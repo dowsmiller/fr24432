@@ -1,0 +1,301 @@
+/* ----------------------------------------------------------
+   GLOBAL RESET & BASE
+---------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+               "Inter", "Merriweather", Georgia, serif;
+  line-height: 1.75;
+  background: linear-gradient(180deg, #f8f9fb 0%, #eef0f4 100%);
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  padding: 24px;
+}
+
+
+/* ----------------------------------------------------------
+   LAYOUT: SPLIT VIEW (left = text/meta, right = Mirador)
+---------------------------------------------------------- */
+.split {
+  display: flex;
+  gap: 24px;
+  height: calc(100vh - 48px);
+}
+
+/* Force left/right layout: left column fixed, right column flexible */
+.left { width: 45%; flex: none; }
+.right { flex: 1; }
+
+/* Glassy panels */
+.left, .right {
+  flex: 1;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-left: 4px solid rgba(0,122,255,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+              border-left-color 0.35s ease;
+}
+
+.left:hover, .right:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  border-left-color: rgba(0,122,255,0.45);
+}
+
+/* ----------------------------------------------------------
+   META BOX (ID, edition, folio etc.)
+---------------------------------------------------------- */
+.meta {
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  border-left: 3px solid rgba(0,122,255,0.25);
+}
+
+.meta div {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.meta strong {
+  color: #111;
+}
+
+/* ----------------------------------------------------------
+   TEXT + LINES
+---------------------------------------------------------- */
+#text {
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* line group container - tight spacing for stanzas */
+.lg-group {
+  padding: 8px 4px;
+  border-left: 3px solid transparent;
+  transition: border-left-color 0.25s ease, transform 0.25s ease;
+  margin-bottom: 12px;
+}
+
+.lg-group:hover {
+  border-left-color: rgba(0,122,255,0.35);
+  transform: translateX(3px);
+}
+
+/* individual line container - no bottom margin, sits tight within lg-group */
+.line {
+  padding: 0;
+  margin: 0;
+}
+
+/* folio/page marker - horizontal line with centered label */
+.folio-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  padding: 8px 0;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.folio-marker:hover {
+  background: rgba(0,122,255,0.08);
+  padding: 8px 8px;
+}
+
+.folio-marker::before,
+.folio-marker::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0,122,255,0.2) 0%, rgba(0,122,255,0) 100%);
+}
+
+.folio-marker::after {
+  background: linear-gradient(90deg, rgba(0,122,255,0) 0%, rgba(0,122,255,0.2) 100%);
+}
+
+.folio-label {
+  padding: 0 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(0,122,255,0.75);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.folio-marker:hover .folio-label {
+  color: rgba(0,122,255,1);
+}
+
+.ln {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  color: #555;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+/* TEI content that has tags removed will inherit */
+#text a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0,122,255,0.3);
+}
+
+#text a:hover {
+  color: #000;
+  border-bottom-color: rgba(0,122,255,0.55);
+}
+
+/* ----------------------------------------------------------
+   RIGHT PANEL: MIRADOR INFORMATION
+---------------------------------------------------------- */
+.right {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#mirador-viewer {
+  flex: 1;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+/* Manifest + canvas URLs area */
+.right > div:last-child {
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  color: #444;
+  background: rgba(255,255,255,0.65);
+  border-top: 1px solid rgba(0,122,255,0.15);
+}
+
+code {
+  background: rgba(0,0,0,0.05);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* ----------------------------------------------------------
+   INDEX PAGE (index_template.html)
+---------------------------------------------------------- */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 24px;
+  color: #111;
+  text-align: center;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg,
+    rgba(0,122,255,0.4), rgba(0,200,255,0.2));
+  border-radius: 3px;
+}
+
+.card {
+  margin-bottom: 32px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-left: 4px solid rgba(0,122,255,0.25);
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+              border-left-color 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-left-color: rgba(0,122,255,0.45);
+}
+
+.card h2 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.card li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 14px;
+  line-height: 1.6;
+}
+
+.card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgba(0,122,255,0.35);
+}
+
+.card a {
+  text-decoration: none;
+  color: #222;
+  border-bottom: 1px dashed rgba(0,122,255,0.25);
+  transition: color 0.25s ease, border-bottom-color 0.25s ease;
+}
+
+.card a:hover {
+  color: #000;
+  border-bottom-color: rgba(0,122,255,0.45);
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------------- */
+@media (max-width: 900px) {
+  .split {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left, .right {
+    height: auto;
+  }
+
+  #mirador-viewer {
+    height: 400px;
+  }
+}

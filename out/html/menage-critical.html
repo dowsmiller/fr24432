@@ -1,0 +1,1497 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My TEI Project — Menage (critical)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="site-style" rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/mirador@3/dist/mirador.min.css">
+  <script src="https://unpkg.com/mirador@3/dist/mirador.min.js"></script>
+
+  <style>
+    body { margin: 0; padding: 0; height: 100vh; overflow: hidden; font-family: sans-serif; }
+    
+    /* Layout */
+    .split { display: flex; height: 100vh; width: 100vw; }
+    
+    /* LEFT PANEL (Scrollable Text) */
+    .left { 
+      flex: 1; 
+      overflow-y: auto; /* This makes the div scrollable */
+      padding: 2rem; 
+      border-right: 1px solid #ccc; 
+      position: relative;
+    }
+
+    /* RIGHT PANEL (Viewer) */
+    .right { flex: 1; display: flex; flex-direction: column; background: #f4f4f4; }
+    
+    /* Folio Marker Styling */
+    .folio-marker {
+      margin: 2rem 0 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #eee;
+      border-left: 5px solid #ccc;
+      cursor: pointer; /* Indicates clickability */
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    
+    .folio-marker:hover {
+      background: #ddd;
+      border-left-color: #999;
+    }
+
+    /* Active state (applied by JS) */
+    .folio-marker.active {
+      background: #e3f2fd;
+      border-left-color: #2196f3;
+      color: #0d47a1;
+    }
+
+    .line { margin-bottom: 0.2rem; line-height: 1.5; }
+    .ln { color: #888; font-size: 0.8rem; margin-right: 0.5rem; user-select: none; }
+    .speaker-label { margin-top: 1rem; font-weight: bold; color: #444; }
+  </style>
+</head>
+<body>
+
+  <div class="split">
+    
+    <div class="left" id="scroll-container">
+      
+      <div class="meta">
+        <h1>Menage</h1>
+        <p><strong>Edition:</strong> critical | <strong>Starting folio:</strong> 226v</p>
+      </div>
+
+      <div id="text"><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f462">
+              Folio 226v
+            </div><div class="lg-group" data-lg="1">
+          <div class="line">
+            <span class="ln">1</span>
+            <span class="line-text">Bonne gent , entendez par amours un biau dit .</span>
+          </div>
+          <div class="line">
+            <span class="ln">2</span>
+            <span class="line-text">Se je me porte cointe , n’en aiez pas despit ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">3</span>
+            <span class="line-text">Car j’aimme par amours celle qui me belist !</span>
+          </div>
+          <div class="line">
+            <span class="ln">4</span>
+            <span class="line-text">Volentiers l’atendroie toute nuit en mon lit .</span>
+          </div></div><div class="lg-group" data-lg="2">
+          <div class="line">
+            <span class="ln">5</span>
+            <span class="line-text">Compains , n’as tu pas honte — maufeu tarde la main —</span>
+          </div>
+          <div class="line">
+            <span class="ln">6</span>
+            <span class="line-text">Qui te vantes d’amer et au soir et au main !</span>
+          </div>
+          <div class="line">
+            <span class="ln">7</span>
+            <span class="line-text">Tu me fais grant despit , par le cors saint Germain ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">8</span>
+            <span class="line-text">Pour Dieu or regardez quel troncon de vilain !</span>
+          </div></div><div class="lg-group" data-lg="3">
+          <div class="line">
+            <span class="ln">9</span>
+            <span class="line-text">Vilain chaitif dolent , tu n’es c’un sechellon .</span>
+          </div>
+          <div class="line">
+            <span class="ln">10</span>
+            <span class="line-text">S’une femme t’amoit , ce seroit foloison .</span>
+          </div>
+          <div class="line">
+            <span class="ln">11</span>
+            <span class="line-text">Mais je sui biaus et jones , si aimme Marion</span>
+          </div>
+          <div class="line">
+            <span class="ln">12</span>
+            <span class="line-text">Qui garde les brebis . Ier le vi au buisson .</span>
+          </div></div><div class="lg-group" data-lg="4">
+          <div class="line">
+            <span class="ln">13</span>
+            <span class="line-text">Amis tu n’as pas tort se tu aimes bregiere ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">14</span>
+            <span class="line-text">Car bien sambles bergier au cors et a la chiere .</span>
+          </div>
+          <div class="line">
+            <span class="ln">15</span>
+            <span class="line-text">Ne te faut que hoüte et une panetiere.</span>
+          </div>
+          <div class="line">
+            <span class="ln">16</span>
+            <span class="line-text">Fui ! Va t’en loins de ci avant que je te fiere !</span>
+          </div></div><div class="lg-group" data-lg="5">
+          <div class="line">
+            <span class="ln">17</span>
+            <span class="line-text">Me veus tu dont ferir ? Voir se ferus estoie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">18</span>
+            <span class="line-text">Pour l’amour de m’amie bien me revengeroie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">19</span>
+            <span class="line-text">Au buisson le trouvai , delez une sausoie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">20</span>
+            <span class="line-text">De son pain me donna , de quoi j’ai moult grant joie .</span>
+          </div></div><div class="lg-group" data-lg="6">
+          <div class="line">
+            <span class="ln">21</span>
+            <span class="line-text">Male joie te puist le cuer el cors crever ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">22</span>
+            <span class="line-text">Se me mens d’une chose que te veul demander :</span>
+          </div>
+          <div class="line">
+            <span class="ln">23</span>
+            <span class="line-text">Comment l’acointas tu ne par confait parler ?</span>
+          </div>
+          <div class="line">
+            <span class="ln">24</span>
+            <span class="line-text">Sez tu bien de certain qu’elle te veult amer ?</span>
+          </div></div><div class="lg-group" data-lg="7">
+          <div class="line">
+            <span class="ln">25</span>
+            <span class="line-text">Ouïl , quar elle rit touz jourz quant vois vers li ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">26</span>
+            <span class="line-text">Et si m’a demandé un chapelet joli .</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f463">
+              Folio 227r
+            </div><div class="lg-group" data-lg="7">
+          <div class="line">
+            <span class="ln">27</span>
+            <span class="line-text">Je en avrai un biau pour mains d’un parisis .</span>
+          </div>
+          <div class="line">
+            <span class="ln">28</span>
+            <span class="line-text">Porter le mi faudra ainz que face autre ami .</span>
+          </div></div><div class="lg-group" data-lg="8">
+          <div class="line">
+            <span class="ln">29</span>
+            <span class="line-text">Hastez vous biax amis et y alez courant !</span>
+          </div>
+          <div class="line">
+            <span class="ln">30</span>
+            <span class="line-text">Robinet va entour , je le vi ne sai quant .</span>
+          </div>
+          <div class="line">
+            <span class="ln">31</span>
+            <span class="line-text">Il la vouloit baisier , mais elle aloit grouçant .</span>
+          </div>
+          <div class="line">
+            <span class="ln">32</span>
+            <span class="line-text">Elle est borgne et toullouque : de deux pars va clochant .</span>
+          </div></div><div class="lg-group" data-lg="9">
+          <div class="line">
+            <span class="ln">33</span>
+            <span class="line-text">Tu dis voir , elle est borgne , mais ce fait mignotise .</span>
+          </div>
+          <div class="line">
+            <span class="ln">34</span>
+            <span class="line-text">Le clochier li siet bien , gentement se debrise .</span>
+          </div>
+          <div class="line">
+            <span class="ln">35</span>
+            <span class="line-text">Se le me blasmes plus tu feras fole emprise ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">36</span>
+            <span class="line-text">Garde que ne mesprengnes car je l’aim moult et prise !</span>
+          </div></div><div class="lg-group" data-lg="10">
+          <div class="line">
+            <span class="ln">37</span>
+            <span class="line-text">Compains , de tes amours t’envoit Diex pute joie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">38</span>
+            <span class="line-text">Va t’ent de devant moi , je le te loeroie !</span>
+          </div>
+          <div class="line">
+            <span class="ln">39</span>
+            <span class="line-text">A ces bonnes gens ci un dit dire cuidoie</span>
+          </div>
+          <div class="line">
+            <span class="ln">40</span>
+            <span class="line-text">Du pappe nostre pere , mais ta jengle m’anoie .</span>
+          </div></div><div class="lg-group" data-lg="11">
+          <div class="line">
+            <span class="ln">41</span>
+            <span class="line-text">Que ai je a faire du pappe ? Il ne li chaut de moi .</span>
+          </div>
+          <div class="line">
+            <span class="ln">42</span>
+            <span class="line-text">Se tu veulz estriver , bien parlerai a toi .</span>
+          </div>
+          <div class="line">
+            <span class="ln">43</span>
+            <span class="line-text">Trop me vas desprisant , du grief mal saint Eloy .</span>
+          </div>
+          <div class="line">
+            <span class="ln">44</span>
+            <span class="line-text">Soit ton cors tourmentez se ne te tais tout quoi !</span>
+          </div></div><div class="lg-group" data-lg="12">
+          <div class="line">
+            <span class="ln">45</span>
+            <span class="line-text">Voir ne me terai je ja pour telle loberie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">46</span>
+            <span class="line-text">Tu es trop bien taillie pour avaler boullie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">47</span>
+            <span class="line-text">Il pert bien a tes joes — que ne t’esmaies mie —</span>
+          </div>
+          <div class="line">
+            <span class="ln">48</span>
+            <span class="line-text">Comment le roy penra la terre de Surie .</span>
+          </div></div><div class="lg-group" data-lg="13">
+          <div class="line">
+            <span class="ln">49</span>
+            <span class="line-text">Se je me soucioie , fol seroie prouvez .</span>
+          </div>
+          <div class="line">
+            <span class="ln">50</span>
+            <span class="line-text">Mon souci n’i vaudroit la monte de deux dez .</span>
+          </div>
+          <div class="line">
+            <span class="ln">51</span>
+            <span class="line-text">Que le feu saint Antoinne te puist mengier le nez !</span>
+          </div>
+          <div class="line">
+            <span class="ln">52</span>
+            <span class="line-text">Aussi est il trop lonc , bonne gent regardez !</span>
+          </div></div><div class="lg-group" data-lg="14">
+          <div class="line">
+            <span class="ln">53</span>
+            <span class="line-text">Hé ! Chetif malostru , que regardera l’en ?</span>
+          </div>
+          <div class="line">
+            <span class="ln">54</span>
+            <span class="line-text">Ton let musel boufi ? Diex te mete en mal an !</span>
+          </div>
+          <div class="line">
+            <span class="ln">55</span>
+            <span class="line-text">S’a moi estrive plus , ce ne sera pas sen ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">56</span>
+            <span class="line-text">Mais sueffre toi tout quoi . Je le te lo : va t’en !</span>
+          </div></div><div class="lg-group" data-lg="15">
+          <div class="line">
+            <span class="ln">57</span>
+            <span class="line-text">Vaten est en Berry assez pres de Crassai ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">58</span>
+            <span class="line-text">A deux lïeues d’un bourc c’on apelle Massai .</span>
+          </div>
+          <div class="line">
+            <span class="ln">59</span>
+            <span class="line-text">Or me di par amours se tu es cler ou lai .</span>
+          </div>
+          <div class="line">
+            <span class="ln">60</span>
+            <span class="line-text">Je croi que du pays ou les gens dient “ nai ” .</span>
+          </div></div><div class="lg-group" data-lg="16">
+          <div class="line">
+            <span class="ln">61</span>
+            <span class="line-text">Mescheant , que te chaut de quel pays je soie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">62</span>
+            <span class="line-text">Se les yex de ta teste touz deux crevez t’avoie ?</span>
+          </div>
+          <div class="line">
+            <span class="ln">63</span>
+            <span class="line-text">Ja parmi ceste ville a aler n’en lairoie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">64</span>
+            <span class="line-text">Te portes tu si fier . Pour t’amie m’aroie ?</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f464">
+              Folio 227v
+            </div><div class="lg-group" data-lg="17">
+          <div class="line">
+            <span class="ln">65</span>
+            <span class="line-text">Ouïl , fier je m’en porte et je le doi bien faire ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">66</span>
+            <span class="line-text">Car elle est bele et douce , courtoise et debonnaire .</span>
+          </div>
+          <div class="line">
+            <span class="ln">67</span>
+            <span class="line-text">A couchier avec moi , je ne le puis atraire</span>
+          </div>
+          <div class="line">
+            <span class="ln">68</span>
+            <span class="line-text">Se ne l’espouse avant , dont j’ai au cuer contraire .</span>
+          </div></div><div class="lg-group" data-lg="18">
+          <div class="line">
+            <span class="ln">69</span>
+            <span class="line-text">Compains , celle qui t’aimme n’a pas merde enhaïe .</span>
+          </div>
+          <div class="line">
+            <span class="ln">70</span>
+            <span class="line-text">Ja femme de ton cors ne sera bien servie ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">71</span>
+            <span class="line-text">Tu n’es c’un droit mouflart . Par amours je te prie</span>
+          </div>
+          <div class="line">
+            <span class="ln">72</span>
+            <span class="line-text">Que ne te vantes plus que tu as mesamie .</span>
+          </div></div><div class="lg-group" data-lg="19">
+          <div class="line">
+            <span class="ln">73</span>
+            <span class="line-text">Ne te courouce pas , par amour , biau varlet ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">74</span>
+            <span class="line-text">Volentiers te donrai plain un pot de bufet</span>
+          </div>
+          <div class="line">
+            <span class="ln">75</span>
+            <span class="line-text">Pour tant que me conseilles se ce sera bien fait</span>
+          </div>
+          <div class="line">
+            <span class="ln">76</span>
+            <span class="line-text">Que j’espouse m’amie qui a biau chapelet .</span>
+          </div></div><div class="lg-group" data-lg="20">
+          <div class="line">
+            <span class="ln">77</span>
+            <span class="line-text">Je ne t’en dirai riens , foy que doi Nostre Dame ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">78</span>
+            <span class="line-text">Car se te conseilloie que tu preïsses femme</span>
+          </div>
+          <div class="line">
+            <span class="ln">79</span>
+            <span class="line-text">Et il t’en avenoit encombrier ne diffame ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">80</span>
+            <span class="line-text">Bien sai que maudiroies souvent mon cors et m’ame .</span>
+          </div></div><div class="lg-group" data-lg="21">
+          <div class="line">
+            <span class="ln">81</span>
+            <span class="line-text">Amis , puis que ne puis trouver conseil en toi ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">82</span>
+            <span class="line-text">Je m’en conseillerai a ce clerc que la voi .</span>
+          </div>
+          <div class="line">
+            <span class="ln">83</span>
+            <span class="line-text">Bien m’en dira le voir si comme je le croi .</span>
+          </div></div><div class="lg-group" data-lg="22">
+          <div class="line">
+            <span class="ln">84</span>
+            <span class="line-text">Male honte t’aviengne ! Tu m’as moustré au doi !</span>
+          </div></div><div class="lg-group" data-lg="23">
+          <div class="line">
+            <span class="ln">85</span>
+            <span class="line-text">Sire , ne vous desplaise , se Diex me puist sauver .</span>
+          </div>
+          <div class="line">
+            <span class="ln">86</span>
+            <span class="line-text">Pas ne l’ai fait por mal , mais je ne puis durer ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">87</span>
+            <span class="line-text">Tant ai le cuer joli , si vous veul demander</span>
+          </div>
+          <div class="line">
+            <span class="ln">88</span>
+            <span class="line-text">Dont veniez orains . Moult vous vi tost aler .</span>
+          </div></div><div class="lg-group" data-lg="24">
+          <div class="line">
+            <span class="ln">89</span>
+            <span class="line-text">Douz compains , je venoie — ja ne t’en quier mentir —</span>
+          </div>
+          <div class="line">
+            <span class="ln">90</span>
+            <span class="line-text">Tout droit du cemitiere de ma femme enfouïr .</span>
+          </div>
+          <div class="line">
+            <span class="ln">91</span>
+            <span class="line-text">Combien que la veïsse en la terre couvrir ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">92</span>
+            <span class="line-text">Si ai je touz jourz doute ne doie revenir .</span>
+          </div></div><div class="lg-group" data-lg="25">
+          <div class="line">
+            <span class="ln">93</span>
+            <span class="line-text">Vous vous trufez de moi ! Ce n’est pas courtoisie !</span>
+          </div>
+          <div class="line">
+            <span class="ln">94</span>
+            <span class="line-text">Tout sanz Chastiau Landon truis bien la moquerie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">95</span>
+            <span class="line-text">Vous dites qu’avez hui vostre femme enfouïe ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">96</span>
+            <span class="line-text">Mais ne puet estre voir quant vous ne plourez mie .</span>
+          </div></div><div class="lg-group" data-lg="26">
+          <div class="line">
+            <span class="ln">97</span>
+            <span class="line-text">Plourer ? Sainte Marie ! Je te jur se j’avoie</span>
+          </div>
+          <div class="line">
+            <span class="ln">98</span>
+            <span class="line-text">Sept anemis mortiex et trainer les veoie</span>
+          </div>
+          <div class="line">
+            <span class="ln">99</span>
+            <span class="line-text">Au gibet de Paris , pas si liez ne seroie</span>
+          </div>
+          <div class="line">
+            <span class="ln">100</span>
+            <span class="line-text">Com je sui de sa mort ; Onques mais n’oi tel joie !</span>
+          </div></div><div class="lg-group" data-lg="27">
+          <div class="line">
+            <span class="ln">101</span>
+            <span class="line-text">Par ma foi , biax amis , moult sui esmerveilliez !</span>
+          </div>
+          <div class="line">
+            <span class="ln">102</span>
+            <span class="line-text">Je voi ces autres hommes qui sont touz courouciez</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f465">
+              Folio 228r
+            </div><div class="lg-group" data-lg="27">
+          <div class="line">
+            <span class="ln">103</span>
+            <span class="line-text">Quant leur femmes trespassent et vont touz embrunchiez</span>
+          </div>
+          <div class="line">
+            <span class="ln">104</span>
+            <span class="line-text">Et de la mort la vostre estes joianz et liez !</span>
+          </div></div><div class="lg-group" data-lg="28">
+          <div class="line">
+            <span class="ln">105</span>
+            <span class="line-text">Douz Diex , se je fais joie , il y a bien raison :</span>
+          </div>
+          <div class="line">
+            <span class="ln">106</span>
+            <span class="line-text">Onques puis que la pris , je n’oi pais en maison ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">107</span>
+            <span class="line-text">En yver n’en esté ne en nule saison</span>
+          </div>
+          <div class="line">
+            <span class="ln">108</span>
+            <span class="line-text">N’estoit qu’adez n’eüsse de tences a foison .</span>
+          </div></div><div class="lg-group" data-lg="29">
+          <div class="line">
+            <span class="ln">109</span>
+            <span class="line-text">Par ma foi , biau douz sire , moult volentiers savroie</span>
+          </div>
+          <div class="line">
+            <span class="ln">110</span>
+            <span class="line-text">Pourquoi menez tel vie . Marier me vouloie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">111</span>
+            <span class="line-text">Mais je sui tout certain , s’une femme prenoie</span>
+          </div>
+          <div class="line">
+            <span class="ln">112</span>
+            <span class="line-text">Qui m’alast riotant , je le mehainneroie .</span>
+          </div></div><div class="lg-group" data-lg="30">
+          <div class="line">
+            <span class="ln">113</span>
+            <span class="line-text">T’en cuideroies tu miex chevir que je n’ai fait ?</span>
+          </div>
+          <div class="line">
+            <span class="ln">114</span>
+            <span class="line-text">Tu n’es que un bourdeur et un droit davoudet !</span>
+          </div>
+          <div class="line">
+            <span class="ln">115</span>
+            <span class="line-text">Tant ai souffert par li de tourment et de lait</span>
+          </div>
+          <div class="line">
+            <span class="ln">116</span>
+            <span class="line-text">Que je ne l’ose dire , s’ame soit au gibet .</span>
+          </div></div><div class="lg-group" data-lg="31">
+          <div class="line">
+            <span class="ln">117</span>
+            <span class="line-text">Je sui touz esbahis des mos que vous contez ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">118</span>
+            <span class="line-text">Mais par amours vous pri que conseil me donnez ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">119</span>
+            <span class="line-text">Car de tenir manage sui fort entalentez</span>
+          </div>
+          <div class="line">
+            <span class="ln">120</span>
+            <span class="line-text">Et de moi marier . Dites que m’en loez !</span>
+          </div></div><div class="lg-group" data-lg="32">
+          <div class="line">
+            <span class="ln">121</span>
+            <span class="line-text">Davoudet , biaus amis , tu n’es mie bien sage .</span>
+          </div>
+          <div class="line">
+            <span class="ln">122</span>
+            <span class="line-text">Je te recorderai l’anuie et le domage</span>
+          </div>
+          <div class="line">
+            <span class="ln">123</span>
+            <span class="line-text">Qu’ai souffert puis le jour qu’entrai en mariage .</span>
+          </div>
+          <div class="line">
+            <span class="ln">124</span>
+            <span class="line-text">Mais avant t’aprendrai qu’il couvient a mesnage .</span>
+          </div></div><div class="lg-group" data-lg="33">
+          <div class="line">
+            <span class="ln">125</span>
+            <span class="line-text">Dan maistre qui voulez de manage parler ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">126</span>
+            <span class="line-text">Voir j’en sai plus que vous . Je le puis bien prouver :</span>
+          </div>
+          <div class="line">
+            <span class="ln">127</span>
+            <span class="line-text">J’i ai esté dix anz , mais je puis bien jurer</span>
+          </div>
+          <div class="line">
+            <span class="ln">128</span>
+            <span class="line-text">C’onques n’i oy bon jour . Deable m’i fist entrer !</span>
+          </div></div><div class="lg-group" data-lg="34">
+          <div class="line">
+            <span class="ln">129</span>
+            <span class="line-text">Compains , bien vous en croi . Je sai certainement</span>
+          </div>
+          <div class="line">
+            <span class="ln">130</span>
+            <span class="line-text">S’il en prent bien a un , qu’il en meschiet a cent .</span>
+          </div>
+          <div class="line">
+            <span class="ln">131</span>
+            <span class="line-text">Manage fait dancier la gent premierement ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">132</span>
+            <span class="line-text">Mais puis vient la riote qui dure longuement .</span>
+          </div></div><div class="lg-group" data-lg="35">
+          <div class="line">
+            <span class="ln">133</span>
+            <span class="line-text">Manage veult avoir robe neuve au primier</span>
+          </div>
+          <div class="line">
+            <span class="ln">134</span>
+            <span class="line-text">Et noble chauceüre pour gentement marcier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">135</span>
+            <span class="line-text">Ganz blans a la çainture et coutel pour taillier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">136</span>
+            <span class="line-text">Ne les joiaus la dame ne doit on pas laissier .</span>
+          </div></div><div class="lg-group" data-lg="36">
+          <div class="line">
+            <span class="ln">137</span>
+            <span class="line-text">Ausi faut il les coutes et cousins por lor lis ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">138</span>
+            <span class="line-text">Les dras , les courtes pointes , et sarges et tapis ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">139</span>
+            <span class="line-text">Fuerre blanc , couverteurs , et quovrechiez faitis .</span>
+          </div>
+          <div class="line">
+            <span class="ln">140</span>
+            <span class="line-text">S’il n’i avoit courtines , ce seroit grant despit .</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f466">
+              Folio 228v
+            </div><div class="lg-group" data-lg="37">
+          <div class="line">
+            <span class="ln">141</span>
+            <span class="line-text">En la chambre faut coffres et escrins pour joiaus ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">142</span>
+            <span class="line-text">Et parmi la maison granz huces et huceaus ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">143</span>
+            <span class="line-text">Escüelles parfondes , sausieres et platiaus .</span>
+          </div>
+          <div class="line">
+            <span class="ln">144</span>
+            <span class="line-text">Quant cela est d’estain l’ostel en est plus biaus .</span>
+          </div></div><div class="lg-group" data-lg="38">
+          <div class="line">
+            <span class="ln">145</span>
+            <span class="line-text">Il couvient a manage : pos , chauderons , paëles ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">146</span>
+            <span class="line-text">Hates , selles et auges , escuves , escüelles ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">147</span>
+            <span class="line-text">Bans , formetes et chazeres , et eschammaz et seles ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">148</span>
+            <span class="line-text">Traitiaus , tables , bufez , napes , touelles belles .</span>
+          </div></div><div class="lg-group" data-lg="39">
+          <div class="line">
+            <span class="ln">149</span>
+            <span class="line-text">Manage veut avoir : voirre , godés , henas ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">150</span>
+            <span class="line-text">Et la maist pour pestrir , buletel et saas ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">151</span>
+            <span class="line-text">Sasoirë et ratoire , et plume se ne l’as .</span>
+          </div>
+          <div class="line">
+            <span class="ln">152</span>
+            <span class="line-text">Un balai en l’ostel , il ne vaut pas deux as .</span>
+          </div></div><div class="lg-group" data-lg="40">
+          <div class="line">
+            <span class="ln">153</span>
+            <span class="line-text">Ou manage couvient : buche , charbon , grant fais ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">154</span>
+            <span class="line-text">Cramillie , trepié , tenailles et mollés ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">155</span>
+            <span class="line-text">Griex , tronchus , landiers , et les petiz chenés ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">156</span>
+            <span class="line-text">Et s’est moult bien seant , en l’atre li soufflés .</span>
+          </div></div><div class="lg-group" data-lg="41">
+          <div class="line">
+            <span class="ln">157</span>
+            <span class="line-text">N’est si petit ostel ou ne faille sailliere ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">158</span>
+            <span class="line-text">Sel , pestel et mortier , et pilete legiere ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">159</span>
+            <span class="line-text">Chandeliere et chandele , et huile qui est chiere ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">160</span>
+            <span class="line-text">La lampe et le crasset , et la lanterne entiere .</span>
+          </div></div><div class="lg-group" data-lg="42">
+          <div class="line">
+            <span class="ln">161</span>
+            <span class="line-text">Vous dites voir amis , mais il li faut tout el :</span>
+          </div>
+          <div class="line">
+            <span class="ln">162</span>
+            <span class="line-text">Les auz et les oingnons , et verjus en tonnel .</span>
+          </div>
+          <div class="line">
+            <span class="ln">163</span>
+            <span class="line-text">Desce que on aproche du haut jour sollempnel ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">164</span>
+            <span class="line-text">La dame se demente d’avoir habit nouvel .</span>
+          </div></div><div class="lg-group" data-lg="43">
+          <div class="line">
+            <span class="ln">165</span>
+            <span class="line-text">Encore n’est ce riens vers ce que dire veul ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">166</span>
+            <span class="line-text">Car au petit enfant lïen faut et berceul ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">167</span>
+            <span class="line-text">Et dangier de norrices qui sont plaines d’orgueil :</span>
+          </div>
+          <div class="line">
+            <span class="ln">168</span>
+            <span class="line-text">La paële au papin , l’aumuce et le lincheul .</span>
+          </div></div><div class="lg-group" data-lg="44">
+          <div class="line">
+            <span class="ln">169</span>
+            <span class="line-text">Davoudet , entens tu ce qu’il te va disant ?</span>
+          </div></div><div class="lg-group" data-lg="45">
+          <div class="line">
+            <span class="ln">170</span>
+            <span class="line-text">Ouïl voir . De manage di “ fi ” d’ore en avant !</span>
+          </div></div><div class="lg-group" data-lg="46">
+          <div class="line">
+            <span class="ln">171</span>
+            <span class="line-text">Amis , trop plus de choses faut — je le te creant —</span>
+          </div>
+          <div class="line">
+            <span class="ln">172</span>
+            <span class="line-text">A ces gens de vilage que n’as eü devant .</span>
+          </div></div><div class="lg-group" data-lg="47">
+          <div class="line">
+            <span class="ln">173</span>
+            <span class="line-text">Je sai bien qu’il leur faut , nez fui en un hamel .</span>
+          </div>
+          <div class="line">
+            <span class="ln">174</span>
+            <span class="line-text">Il leur couvient par force la fource et le flaël ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">175</span>
+            <span class="line-text">Une paule et un pic , la houe et le hoël ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">176</span>
+            <span class="line-text">Le rouable et la fauz , la queuz et le martel .</span>
+          </div></div><div class="lg-group" data-lg="48">
+          <div class="line">
+            <span class="ln">177</span>
+            <span class="line-text">Ausi ques leur faut il , et vachiers et berchieres ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">178</span>
+            <span class="line-text">Charetes , tuberiaus , brouetes et chivieres ,</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f467">
+              Folio 229r
+            </div><div class="lg-group" data-lg="48">
+          <div class="line">
+            <span class="ln">179</span>
+            <span class="line-text">La charrue et la harche , soc , coutre et dossïeres ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">180</span>
+            <span class="line-text">Chevaus , jumens et bués , et anesses somieres .</span>
+          </div></div><div class="lg-group" data-lg="49">
+          <div class="line">
+            <span class="ln">181</span>
+            <span class="line-text">A vilages couvient : brebis , vaches , moutons ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">182</span>
+            <span class="line-text">Chievres , bous et chevreaus , oës , jars et oisons ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">183</span>
+            <span class="line-text">Avetes et mallars , cos , gelines , chapons ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">184</span>
+            <span class="line-text">Et le chat qui enchace les ras loins des bacons .</span>
+          </div></div><div class="lg-group" data-lg="50">
+          <div class="line">
+            <span class="ln">185</span>
+            <span class="line-text">Bacins et chaufouetes faut aus granz managiers ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">186</span>
+            <span class="line-text">Corbelles et boissiaus , et hotes et paniers .</span>
+          </div>
+          <div class="line">
+            <span class="ln">187</span>
+            <span class="line-text">Qui n’a serpe ou hachete , il ne vaut deux deniers .</span>
+          </div>
+          <div class="line">
+            <span class="ln">188</span>
+            <span class="line-text">Moufles , ganz et mitenes faut , quant hyver est fiers .</span>
+          </div></div><div class="lg-group" data-lg="51">
+          <div class="line">
+            <span class="ln">189</span>
+            <span class="line-text">Il y faut corde a puis , eschieles et martel ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">190</span>
+            <span class="line-text">La coulonne a la dame , la pezon , le fuizel ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">191</span>
+            <span class="line-text">Et les desvideüres ou desouz est l’aviel</span>
+          </div>
+          <div class="line">
+            <span class="ln">192</span>
+            <span class="line-text">Ou on met le maillet dont on bat le luissel .</span>
+          </div></div><div class="lg-group" data-lg="52">
+          <div class="line">
+            <span class="ln">193</span>
+            <span class="line-text">Davoudet , tu oublies : il faut un bateür ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">194</span>
+            <span class="line-text">Le traoul , le cerens , et le fer a ferrer !</span>
+          </div></div><div class="lg-group" data-lg="53">
+          <div class="line">
+            <span class="ln">195</span>
+            <span class="line-text">Sire lessïez moi ! Diex vous puist craventer !</span>
+          </div>
+          <div class="line">
+            <span class="ln">196</span>
+            <span class="line-text">Je renie masnage ! N’en veul plus escouter .</span>
+          </div></div><div class="lg-group" data-lg="54">
+          <div class="line">
+            <span class="ln">197</span>
+            <span class="line-text">Quant y faut tant de choses , de ma part le renie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">198</span>
+            <span class="line-text">Mais orains promeïtes devant la compaignie</span>
+          </div>
+          <div class="line">
+            <span class="ln">199</span>
+            <span class="line-text">Que me conterïez la dolente de vie</span>
+          </div>
+          <div class="line">
+            <span class="ln">200</span>
+            <span class="line-text">Que vous faisoit la femme qui du siecle est partie .</span>
+          </div></div><div class="lg-group" data-lg="55">
+          <div class="line">
+            <span class="ln">201</span>
+            <span class="line-text">Or te tais dont tout qu’ois , si orras le hustin</span>
+          </div>
+          <div class="line">
+            <span class="ln">202</span>
+            <span class="line-text">Qu’avoie de ma femme ; trop sui liez de sa fin .</span>
+          </div>
+          <div class="line">
+            <span class="ln">203</span>
+            <span class="line-text">Coie ne se taisoit , au soir ne au matin .</span>
+          </div>
+          <div class="line">
+            <span class="ln">204</span>
+            <span class="line-text">Adez aloit sa langue com batiau de molin .</span>
+          </div></div><div class="lg-group" data-lg="56">
+          <div class="line">
+            <span class="ln">205</span>
+            <span class="line-text">Et que vous disoit elle , pour le cors saint Marcel ?</span>
+          </div></div><div class="lg-group" data-lg="57">
+          <div class="line">
+            <span class="ln">206</span>
+            <span class="line-text">Tout adez riotoit , ou fust ou d’un ou d’el :</span>
+          </div>
+          <div class="line">
+            <span class="ln">207</span>
+            <span class="line-text">Une heure de sa vache , autre de son veel .</span>
+          </div>
+          <div class="line">
+            <span class="ln">208</span>
+            <span class="line-text">Souvent m’en couvenoit fuïr hors de l’ostel .</span>
+          </div></div><div class="lg-group" data-lg="58">
+          <div class="line">
+            <span class="ln">209</span>
+            <span class="line-text">Il ne m’en chaloit ja qu’elle alast devisant ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">210</span>
+            <span class="line-text">Quant ne parlast de chose qui m’alast aferant .</span>
+          </div>
+          <div class="line">
+            <span class="ln">211</span>
+            <span class="line-text">Je n’en feïsse ja ne chiere ne samblant ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">212</span>
+            <span class="line-text">Ainz li laissaisse dire du tout a son talent .</span>
+          </div></div><div class="lg-group" data-lg="59">
+          <div class="line">
+            <span class="ln">213</span>
+            <span class="line-text">Amis , quant m’en taisoie tant estoit aïree</span>
+          </div>
+          <div class="line">
+            <span class="ln">214</span>
+            <span class="line-text">Que d’aire m’apeloit : “ ribaut , hance pelee ” .</span>
+          </div>
+          <div class="line">
+            <span class="ln">215</span>
+            <span class="line-text">S’a li gesir vousisse , tantost se fust donnee</span>
+          </div>
+          <div class="line">
+            <span class="ln">216</span>
+            <span class="line-text">Aus deables d’enfer qui l’en ont emportee .</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f468">
+              Folio 229v
+            </div><div class="lg-group" data-lg="60">
+          <div class="line">
+            <span class="ln">217</span>
+            <span class="line-text">Sire , je vous demande se belle femme estoit .</span>
+          </div></div><div class="lg-group" data-lg="61">
+          <div class="line">
+            <span class="ln">218</span>
+            <span class="line-text">Ouïl , se Dieu me gart , mais lever me faisoit</span>
+          </div>
+          <div class="line">
+            <span class="ln">219</span>
+            <span class="line-text">Souvent ainz qu’il fust jor , et puis si me bailloit</span>
+          </div>
+          <div class="line">
+            <span class="ln">220</span>
+            <span class="line-text">Ma houe par le manche , et aus chans m’enveoit .</span>
+          </div></div><div class="lg-group" data-lg="62">
+          <div class="line">
+            <span class="ln">221</span>
+            <span class="line-text">Male honte vous viengne , sire ribaut puant !</span>
+          </div>
+          <div class="line">
+            <span class="ln">222</span>
+            <span class="line-text">On vous deüst clamer compere au mescheant</span>
+          </div>
+          <div class="line">
+            <span class="ln">223</span>
+            <span class="line-text">Quant d’une seule femme vous faloit souffrir tant .</span>
+          </div>
+          <div class="line">
+            <span class="ln">224</span>
+            <span class="line-text">Je la laisse de coups trestoute derompant !</span>
+          </div></div><div class="lg-group" data-lg="63">
+          <div class="line">
+            <span class="ln">225</span>
+            <span class="line-text">Hé laz , tres douz compains ! Une foiz l’a feri ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">226</span>
+            <span class="line-text">Mais ne me donnai garde qu’aus cheveus me saisi ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">227</span>
+            <span class="line-text">A terre me geta , sus mon ventre sailli ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">228</span>
+            <span class="line-text">Et me prist par la gorge . A poi ne me murdri !</span>
+          </div></div><div class="lg-group" data-lg="64">
+          <div class="line">
+            <span class="ln">229</span>
+            <span class="line-text">Voir j’ou grant joie au cuer quant me daigna laissier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">230</span>
+            <span class="line-text">Onques si male beste ne vi terre marchier !</span>
+          </div></div><div class="lg-group" data-lg="65">
+          <div class="line">
+            <span class="ln">231</span>
+            <span class="line-text">Or me dites , biau sire , aprés si fait dangier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">232</span>
+            <span class="line-text">De quoi vous servoit elle quant venoit au mengier ?</span>
+          </div></div><div class="lg-group" data-lg="66">
+          <div class="line">
+            <span class="ln">233</span>
+            <span class="line-text">J’avoie du pain d’orge poi cuit et mal levé ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">234</span>
+            <span class="line-text">Ort pot et sale nape , et lait aigre esburré .</span>
+          </div>
+          <div class="line">
+            <span class="ln">235</span>
+            <span class="line-text">Puis que Jhesucrist m’a de ses laz delivré ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">236</span>
+            <span class="line-text">Jamais en mariage ne me rebouteré .</span>
+          </div></div><div class="lg-group" data-lg="67">
+          <div class="line">
+            <span class="ln">237</span>
+            <span class="line-text">Il n’est mie mestier que toutes femmes soient</span>
+          </div>
+          <div class="line">
+            <span class="ln">238</span>
+            <span class="line-text">Telle comme elle estoit . Pluseurs genz y perdroient :</span>
+          </div>
+          <div class="line">
+            <span class="ln">239</span>
+            <span class="line-text">Il est grant plenté d’ommes que se il le savoient ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">240</span>
+            <span class="line-text">Que jamais en leur vie ne se marieroient .</span>
+          </div></div><div class="lg-group" data-lg="68">
+          <div class="line">
+            <span class="ln">241</span>
+            <span class="line-text">En non Dieu , tu diz voir . N’ai soing de dire outrage</span>
+          </div>
+          <div class="line">
+            <span class="ln">242</span>
+            <span class="line-text">Des dames , fors de celle qui m’a fait tel dommage .</span>
+          </div>
+          <div class="line">
+            <span class="ln">243</span>
+            <span class="line-text">Mais avant m’enfuiroie outre la mere a nage</span>
+          </div>
+          <div class="line">
+            <span class="ln">244</span>
+            <span class="line-text">Que je me remeïsse en si fait mariage !</span>
+          </div></div><div class="lg-group" data-lg="69">
+          <div class="line">
+            <span class="ln">245</span>
+            <span class="line-text">Sire qui mariage si forment redoutez ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">246</span>
+            <span class="line-text">Je croi c’est pour les biens que souffert y avez .</span>
+          </div>
+          <div class="line">
+            <span class="ln">247</span>
+            <span class="line-text">Par amours or me dites , mie ne me celez ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">248</span>
+            <span class="line-text">Comment d’ore en avant maintenir vous voudrez .</span>
+          </div></div><div class="lg-group" data-lg="70">
+          <div class="line">
+            <span class="ln">249</span>
+            <span class="line-text">Davoudet , tu l’orras . Quant le douz Roy celestre</span>
+          </div>
+          <div class="line">
+            <span class="ln">250</span>
+            <span class="line-text">Me delivra de celle que deable fist nestre ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">251</span>
+            <span class="line-text">D’ore en avant voudrai de touz poins preudons estre ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">252</span>
+            <span class="line-text">Et ferai se Dieu plait que briement serai prestre .</span>
+          </div></div><div class="lg-group" data-lg="71">
+          <div class="line">
+            <span class="ln">253</span>
+            <span class="line-text">Prestre , deable y soient ! Estes vous forsenez ?</span>
+          </div>
+          <div class="line">
+            <span class="ln">254</span>
+            <span class="line-text">Prestre Hue ot l’autr’ier trestout les biens coupez</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f469">
+              Folio 230r
+            </div><div class="lg-group" data-lg="71">
+          <div class="line">
+            <span class="ln">255</span>
+            <span class="line-text">Sur une orde ribaude : d’un barbier fu trouvés .</span>
+          </div>
+          <div class="line">
+            <span class="ln">256</span>
+            <span class="line-text">Prestres sont si ribaus qu’il ne valent deux dez !</span>
+          </div></div><div class="lg-group" data-lg="72">
+          <div class="line">
+            <span class="ln">257</span>
+            <span class="line-text">Tu men mauvaisement ! Il ne va pas ainssi .</span>
+          </div>
+          <div class="line">
+            <span class="ln">258</span>
+            <span class="line-text">Bien voi a ton parler qu’il .</span>
+          </div>
+          <div class="line">
+            <span class="ln">259</span>
+            <span class="line-text">Se plus mesdiz des prestres , de touz poins te deffi ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">260</span>
+            <span class="line-text">Et de l’auctorité que j’ai , t’escommeni !</span>
+          </div></div><div class="lg-group" data-lg="73">
+          <div class="line">
+            <span class="ln">261</span>
+            <span class="line-text">Hé laz tres douce gent ! Je ne savrai mengier</span>
+          </div>
+          <div class="line">
+            <span class="ln">262</span>
+            <span class="line-text">Puis qu’escommenié m’a mesire Gautier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">263</span>
+            <span class="line-text">Car me veilliez absoudre , pour Dieu le vous requier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">264</span>
+            <span class="line-text">Savez vous par quel lettre commence le Sautier ?</span>
+          </div></div><div class="lg-group" data-lg="74">
+          <div class="line">
+            <span class="ln">265</span>
+            <span class="line-text">Tanstost le te dirai mais que m’avise un poi .</span>
+          </div>
+          <div class="line">
+            <span class="ln">266</span>
+            <span class="line-text">Je connois bien les lettres , quant el livre les voi .</span>
+          </div>
+          <div class="line">
+            <span class="ln">267</span>
+            <span class="line-text">Or ne parle pas haut et te tais trestout quoi .</span>
+          </div></div><div class="lg-group" data-lg="75">
+          <div class="line">
+            <span class="ln">268</span>
+            <span class="line-text">Je pense le Sautier se commence par’B’!</span>
+          </div></div><div class="lg-group" data-lg="76">
+          <div class="line">
+            <span class="ln">269</span>
+            <span class="line-text">“ Boi ” ? Et que bevrai je ? Au mains dites “ bevez ” ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">270</span>
+            <span class="line-text">Et me portez hounour ; bien faire le devez .</span>
+          </div></div><div class="lg-group" data-lg="77">
+          <div class="line">
+            <span class="ln">271</span>
+            <span class="line-text">Alez a Avignon — en l’eure passerez —</span>
+          </div>
+          <div class="line">
+            <span class="ln">272</span>
+            <span class="line-text">Et par devant les maistres si sagement parlez !</span>
+          </div></div><div class="lg-group" data-lg="78">
+          <div class="line">
+            <span class="ln">273</span>
+            <span class="line-text">En non Dieu , tu dis voir qu’il en y a de tiex</span>
+          </div>
+          <div class="line">
+            <span class="ln">274</span>
+            <span class="line-text">Qui ne sont pas si sages com moi , ne tant soutiex .</span>
+          </div>
+          <div class="line">
+            <span class="ln">275</span>
+            <span class="line-text">Se des flourins y porte j’en passerai trop miex :</span>
+          </div>
+          <div class="line">
+            <span class="ln">276</span>
+            <span class="line-text">En l’eure serai prestre que je sui trop soutiex .</span>
+          </div></div><div class="lg-group" data-lg="79">
+          <div class="line">
+            <span class="ln">277</span>
+            <span class="line-text">Bonne gent , entendez : voir quant prestre sera ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">278</span>
+            <span class="line-text">De beles avalees en sa messe fera !</span>
+          </div>
+          <div class="line">
+            <span class="ln">279</span>
+            <span class="line-text">Bien croi que quant l’offrande receüe sera ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">280</span>
+            <span class="line-text">Que de l’autre servise briement se passera .</span>
+          </div></div><div class="lg-group" data-lg="80">
+          <div class="line">
+            <span class="ln">281</span>
+            <span class="line-text">Davodet , or me croi : se grant offrande avoie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">282</span>
+            <span class="line-text">Je te jure sur Dieu , du meilleur vin bevroie ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">283</span>
+            <span class="line-text">Jamais pour messe dire es mains gale n’avroie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">284</span>
+            <span class="line-text">Prestres ont biau mestier : volentiers le seroie .</span>
+          </div></div><div class="lg-group" data-lg="81">
+          <div class="line">
+            <span class="ln">285</span>
+            <span class="line-text">Fol garcon recreant , or puet on bien savoir</span>
+          </div>
+          <div class="line">
+            <span class="ln">286</span>
+            <span class="line-text">Que voulez estre prestre pour en repos manoir</span>
+          </div>
+          <div class="line">
+            <span class="ln">287</span>
+            <span class="line-text">Et pour boire bon vin et au main et au soir !</span>
+          </div></div><div class="lg-group" data-lg="82">
+          <div class="line">
+            <span class="ln">288</span>
+            <span class="line-text">Davoudet , biax compains , tu ne diz mie voir .</span>
+          </div></div><div class="lg-group" data-lg="83">
+          <div class="line">
+            <span class="ln">289</span>
+            <span class="line-text">Je ne veul estre prestres fors que pour Dieu servir</span>
+          </div>
+          <div class="line">
+            <span class="ln">290</span>
+            <span class="line-text">Et pour aus povres gens de mes biens departir ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">291</span>
+            <span class="line-text">Si que quant de mon cors faudra l’ame partir ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">292</span>
+            <span class="line-text">Que Dieu en sa grant joie la veille recueillir .</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f470">
+              Folio 230v
+            </div><div class="lg-group" data-lg="84">
+          <div class="line">
+            <span class="ln">293</span>
+            <span class="line-text">Mes trestouz les deables d’enfer l’emporteront ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">294</span>
+            <span class="line-text">Prestre sont plus aver que nule gent du mont !</span>
+          </div>
+          <div class="line">
+            <span class="ln">295</span>
+            <span class="line-text">Qu’il prennent tout adez , les mains ouvertes ont ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">296</span>
+            <span class="line-text">Ja de chose qu’il aient asouvis ne seront .</span>
+          </div></div><div class="lg-group" data-lg="85">
+          <div class="line">
+            <span class="ln">297</span>
+            <span class="line-text">Davoudet , je te jur se les prestres n’estoient ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">298</span>
+            <span class="line-text">Les laies gens com bestes en cest siecle vivroient .</span>
+          </div>
+          <div class="line">
+            <span class="ln">299</span>
+            <span class="line-text">N’est il pas bien raison que d’eulz soustenus soient</span>
+          </div>
+          <div class="line">
+            <span class="ln">300</span>
+            <span class="line-text">Quant il font le service du seignor en qui croient ?</span>
+          </div></div><div class="lg-group" data-lg="86">
+          <div class="line">
+            <span class="ln">301</span>
+            <span class="line-text">Voir il me desplait trop qu’il faut argent baillier</span>
+          </div>
+          <div class="line">
+            <span class="ln">302</span>
+            <span class="line-text">A baptizier enfant et le cresmel paier !</span>
+          </div>
+          <div class="line">
+            <span class="ln">303</span>
+            <span class="line-text">Des femmes relever veulent avoir loier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">304</span>
+            <span class="line-text">Et quant il portent Dieu , il en ont un denier .</span>
+          </div></div><div class="lg-group" data-lg="87">
+          <div class="line">
+            <span class="ln">305</span>
+            <span class="line-text">Davoudet , le boucel te puist crever les yex !</span>
+          </div>
+          <div class="line">
+            <span class="ln">306</span>
+            <span class="line-text">Pas ne l’acoustumai , li usages est tiex :</span>
+          </div>
+          <div class="line">
+            <span class="ln">307</span>
+            <span class="line-text">Prestres couchent et lievent celui qui est vraiz Diex ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">308</span>
+            <span class="line-text">Par euz sont couronnees pluseurs ames es ciex .</span>
+          </div></div><div class="lg-group" data-lg="88">
+          <div class="line">
+            <span class="ln">309</span>
+            <span class="line-text">Vous mentez ! Mes dampnees en enfer a tourment ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">310</span>
+            <span class="line-text">Car des mors et des vis veulent avoir argent .</span>
+          </div>
+          <div class="line">
+            <span class="ln">311</span>
+            <span class="line-text">Leurs parochïens font couz , menu et souvent ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">312</span>
+            <span class="line-text">Voir quant Diex en a un le deable en a cent .</span>
+          </div></div><div class="lg-group" data-lg="89">
+          <div class="line">
+            <span class="ln">313</span>
+            <span class="line-text">Pour quoi diz ytes mos , maleüreuz chetis ?</span>
+          </div></div><div class="lg-group" data-lg="90">
+          <div class="line">
+            <span class="ln">314</span>
+            <span class="line-text">Pour ce que je di voir . Estes vous esbahiz ?</span>
+          </div>
+          <div class="line">
+            <span class="ln">315</span>
+            <span class="line-text">Se vous me voulez croire , par Dieu de Paradis ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">316</span>
+            <span class="line-text">Bon conseil vous donrai et devant vos amis .</span>
+          </div></div><div class="lg-group" data-lg="91">
+          <div class="line">
+            <span class="ln">317</span>
+            <span class="line-text">Di quanques tu veulz dire et je t’escouterai !</span>
+          </div>
+          <div class="line">
+            <span class="ln">318</span>
+            <span class="line-text">Se tu me diz raison , je m’i acorderai .</span>
+          </div></div><div class="lg-group" data-lg="92">
+          <div class="line">
+            <span class="ln">319</span>
+            <span class="line-text">Se vous voulez souffrir d’estre prestre curé ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">320</span>
+            <span class="line-text">Jamais jour de ma vie femme n’espouserai .</span>
+          </div></div><div class="lg-group" data-lg="93">
+          <div class="line">
+            <span class="ln">321</span>
+            <span class="line-text">Et que ferons nous dont ? Di moi tout ton penser !</span>
+          </div>
+          <div class="line">
+            <span class="ln">322</span>
+            <span class="line-text">Tu ne me doins en riens ton courage celer .</span>
+          </div></div><div class="lg-group" data-lg="94">
+          <div class="line">
+            <span class="ln">323</span>
+            <span class="line-text">En Engleterre yron touz ces Englois tuer ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">324</span>
+            <span class="line-text">Car on dit que vers nous se veulent reveler .</span>
+          </div></div><div class="lg-group" data-lg="95">
+          <div class="line">
+            <span class="ln">325</span>
+            <span class="line-text">Douz amis je le veul , car se prestres estoie</span>
+          </div>
+          <div class="line">
+            <span class="ln">326</span>
+            <span class="line-text">Et soisante livrees de bonne rente avoie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">327</span>
+            <span class="line-text">Si lairoie tout quoi et tuer les yroie .</span>
+          </div></div><div class="lg-group" data-lg="96">
+          <div class="line">
+            <span class="ln">328</span>
+            <span class="line-text">A touz ceuz qui sont ci otroit Jhesucrist joie !</span>
+          </div></div></div>
+      
+      <div style="height: 60vh;"></div>
+    </div>
+
+    <div class="right">
+      <div id="mirador-viewer" style="width:100%; height:100%;"></div>
+    </div>
+  </div>
+
+<script>
+  const manifestUrl = "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json";
+  const startCanvas = "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f462";
+  const scrollContainer = document.getElementById('scroll-container');
+  let miradorInstance = null;
+
+  // --- 1. Initialize Mirador (Minimalist Mode) ---
+  if (manifestUrl) {
+    miradorInstance = Mirador.viewer({
+      id: "mirador-viewer",
+      windows: [{
+        loadedManifest: manifestUrl,
+        canvasId: startCanvas
+      }],
+      workspaceControlPanel: { enabled: false },
+      window: {
+        hideWindowTitle: true,
+        sideBarOpen: false,
+        allowClose: false,
+        allowMaximize: false,
+      }
+    });
+  } else {
+    document.getElementById('mirador-viewer').innerHTML = 
+      "<div style='padding:20px; text-align:center; color:#666;'>No Manifest URL Provided</div>";
+  }
+
+  // --- 2. Action Handler with Diagnostics ---
+  function jumpToCanvas(canvasId, markerElement) {
+    if (!miradorInstance || !canvasId) return;
+
+    const state = miradorInstance.store.getState();
+    const windows = state.windows;
+    const windowId = Object.keys(windows)[0];
+
+    if (!windowId) return;
+
+    const currentCanvas = windows[windowId].canvasId;
+    if (currentCanvas !== canvasId) {
+      miradorInstance.store.dispatch(
+        Mirador.actions.setCanvas(windowId, canvasId)
+      );
+    }
+
+    // Highlight markers
+    document.querySelectorAll('.folio-marker').forEach(el => el.classList.remove('active'));
+    if (markerElement) markerElement.classList.add('active');
+  }
+
+  // --- 3. Click Listener ---
+  document.querySelectorAll('.folio-marker').forEach(marker => {
+    marker.addEventListener('click', (e) => {
+      const url = e.currentTarget.getAttribute('data-canvas-url');
+      jumpToCanvas(url, e.currentTarget);
+      e.currentTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // --- 4. Scroll Observer ---
+  if (window.IntersectionObserver && scrollContainer) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const marker = entry.target;
+          const url = marker.getAttribute('data-canvas-url');
+          jumpToCanvas(url, marker);
+        }
+      });
+    }, {
+      root: scrollContainer,
+      rootMargin: '0px 0px -60% 0px',
+      threshold: 0
+    });
+
+    document.querySelectorAll('.folio-marker').forEach(marker => {
+      observer.observe(marker);
+    });
+  }
+</script>
+</body>
+</html>

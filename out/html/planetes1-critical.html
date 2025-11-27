@@ -1,0 +1,1520 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My TEI Project — Planetes1 (critical)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="site-style" rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/mirador@3/dist/mirador.min.css">
+  <script src="https://unpkg.com/mirador@3/dist/mirador.min.js"></script>
+
+  <style>
+    body { margin: 0; padding: 0; height: 100vh; overflow: hidden; font-family: sans-serif; }
+    
+    /* Layout */
+    .split { display: flex; height: 100vh; width: 100vw; }
+    
+    /* LEFT PANEL (Scrollable Text) */
+    .left { 
+      flex: 1; 
+      overflow-y: auto; /* This makes the div scrollable */
+      padding: 2rem; 
+      border-right: 1px solid #ccc; 
+      position: relative;
+    }
+
+    /* RIGHT PANEL (Viewer) */
+    .right { flex: 1; display: flex; flex-direction: column; background: #f4f4f4; }
+    
+    /* Folio Marker Styling */
+    .folio-marker {
+      margin: 2rem 0 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #eee;
+      border-left: 5px solid #ccc;
+      cursor: pointer; /* Indicates clickability */
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    
+    .folio-marker:hover {
+      background: #ddd;
+      border-left-color: #999;
+    }
+
+    /* Active state (applied by JS) */
+    .folio-marker.active {
+      background: #e3f2fd;
+      border-left-color: #2196f3;
+      color: #0d47a1;
+    }
+
+    .line { margin-bottom: 0.2rem; line-height: 1.5; }
+    .ln { color: #888; font-size: 0.8rem; margin-right: 0.5rem; user-select: none; }
+    .speaker-label { margin-top: 1rem; font-weight: bold; color: #444; }
+  </style>
+</head>
+<body>
+
+  <div class="split">
+    
+    <div class="left" id="scroll-container">
+      
+      <div class="meta">
+        <h1>Planetes1</h1>
+        <p><strong>Edition:</strong> critical | <strong>Starting folio:</strong> 84r</p>
+      </div>
+
+      <div id="text"><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f171">
+              Folio 84r
+            </div><div class="lg-group" data-lg="1">
+          <div class="line">
+            <span class="ln">1</span>
+            <span class="line-text">Pour ce que je voy grant partie</span>
+          </div>
+          <div class="line">
+            <span class="ln">2</span>
+            <span class="line-text">Du monde qui met s’estudie</span>
+          </div>
+          <div class="line">
+            <span class="ln">3</span>
+            <span class="line-text">A li un l’autre decevoir ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">4</span>
+            <span class="line-text">Veil dire un dit qui tout est voir ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">5</span>
+            <span class="line-text">N’en puis mes se j’en sui haïs ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">6</span>
+            <span class="line-text">Mes je tiens ceus pour foux naïs</span>
+          </div>
+          <div class="line">
+            <span class="ln">7</span>
+            <span class="line-text">Qui tant se fient estre fors</span>
+          </div>
+          <div class="line">
+            <span class="ln">8</span>
+            <span class="line-text">Et en la force de leur corps</span>
+          </div>
+          <div class="line">
+            <span class="ln">9</span>
+            <span class="line-text">Que il ne leur chaille de l’ame .</span>
+          </div>
+          <div class="line">
+            <span class="ln">10</span>
+            <span class="line-text">Dïex ! il n’est si belle dame</span>
+          </div>
+          <div class="line">
+            <span class="ln">11</span>
+            <span class="line-text">Ne si fort homme tant soit fier</span>
+          </div>
+          <div class="line">
+            <span class="ln">12</span>
+            <span class="line-text">Que mort ne face trebuchier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">13</span>
+            <span class="line-text">Personne qui a a mourir</span>
+          </div>
+          <div class="line">
+            <span class="ln">14</span>
+            <span class="line-text">Ne se devroit ja orgueillir .</span>
+          </div>
+          <div class="line">
+            <span class="ln">15</span>
+            <span class="line-text">Des estas du monde veil dire</span>
+          </div>
+          <div class="line">
+            <span class="ln">16</span>
+            <span class="line-text">Par amours ; n’en aiés pas ire ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">17</span>
+            <span class="line-text">Car partout a trop a reprendre .</span>
+          </div>
+          <div class="line">
+            <span class="ln">18</span>
+            <span class="line-text">Aucuns aimment miex a entendre</span>
+          </div>
+          <div class="line">
+            <span class="ln">19</span>
+            <span class="line-text">Une foulour quant on l’a dit</span>
+          </div>
+          <div class="line">
+            <span class="ln">20</span>
+            <span class="line-text">Que chose donc vïent profit ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">21</span>
+            <span class="line-text">Mes pour ce ne lairoi je mie</span>
+          </div>
+          <div class="line">
+            <span class="ln">22</span>
+            <span class="line-text">Que pure verité ne die :</span>
+          </div>
+          <div class="line">
+            <span class="ln">23</span>
+            <span class="line-text">Diex gart qui l’orra sanz noisier .</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f172">
+              Folio 84v
+            </div><div class="lg-group" data-lg="1">
+          <div class="line">
+            <span class="ln">24</span>
+            <span class="line-text">Saint Pol si le veut tesmonier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">25</span>
+            <span class="line-text">Car celui doit bien jeüner</span>
+          </div>
+          <div class="line">
+            <span class="ln">26</span>
+            <span class="line-text">Qui a point ne veult laborer ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">27</span>
+            <span class="line-text">C’est un certain enseignement .</span>
+          </div>
+          <div class="line">
+            <span class="ln">28</span>
+            <span class="line-text">Or entendés bien sainement :</span>
+          </div>
+          <div class="line">
+            <span class="ln">29</span>
+            <span class="line-text">Il sunt deux paire de labeurs ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">30</span>
+            <span class="line-text">Li un d’aquerre bonnes meurs ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">31</span>
+            <span class="line-text">L’autre est ouvrer de ses mains :</span>
+          </div>
+          <div class="line">
+            <span class="ln">32</span>
+            <span class="line-text">Ces deux ouvrages sunt certains .</span>
+          </div>
+          <div class="line">
+            <span class="ln">33</span>
+            <span class="line-text">Personne qui set son mestier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">34</span>
+            <span class="line-text">Dont elle puet pain gaaignier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">35</span>
+            <span class="line-text">Doit loer Dieu parfetement</span>
+          </div>
+          <div class="line">
+            <span class="ln">36</span>
+            <span class="line-text">Et conforter la povre gent</span>
+          </div>
+          <div class="line">
+            <span class="ln">37</span>
+            <span class="line-text">De ses biens que Diex li envoie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">38</span>
+            <span class="line-text">Diverse gens vont par la voie :</span>
+          </div>
+          <div class="line">
+            <span class="ln">39</span>
+            <span class="line-text">L’un demande pour Dieu sa vie</span>
+          </div>
+          <div class="line">
+            <span class="ln">40</span>
+            <span class="line-text">Et l’autre la boe nestie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">41</span>
+            <span class="line-text">Le tiers si fait vessiaus d’argent .</span>
+          </div>
+          <div class="line">
+            <span class="ln">42</span>
+            <span class="line-text">Li un achete et l’autre vent ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">43</span>
+            <span class="line-text">Les autres servent d’autre guise</span>
+          </div>
+          <div class="line">
+            <span class="ln">44</span>
+            <span class="line-text">Qui ne se mevent de l’eglise .</span>
+          </div>
+          <div class="line">
+            <span class="ln">45</span>
+            <span class="line-text">Les marcheans , les laboureurs ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">46</span>
+            <span class="line-text">Les soustiennent de leur labeurs ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">47</span>
+            <span class="line-text">Noble chose est que de donner</span>
+          </div>
+          <div class="line">
+            <span class="ln">48</span>
+            <span class="line-text">Et chetive de demander :</span>
+          </div>
+          <div class="line">
+            <span class="ln">49</span>
+            <span class="line-text">Celui qui donne se franchist</span>
+          </div>
+          <div class="line">
+            <span class="ln">50</span>
+            <span class="line-text">Et celui qui prent s’aservist ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">51</span>
+            <span class="line-text">Mes chascun ne puet pas avoir</span>
+          </div>
+          <div class="line">
+            <span class="ln">52</span>
+            <span class="line-text">Grasce d’amasser grant avoir ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">53</span>
+            <span class="line-text">Ceus qui sunt riches saches sunt</span>
+          </div>
+          <div class="line">
+            <span class="ln">54</span>
+            <span class="line-text">Quant a la povre gent bien font ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">55</span>
+            <span class="line-text">Mes par le monde queurt un vice</span>
+          </div>
+          <div class="line">
+            <span class="ln">56</span>
+            <span class="line-text">Qui est apellés avarice</span>
+          </div>
+          <div class="line">
+            <span class="ln">57</span>
+            <span class="line-text">Qui pluseurs gens en enfer meine .</span>
+          </div>
+          <div class="line">
+            <span class="ln">58</span>
+            <span class="line-text">Il a sept jours en la semeine</span>
+          </div>
+          <div class="line">
+            <span class="ln">59</span>
+            <span class="line-text">De quoy veil un petit parler :</span>
+          </div>
+          <div class="line">
+            <span class="ln">60</span>
+            <span class="line-text">Vous les oiés souvent noumer .</span>
+          </div>
+          <div class="line">
+            <span class="ln">61</span>
+            <span class="line-text">Les nons qu’il ont leur sunt venus</span>
+          </div>
+          <div class="line">
+            <span class="ln">62</span>
+            <span class="line-text">Des sept planetes de lassus ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">63</span>
+            <span class="line-text">Ausiques a il sept estas</span>
+          </div>
+          <div class="line">
+            <span class="ln">64</span>
+            <span class="line-text">De gens au monde ca jus bas</span>
+          </div>
+          <div class="line">
+            <span class="ln">65</span>
+            <span class="line-text">Que comparer veil par mon cours</span>
+          </div>
+          <div class="line">
+            <span class="ln">66</span>
+            <span class="line-text">Aus sept planetes et aus jours .</span>
+          </div>
+          <div class="line">
+            <span class="ln">67</span>
+            <span class="line-text">Le diemenche est jour de repos ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">68</span>
+            <span class="line-text">Et pour tant bien comparer l’os</span>
+          </div>
+          <div class="line">
+            <span class="ln">69</span>
+            <span class="line-text">Au souleil , c’est le non de Dieu ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">70</span>
+            <span class="line-text">Aler doivent de bon cuer pieu</span>
+          </div>
+          <div class="line">
+            <span class="ln">71</span>
+            <span class="line-text">Au moustier chascun et chascune .</span>
+          </div>
+          <div class="line">
+            <span class="ln">72</span>
+            <span class="line-text">Le lundi est dit de la lune ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">73</span>
+            <span class="line-text">De Mars pren selonc le mardi ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">74</span>
+            <span class="line-text">De Mercure le merquedi ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">75</span>
+            <span class="line-text">Le jeudi de Jupiter jus ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">76</span>
+            <span class="line-text">Et le vendredi de Venus ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">77</span>
+            <span class="line-text">De Saturnus le samedi .</span>
+          </div>
+          <div class="line">
+            <span class="ln">78</span>
+            <span class="line-text">Or entendés je vous em pri .</span>
+          </div>
+          <div class="line">
+            <span class="ln">79</span>
+            <span class="line-text">Le diemenche est un digne jour ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">80</span>
+            <span class="line-text">Si com le souleil rent luour</span>
+          </div>
+          <div class="line">
+            <span class="ln">81</span>
+            <span class="line-text">Plus qu’autres planetes ne font ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">82</span>
+            <span class="line-text">Ausi ceus qui bonne foy ont</span>
+          </div>
+          <div class="line">
+            <span class="ln">83</span>
+            <span class="line-text">Vont devotement au mostier</span>
+          </div>
+          <div class="line">
+            <span class="ln">84</span>
+            <span class="line-text">Au diemenche , de cuer entier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">85</span>
+            <span class="line-text">La messe oïr et le sermon .</span>
+          </div>
+          <div class="line">
+            <span class="ln">86</span>
+            <span class="line-text">Voir , ce n’est mie sans raison</span>
+          </div>
+          <div class="line">
+            <span class="ln">87</span>
+            <span class="line-text">Se nostre Seingneur se courouce</span>
+          </div>
+          <div class="line">
+            <span class="ln">88</span>
+            <span class="line-text">Quant les gloutons , plains de reprouce ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">89</span>
+            <span class="line-text">Vont en la taverne ou il boivent ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">90</span>
+            <span class="line-text">Quant oïr le servise doivent ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">91</span>
+            <span class="line-text">Et font traire du plus fort vin .</span>
+          </div>
+          <div class="line">
+            <span class="ln">92</span>
+            <span class="line-text">La bonne viande bien matin</span>
+          </div>
+          <div class="line">
+            <span class="ln">93</span>
+            <span class="line-text">Vont acheter , il le couvient ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">94</span>
+            <span class="line-text">Et se par avanture avient</span>
+          </div>
+          <div class="line">
+            <span class="ln">95</span>
+            <span class="line-text">Que li uns d’eus vaist au mostier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">96</span>
+            <span class="line-text">L’autre le vendra sachier</span>
+          </div>
+          <div class="line">
+            <span class="ln">97</span>
+            <span class="line-text">Par la corne du chaperon ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">98</span>
+            <span class="line-text">Et li dit : “ Vien t’en , si beron ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">99</span>
+            <span class="line-text">Ne te chaut d’arester plus ci .</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f173">
+              Folio 85r
+            </div><div class="lg-group" data-lg="1">
+          <div class="line">
+            <span class="ln">100</span>
+            <span class="line-text">Il m’ennuie je le t’afi ”</span>
+          </div>
+          <div class="line">
+            <span class="ln">101</span>
+            <span class="line-text">Vrais Diex ! il ne leur desplaist mie</span>
+          </div>
+          <div class="line">
+            <span class="ln">102</span>
+            <span class="line-text">D’estre du main jusqu’a complie</span>
+          </div>
+          <div class="line">
+            <span class="ln">103</span>
+            <span class="line-text">En la meson du tavernier ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">104</span>
+            <span class="line-text">Ne font fors crier et noisier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">105</span>
+            <span class="line-text">La sunt aesés sus le coute ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">106</span>
+            <span class="line-text">Souvent faut que l’oste les boute</span>
+          </div>
+          <div class="line">
+            <span class="ln">107</span>
+            <span class="line-text">Hors de l’ostel , tant i sunt tart .</span>
+          </div>
+          <div class="line">
+            <span class="ln">108</span>
+            <span class="line-text">Le vin qu’em le foie leur art !</span>
+          </div>
+          <div class="line">
+            <span class="ln">109</span>
+            <span class="line-text">Et quant ce vient a l’endemain ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">110</span>
+            <span class="line-text">La teste leur deust et la main</span>
+          </div>
+          <div class="line">
+            <span class="ln">111</span>
+            <span class="line-text">Leur tremble , lors vont par effors</span>
+          </div>
+          <div class="line">
+            <span class="ln">112</span>
+            <span class="line-text">Au poil du chien qui les a mors .</span>
+          </div>
+          <div class="line">
+            <span class="ln">113</span>
+            <span class="line-text">La recoumencent le trumel ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">114</span>
+            <span class="line-text">Et quant reviennent a l’ostel</span>
+          </div>
+          <div class="line">
+            <span class="ln">115</span>
+            <span class="line-text">Il batent fames et enfans ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">116</span>
+            <span class="line-text">Ainssi gascent les mescheans</span>
+          </div>
+          <div class="line">
+            <span class="ln">117</span>
+            <span class="line-text">En un jour , par leur lecherie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">118</span>
+            <span class="line-text">De quoy leur fame et leur mesnie</span>
+          </div>
+          <div class="line">
+            <span class="ln">119</span>
+            <span class="line-text">Vesquisent bien une semainne .</span>
+          </div>
+          <div class="line">
+            <span class="ln">120</span>
+            <span class="line-text">Voire on fet plus d’evre vilainne</span>
+          </div>
+          <div class="line">
+            <span class="ln">121</span>
+            <span class="line-text">Au dimenche qu’autre jour ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">122</span>
+            <span class="line-text">Mes certes c’est trop grant folor .</span>
+          </div>
+          <div class="line">
+            <span class="ln">123</span>
+            <span class="line-text">Du premier vous lairai ester ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">124</span>
+            <span class="line-text">De secont estat veil parler .</span>
+          </div>
+          <div class="line">
+            <span class="ln">125</span>
+            <span class="line-text">Car par le lundi entendon ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">126</span>
+            <span class="line-text">Qui de la lune prent son non .</span>
+          </div>
+          <div class="line">
+            <span class="ln">127</span>
+            <span class="line-text">La lune est froide , fresche et tendre :</span>
+          </div>
+          <div class="line">
+            <span class="ln">128</span>
+            <span class="line-text">Par cela nous poons entendre</span>
+          </div>
+          <div class="line">
+            <span class="ln">129</span>
+            <span class="line-text">L’estat de gent religieuse</span>
+          </div>
+          <div class="line">
+            <span class="ln">130</span>
+            <span class="line-text">Qui doit estre douce et piteuse .</span>
+          </div>
+          <div class="line">
+            <span class="ln">131</span>
+            <span class="line-text">Aussi coume la lune rent</span>
+          </div>
+          <div class="line">
+            <span class="ln">132</span>
+            <span class="line-text">Eaue quant est plainne sovent ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">133</span>
+            <span class="line-text">Doivent gent d’ordre grant plenté</span>
+          </div>
+          <div class="line">
+            <span class="ln">134</span>
+            <span class="line-text">Euvre fere d’umilité ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">135</span>
+            <span class="line-text">Mes le deable les tarie</span>
+          </div>
+          <div class="line">
+            <span class="ln">136</span>
+            <span class="line-text">De bouter en ipocrisie ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">137</span>
+            <span class="line-text">En vainne gloire bien souvent .</span>
+          </div>
+          <div class="line">
+            <span class="ln">138</span>
+            <span class="line-text">Ceulz qui pour le los de la gent</span>
+          </div>
+          <div class="line">
+            <span class="ln">139</span>
+            <span class="line-text">Font en cest monde penitance ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">140</span>
+            <span class="line-text">L’evangile dit sans doutance</span>
+          </div>
+          <div class="line">
+            <span class="ln">141</span>
+            <span class="line-text">Que il ont ja eu le lourier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">142</span>
+            <span class="line-text">Nus ne se doit pour bons jugier :</span>
+          </div>
+          <div class="line">
+            <span class="ln">143</span>
+            <span class="line-text">Jhesucrist dist que cil sera</span>
+          </div>
+          <div class="line">
+            <span class="ln">144</span>
+            <span class="line-text">Essauciés qui s’abaisera .</span>
+          </div>
+          <div class="line">
+            <span class="ln">145</span>
+            <span class="line-text">Cil est sage qui poi se prise :</span>
+          </div>
+          <div class="line">
+            <span class="ln">146</span>
+            <span class="line-text">Du tiers estat dirai la guise .</span>
+          </div>
+          <div class="line">
+            <span class="ln">147</span>
+            <span class="line-text">Mardi vient de Mars par droiture ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">148</span>
+            <span class="line-text">Mars , senefie l’escripture ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">149</span>
+            <span class="line-text">Diex de bataille , pour tant di</span>
+          </div>
+          <div class="line">
+            <span class="ln">150</span>
+            <span class="line-text">Que puis comparer au mardi</span>
+          </div>
+          <div class="line">
+            <span class="ln">151</span>
+            <span class="line-text">L’estat de chascun chevalier</span>
+          </div>
+          <div class="line">
+            <span class="ln">152</span>
+            <span class="line-text">Qui pour la foy Dieu essaucier</span>
+          </div>
+          <div class="line">
+            <span class="ln">153</span>
+            <span class="line-text">Se doivent combatre a effors ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">154</span>
+            <span class="line-text">Le droit doivent sevrer des tors ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">155</span>
+            <span class="line-text">Et jugier loyaument tourjours .</span>
+          </div>
+          <div class="line">
+            <span class="ln">156</span>
+            <span class="line-text">Mais maintenant en pluseurs cours ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">157</span>
+            <span class="line-text">Ne veut on povres gens oïr</span>
+          </div>
+          <div class="line">
+            <span class="ln">158</span>
+            <span class="line-text">Aus avocas covient blancher</span>
+          </div>
+          <div class="line">
+            <span class="ln">159</span>
+            <span class="line-text">Les mains d’argent , non pas de chaus .</span>
+          </div>
+          <div class="line">
+            <span class="ln">160</span>
+            <span class="line-text">Les chevaliers si sunt trop chaus</span>
+          </div>
+          <div class="line">
+            <span class="ln">161</span>
+            <span class="line-text">D’aler tournoier et jouster ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">162</span>
+            <span class="line-text">Mes miex leur vousist conquester</span>
+          </div>
+          <div class="line">
+            <span class="ln">163</span>
+            <span class="line-text">Le saint sepulcre ou Diex fu mis .</span>
+          </div>
+          <div class="line">
+            <span class="ln">164</span>
+            <span class="line-text">Les Sarrazins ont ja occis</span>
+          </div>
+          <div class="line">
+            <span class="ln">165</span>
+            <span class="line-text">En Garnade moult de no gent .</span>
+          </div>
+          <div class="line">
+            <span class="ln">166</span>
+            <span class="line-text">Nous voion tuit coumunalment</span>
+          </div>
+          <div class="line">
+            <span class="ln">167</span>
+            <span class="line-text">Que l’un crestïen l’autre occist :</span>
+          </div>
+          <div class="line">
+            <span class="ln">168</span>
+            <span class="line-text">Le grant menjue le petit .</span>
+          </div>
+          <div class="line">
+            <span class="ln">169</span>
+            <span class="line-text">Les laboureurs sunt trop folés :</span>
+          </div>
+          <div class="line">
+            <span class="ln">170</span>
+            <span class="line-text">Fain et avoine , vin et blés ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">171</span>
+            <span class="line-text">Prent on seur eus soir et matin ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">172</span>
+            <span class="line-text">Voir ce n’est mie larrecin ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">173</span>
+            <span class="line-text">Mes c’est toute qui poi mains vaut .</span>
+          </div>
+          <div class="line">
+            <span class="ln">174</span>
+            <span class="line-text">Du merquedi parler me faut</span>
+          </div>
+          <div class="line">
+            <span class="ln">175</span>
+            <span class="line-text">Qui sus la planete Mercure</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f174">
+              Folio 85v
+            </div><div class="lg-group" data-lg="1">
+          <div class="line">
+            <span class="ln">176</span>
+            <span class="line-text">Prent son non , ce dit l’escripture .</span>
+          </div>
+          <div class="line">
+            <span class="ln">177</span>
+            <span class="line-text">Pour ce , selonc m’entencïon ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">178</span>
+            <span class="line-text">Des marcheans vous parleron .</span>
+          </div>
+          <div class="line">
+            <span class="ln">179</span>
+            <span class="line-text">On doit en tous lieus amer</span>
+          </div>
+          <div class="line">
+            <span class="ln">180</span>
+            <span class="line-text">Les marcheans et honnourer</span>
+          </div>
+          <div class="line">
+            <span class="ln">181</span>
+            <span class="line-text">Qui veulent ouvrer loyaument ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">182</span>
+            <span class="line-text">Mes on m’a dit n’a pas graument</span>
+          </div>
+          <div class="line">
+            <span class="ln">183</span>
+            <span class="line-text">Que qui loyauté veult tenir ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">184</span>
+            <span class="line-text">Qu’a grant painne se puet chevir :</span>
+          </div>
+          <div class="line">
+            <span class="ln">185</span>
+            <span class="line-text">Il faut mentir et parjurer ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">186</span>
+            <span class="line-text">Et le plus biau dehors moustrer</span>
+          </div>
+          <div class="line">
+            <span class="ln">187</span>
+            <span class="line-text">Qui veult avoir s’achevisance .</span>
+          </div>
+          <div class="line">
+            <span class="ln">188</span>
+            <span class="line-text">Bonne gent , c’est grant mescheance</span>
+          </div>
+          <div class="line">
+            <span class="ln">189</span>
+            <span class="line-text">Quant on met Diex en nonchaloir</span>
+          </div>
+          <div class="line">
+            <span class="ln">190</span>
+            <span class="line-text">Pour amasser trop grant avoir .</span>
+          </div>
+          <div class="line">
+            <span class="ln">191</span>
+            <span class="line-text">L’en souloit croire un marcheant</span>
+          </div>
+          <div class="line">
+            <span class="ln">192</span>
+            <span class="line-text">Par son dit , mes d’ore en avant</span>
+          </div>
+          <div class="line">
+            <span class="ln">193</span>
+            <span class="line-text">On voit tant de fauses mesures ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">194</span>
+            <span class="line-text">De termoiemens et d’usures ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">195</span>
+            <span class="line-text">C’om ne se set en qui fier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">196</span>
+            <span class="line-text">Se je vouloie deslier</span>
+          </div>
+          <div class="line">
+            <span class="ln">197</span>
+            <span class="line-text">Ma langue en disant verité ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">198</span>
+            <span class="line-text">Voir , on ne m’en saroit ja gré .</span>
+          </div>
+          <div class="line">
+            <span class="ln">199</span>
+            <span class="line-text">Des marcheans a tant me tés :</span>
+          </div>
+          <div class="line">
+            <span class="ln">200</span>
+            <span class="line-text">Diex ament trestous les mauvés !</span>
+          </div>
+          <div class="line">
+            <span class="ln">201</span>
+            <span class="line-text">Du cinquiesme estat vous diron ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">202</span>
+            <span class="line-text">Car par le jeudi entendon ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">203</span>
+            <span class="line-text">Ce sunt les laboureus de terre</span>
+          </div>
+          <div class="line">
+            <span class="ln">204</span>
+            <span class="line-text">Qui penssent tant ades aquerre</span>
+          </div>
+          <div class="line">
+            <span class="ln">205</span>
+            <span class="line-text">Les biens dont soumes soustenus .</span>
+          </div>
+          <div class="line">
+            <span class="ln">206</span>
+            <span class="line-text">Mes les uns en sunt deceüs</span>
+          </div>
+          <div class="line">
+            <span class="ln">207</span>
+            <span class="line-text">Par une tres mauvaise guise ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">208</span>
+            <span class="line-text">Car il labourent par faintise .</span>
+          </div>
+          <div class="line">
+            <span class="ln">209</span>
+            <span class="line-text">De par main demandent loier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">210</span>
+            <span class="line-text">Afin de leur journee avoir ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">211</span>
+            <span class="line-text">Et si heent , c’est sans douter ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">212</span>
+            <span class="line-text">Ce qu’il deüssent plus amer :</span>
+          </div>
+          <div class="line">
+            <span class="ln">213</span>
+            <span class="line-text">C’est saint Eglise , clerc et prestre ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">214</span>
+            <span class="line-text">C’il vousissent pacïens estre</span>
+          </div>
+          <div class="line">
+            <span class="ln">215</span>
+            <span class="line-text">Plus tost qu’autres fussent savez .</span>
+          </div>
+          <div class="line">
+            <span class="ln">216</span>
+            <span class="line-text">Je croy qu’il en i ait assez :</span>
+          </div>
+          <div class="line">
+            <span class="ln">217</span>
+            <span class="line-text">Il vouroient que pain fust chier</span>
+          </div>
+          <div class="line">
+            <span class="ln">218</span>
+            <span class="line-text">Quant ont de pain plains leur grenier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">219</span>
+            <span class="line-text">Ne di pas qu’il soient tous tiex ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">220</span>
+            <span class="line-text">Entendés si en vaudrés miex .</span>
+          </div>
+          <div class="line">
+            <span class="ln">221</span>
+            <span class="line-text">Parler vous veil du vendredi ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">222</span>
+            <span class="line-text">Et puis apres du samedi ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">223</span>
+            <span class="line-text">S’arés les sept estat tous sus .</span>
+          </div>
+          <div class="line">
+            <span class="ln">224</span>
+            <span class="line-text">Le vendredi vient de Venus :</span>
+          </div>
+          <div class="line">
+            <span class="ln">225</span>
+            <span class="line-text">Venus senefie luxure .</span>
+          </div>
+          <div class="line">
+            <span class="ln">226</span>
+            <span class="line-text">Moult de gens i metent leur cure</span>
+          </div>
+          <div class="line">
+            <span class="ln">227</span>
+            <span class="line-text">A fere trestous leur delis ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">228</span>
+            <span class="line-text">Bonnes vïandes et bons lis ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">229</span>
+            <span class="line-text">Et bonnes robes a vestir ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">230</span>
+            <span class="line-text">Orgueil fet le monde honnir :</span>
+          </div>
+          <div class="line">
+            <span class="ln">231</span>
+            <span class="line-text">Trop fort souprent fames et homes .</span>
+          </div>
+          <div class="line">
+            <span class="ln">232</span>
+            <span class="line-text">Se regardon de qui nous soumes ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">233</span>
+            <span class="line-text">D’estre orgueilleus n’arons talent ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">234</span>
+            <span class="line-text">Se pensons a l’engendrement ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">235</span>
+            <span class="line-text">Voir ce n’est pas chose moult nete .</span>
+          </div>
+          <div class="line">
+            <span class="ln">236</span>
+            <span class="line-text">Au premier ne soumes que glete ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">237</span>
+            <span class="line-text">Tant com vivons ne valon riens :</span>
+          </div>
+          <div class="line">
+            <span class="ln">238</span>
+            <span class="line-text">Le plus c’est plain sac de fiens .</span>
+          </div>
+          <div class="line">
+            <span class="ln">239</span>
+            <span class="line-text">Un arbre rent fuilles ou fruit ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">240</span>
+            <span class="line-text">Mes de nos corps c’ordure n’ist .</span>
+          </div>
+          <div class="line">
+            <span class="ln">241</span>
+            <span class="line-text">Il n’est bouche ne si biau nés</span>
+          </div>
+          <div class="line">
+            <span class="ln">242</span>
+            <span class="line-text">Dont il n’isse d’ordure assés ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">243</span>
+            <span class="line-text">Et tantost com nous soumes mors</span>
+          </div>
+          <div class="line">
+            <span class="ln">244</span>
+            <span class="line-text">Vous poés savoir que le cors</span>
+          </div>
+          <div class="line">
+            <span class="ln">245</span>
+            <span class="line-text">Put plus que d’autre criature .</span>
+          </div>
+          <div class="line">
+            <span class="ln">246</span>
+            <span class="line-text">Les vers font de nous leur pasture ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">247</span>
+            <span class="line-text">Pour ce est fol qui s’orgueillist .</span>
+          </div>
+          <div class="line">
+            <span class="ln">248</span>
+            <span class="line-text">Afiner me couvient mon dit .</span>
+          </div>
+          <div class="line">
+            <span class="ln">249</span>
+            <span class="line-text">Du samedi , se Diex me saut ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">250</span>
+            <span class="line-text">A cel jour la semainne faut .</span>
+          </div>
+          <div class="line">
+            <span class="ln">251</span>
+            <span class="line-text">Le samedi si prent son non</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f175">
+              Folio 86r
+            </div><div class="lg-group" data-lg="1">
+          <div class="line">
+            <span class="ln">252</span>
+            <span class="line-text">De Saturnus , et nous trouvon</span>
+          </div>
+          <div class="line">
+            <span class="ln">253</span>
+            <span class="line-text">Qu’il n’est estoille si diverse</span>
+          </div>
+          <div class="line">
+            <span class="ln">254</span>
+            <span class="line-text">Comme elle est , et pour ce j’enverse</span>
+          </div>
+          <div class="line">
+            <span class="ln">255</span>
+            <span class="line-text">Seur li l’estat de povreté .</span>
+          </div>
+          <div class="line">
+            <span class="ln">256</span>
+            <span class="line-text">Trop i a de diversité ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">257</span>
+            <span class="line-text">Car cil est povre d’esperit</span>
+          </div>
+          <div class="line">
+            <span class="ln">258</span>
+            <span class="line-text">A qui povreté enbelist .</span>
+          </div>
+          <div class="line">
+            <span class="ln">259</span>
+            <span class="line-text">Povres i a d’autre maniere</span>
+          </div>
+          <div class="line">
+            <span class="ln">260</span>
+            <span class="line-text">Qui n’ont de rien povreté chiere ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">261</span>
+            <span class="line-text">Car moult voulentiers s’il pooient</span>
+          </div>
+          <div class="line">
+            <span class="ln">262</span>
+            <span class="line-text">Riches et puissans devendroient ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">263</span>
+            <span class="line-text">Mes il n’i puent avenir .</span>
+          </div>
+          <div class="line">
+            <span class="ln">264</span>
+            <span class="line-text">On voit bien povre devenir</span>
+          </div>
+          <div class="line">
+            <span class="ln">265</span>
+            <span class="line-text">Aucunes gens par mescheance</span>
+          </div>
+          <div class="line">
+            <span class="ln">266</span>
+            <span class="line-text">Et les autres par leur enfance ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">267</span>
+            <span class="line-text">Qui ne veulent leur amis croire .</span>
+          </div>
+          <div class="line">
+            <span class="ln">268</span>
+            <span class="line-text">Les uns sunt povres par trop boire ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">269</span>
+            <span class="line-text">Les autres par le gieu du dé ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">270</span>
+            <span class="line-text">Quant se veoient a povreté</span>
+          </div>
+          <div class="line">
+            <span class="ln">271</span>
+            <span class="line-text">Il maugreent saintes et sains .</span>
+          </div>
+          <div class="line">
+            <span class="ln">272</span>
+            <span class="line-text">Les autres perdent piés ou mains</span>
+          </div>
+          <div class="line">
+            <span class="ln">273</span>
+            <span class="line-text">Par meffet ou par maladie .</span>
+          </div>
+          <div class="line">
+            <span class="ln">274</span>
+            <span class="line-text">Aucuns musars par leur folie</span>
+          </div>
+          <div class="line">
+            <span class="ln">275</span>
+            <span class="line-text">Se desesperent bien souvent :</span>
+          </div>
+          <div class="line">
+            <span class="ln">276</span>
+            <span class="line-text">Ceus sunt povres parfetement ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">277</span>
+            <span class="line-text">Car il perdent le corps et l’ame .</span>
+          </div>
+          <div class="line">
+            <span class="ln">278</span>
+            <span class="line-text">Pour ce tout homme et toute fame</span>
+          </div>
+          <div class="line">
+            <span class="ln">279</span>
+            <span class="line-text">A qui Diex a presté avoir</span>
+          </div>
+          <div class="line">
+            <span class="ln">280</span>
+            <span class="line-text">Doit conforter a son povoir</span>
+          </div>
+          <div class="line">
+            <span class="ln">281</span>
+            <span class="line-text">Ceus c’on voit qui en ont mestier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">282</span>
+            <span class="line-text">Mes l’un ne veut mes l’autre aidier .</span>
+          </div>
+          <div class="line">
+            <span class="ln">283</span>
+            <span class="line-text">Diex , un petit de secourance</span>
+          </div>
+          <div class="line">
+            <span class="ln">284</span>
+            <span class="line-text">Gete homme de desesperance .</span>
+          </div>
+          <div class="line">
+            <span class="ln">285</span>
+            <span class="line-text">Roys Alixandres est finés ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">286</span>
+            <span class="line-text">Les biaus dons ne sunt mes donnés ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">287</span>
+            <span class="line-text">Et s’on donne , je vous creant ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">288</span>
+            <span class="line-text">Si n’es ce fors qu’en retraiant .</span>
+          </div>
+          <div class="line">
+            <span class="ln">289</span>
+            <span class="line-text">S’un bourjois ou un chevalier</span>
+          </div>
+          <div class="line">
+            <span class="ln">290</span>
+            <span class="line-text">Donne sa robe a un barbier</span>
+          </div>
+          <div class="line">
+            <span class="ln">291</span>
+            <span class="line-text">Ou a un autre menestrel ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">292</span>
+            <span class="line-text">Il couvient qu’il serve a l’ostel</span>
+          </div>
+          <div class="line">
+            <span class="ln">293</span>
+            <span class="line-text">Et i fera mainte corvee ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">294</span>
+            <span class="line-text">Tant qu’il maudira la journee</span>
+          </div>
+          <div class="line">
+            <span class="ln">295</span>
+            <span class="line-text">Qu’il prist la robe , car plus chiere</span>
+          </div>
+          <div class="line">
+            <span class="ln">296</span>
+            <span class="line-text">Li couste que d’une frepiere .</span>
+          </div>
+          <div class="line">
+            <span class="ln">297</span>
+            <span class="line-text">Douce gent , petit vaut tel don ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">298</span>
+            <span class="line-text">Tel don resemblent au lïon ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">299</span>
+            <span class="line-text">Car quant le lïon veut mengier ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">300</span>
+            <span class="line-text">Les bestes prent fort a huchier ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">301</span>
+            <span class="line-text">Elles i viennent sans respit :</span>
+          </div>
+          <div class="line">
+            <span class="ln">302</span>
+            <span class="line-text">Celle prent qui li abelit .</span>
+          </div>
+          <div class="line">
+            <span class="ln">303</span>
+            <span class="line-text">Quant toute ne la puet user ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">304</span>
+            <span class="line-text">A un autre la va donner ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">305</span>
+            <span class="line-text">Mes s’il avient a l’endemain</span>
+          </div>
+          <div class="line">
+            <span class="ln">306</span>
+            <span class="line-text">Que li lïon n’ait point de fain ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">307</span>
+            <span class="line-text">Tantost la beste mengera</span>
+          </div>
+          <div class="line">
+            <span class="ln">308</span>
+            <span class="line-text">A qui son remainant donna .</span>
+          </div>
+          <div class="line">
+            <span class="ln">309</span>
+            <span class="line-text">Son don n’est gueres profitable .</span>
+          </div>
+          <div class="line">
+            <span class="ln">310</span>
+            <span class="line-text">Or oés un mot tant notable :</span>
+          </div>
+          <div class="line">
+            <span class="ln">311</span>
+            <span class="line-text">Vous veez le jour des estrenes</span>
+          </div>
+          <div class="line">
+            <span class="ln">312</span>
+            <span class="line-text">Que on presente les dousennes</span>
+          </div>
+          <div class="line">
+            <span class="ln">313</span>
+            <span class="line-text">De fourmages es grans mesons ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">314</span>
+            <span class="line-text">Dont on renvoie cras chapons .</span>
+          </div>
+          <div class="line">
+            <span class="ln">315</span>
+            <span class="line-text">Ja n’i alast on riens porter</span>
+          </div>
+          <div class="line">
+            <span class="ln">316</span>
+            <span class="line-text">Se on n’en cuidast amender .</span>
+          </div>
+          <div class="line">
+            <span class="ln">317</span>
+            <span class="line-text">Tiex dons plesent petit a Dieu ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">318</span>
+            <span class="line-text">Mes ce c’on donne de cuer pieu</span>
+          </div>
+          <div class="line">
+            <span class="ln">319</span>
+            <span class="line-text">El non du tres dous Jhesucrist ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">320</span>
+            <span class="line-text">C’est le don qui vient a profit ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">321</span>
+            <span class="line-text">Car a cent doubles est rendus ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">322</span>
+            <span class="line-text">Mes uns usages venus</span>
+          </div>
+          <div class="line">
+            <span class="ln">323</span>
+            <span class="line-text">Que l’en let les povres juner ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">324</span>
+            <span class="line-text">Et fait on les biaus dons donner</span>
+          </div>
+          <div class="line">
+            <span class="ln">325</span>
+            <span class="line-text">A ceulz qui ont nul mestier ;</span>
+          </div>
+          <div class="line">
+            <span class="ln">326</span>
+            <span class="line-text">Pour ce dit on en reprouvier :</span>
+          </div>
+          <div class="line">
+            <span class="ln">327</span>
+            <span class="line-text">C’est au cras porcel le cul oindre .</span>
+          </div></div><div class="folio-marker" 
+                 data-canvas-url="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f176">
+              Folio 86v
+            </div><div class="lg-group" data-lg="1">
+          <div class="line">
+            <span class="ln">328</span>
+            <span class="line-text">En la fin de mon dit veil joindre</span>
+          </div>
+          <div class="line">
+            <span class="ln">329</span>
+            <span class="line-text">Un mot qu’ai oy mainte foys :</span>
+          </div>
+          <div class="line">
+            <span class="ln">330</span>
+            <span class="line-text">Pour ce te donne de mes pois</span>
+          </div>
+          <div class="line">
+            <span class="ln">331</span>
+            <span class="line-text">Que de tes feives veil ravoir .</span>
+          </div>
+          <div class="line">
+            <span class="ln">332</span>
+            <span class="line-text">C’il vous semble que je di voir ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">333</span>
+            <span class="line-text">Se m’en creés seürement ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">334</span>
+            <span class="line-text">Et se vous avés aisement ,</span>
+          </div>
+          <div class="line">
+            <span class="ln">335</span>
+            <span class="line-text">Si me fetes aucun confort .</span>
+          </div>
+          <div class="line">
+            <span class="ln">336</span>
+            <span class="line-text">Diex vous gart de vilainne mort !</span>
+          </div></div></div>
+      
+      <div style="height: 60vh;"></div>
+    </div>
+
+    <div class="right">
+      <div id="mirador-viewer" style="width:100%; height:100%;"></div>
+    </div>
+  </div>
+
+<script>
+  const manifestUrl = "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json";
+  const startCanvas = "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f171";
+  const scrollContainer = document.getElementById('scroll-container');
+  let miradorInstance = null;
+
+  // --- 1. Initialize Mirador (Minimalist Mode) ---
+  if (manifestUrl) {
+    miradorInstance = Mirador.viewer({
+      id: "mirador-viewer",
+      windows: [{
+        loadedManifest: manifestUrl,
+        canvasId: startCanvas
+      }],
+      workspaceControlPanel: { enabled: false },
+      window: {
+        hideWindowTitle: true,
+        sideBarOpen: false,
+        allowClose: false,
+        allowMaximize: false,
+      }
+    });
+  } else {
+    document.getElementById('mirador-viewer').innerHTML = 
+      "<div style='padding:20px; text-align:center; color:#666;'>No Manifest URL Provided</div>";
+  }
+
+  // --- 2. Action Handler with Diagnostics ---
+  function jumpToCanvas(canvasId, markerElement) {
+    if (!miradorInstance || !canvasId) return;
+
+    const state = miradorInstance.store.getState();
+    const windows = state.windows;
+    const windowId = Object.keys(windows)[0];
+
+    if (!windowId) return;
+
+    const currentCanvas = windows[windowId].canvasId;
+    if (currentCanvas !== canvasId) {
+      miradorInstance.store.dispatch(
+        Mirador.actions.setCanvas(windowId, canvasId)
+      );
+    }
+
+    // Highlight markers
+    document.querySelectorAll('.folio-marker').forEach(el => el.classList.remove('active'));
+    if (markerElement) markerElement.classList.add('active');
+  }
+
+  // --- 3. Click Listener ---
+  document.querySelectorAll('.folio-marker').forEach(marker => {
+    marker.addEventListener('click', (e) => {
+      const url = e.currentTarget.getAttribute('data-canvas-url');
+      jumpToCanvas(url, e.currentTarget);
+      e.currentTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // --- 4. Scroll Observer ---
+  if (window.IntersectionObserver && scrollContainer) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const marker = entry.target;
+          const url = marker.getAttribute('data-canvas-url');
+          jumpToCanvas(url, marker);
+        }
+      });
+    }, {
+      root: scrollContainer,
+      rootMargin: '0px 0px -60% 0px',
+      threshold: 0
+    });
+
+    document.querySelectorAll('.folio-marker').forEach(marker => {
+      observer.observe(marker);
+    });
+  }
+</script>
+</body>
+</html>

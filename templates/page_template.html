@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ project_title }} — {{ div_id }} ({{ edition }})</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="site-style" rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/mirador@3/dist/mirador.min.css">
+  <script src="https://unpkg.com/mirador@3/dist/mirador.min.js"></script>
+
+  <style>
+    body { margin: 0; padding: 0; height: 100vh; overflow: hidden; font-family: sans-serif; }
+    
+    /* Layout */
+    .split { display: flex; height: 100vh; width: 100vw; }
+    
+    /* LEFT PANEL (Scrollable Text) */
+    .left { 
+      flex: 1; 
+      overflow-y: auto; /* This makes the div scrollable */
+      padding: 2rem; 
+      border-right: 1px solid #ccc; 
+      position: relative;
+    }
+
+    /* RIGHT PANEL (Viewer) */
+    .right { flex: 1; display: flex; flex-direction: column; background: #f4f4f4; }
+    
+    /* Folio Marker Styling */
+    .folio-marker {
+      margin: 2rem 0 1rem 0;
+      padding: 0.5rem 1rem;
+      background: #eee;
+      border-left: 5px solid #ccc;
+      cursor: pointer; /* Indicates clickability */
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    
+    .folio-marker:hover {
+      background: #ddd;
+      border-left-color: #999;
+    }
+
+    /* Active state (applied by JS) */
+    .folio-marker.active {
+      background: #e3f2fd;
+      border-left-color: #2196f3;
+      color: #0d47a1;
+    }
+
+    .line { margin-bottom: 0.2rem; line-height: 1.5; }
+    .ln { color: #888; font-size: 0.8rem; margin-right: 0.5rem; user-select: none; }
+    .speaker-label { margin-top: 1rem; font-weight: bold; color: #444; }
+  </style>
+</head>
+<body>
+
+  <div class="split">
+    
+    <div class="left" id="scroll-container">
+      
+      <div class="meta">
+        <h1>{{ div_id }}</h1>
+        <p><strong>Edition:</strong> {{ edition }} | <strong>Starting folio:</strong> {{ initial_folio }}</p>
+      </div>
+
+      <div id="text">
+        {%- set ns = namespace(last_lg=None, last_folio=None, current_speaker=None, group_open=False) -%}
+
+        {%- for row in lines -%}
+          {%- set folio = row.folio|string|trim -%}
+          {%- set lg = row.lg|string|trim -%}
+
+          {# 1. Close Group #}
+          {%- if ns.group_open and (lg != ns.last_lg or folio != ns.last_folio) -%}
+            </div>
+            {%- set ns.group_open = False -%}
+          {%- endif -%}
+
+          {# 2. Folio Marker #}
+          {%- if folio != ns.last_folio -%}
+            <div class="folio-marker" 
+                 data-canvas-url="{{ folio_to_canvas.get(folio, '') or '' }}">
+              Folio {{ folio }}
+            </div>
+            {%- set ns.last_folio = folio -%}
+          {%- endif -%}
+
+          {# 3. Open Group #}
+          {%- if not ns.group_open -%}
+            <div class="lg-group" data-lg="{{ lg }}">
+            {%- set ns.group_open = True -%}
+            {%- set ns.last_lg = lg -%}
+            {%- set ns.current_speaker = None -%}
+          {%- endif -%}
+
+          {# 4. Speaker #}
+          {%- if row.speaker and row.speaker != ns.current_speaker -%}
+            <div class="speaker-label">{{ row.speaker }}</div>
+            {%- set ns.current_speaker = row.speaker -%}
+          {%- endif -%}
+
+          {# 5. Line #}
+          <div class="line">
+            <span class="ln">{{ row.line_no }}</span>
+            <span class="line-text">{{ row.text }}</span>
+          </div>
+        {%- endfor -%}
+
+        {%- if ns.group_open -%}</div>{%- endif -%}
+      </div>
+      
+      <div style="height: 60vh;"></div>
+    </div>
+
+    <div class="right">
+      <div id="mirador-viewer" style="width:100%; height:100%;"></div>
+    </div>
+  </div>
+
+<script>
+  const manifestUrl = "{{ manifest_url or '' }}";
+  const startCanvas = "{{ canvas_url or '' }}";
+  const scrollContainer = document.getElementById('scroll-container');
+  let miradorInstance = null;
+
+  // --- 1. Initialize Mirador (Minimalist Mode) ---
+  if (manifestUrl) {
+    miradorInstance = Mirador.viewer({
+      id: "mirador-viewer",
+      windows: [{
+        loadedManifest: manifestUrl,
+        canvasId: startCanvas
+      }],
+      workspaceControlPanel: { enabled: false },
+      window: {
+        hideWindowTitle: true,
+        sideBarOpen: false,
+        allowClose: false,
+        allowMaximize: false,
+      }
+    });
+  } else {
+    document.getElementById('mirador-viewer').innerHTML = 
+      "<div style='padding:20px; text-align:center; color:#666;'>No Manifest URL Provided</div>";
+  }
+
+  // --- 2. Action Handler with Diagnostics ---
+  function jumpToCanvas(canvasId, markerElement) {
+    if (!miradorInstance || !canvasId) return;
+
+    const state = miradorInstance.store.getState();
+    const windows = state.windows;
+    const windowId = Object.keys(windows)[0];
+
+    if (!windowId) return;
+
+    const currentCanvas = windows[windowId].canvasId;
+    if (currentCanvas !== canvasId) {
+      miradorInstance.store.dispatch(
+        Mirador.actions.setCanvas(windowId, canvasId)
+      );
+    }
+
+    // Highlight markers
+    document.querySelectorAll('.folio-marker').forEach(el => el.classList.remove('active'));
+    if (markerElement) markerElement.classList.add('active');
+  }
+
+  // --- 3. Click Listener ---
+  document.querySelectorAll('.folio-marker').forEach(marker => {
+    marker.addEventListener('click', (e) => {
+      const url = e.currentTarget.getAttribute('data-canvas-url');
+      jumpToCanvas(url, e.currentTarget);
+      e.currentTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // --- 4. Scroll Observer ---
+  if (window.IntersectionObserver && scrollContainer) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const marker = entry.target;
+          const url = marker.getAttribute('data-canvas-url');
+          jumpToCanvas(url, marker);
+        }
+      });
+    }, {
+      root: scrollContainer,
+      rootMargin: '0px 0px -60% 0px',
+      threshold: 0
+    });
+
+    document.querySelectorAll('.folio-marker').forEach(marker => {
+      observer.observe(marker);
+    });
+  }
+</script>
+</body>
+</html>
