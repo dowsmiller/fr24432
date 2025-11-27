@@ -3,23 +3,25 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ project_title }} — Index</title>
+  <title>{{ project_title }} — Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link id="site-style" rel="stylesheet" href="static/style.css">
 </head>
 <body>
-  <h1>{{ project_title }} — Index</h1>
-  <p>Auto-generated index. Fill in project metadata where needed.</p>
-
+  <h1>
+    {{ project_title }}
+    {% if project_subtitle %}<span class="subtitle">{{ project_subtitle }}</span>{% endif %}
+  </h1>
   {% for item in listing %}
     <div class="card">
       <h2>{{ item.id }}</h2>
-      <ul>
-        <li><a href="{{ item.tei }}">TEI (minimal)</a></li>
-        <li><a href="{{ item.diplomatic_html }}">Diplomatic HTML</a></li>
-        <li><a href="{{ item.critical_html }}">Critical HTML</a></li>
-      </ul>
-      <p>Notes: <em>Fill details here</em></p>
+      <div class="link-buttons">
+        <a href="{{ item.diplomatic_html }}" class="button">Web Viewer (Diplomatic)</a>
+        <a href="{{ item.critical_html }}" class="button">Web Viewer (Critical)</a>
+        <a href="{{ item.tei }}" class="button">TEI Snippet</a>
+        <a href="{{ item.diplomatic_csv }}" class="button">CSV (Diplomatic)</a>
+        <a href="{{ item.critical_csv }}" class="button">CSV (Critical)</a>
+      </div>
     </div>
   {% endfor %}
 

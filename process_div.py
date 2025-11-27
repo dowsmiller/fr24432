@@ -234,7 +234,8 @@ def process_div(tei_path, out_root="out", div_id=None, initial_folio="", initial
                 canvas_url = folio_to_canvas[first_folio]
 
         context = {
-            "project_title": "My TEI Project",
+            "project_title": "The texts of BnF fr. 24432",
+            "project_subtitle": "A cumulative, work-in-progress digital edition",
             "div_id": tei_basename,
             "edition": edition,
             "lines": lines,

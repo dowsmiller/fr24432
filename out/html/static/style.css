@@ -18,7 +18,36 @@ body {
   background: linear-gradient(180deg, #f8f9fb 0%, #eef0f4 100%);
   color: #111;
   -webkit-font-smoothing: antialiased;
-  padding: 24px;
+}
+
+
+/* ----------------------------------------------------------
+   BUTTON-LINKS (for Web Viewer, TEI, CSV links)
+---------------------------------------------------------- */
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; /* space between buttons */
+  margin-top: 1rem;
+}
+
+.link-buttons a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #fff;
+  background: rgba(0,122,255,0.9);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.link-buttons a:hover {
+  background: rgba(0,122,255,1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 
@@ -27,15 +56,21 @@ body {
 ---------------------------------------------------------- */
 .split {
   display: flex;
-  gap: 24px;
-  height: calc(100vh - 48px);
+  height: 100vh;
+  width: 100%;
+  padding: 24pt;
 }
 
-/* Force left/right layout: left column fixed, right column flexible */
-.left { width: 45%; flex: none; }
-.right { flex: 1; }
+.left {
+  border-right: 1px solid #ccc; 
+  position: relative;
+}
 
-/* Glassy panels */
+.right {
+  display: flex;
+  background: #f4f4f4;
+}
+
 .left, .right {
   flex: 1;
   background: rgba(255,255,255,0.7);
@@ -84,7 +119,7 @@ body {
    TEXT + LINES
 ---------------------------------------------------------- */
 #text {
-  overflow-y: auto;
+  /* overflow-y: auto; */
   padding-right: 6px;
 }
 
@@ -105,6 +140,50 @@ body {
 .line {
   padding: 0;
   margin: 0;
+}
+
+/* folio/page marker - horizontal line with centered label */
+.folio-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  padding: 8px 0;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.folio-marker:hover {
+  background: rgba(0,122,255,0.08);
+  padding: 8px 8px;
+}
+
+.folio-marker::before,
+.folio-marker::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(0,122,255,0.2) 0%, rgba(0,122,255,0) 100%);
+}
+
+.folio-marker::after {
+  background: linear-gradient(90deg, rgba(0,122,255,0) 0%, rgba(0,122,255,0.2) 100%);
+}
+
+.folio-label {
+  padding: 0 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(0,122,255,0.75);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.folio-marker:hover .folio-label {
+  color: rgba(0,122,255,1);
 }
 
 .ln {
@@ -182,6 +261,14 @@ h1::after {
   border-radius: 3px;
 }
 
+h1 .subtitle {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 400;
+  font-style: italic;
+  color: #888;
+}
+
 .card {
   margin-bottom: 32px;
   padding: 24px;
@@ -236,6 +323,121 @@ h1::after {
 .card a:hover {
   color: #000;
   border-bottom-color: rgba(0,122,255,0.45);
+}
+
+/* ----------------------------------------------------------
+   PAGE VIEW STYLES
+---------------------------------------------------------- */
+
+/* Scroll container for text (left panel) */
+#scroll-container {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Metadata section */
+.meta {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(0,122,255,0.15);
+  padding-bottom: 1rem;
+}
+
+.meta h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+  color: #111;
+}
+
+.meta p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Folio marker - larger and more prominent */
+.folio-marker {
+  margin: 2rem 0 1rem 0;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, rgba(0,122,255,0.08) 0%, rgba(0,122,255,0.04) 100%);
+  border-left: 4px solid rgba(0,122,255,0.4);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(0,122,255,0.85);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.folio-marker:hover {
+  background: linear-gradient(90deg, rgba(0,122,255,0.12) 0%, rgba(0,122,255,0.08) 100%);
+  border-left-color: rgba(0,122,255,0.6);
+  padding-left: 1.25rem;
+}
+
+/* Active state when corresponding canvas is displayed */
+.folio-marker.active {
+  background: linear-gradient(90deg, rgba(0,122,255,0.15) 0%, rgba(0,122,255,0.1) 100%);
+  border-left-color: rgba(0,122,255,0.9);
+  color: rgba(0,122,255,1);
+  box-shadow: inset 0 0 8px rgba(0,122,255,0.1);
+}
+
+/* Text content styling */
+#text {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.line {
+  margin-bottom: 0.15rem;
+  line-height: 1.6;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ln {
+  color: #999;
+  font-size: 0.85rem;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  margin-right: 0.25rem;
+  user-select: none;
+  flex-shrink: 0;
+  text-align: right;
+  min-width: 2.5rem;
+}
+
+.line-text {
+  flex: 1;
+}
+
+/* Speaker label */
+.speaker-label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: rgba(0,122,255,0.8);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Line group container */
+.lg-group {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(0,122,255,0.1);
+  transition: border-left-color 0.2s ease;
+}
+
+.lg-group:hover {
+  border-left-color: rgba(0,122,255,0.3);
+}
+
+/* Padding below content for scroll space */
+#scroll-container > div:last-child {
+  min-height: 60vh;
 }
 
 /* ----------------------------------------------------------

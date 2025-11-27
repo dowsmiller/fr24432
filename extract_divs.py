@@ -221,12 +221,14 @@ for fname in sorted(os.listdir(OUT_TEI_DIR)):
         base_lower = base.lower()
         listing.append({
             "id": base,
-            "tei": f"../tei/{fname}",
             "diplomatic_html": f"{base_lower}-diplomatic.html",
             "critical_html": f"{base_lower}-critical.html",
+            "tei": f"../tei/{fname}",
+            "diplomatic_csv": f"../csv/diplomatic/{fname}",
+            "critical_csv": f"../csv/critical/{fname}"
         })
 
-index_html = index_tmpl.render(listing=listing, project_title="My TEI Project")
+index_html = index_tmpl.render(listing=listing, project_title="The texts of BnF fr. 24432", project_subtitle="A cumulative, work-in-progress digital edition")
 index_out = os.path.join(OUT_ROOT, "html", "index.html")
 
 with open(index_out, "w", encoding="utf8") as fh:
