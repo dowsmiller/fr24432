@@ -86,7 +86,7 @@ body.has-fixed-header {
   border-left: 4px solid rgba(0,122,255,0.25);
   transition: all 0.35s ease;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   text-align: left;
 }
 
