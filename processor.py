@@ -153,6 +153,8 @@ with PySaxonProcessor(license=False) as proc:
         process_div(out_path, out_root=OUT_ROOT, div_id=div_id, initial_folio=initial_folio, initial_col=initial_col, manifest_url=manifest_url, metadata_dict=metadata_dict)
         
 # --- Generate Index HTML ---
+# Set output base
+RAW_BASE = "https://raw.githubusercontent.com/dowsmiller/fr24432/main/out"
 
 # Define which states are allowed to have HTML links
 ALLOWED_HTML_STATES = ['complete', 'near-complete']
@@ -191,14 +193,16 @@ for state_dir in os.listdir(OUT_TEI_DIR):
                 # Create a dictionary for the current item
                 item = {
                     "id": base,
-                    "tei": f"../tei/{norm_div_state}/{fname}", # Path to TEI XML
+                    "tei": f"{RAW_BASE}/tei/{norm_div_state}/{fname}",
                     "diplomatic_html": diplomatic_html_path, # Path to diplomatic HTML
                     "critical_html": critical_html_path, # Path to critical HTML
-                    # Paths to other formats (CSV, TXT)
-                    "diplomatic_csv": f"../csv/{norm_div_state}/diplomatic/{fname[:-4]}.csv",
-                    "critical_csv": f"../csv/{norm_div_state}/critical/{fname[:-4]}.csv",
-                    "diplomatic_txt": f"../txt/{norm_div_state}/diplomatic/{fname[:-4]}.txt",
-                    "critical_txt": f"../txt/{norm_div_state}/critical/{fname[:-4]}.txt",
+                    # Paths to CSV
+                    "diplomatic_csv": f"{RAW_BASE}/csv/{norm_div_state}/diplomatic/{fname[:-4]}.csv",
+                    "critical_csv":   f"{RAW_BASE}/csv/{norm_div_state}/critical/{fname[:-4]}.csv",
+                    # Paths to TXT
+                    "diplomatic_txt": f"{RAW_BASE}/txt/{norm_div_state}/diplomatic/{fname[:-4]}.txt",
+                    "critical_txt":   f"{RAW_BASE}/txt/{norm_div_state}/critical/{fname[:-4]}.txt",
+                    # Other relevant metadata
                     "title": title,
                     "summary": summary,
                     "fol_range": fol_range,
