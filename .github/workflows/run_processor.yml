@@ -5,6 +5,7 @@ on:
   push:
     paths-ignore:
       - 'out/**'
+      - '.github/**'
 
 permissions:
   contents: write
