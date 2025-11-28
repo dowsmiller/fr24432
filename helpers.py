@@ -317,7 +317,7 @@ def process_div(tei_path, out_root="out", div_id=None, initial_folio="", initial
             # Context dictionary passed to the HTML template
             context = {
                 "project_title": "The Texts of BnF fr. 24432",
-                "project_subtitle": "A cumulative, work-in-progress digital edition",
+                "project_subtitle": "A cumulative, work-in-progress digital edition by Sebastian Dows-Miller",
                 "div_id": tei_basename,
                 "title": title,
                 "edition": edition,

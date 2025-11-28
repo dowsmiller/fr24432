@@ -226,7 +226,7 @@ if any(grouped_listing.values()):
     index_html = index_tmpl.render(
         grouped_listing=grouped_listing,
         project_title="The Texts of BnF fr. 24432", 
-        project_subtitle="A cumulative, work-in-progress digital edition"
+        project_subtitle="A cumulative, work-in-progress digital edition by Sebastian Dows-Miller"
     )
     # Define the output path for the index
     index_out = os.path.join(OUT_ROOT, "html", "index.html")
