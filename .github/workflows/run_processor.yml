@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - 'out/**'
       - '.github/**'
+      - 'README.md'
 
 permissions:
   contents: write
