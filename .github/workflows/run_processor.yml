@@ -1,0 +1,38 @@
+name: Run Processor
+
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - 'out/**'
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Needed so pushes back to repo work
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run processor
+        run: |
+          python processor.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Automated update from processor.py" || echo "No changes to commit"
+          git push
