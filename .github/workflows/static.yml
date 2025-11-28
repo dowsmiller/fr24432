@@ -1,10 +1,10 @@
 name: Deploy static content to Pages
 
 on:
-  push:
-    branches: ["main"]
-    paths:
-      - "out/html/**"
+  workflow_run:
+    workflows: ["Run Processor"]
+    types:
+      - completed
 
   workflow_dispatch:
 
