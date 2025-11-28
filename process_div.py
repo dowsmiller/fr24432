@@ -156,7 +156,7 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
                       "l_id": l_id, "folio": folio, "col": col, "speaker": speaker})
     return lines
 
-# ------------------ OUTPUT WRITING (unchanged) ------------------ #
+# ------------------ OUTPUT WRITING ------------------ #
 
 def write_txt(lines, outpath):
     with open(outpath, "w", encoding="utf8") as fh:

@@ -2,20 +2,23 @@
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 version="3.0">
 
-  <xsl:output method="xml" indent="yes"/>
+  <xsl:output method="xml" indent="no"/>
 
-  <!-- Identity template -->
-  <xsl:template match="/ | @* | node()">
+  <!-- Identity -->
+  <xsl:template match="@* | node()">
     <xsl:copy>
       <xsl:apply-templates select="@* | node()"/>
     </xsl:copy>
   </xsl:template>
 
   <!-- CRITICAL: Remove originals, errors, deletions, surplus, supplied -->
-  <xsl:template match="tei:abbr[not(@ana='retain')] | tei:orig[not(@ana='retain')] | tei:sic[not(@ana='retain')] | tei:del[not(@ana='retain')] | tei:surplus[not(@ana='retain')] | tei:supplied[not(@ana='retain')]" />
-  <xsl:template match="*[@ana='ignore']" />
+  <xsl:template match="tei:abbr[not(@ana='retain')] 
+                      | tei:orig[not(@ana='retain')]
+                      | tei:sic[not(@ana='retain')]
+                      | tei:del[not(@ana='retain')]
+                      | tei:surplus[not(@ana='retain')]"/>
 
-  <!-- CRITICAL: Keep regularizations, expansions, additions, corrections -->
-  <!-- Keep tei:expan, tei:reg, tei:add, tei:corr in critical -->
+  <!-- Remove elements explicitly marked ignore -->
+  <xsl:template match="*[@ana='ignore']"/>
 
 </xsl:stylesheet>

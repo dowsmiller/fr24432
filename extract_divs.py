@@ -158,8 +158,10 @@ with PySaxonProcessor(license=False) as proc:
     except Exception:
         pass
 
-    # Load source XML with ElementTree to extract folio/col info
+    # Load source XML and XSLT processor
     source_root = ET.parse(INPUT_FILE).getroot()
+    xslt30 = proc.new_xslt30_processor()
+    executable = xslt30.compile_stylesheet(stylesheet_file="extract_div.xsl")
 
     for i, div_node in enumerate(divs if isinstance(divs, list) else [divs.item_at(j) for j in range(divs.size)]):  
         div_xml = div_node.to_string()  
@@ -190,23 +192,21 @@ with PySaxonProcessor(license=False) as proc:
         if preceding_pb_elem is not None:
             preceding_pb_xml = ET.tostring(preceding_pb_elem, encoding="unicode")
 
-        # Create minimal TEI wrapper
-        body_content = preceding_pb_xml + div_xml if preceding_pb_xml else div_xml
-        tei_out = "\n".join([  
-            '<TEI xmlns="http://www.tei-c.org/ns/1.0">',  
-            tei_header_xml,  
-            "<text><body>",  
-            body_content,  
-            "</body></text>",  
-            "</TEI>",  
-        ])  
+        # Set parameter for this transformation
+        xdm_div_id = proc.make_string_value(div_id)
+        executable.set_parameter("div-id", xdm_div_id)
 
-        # Write minimal TEI file
-        out_path = os.path.join(OUT_TEI_DIR, f"{div_id}.xml")  
-        with open(out_path, "w", encoding="utf-8") as fh:  
-            fh.write(tei_out)  
+        # Transform to string
+        result = executable.transform_to_string(
+            xdm_node=doc
+        )
 
-        print(f"Wrote TEI for {div_id} -> {out_path}")  
+        out_path = os.path.join(OUT_TEI_DIR, f"{div_id}.xml")
+        with open(out_path, "w", encoding="utf-8") as fh:
+            fh.write(result)
+
+        print(f"Wrote TEI for {div_id} -> {out_path}")
+ 
 
         # Process diplomatic/critical editions, passing folio/col metadata and manifest URL
         process_div(out_path, out_root=OUT_ROOT, div_id=div_id, initial_folio=initial_folio, initial_col=initial_col, manifest_url=manifest_url)
