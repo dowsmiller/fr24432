@@ -5,6 +5,11 @@ on:
     workflows: ["Run Processor"]
     types:
       - completed
+      
+  push:
+    branches: ["main"]
+    paths:
+      - "out/html/**"
 
   workflow_dispatch:
 
