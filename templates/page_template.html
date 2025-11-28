@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ project_title }} — {{ div_id }} ({{ edition }})</title>
+  <title>{{ div_id }} ({{ edition }}) — {{ project_title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link id="site-style" rel="stylesheet" href="static/style.css">
   <link rel="stylesheet" href="https://unpkg.com/mirador@3/dist/mirador.min.css">
@@ -13,8 +13,13 @@
   <div class="split">
     
     <div class="left" id="scroll-container">
-      
+
       <div class="meta">
+        <div class="header-buttons">
+          <a class="back-button" href="index.html">&larr; Back to Index</a>
+          <a class="switch-button" href="{{ other_version_url }}">{{ other_version_label }} &rarr;</a>
+        </div>
+
         <h1>{{ div_id }}</h1>
         <p><strong>Edition type:</strong> {{ edition }} | <strong>Starting folio:</strong> {{ initial_folio }}</p>
       </div>
@@ -58,14 +63,14 @@
           {# 5. Line #}
           <div class="line">
             <span class="ln">{{ row.line_no }}</span>
-            <span class="line-text">{{ row.text }}</span>
+            <span class="line-text">{{ row.text | safe }}</span>
           </div>
         {%- endfor -%}
 
         {%- if ns.group_open -%}</div>{%- endif -%}
       </div>
       
-      <div style="height: 60vh;"></div>
+      <div style="height: 95vh;"></div>
     </div>
 
     <div class="right">

@@ -13,14 +13,16 @@
     {% if project_subtitle %}<span class="subtitle">{{ project_subtitle }}</span>{% endif %}
   </h1>
   {% for item in listing %}
-    <div class="card">
-      <h2>{{ item.id }}</h2>
-      <div class="link-buttons">
-        <a href="{{ item.diplomatic_html }}" class="button">Web Viewer (Diplomatic)</a>
-        <a href="{{ item.critical_html }}" class="button">Web Viewer (Critical)</a>
-        <a href="{{ item.tei }}" class="button">TEI Snippet</a>
-        <a href="{{ item.diplomatic_csv }}" class="button">CSV (Diplomatic)</a>
-        <a href="{{ item.critical_csv }}" class="button">CSV (Critical)</a>
+    <div class="cards-wrapper">
+      <div class="card">
+        <h2>{{ item.id }}</h2>
+        <div class="link-buttons">
+          <a href="{{ item.diplomatic_html }}" class="button">Web Viewer (Diplomatic)</a>
+          <a href="{{ item.critical_html }}" class="button">Web Viewer (Critical)</a>
+          <a href="{{ item.tei }}" class="button">TEI Snippet</a>
+          <a href="{{ item.diplomatic_csv }}" class="button">CSV (Diplomatic)</a>
+          <a href="{{ item.critical_csv }}" class="button">CSV (Critical)</a>
+        </div>
       </div>
     </div>
   {% endfor %}

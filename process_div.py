@@ -37,6 +37,48 @@ def transform_div_with_xslt(tei_path, edition='diplomatic', xslt_path=None):
             return None
 
         return result
+    
+def get_text_with_markup(node):
+    """
+    Recursively extract text from a node, applying TEI-inspired markup:
+      - <ex> -> <em>
+      - <add> or <supplied> -> wrap in [ ]
+      - <del> or <surplus> -> wrap in ( )
+    """
+    text_parts = []
+    ns_tag = lambda t: t.rsplit('}', 1)[-1] if '}' in t else t
+
+    tag = ns_tag(node.tag)
+
+    if tag == "ex":
+        inner = "".join(get_text_with_markup(c) for c in node)
+        text_parts.append(f"<em>{(node.text or '')}{inner}</em>")
+        if node.tail:
+            text_parts.append(node.tail)
+    elif tag in {"add", "supplied"}:
+        inner = "".join(get_text_with_markup(c) for c in node)
+        text_parts.append(f"[{(node.text or '')}{inner}]")
+        if node.tail:
+            text_parts.append(node.tail)
+    elif tag in {"del", "surplus"}:
+        inner = "".join(get_text_with_markup(c) for c in node)
+        text_parts.append(f"({(node.text or '')}{inner})")
+        if node.tail:
+            text_parts.append(node.tail)
+    elif tag == "gap":
+        inner = "".join(get_text_with_markup(c) for c in node)
+        text_parts.append(f" [...]")
+        if node.tail:
+            text_parts.append(node.tail)
+    else:
+        if node.text:
+            text_parts.append(node.text)
+        for c in node:
+            text_parts.append(get_text_with_markup(c))
+        if node.tail:
+            text_parts.append(node.tail)
+
+    return "".join(text_parts)
 
 def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
     """
@@ -64,8 +106,7 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
 
     # Group lines by their nearest ancestor group container. Look for
     # <lg>, <p>, or <sp> as grouping containers and assign a stable group id
-    # based on the ancestor element. This is robust even when the XSLT
-    # flattens/changes traversal order.
+    # based on the ancestor element.
     GROUP_TAGS = {"lg", "p", "sp"}
     # parent_map maps child -> parent for nodes under the div
     ancestor_group_map = {}
@@ -86,11 +127,10 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
         line_counter += 1
         # Concatenate all text nodes within the <l> element
         text = "".join(l.itertext())
+        # Add markup
+        text = get_text_with_markup(l)
         # Normalize whitespace
         text = re.sub(r"\s+", " ", text).strip()
-        # Remove unwanted spaces around apostrophes (both typographic ’ and ASCII ')
-        text = re.sub(r"\s*’\s*", "’", text)
-        text = re.sub(r"\s*'\s*", "'", text)
 
         # l_id: xml:id is in the XML namespace
         xml_ns = "{http://www.w3.org/XML/1998/namespace}id"
@@ -144,10 +184,11 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
             for prev in reversed(doc_nodes[:idx]):
                 prev_tag = prev.tag.rsplit('}', 1)[-1] if '}' in prev.tag else prev.tag
                 if prev_tag == 'sp':
-                    # Found the enclosing <sp>, now find its <speaker> child
-                    speaker_elem = prev.find('tei:speaker', ns)
-                    if speaker_elem is not None:
-                        speaker = "".join(speaker_elem.itertext()).strip()
+                    # Found the enclosing <sp>, now extract the speaker from the @who attribute
+                    speaker = prev.attrib.get('who', '')
+                    # If the speaker name includes a '#', remove it for cleaner presentation
+                    if speaker.startswith('#'):
+                        speaker = speaker[1:]
                     break
         except (ValueError, AttributeError):
             pass
@@ -161,7 +202,8 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
 def write_txt(lines, outpath):
     with open(outpath, "w", encoding="utf8") as fh:
         for entry in lines:
-            fh.write(entry["text"] + "\n")
+            text = re.sub(r"</?em>", "", entry["text"])
+            fh.write(text + "\n")
 
 def write_csv(lines, outpath):
     fieldnames = ["line_no", "text", "lg", "l_id", "folio", "col", "speaker"]
@@ -169,7 +211,8 @@ def write_csv(lines, outpath):
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for row in lines:
-            writer.writerow({k: row.get(k, "") for k in fieldnames})
+            text = re.sub(r"</?em>", "", row["text"])
+            writer.writerow({**row, "text": text})
 
 def render_html(template_name, context, outpath):
     tmpl_dir = os.path.join(os.path.dirname(__file__), "templates")
@@ -180,7 +223,6 @@ def render_html(template_name, context, outpath):
         fh.write(html)
 
 # ------------------ PUBLIC FUNCTION ------------------ #
-
 def process_div(tei_path, out_root="out", div_id=None, initial_folio="", initial_col="", manifest_url=""):
     # Use provided div_id (from @xml:id) when available, otherwise fall back
     # to the TEI filename basename.
@@ -233,6 +275,14 @@ def process_div(tei_path, out_root="out", div_id=None, initial_folio="", initial
             if first_folio and first_folio in folio_to_canvas:
                 canvas_url = folio_to_canvas[first_folio]
 
+        # Determine text for switch button
+        if edition == "critical":
+            other_version_url = tei_basename + "-diplomatic.html"
+            other_version_label = "Go to diplomatic"
+        else:
+            other_version_url = tei_basename + "-critical.html"
+            other_version_label = "Go to critical"
+
         context = {
             "project_title": "The texts of BnF fr. 24432",
             "project_subtitle": "A cumulative, work-in-progress digital edition",
@@ -244,7 +294,9 @@ def process_div(tei_path, out_root="out", div_id=None, initial_folio="", initial
             "initial_folio": initial_folio or "",
             "folio_to_canvas": folio_to_canvas,
             "facs": None,
-            "notes": "Replace with project-specific metadata"
+            "other_version_url": other_version_url,
+            "other_version_label": other_version_label,
+            "notes": "empty for now"
         }
         render_html("page_template.html", context, html_out)
         print(f"Wrote {edition} outputs: TXT->{txt_out}, CSV->{csv_out}, HTML->{html_out}")

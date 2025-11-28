@@ -14,8 +14,9 @@ from saxonche import PySaxonProcessor
 from jinja2 import Environment, FileSystemLoader
 from process_div import process_div
 
-INPUT_DIR = "xml"
+INPUT_DIR = "in"
 INPUT_FILE = os.path.join(INPUT_DIR, "fr24432.xml")
+META_FILE = os.path.join(INPUT_DIR, "meta.csv")
 OUT_ROOT = "out"
 OUT_TEI_DIR = os.path.join(OUT_ROOT, "tei")
 os.makedirs(OUT_TEI_DIR, exist_ok=True)

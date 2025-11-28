@@ -59,7 +59,7 @@ A deux lïeues d’un bourc c’on apelle Massai.
 Or me di par amours se tu es cler ou lai.
 Je croi que du pays ou les gens dient “nai”.
 Mescheant, que te chaut de quel pays je soie,
-Se les yex de ta teste touz deux crevez t’avoie ?
+Se les yex de ta teste touz deux crevez [t]’avoie ?
 Ja parmi ceste ville a aler n’en lairoie.
 Te portes tu si fier. Pour t’amie m’aroie ?
 Ouïl, fier je m’en porte et je le doi bien faire,
@@ -144,7 +144,7 @@ Escüelles parfondes, sausieres et platiaus.
 Quant cela est d’estain l’ostel en est plus biaus.
 Il couvient a manage : pos, chauderons, paëles,
 Hates, selles et auges, escuves, escüelles,
-Bans, formetes et chazeres, et eschammaz et seles,
+Bans, forme[te]s et chazeres, et eschammaz et seles,
 Traitiaus, tables, bufez, napes, touelles belles.
 Manage veut avoir : voirre, godés, henas,
 Et la maist pour pestrir, buletel et saas,
@@ -186,7 +186,7 @@ Bacins et chaufouetes faut aus granz managiers,
 Corbelles et boissiaus, et hotes et paniers.
 Qui n’a serpe ou hachete, il ne vaut deux deniers.
 Moufles, ganz et mitenes faut, quant hyver est fiers.
-Il y faut corde a puis, eschieles et martel,
+Il y faut corde a puis, eschieles et ma[r]tel,
 La coulonne a la dame, la pezon, le fuizel,
 Et les desvideüres ou desouz est l’aviel
 Ou on met le maillet dont on bat le luissel.
@@ -251,11 +251,11 @@ Me delivra de celle que deable fist nestre,
 D’ore en avant voudrai de touz poins preudons estre,
 Et ferai se Dieu plait que briement serai prestre.
 Prestre, deable y soient ! Estes vous forsenez ?
-Prestre Hue ot l’autr’ier trestout les biens coupez
-Sur une orde ribaude : d’un barbier fu trouvés.
-Prestres sont si ribaus qu’il ne valent deux dez !
+Prestre Hue ot l’autr’ier [trestout les biens coupez]
+[Sur une orde ribaude] : d’un barbier fu trouvés.
+[Prestres sont si ribaus] qu’il ne valent deux dez !
 Tu men mauvaisement ! Il ne va pas ainssi.
-Bien voi a ton parler qu’il .
+Bien voi a ton parler qu’il [...].
 Se plus mesdiz des prestres, de touz poins te deffi,
 Et de l’auctorité que j’ai, t’escommeni !
 Hé laz tres douce gent ! Je ne savrai mengier
@@ -265,7 +265,7 @@ Savez vous par quel lettre commence le Sautier ?
 Tanstost le te dirai mais que m’avise un poi.
 Je connois bien les lettres, quant el livre les voi.
 Or ne parle pas haut et te tais trestout quoi.
-Je pense le Sautier se commence par’B’!
+Je pense le Sautier se commence par ‘B’ !
 “Boi” ? Et que bevrai je ? Au mains dites “bevez”,
 Et me portez hounour ; bien faire le devez.
 Alez a Avignon — en l’eure passerez —

@@ -205,7 +205,7 @@ Tuit cil qⁱ la erēt venu
 Gñt et petit gros et menu
 Qñt ie les vi i'ai oï gñt ioie
 Qu'a paines dire le poꝛroie
-Car i'auoie gñt appetit
+(Car i'auoie gñt appetit)
 Si m'apꝛochai d'ex .i. petit
 Car i'auoie gñt apetit
 Et gñt deſirrier du ſauoir
@@ -352,7 +352,7 @@ Hons deuendꝛoie
 A hōme q՚ ie ne cōnuſſe
 Q՚l domage q՚ g'y euſſe.
 Loꝛs diſt et ie le te dirai
-Et tō cuer cuer en aſſouuirai
+Et tō cuer (cuer )en aſſouuirai
 Car il a en toi ce me ſamble
 Bien foy et loial
 Ce me ſamble
@@ -994,7 +994,7 @@ Et ſi me doit ſoffire iusqu'atant
 Qu'amoꝛ ne voiſt ē mō cuer ēbatāt
 Q՚ li face pour voir aꝑceuoir
 Q՚ i'ai poꝛ li ces maꝰ a receuoir
-Q՚ i'ai poꝛ li ces maꝰ a receuoir
+(Q՚ i'ai poꝛ li ces maꝰ a receuoir)
 Cy fault li diz en auēture fais
 Poꝛ ce mes maulz amenuiſier le fais
 Qñt ꝑ ce dit ay ma pēſee
@@ -1460,7 +1460,7 @@ Et elle me diſt ce me ſamble
 Q՚ ia ce ne li auendꝛoit
 Et q՚ le dit ia ne tēroit
 Car choſe qⁱ eſt ſeellee
-A pꝛēdꝛe pas ne li apele agree
+A pꝛēdꝛe pas ne li (apele )agree
 Car il y auoit ſouſpecon
 Qñt i'entendi ceſte lecon
 Q՚ l'ē dit a penre vea
@@ -1813,7 +1813,7 @@ Qñt il ſe cōplaīt alleg՚
 Et celui ꝯſent alleg՚
 Doit on leſſier meſaiſe auoir
 Non ne deuroit poꝛ mal auoir
-Non ne deuroit poꝛ nul auoir
+(Non ne deuroit poꝛ nul auoir)
 Ce m'eſt vis releuer demoꝛt
 Car il eſt dignes de depoꝛt
 Le fait ſe bien ſui apēſez

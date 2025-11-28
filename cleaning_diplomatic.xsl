@@ -19,6 +19,6 @@
                       | tei:supplied[not(@ana='retain')]" />
 
   <!-- Remove elements explicitly marked ignore -->
-  <xsl:template match="*[@ana='ignore']" />
+  <xsl:template match="*[@ana='ignore']"/>
 
 </xsl:stylesheet>
