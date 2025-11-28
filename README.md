@@ -8,7 +8,7 @@ It is the work of some 11 scribes, and contains some 87 texts across its 446 fol
 
 ## About the Project
 
-This page presents a work-in-progress edition of the texts of fr24432 arising from my doctoral project, in which I conducted a combined textual and digital analysis of the manuscript.
+This project presents a work-in-progress edition of the texts of fr24432 arising from my doctoral project, in which I conducted a combined textual and digital analysis of the manuscript.
 The texts are separated into three groups according to their status: *Complete*, *Near Complete*, and *Incomplete*.
 
 - *Complete* texts are those for which I have completed a full edition-quality encoding, which is presented via a web viewer.
