@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="91r" xml:id="f91r"/><div type="text" n="25" xml:id="SeptDormant">
+                    <pb n="91v" xml:id="f91v"/>
+                    <cb n="1" xml:id="cb-91v-1"/>
+                    <p xml:id="p-91v-1-1">Ce<choice><orig/><reg resp="#SDM"> </reg></choice>ſont les <num value="7">.<choice><orig>vij</orig><reg resp="#SDM">vii</reg></choice>.</num> doꝛmant qui<lb/>
+                    Sont ici eſcrit ſi les doit l'en<lb/>
+                    Meſtre deſous ſon chief<lb/>
+                    /Maximus. /Malchius<lb/>
+                    /Martinius. /<choice><abbr>Conſtantinꝯ</abbr><expan resp="#SDM">Conſtantin<ex>us</ex></expan></choice><lb/>
+                    /Dioniſius. /Iohannes<lb/>
+                    /Seꝛaphion.<lb/>
+                    Ce ſont li <num value="7">.<choice><orig>vij</orig><reg resp="#SDM">vii</reg></choice>.</num> doꝛmant</p>
+            </div></body></text></TEI>

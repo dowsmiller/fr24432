@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="246v" xml:id="f246v"/><div type="text" n="60" xml:id="TMTV2">
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-246v-2-11">Une auanture <choice><abbr>m՚ueilleuſe</abbr><expan resp="#SDM">m<ex>er</ex>ueilleuſe</expan></choice></l>
+                    <l xml:id="l-246v-2-12"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> a<choice><orig/><reg resp="#SDM"> </reg></choice>l'ouir eſt <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> piteuſe</l>
+                    <l xml:id="l-246v-2-13"><choice><orig>auint</orig><reg resp="#SDM">avint</reg></choice> l'<choice><abbr>autͤ</abbr><expan resp="#SDM">aut<ex>re</ex></expan></choice> hier <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><abbr>noꝛm̄die</abbr><expan resp="#SDM">noꝛm<ex>en</ex>die</expan></choice></l>
+                    <l xml:id="l-246v-2-14">De <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num> dames <choice><abbr>dōt</abbr><expan resp="#SDM">do<ex>n</ex>t</expan></choice> amoureuſe</l>
+                    <l xml:id="l-246v-2-15"><choice><abbr>Chaſcūne</abbr><expan resp="#SDM">Chaſcu<ex>n</ex>ne</expan></choice> eſtoit conuoiteuſe</l>
+                    <l xml:id="l-246v-2-16">De<choice><orig/><reg resp="#SDM"> </reg></choice>maintenir <choice><orig>uie</orig><reg resp="#SDM">vie</reg></choice> iolye</l>
+                    <l xml:id="l-246v-2-17">D'autre riens n'<choice><orig>auoient</orig><reg resp="#SDM">avoient</reg></choice> <choice><orig>enuie</orig><reg resp="#SDM">envie</reg></choice></l>
+                    <l xml:id="l-246v-2-18">Car <choice><abbr>chaſcūne</abbr><expan resp="#SDM">chaſcu<ex>n</ex>ne</expan></choice> quidoit en<choice><orig/><reg resp="#SDM"> </reg></choice><choice><orig>uie</orig><reg resp="#SDM">vie</reg></choice></l>
+                    <l xml:id="l-246v-2-19">Manoir tous <choice><orig>iours</orig><reg resp="#SDM">jours</reg></choice> mes trop <choice><abbr>cͧeuſe</abbr><expan resp="#SDM">c<ex>ru</ex>euſe</expan></choice></l>
+                    <l xml:id="l-246v-2-20">Auanture loꝛ; fu baillie</l>
+                </lg>
+                <fw type="catchwords" source="beforeFolioLoss" xml:id="fw-246v-2-1">De <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> qui toute rien meſtrie</fw>
+                <fw type="catchwords" source="afterFolioLoss" xml:id="fw-246v-2-2">Ci <choice><abbr>cōmence</abbr><expan resp="#SDM">co<ex>m</ex>mence</expan></choice> le dit du buef</fw>
+
+                <gap extent="unknown" reason="missing"/>
+            </div></body></text></TEI>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ div_id }} ({{ edition }}) — {{ project_title }}</title>
+  <title>{{ title }} ({{ edition }}) — {{ project_title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link id="site-style" rel="stylesheet" href="static/style.css">
   <link rel="stylesheet" href="https://unpkg.com/mirador@3/dist/mirador.min.css">
@@ -20,8 +20,12 @@
           <a class="switch-button" href="{{ other_version_url }}">{{ other_version_label }} &rarr;</a>
         </div>
 
-        <h1>{{ div_id }}</h1>
-        <p><strong>Edition type:</strong> {{ edition }} | <strong>Starting folio:</strong> {{ initial_folio }}</p>
+        <h1><em>{{ title }}</em></h1>
+        <p><strong>Edition type:</strong> {{ edition }} | <strong>Status:</strong> {{ state }} | <strong>Starting folio:</strong> {{ initial_folio }}</p>
+
+        {% if notes %}
+          <p class="card-warning">{{ notes }}</p>
+        {% endif %}
       </div>
 
       <div id="text">

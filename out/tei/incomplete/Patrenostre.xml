@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="47v" xml:id="f47v"/><div type="text" n="16" xml:id="Patrenostre">
+                <gb n="7" cert="medium"/>
+                <gap reason="missing" extent="folio" quantity="1"/>
+
+                <lg>
+                    <pb n="49r" xml:id="f49r"/>
+                    <cb n="1" xml:id="cb-49r-1"/>
+                    <l xml:id="l-49r-1-1">Chaſcun <choice><orig>iour</orig><reg resp="#SDM">jour</reg></choice> <num value="4">.<choice><orig>iiij</orig><reg resp="#SDM">iiii</reg></choice>.</num> patenoſtre</l>
+                    <l xml:id="l-49r-1-2">Ribaut <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> gouliardois doient</l>
+                    <l xml:id="l-49r-1-3"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> le pais tiex <num value="100">.<choice><orig>C</orig><reg resp="#SDM">c</reg></choice>.</num> denieꝛs</l>
+                    <l xml:id="l-49r-1-4">Dont <num value="1">.i.</num> ſeulz n'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> i eꝛt <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> <del rend="strikethrough">choi</del> paies</l>
+                    <l xml:id="l-49r-1-5">Et ſ'il n'en <choice><abbr>eſtoiēt</abbr><expan resp="#SDM">eſtoie<ex>n</ex>t</expan></choice> aquite</l>
+                    <l xml:id="l-49r-1-6">Il n'i <choice><abbr>donroiēt</abbr><expan resp="#SDM">donroie<ex>n</ex>t</expan></choice> mie <num value="1">.i.</num> poil d'eꝛbe</l>
+                    <l xml:id="l-49r-1-7">Li vilains dit en<choice><orig/><reg resp="#SDM"> </reg></choice>ſon <choice><abbr>pꝛou՚be</abbr><expan resp="#SDM">pꝛou<ex>er</ex>be</expan></choice></l>
+                    <l xml:id="l-49r-1-8"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> de <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> folie ſ'eſmaie</l>
+                    <l xml:id="l-49r-1-9"><choice><abbr>Q˜</abbr><expan resp="#SDM">Q<ex>u'a</ex></expan></choice> ſes acroit <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>riēs</abbr><expan resp="#SDM">rie<ex>n</ex>s</expan></choice> ne<choice><orig/><reg resp="#SDM"> </reg></choice>paie<!-- NB proverb --></l>
+                    <l xml:id="l-49r-1-10"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> di veant <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> oꝛendꝛoit</l>
+                    <l xml:id="l-49r-1-11"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> aus <choice><abbr>vigneꝛōs</abbr><expan resp="#SDM">vigneꝛo<ex>n</ex>s</expan></choice> feꝛoit dꝛoit</l>
+                    <l xml:id="l-49r-1-12">Il <choice><abbr>deuroiēt</abbr><expan resp="#SDM">deuroie<ex>n</ex>t</expan></choice> <choice><abbr>plꝰ</abbr><expan resp="#SDM">pl<ex>us</ex></expan></choice> <choice><abbr>fñc</abbr><expan resp="#SDM">f<ex>ra</ex>nc</expan></choice> eſtre</l>
+                    <l xml:id="l-49r-1-13"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> <choice><abbr>ch՚r</abbr><expan resp="#SDM">ch<ex>evalie</ex>r</expan></choice> ne<choice><orig/><reg resp="#SDM"> </reg></choice>cleꝛ ne<choice><orig/><reg resp="#SDM"> </reg></choice>pꝛeſtre</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-49r-1-14"><seg xml:lang="lat">Sed<choice><orig/><reg resp="#SDM"> </reg></choice>libeꝛa<choice><orig/><reg resp="#SDM"> </reg></choice>nos</seg> <num value="1">.i.</num> ſentieꝛ</l>
+                    <l xml:id="l-49r-1-15">Le matin <choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice> moy leueꝛai</l>
+                    <l xml:id="l-49r-1-16"><choice><abbr>P˞</abbr><expan resp="#SDM">P<ex>our</ex></expan></choice> tous les vigneꝛont dirai</l>
+                    <l xml:id="l-49r-1-17">Pour les ceps qu'il ot plenté</l>
+                    <l xml:id="l-49r-1-18"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> du vin <choice><abbr>donnēt</abbr><expan resp="#SDM">donne<ex>n</ex>t</expan></choice> a<choice><orig/><reg resp="#SDM"> </reg></choice>plenté</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-49r-1-19">A malo <choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice> <choice><orig>mauués</orig><reg resp="#SDM">mauvés</reg></choice> <del rend="expunctuation">noie</del> manoie</l>
+                    <l xml:id="l-49r-1-20">Bon vin ſoꝛ lie <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> m'anoie</l>
+                    <l xml:id="l-49r-1-21"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice> pꝛeudons le <choice><abbr>tiēt</abbr><expan resp="#SDM">tie<ex>n</ex>t</expan></choice> au<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>maīs</abbr><expan resp="#SDM">mai<ex>n</ex>s</expan></choice></l>
+                    <l xml:id="l-49r-1-22"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> di qu'il ne vaut mie mains</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-49r-1-23"><choice><abbr>Amē</abbr><expan resp="#SDM">Ame<ex>n</ex></expan></choice> <choice><orig>dieus</orig><reg resp="#SDM">Dieus</reg></choice> gart toute gent</l>
+                    <l xml:id="l-49r-1-24"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> deſpendent largement</l>
+                </lg>
+            </div></body></text></TEI>

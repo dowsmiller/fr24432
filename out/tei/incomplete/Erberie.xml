@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="34r" xml:id="f34r"/><div type="text" n="9" xml:id="Erberie">
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-34r-1-1"><choice><orig>SEigneurs</orig><reg resp="#SDM">Seigneurs</reg></choice> qui<lb/>
+                    ci eſtes venus</l>
+                    <l xml:id="l-34r-1-2">Petit et grant<lb/>
+                    <choice><abbr>Iōnes</abbr><expan resp="#SDM">Io<ex>n</ex>nes</expan></choice> et chanus</l>
+                    <l xml:id="l-34r-1-3">Il vous eſt trop <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> <choice><orig>auenu</orig><reg resp="#SDM">avenu</reg></choice></l>
+                    <l xml:id="l-34r-1-4">Sachiez <choice><orig>deuoir</orig><reg resp="#SDM">devoir</reg></choice></l>
+                    <l xml:id="l-34r-1-5"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> ne <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> weil pas <choice><orig>deceuoir</orig><reg resp="#SDM">decevoir</reg></choice></l>
+                    <l xml:id="l-34r-1-6"><choice><abbr>Bn̄</abbr><expan resp="#SDM">B<ex>ie</ex>n</expan></choice> le pourres <choice><orig>apeꝛceuoir</orig><reg resp="#SDM">apeꝛcevoir</reg></choice></l>
+                    <l xml:id="l-34r-1-7">Ains que men uoiſſe</l>
+                    <l xml:id="l-34r-1-8">Aſees <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> ne faites noiſe</l>
+                    <l xml:id="l-34r-1-9">Si eſcoutez ſil ne <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> poiſe</l>
+                    <l xml:id="l-34r-1-10"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> ſui <num value="1">.i.</num> mires</l>
+                    <l xml:id="l-34r-1-11">S'ai eſté par <choice><orig>diueꝛs</orig><reg resp="#SDM">diveꝛs</reg></choice> empires</l>
+                    <l xml:id="l-34r-1-12">Du caire matenu li ſires</l>
+                    <l xml:id="l-34r-1-13">Plus d'un eſté</l>
+                    <l xml:id="l-34r-1-14">Lonc <choice><abbr>tēps</abbr><expan resp="#SDM">te<ex>m</ex>ps</expan></choice> ai <choice><orig>auec</orig><reg resp="#SDM">avec</reg></choice> li eſté</l>
+                    <l xml:id="l-34r-1-15">Grant auoi i'ai <choice><abbr>ꝯques</abbr><expan resp="#SDM"><ex>con</ex>ques</expan></choice>te</l>
+                    <l xml:id="l-34r-1-16">Meꝛ ai paſſe</l>
+                    <l xml:id="l-34r-1-17">Sim<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> reuing <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> lamoꝛee</l>
+                    <l xml:id="l-34r-1-18">Ou <choice><orig>i</orig><reg resp="#SDM">j</reg></choice>'ai fet <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> de moꝛee</l>
+                    <l xml:id="l-34r-1-19">Et <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> <placeName ref="#Salerne">ſaleꝛne</placeName></l>
+                    <l xml:id="l-34r-1-20"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> <placeName ref="#Burienne">burienne</placeName> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> <placeName ref="#Biterne">biteꝛne</placeName></l>
+                    <l xml:id="l-34r-1-21">En<placeName ref="#Puille">puille</placeName> en <placeName ref="#Calabre">calabꝛe</placeName> <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> <placeName ref="#Luserne">luſeꝛne</placeName></l>
+                    <l xml:id="l-34r-1-22">Ai heꝛbes pꝛiſſes</l>
+                    <l xml:id="l-34r-1-23"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> de <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> <choice><abbr>v՚tu</abbr><expan resp="#SDM">v<ex>er</ex>tu</expan></choice> ſont eſpꝛiſes</l>
+                    <l xml:id="l-34r-1-24">Sus <choice><abbr>q՚l</abbr><expan resp="#SDM">q<ex>ue</ex>l</expan></choice> que mal <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><abbr>ſoiēt</abbr><expan resp="#SDM">ſoie<ex>n</ex>t</expan></choice> miſes</l>
+
+                    <cb n="2" xml:id="cb-34r-2"/>
+                    <l xml:id="l-34r-2-1">Li maus ſenfuit</l>
+                    <l xml:id="l-34r-2-2"><choice><orig>Iuſqu'a</orig><reg resp="#SDM">Juſqu'a</reg></choice> la <choice><orig>riuieꝛe</orig><reg resp="#SDM">rivieꝛe</reg></choice> <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> bꝛint</l>
+                    <l xml:id="l-34r-2-3">D<choice><abbr>ū</abbr><expan resp="#SDM">u<ex>n</ex></expan></choice> <choice><abbr>flū</abbr><expan resp="#SDM">flu<ex>n</ex></expan></choice> deſpieꝛres <choice><orig>ioꝛ</orig><reg resp="#SDM">joꝛ</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> nuit</l>
+                    <l xml:id="l-34r-2-4">Fui pieꝛres <choice><abbr>q՚rre</abbr><expan resp="#SDM">q<ex>ue</ex>rre</expan></choice></l>
+                    <l xml:id="l-34r-2-5"><choice><abbr>P՚ſtres</abbr><expan resp="#SDM">P<ex>re</ex>ſtres</expan></choice> iehan <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> fet gueꝛre</l>
+                    <l xml:id="l-34r-2-6"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> noſe entreꝛ en la <choice><abbr>t՚re</abbr><expan resp="#SDM">t<ex>er</ex>re</expan></choice></l>
+                    <l xml:id="l-34r-2-7"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> fui au poꝛt</l>
+                    <l xml:id="l-34r-2-8"><choice><abbr>Ml՚t</abbr><expan resp="#SDM">M<ex>ou</ex>lt</expan></choice> riches pieꝛres <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> apoꝛt</l>
+                    <l xml:id="l-34r-2-9"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> font reſuſciteꝛ le moꝛt</l>
+                    <l xml:id="l-34r-2-10">Ce ſont feꝛrites</l><note resp="#LH4" place="margin" xml:id="note-34r-2-1">I vers manque.</note>
+                    <l xml:id="l-34r-2-11">Rubis. iagonces margueꝛites</l>
+                    <l xml:id="l-34r-2-12">Grenas ſtopacez</l>
+                    <l xml:id="l-34r-2-13"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> tella cpms <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> galagaces</l>
+                    <l xml:id="l-34r-2-14">Demoꝛt ne douteꝛa manaces</l>
+                    <l xml:id="l-34r-2-15">Cil qui les poꝛte</l>
+                    <l xml:id="l-34r-2-16">Fox eſt quiſe <choice><abbr>deſcōfoꝛte</abbr><expan resp="#SDM">deſco<ex>n</ex>foꝛte</expan></choice></l>
+                    <l xml:id="l-34r-2-17">Na garde <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> lieures l<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> poꝛte</l>
+                    <l xml:id="l-34r-2-18">S'il ſe tient <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice></l>
+                    <l xml:id="l-34r-2-19">Sina garde de bai dechien</l>
+                    <l xml:id="l-34r-2-20">Ne de rechan daſne ancien</l>
+                    <l xml:id="l-34r-2-21">S'il neſt couars</l>
+                    <l xml:id="l-34r-2-22">Il na garde detoutes pars</l>
+                    <l xml:id="l-34r-2-23">Charbon ne los <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> garolas</l>
+                    <l xml:id="l-34r-2-24"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſont tuit inde</l>
+                    <l xml:id="l-34r-2-25">Heꝛbes a poꝛt des deſeꝛs d'<placeName ref="#India"><choice><abbr>īnde</abbr><expan resp="#SDM">i<ex>n</ex>nde</expan></choice></placeName></l>
+                    <l xml:id="l-34r-2-26"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> de la <choice><abbr>t՚re</abbr><expan resp="#SDM">t<ex>er</ex>re</expan></choice> <placeName ref="#Lincorinde">lincoꝛinde</placeName></l>
+                    <l xml:id="l-34r-2-27"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſiet ſus londe</l>
+                    <l xml:id="l-34r-2-28">Eſquatre <choice><abbr>ꝑties</abbr><expan resp="#SDM">p<ex>ar</ex>ties</expan></choice> du <choice><abbr>mōde</abbr><expan resp="#SDM">mo<ex>n</ex>de</expan></choice></l>
+                    <l xml:id="l-34r-2-29">Si<choice><abbr>cōme</abbr><expan resp="#SDM">co<ex>m</ex>me</expan></choice> il <choice><abbr>tiēt</abbr><expan resp="#SDM">tie<ex>n</ex>t</expan></choice> alaroonde</l>
+                    <l xml:id="l-34r-2-30">Oꝛ me crees</l>
+                    <l xml:id="l-34r-2-31"><choice><abbr>Vꝰ</abbr><expan resp="#SDM">V<ex>ous</ex></expan></choice> ne <choice><orig>ſauez</orig><reg resp="#SDM">ſavez</reg></choice> cui <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> uees</l>
+                    <l xml:id="l-34r-2-32">Teſſiez <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſi vous ſees</l>
+                    <l xml:id="l-34r-2-33">Veez meꝛbeꝛie</l>
+                    <l xml:id="l-34r-2-34"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> di <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> <persName ref="#Mary">ſainte <choice><orig>marie</orig><reg resp="#SDM">Marie</reg></choice></persName></l>
+                    <l xml:id="l-34r-2-35"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> ce neſt mie feꝛpeꝛie</l>
+                    <l xml:id="l-34r-2-36">Mes <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> noblece</l>
+                    <l xml:id="l-34r-2-37"><del resp="#LH?" rend="strikethrough"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> leꝛbe qui les vez redꝛece</del></l>
+                    <l xml:id="l-34r-2-38"><del resp="#LH?" rend="strikethrough"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> celle qui les cons eſtrece</del></l>
+
+                    <pb n="34v" xml:id="f34v"/>
+                    <cb n="1" xml:id="cb-34v-1"/>
+                    <l xml:id="l-34v-1-1">A pou de<choice><abbr>paīne</abbr><expan resp="#SDM">pai<ex>n</ex>ne</expan></choice></l>
+                    <l xml:id="l-34v-1-2">De toutes fieures foꝛs <choice><abbr>qr̃taine</abbr><expan resp="#SDM">q<ex>ua</ex>rtaine</expan></choice></l>
+                    <l xml:id="l-34v-1-3">Garis <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> <choice><abbr>maīs</abbr><expan resp="#SDM">mai<ex>n</ex>s</expan></choice> d'une <choice><abbr>ſemaīne</abbr><expan resp="#SDM">ſemai<ex>n</ex>ne</expan></choice></l>
+                    <l xml:id="l-34v-1-4">Ce neſt pas faute</l>
+                    <l xml:id="l-34v-1-5"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> ſi garis de goute fautre</l>
+                    <l xml:id="l-34v-1-6"><choice><orig>Ia</orig><reg resp="#SDM">Ja</reg></choice> tant n<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> eꝛt baſſe ne haute</l>
+                    <l xml:id="l-34v-1-7">Toute la bat</l>
+                    <l xml:id="l-34v-1-8"><del resp="#LH?" rend="strikethrough">Si la <choice><abbr>vaīne</abbr><expan resp="#SDM">vai<ex>n</ex>ne</expan></choice> du cul</del><add resp="#LH4" place="above">Se la vainne du cul</add> <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> bat</l>
+                    <l xml:id="l-34v-1-9"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> en garrai <choice><abbr>sāz</abbr><expan resp="#SDM">ſa<ex>n</ex>z</expan></choice> debat</l>
+                    <l xml:id="l-34v-1-10"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> de la dent</l>
+                    <l xml:id="l-34v-1-11">Gariſie trop <choice><abbr>apeꝛtemēt</abbr><expan resp="#SDM">apeꝛteme<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-34v-1-12"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> <num value="1">.i.</num> petitet <choice><abbr>doignemēt</abbr><expan resp="#SDM">doigneme<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-34v-1-13"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> vous diroie</l>
+                    <l xml:id="l-34v-1-14">Oez <choice><abbr>cōmēt</abbr><expan resp="#SDM">co<ex>m</ex>me<ex>n</ex>t</expan></choice> i<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> confirai</l>
+                    <l xml:id="l-34v-1-15"><choice><orig>Ia</orig><reg resp="#SDM">Ja</reg></choice> auconſire ne mentirai</l>
+                    <l xml:id="l-34v-1-16">Ceſt ſans riote</l>
+                    <l xml:id="l-34v-1-17"><choice><abbr>P՚nez</abbr><expan resp="#SDM">P<ex>re</ex>nez</expan></choice> ſain de la marmote</l>
+                    <l xml:id="l-34v-1-18">De la meꝛde de la linote</l>
+                    <l xml:id="l-34v-1-19">Au mardi main</l>
+                    <l xml:id="l-34v-1-20">Et de la fuelle du <choice><abbr>plātain</abbr><expan resp="#SDM">pla<ex>n</ex>tain</expan></choice></l>
+                    <l xml:id="l-34v-1-21">Et de leſtront de la <del resp="#LH?" rend="strikethrough">putain</del><add resp="#LH4" place="above">putain</add></l>
+                    <l xml:id="l-34v-1-22"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſoit <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> vielle</l>
+                    <l xml:id="l-34v-1-23">Et de la poudꝛe deleſtrille</l>
+                    <l xml:id="l-34v-1-24"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> du rouil de la faucille</l>
+                    <l xml:id="l-34v-1-25">Et de la laine</l>
+                    <l xml:id="l-34v-1-26">Et de leſcoꝛce de lauaine</l>
+                    <l xml:id="l-34v-1-27">Pilee <choice><abbr>p՚mieꝛ</abbr><expan resp="#SDM">p<ex>re</ex>mieꝛ</expan></choice> <choice><orig>ioꝛ</orig><reg resp="#SDM">joꝛ</reg></choice> de ſemaine</l>
+                    <l xml:id="l-34v-1-28">Sien feꝛes</l>
+                    <l xml:id="l-34v-1-29"><num value="1">.I.</num> plaſtre <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> du <choice><orig>ius</orig><reg resp="#SDM">jus</reg></choice> laueꝛez</l>
+                    <l xml:id="l-34v-1-30">La<choice><abbr>dēt</abbr><expan resp="#SDM">de<ex>n</ex>t</expan></choice>. lemplaſtre meteꝛez</l>
+                    <l xml:id="l-34v-1-31">Deſus la ioe</l>
+                    <l xml:id="l-34v-1-32">Doꝛmez <num value="1">.i.</num> pou <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> le <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> loe</l>
+                    <l xml:id="l-34v-1-33">Sau <choice><orig>leueꝛ</orig><reg resp="#SDM">leveꝛ</reg></choice> nia meꝛde ouboe</l>
+                    <l xml:id="l-34v-1-34">Diex vous deſtruie</l>
+                    <l xml:id="l-34v-1-35">Eſcoutez ſi ne <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> ennuie</l>
+                    <l xml:id="l-34v-1-36">Ce neſt pas <choice><orig>ioꝛnee</orig><reg resp="#SDM">joꝛnee</reg></choice> de truie</l>
+                    <l xml:id="l-34v-1-37">Cui poez faire</l>
+                    <l xml:id="l-34v-1-38"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> cui lapieꝛre fet bꝛeꝛe</l>
+
+                    <cb n="2" xml:id="cb-34v-2"/>
+                    <l xml:id="l-34v-2-1"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> vous en garrai <choice><abbr>sās</abbr><expan resp="#SDM">ſa<ex>n</ex>s</expan></choice> <choice><abbr>ꝯtraire</abbr><expan resp="#SDM"><ex>con</ex>traire</expan></choice></l>
+                    <l xml:id="l-34v-2-2">Se gi mes cure</l>
+                    <l xml:id="l-34v-2-3">De foir eſchaufe de routure</l>
+                    <l xml:id="l-34v-2-4">Garis <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> toſt adés meſure</l>
+                    <l xml:id="l-34v-2-5">A <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> qu'il tourt</l>
+                    <l xml:id="l-34v-2-6"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> ſe <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> <choice><orig>ſauez</orig><reg resp="#SDM">ſavez</reg></choice> <choice><abbr>hōme</abbr><expan resp="#SDM">ho<ex>m</ex>me</expan></choice> ſourt</l>
+                    <l xml:id="l-34v-2-7">Faites le venir a ma court</l>
+                    <l xml:id="l-34v-2-8"><choice><orig>Ia</orig><reg resp="#SDM">Ja</reg></choice> ieꝛt touz ſains</l>
+                    <l xml:id="l-34v-2-9"><choice><abbr>Onq՚s</abbr><expan resp="#SDM">Onq<ex>ue</ex>s</expan></choice> anul <choice><orig>ioꝛ</orig><reg resp="#SDM">joꝛ</reg></choice> noi mains</l>
+                    <l xml:id="l-34v-2-10">Se <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> me gariſt ces <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> <choice><abbr>maīs</abbr><expan resp="#SDM">mai<ex>n</ex>s</expan></choice></l>
+                    <l xml:id="l-34v-2-11">Qui loꝛra <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice></l>
+                    <l xml:id="l-34v-2-12">Oez ce <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> len <choice><abbr>mēcheꝛia</abbr><expan resp="#SDM">me<ex>n</ex>cheꝛia</expan></choice></l>
+                    <l xml:id="l-34v-2-13">Ma dame qui m<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> voia ca</l>
+                </lg>
+                <p xml:id="p-34v-2-1">
+                    Belles gens <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> ne ſui pas de<lb/>
+                    ces <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice> pꝛeeſcheeurs. ne de ces<lb/>
+                    <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice> heꝛbieꝛs. Qui vont par<lb/>
+                    <choice><orig>deuant</orig><reg resp="#SDM">devant</reg></choice> ces mouſtieꝛs a ces <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice><lb/>
+                    chapas maucouſues qui poꝛtent<lb/>
+                    boites <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſaches. <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſi eſtandent <choice><orig>vn</orig><reg resp="#SDM">un</reg></choice><lb/>
+                    tappi. Car tiens vent poiure et<lb/>
+                    <choice><abbr>cōmin</abbr><expan resp="#SDM">co<ex>m</ex>min</expan></choice>. <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> autres eſpices qui n<choice><abbr>ōt</abbr><expan resp="#SDM">o<ex>n</ex>t</expan></choice><lb/>
+                    pas autant deſaches <choice><abbr>cōme</abbr><expan resp="#SDM">co<ex>m</ex>me</expan></choice> il ont<lb/>
+                    ſachiez que de ceulz ne ſui <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> pas<lb/>
+                    ains ſui a <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> dame qui a a non<lb/>
+                    madame crote de <persName ref="#Salerne">ſaleꝛne</persName>. qui fet<lb/>
+                    cueurechiez de ces oꝛeilles <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> les ſour<lb break="no"/>
+                    cilz li pandent a <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> chaannes dar<lb break="no"/>
+                    gent par de ſus les eſpaules. Sachi<lb break="no"/>
+                    ez que ceſt la plus ſa ge dame <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> ſoit<lb/>
+                    es quatre parties du monde. Ma<lb/>
+                    dame ſi nous en voie en diueꝛſes<lb/>
+                    teꝛres <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en <choice><orig>diueꝛs</orig><reg resp="#SDM">diveꝛs</reg></choice> pais. En <placeName ref="#Puille">puil<lb break="no"/>
+                    le</placeName> en <placeName ref="#Calabre">qualabꝛe</placeName> en <placeName ref="#Tuscany">toſquane</placeName> en<lb/>
+                    <placeName ref="#Germany">alemaingne</placeName> en <placeName ref="#Sessoigne">ſeſſoingne</placeName> en<lb/>
+                    <placeName ref="#Gascoigne">gaſcoingne</placeName> en <choice><abbr>tr՚e</abbr><expan resp="#SDM">t<ex>er</ex>re</expan></choice> de <placeName ref="#LaBour">la bour</placeName> poꝛ<lb/>
+                    occirre les beſtes <choice><orig>ſauuages</orig><reg resp="#SDM">ſauvages</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> pour<lb/>
+                    treꝛe les <choice><abbr>oingnemēs</abbr><expan resp="#SDM">oingneme<ex>n</ex>s</expan></choice> pour doneꝛ<lb/>
+                    medecine aceus qui ont les ma<lb break="no"/>
+
+                    <pb n="35r" xml:id="f35r"/>
+                    <cb n="1" xml:id="cb-35r-1"/>
+                    ladies es coꝛs. Madame ſime dit<lb/>
+                    et comanda que <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> quel lieu que<lb/>
+                    <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> ueniſſe. que <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> deiſſe aucunne<lb/>
+                    choſe ſi que cil qui <choice><abbr>fuſſēt</abbr><expan resp="#SDM">fuſſe<ex>n</ex>t</expan></choice> en tour<lb/>
+                    moi ipꝛeiſſent bon eſſemple.<lb/>
+                    Et pour<choice><orig/><reg resp="#SDM"> </reg></choice>ce quelle mefiſt <choice><orig>iureꝛ</orig><reg resp="#SDM">jureꝛ</reg></choice> ſus<lb/>
+                    ſains <choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> me parti de lui. <choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice><lb/>
+                    vous apꝛendꝛe agarir du mal des<lb/>
+                    <choice><orig>ueꝛs</orig><reg resp="#SDM">veꝛs</reg></choice> ſe <choice><orig>uous</orig><reg resp="#SDM">vous</reg></choice> ſe voulez oir de<choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice><lb/>
+                    Aucuns me <choice><abbr>demandēt</abbr><expan resp="#SDM">demande<ex>n</ex>t</expan></choice> dont li <choice><abbr>v՚</abbr><expan resp="#SDM">v<ex>er</ex></expan></choice><lb/>
+                    <choice><abbr>viennēt</abbr><expan resp="#SDM">vienne<ex>n</ex>t</expan></choice>. Iel vous fais <choice><orig>aſauoir</orig><reg resp="#SDM">aſavoir</reg></choice> qu'il<lb/>
+                    <choice><abbr>viēnent</abbr><expan resp="#SDM">vie<ex>n</ex>nent</expan></choice> dediueꝛſes viandes res<lb break="no"/>
+                    chaufees <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> de ces vins <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> fuſtez. <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> les<lb/>
+                    autres ſi ſe contienent eſcoꝛs par<lb/>
+                    chaleur <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> par humeur. Car ſi com<lb/>
+                    dient li philoſophe toutes choſes en<lb/>
+                    ſont criees <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> par ce ſi <choice><abbr>vienēt</abbr><expan resp="#SDM">viene<ex>n</ex>t</expan></choice> li veꝛ<lb/>
+                    es coꝛs qui montent iuſquau cueꝛ<lb/>
+                    <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> ſi font mourir d'une maladie c<choice><abbr>ō</abbr><expan resp="#SDM">o<ex>n</ex></expan></choice><lb/>
+                    apelle moꝛt ſoubitaine. ſaingnies<lb/>
+                    vous que <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> engart touz pour<lb/>
+                    lamaladie des <choice><orig>ueꝛs</orig><reg resp="#SDM">veꝛs</reg></choice> garir auos<lb/>
+                    iex laueez auos piez la marchiez<lb/>
+                    lameilloꝛ heꝛbe qui ſoit es<choice><abbr>q̃tre</abbr><expan resp="#SDM">q<ex>ua</ex>tre</expan></choice> par<lb break="no"/>
+                    ties du monde. Ceſt larmoiſe. ces<lb/>
+                    fames ſen ſainent le ſoir de <placeName ref="StJean">la ſaint<lb/>
+                    iehan</placeName> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en font chapiax <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> leur chiés<lb/>
+                    <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> dient que goute naueꝛtin ne les<lb/>
+                    puet pꝛendꝛe nen chief n'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> bꝛas<lb/>
+                    n'en pié n'en pain. Mes <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> me <choice><abbr>m՚<lb break="no"/>ueil</abbr><expan resp="#SDM">m<ex>er</ex><lb break="no"/>ueil</expan></choice>
+                    <choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice> les teſtes ne leur bꝛis<lb break="no"/>
+                    ſent <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> que li coꝛs ne rompent par<lb break="no"/>
+                    mi tant aleꝛbe de veꝛtu. En celle<lb/>
+                    <placeName ref="#Champagne">champaingne</placeName> ou <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> fui nez la<lb break="no" rend="hyphenBefore"/>
+                    pelle lan marreboꝛc qui vault<lb/>
+                    autant <choice><abbr>cōme</abbr><expan resp="#SDM">co<ex>m</ex>me</expan></choice> lameꝛe des <choice><abbr>h՚bes</abbr><expan resp="#SDM">h<ex>er</ex>bes</expan></choice><lb/>
+                    de celle heꝛbe penres trois racines<lb/>
+                    <num value="5">.v.</num> fueilles de ſauge <num value="10">.xx.</num> fueilles de<lb/>
+
+                    <cb n="2" xml:id="cb-35r-2"/>
+                    plantain batez en <num value="1">.i.</num> moꝛtieꝛ<lb/>
+                    de cuiure a <num value="1">.i.</num> peſteil defeꝛ deſiu<lb break="no"/>
+                    nes vous du ius par trois ma<lb break="no"/>
+                    tins garis ſeꝛes de la maladie<lb/>
+                    des veꝛs. Oꝛ oſtez les chapeꝛons<lb/>
+                    tendez les oꝛeille regardes mes<lb/>
+                    heꝛbes que ma dame en ceſt pais <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><lb/>
+                    en ceſte teꝛre et pour<choice><orig/><reg resp="#SDM"> </reg></choice>ce quele veut<lb/>
+                    que li <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice> ipuiſt <choice><orig>auenir</orig><reg resp="#SDM">avenir</reg></choice> auſi<lb/>
+                    <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> <choice><orig>auenir</orig><reg resp="#SDM">avenir</reg></choice> com li riches Elle me<lb/>
+                    diſt que <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> en feiſſe denree. <choice><abbr>Q˜r</abbr><expan resp="#SDM">Q<ex>ua</ex>r</expan></choice><lb/>
+                    tiex a <num value="1">.i.</num> denieꝛ en ſa bource qui<lb/>
+                    nia pas <num value="5">.v.</num> <choice><abbr>s՚</abbr><expan resp="#SDM">s<ex>ous</ex></expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> diſt que <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> pꝛeiſſe<lb/>
+                    <num value="1">.i.</num> demeꝛ de la <choice><abbr>mōnoie</abbr><expan resp="#SDM">mo<ex>n</ex>noie</expan></choice> <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> couroit<lb/>
+                    elpais <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en la teꝛre ou <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> nen<lb/>
+                    roie a<placeName ref="#Paris"><choice><orig>paris</orig><reg resp="#SDM">Paris</reg></choice></placeName> <num value="1">.i.</num> pariſſi a <placeName ref="#Orleans">oꝛliens</placeName> <num value="1">.i.</num><lb/>
+                    oꝛlenoiz. a <placeName ref="#Estampes">eſtampes</placeName> <num value="1">.i.</num> eſtam<lb break="no"/>
+                    poois. a <placeName ref="#Barre">bar</placeName> <num value="1">.i.</num> barrois. a <placeName ref="#Viane">uiane</placeName><lb/>
+                    <num value="1">.i.</num> uianois. a <placeName ref="#Clermont">cloeꝛmont</placeName> <num value="1">.i.</num> <choice><abbr>cleꝛmō</abbr><expan resp="#SDM">cleꝛmo<ex>n</ex></expan></choice><!-- Note to self: the places mentioned here are different to those in other MSS --><lb/>
+                    dois. a<placeName ref="#Dijon">dylon</placeName> <num value="1">.i.</num> <choice><abbr>diiōnois</abbr><expan resp="#SDM">diio<ex>n</ex>nois</expan></choice>. a <placeName ref="#Maçon">mas<lb break="no"/>
+                    con</placeName> <num value="1">.i.</num> <choice><abbr>maſcoīs</abbr><expan resp="#SDM">maſcoi<ex>n</ex>s</expan></choice>. a <placeName ref="#Tours">toꝛs</placeName> <num value="1">.i.</num> toꝛnois<lb/>
+                    a <placeName ref="#Troies">troies</placeName> <num value="1">.i.</num> treeſſien. a <placeName ref="#Reims">rains</placeName> <num value="1">.i.</num><lb/>
+                    rencien. a.<placeName ref="#Province">pꝛouuins</placeName> <num value="1">.i.</num> pꝛoue<lb break="no"/>
+                    noiſien. a <placeName ref="#Miens">miens</placeName> <num value="1">.i.</num> moucien.<lb/>
+                    a arras <num value="1">.i.</num> artiſien. pour du <choice><abbr>paī</abbr><expan resp="#SDM">pai<ex>n</ex></expan></choice><lb/>
+                    pour du vin <choice><orig>auec</orig><reg resp="#SDM">avec</reg></choice> moy pour de<lb/>
+                    lauaine amon roncin. Car qui<lb/>
+                    dautel ſeꝛt dautel doit <choice><orig>viure</orig><reg resp="#SDM">vivre</reg></choice>. Et<lb/>
+                    <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> di que ſil eſtoit ſi <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice> ou<lb/>
+                    <choice><abbr>hōme</abbr><expan resp="#SDM">ho<ex>m</ex>me</expan></choice> ou fame qui n'eüſt point<lb/>
+                    dargent. veniſt <choice><orig>auant</orig><reg resp="#SDM">avant</reg></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> li pꝛés<lb break="no"/>
+                    teꝛoie uns <gap reason="damage" agent="water"/><lb/>
+                    <gap reason="damage" agent="water"/><lb/>
+                    <gap reason="damage" agent="water"/><lb/>
+                    <gap reason="damage" agent="water"/><lb/>
+                    <gap reason="damage" agent="water"/><lb/>
+                    <gap reason="damage" agent="water"/><lb/>
+                    <gap reason="damage" agent="water"/><lb/>
+
+                    <pb n="35v" xml:id="f35v"/>
+                    <cb n="1" xml:id="cb-35v-1"/>
+                    li quars ne ſoit pour lame de ſon<lb/>
+                    peꝛe <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> de ſameꝛe en remiſſion deloꝛ<lb/>
+                    pechiez. Ces heꝛbes <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> ne men<lb break="no"/>
+                    iurez pas. Car il na ſi bon buef <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice><lb/>
+                    ceſt pais ne ſi foꝛt deſtrieꝛ que ſil<lb/>
+                    en <choice><orig>auoit</orig><reg resp="#SDM">avoit</reg></choice> auſi gros <choice><abbr>cōme</abbr><expan resp="#SDM">co<ex>m</ex>me</expan></choice> <num value="1">.i.</num> pois<lb/>
+                    ſus la langue qu'il ne mouruſt<lb/>
+                    de male moꝛt. tant ſont foꝛs <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><lb/>
+                    ameꝛes et cequi eſt ameꝛ ala<lb/>
+                    bouche ſi eſt bon aucheꝛ vous les<lb/>
+                    me metres <num value="3">.iii.</num> <choice><orig>iours</orig><reg resp="#SDM">jours</reg></choice> doꝛmir <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice><lb/>
+                    vin blanc ſe vous nauez blanc<lb/>
+                    pꝛenez veꝛmeil ſeuous nauez<lb/>
+                    veꝛmeil <choice><abbr>p՚nez</abbr><expan resp="#SDM">p<ex>re</ex>nez</expan></choice> chaſtain. Se <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice><lb/>
+                    nauez chaſtain <choice><abbr>p՚nez</abbr><expan resp="#SDM">p<ex>re</ex>nez</expan></choice> de la belle<lb/>
+                    yaue cleꝛe car tiex a <num value="1">.i.</num> puis de<lb break="no"/>
+                    uant ſon huis qui na pas <choice><orig>vn</orig><reg resp="#SDM">un</reg></choice><lb/>
+                    tonnel de vin en ſon hoſtel. Si <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice><lb/>
+                    en <choice><orig><choice><abbr>des geūneꝛez</abbr><expan resp="#SDM">des geu<ex>n</ex>neꝛez</expan></choice></orig><reg resp="#SDM"><choice><abbr>desgeūneꝛez</abbr><expan resp="#SDM">desgeu<ex>n</ex>neꝛez</expan></choice></reg></choice> par <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num> <choice><abbr>matīs</abbr><expan resp="#SDM">mati<ex>n</ex>s</expan></choice><lb/>
+                    ſe vous ifailliez <num value="1">.i.</num> pꝛenez autre<lb/>
+                    ſe vous ifailliez le quart <choice><abbr>p՚nes</abbr><expan resp="#SDM">p<ex>re</ex>nes</expan></choice><lb/>
+                    lequint car ſe ne ſont pas char<lb break="no"/>
+                    roi. Et <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> vous di par la <choice><abbr>paſſiō</abbr><expan resp="#SDM">paſſio<ex>n</ex></expan></choice><lb/>
+                    dont <choice><orig>dieus</orig><reg resp="#SDM">Dieus</reg></choice> maudiſt <persName ref="#Corcabas">coꝛbacas le<lb/>
+                    <choice><orig>iuif</orig><reg resp="#SDM">Juif</reg></choice> qui foꝛga les <num value="30">.xxx.</num> pieces dar<lb break="no"/>
+                    gent</persName> enlatou d'<placeName ref="#Abilant">abilant</placeName> a <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num><lb/>
+                    luies de <placeName ref="#Jerusalem"><choice><orig>ieꝛuſalem</orig><reg resp="#SDM">Jeꝛuſalem</reg></choice></placeName> dont <choice><orig>dieus</orig><reg resp="#SDM">Dieus</reg></choice><lb/>
+                    fu vendus que <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> ſeꝛez gueꝛis<lb/>
+                    de diueꝛſes maladies <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> dediueꝛs<lb/>
+                    malhains de toutes fieures <choice><abbr>sās</abbr><expan resp="#SDM">ſa<ex>n</ex>s</expan></choice><lb/>
+                    quartaines de toutes goutes<lb/>
+                    ſanz palazine denfleure du coꝛs<lb/>
+                    de la <del resp="#LH?" rend="strikethrough">vaine de cul</del><add resp="#LH4" place="above">vaine de cul</add> ſelle vous de<lb break="no"/>
+                    bat car ſe mes peꝛes <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> manieꝛe es<lb break="no"/>
+                    toient aupeꝛil delamoꝛt <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> il me<lb/>
+                    demandoit lameilleur heꝛbe <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><lb/>
+                    ieleur peuſſe <choice><abbr>dōneꝛ</abbr><expan resp="#SDM">do<ex>n</ex>neꝛ</expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> leur don<lb break="no"/>
+                    roie ceſte.</p>
+            </div></body></text></TEI>

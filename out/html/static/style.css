@@ -22,48 +22,62 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body.has-fixed-header {
+  padding-top: 130px;
+}
+
 
 /* ----------------------------------------------------------
    INDEX PAGE
 ---------------------------------------------------------- */
-h1 {
-  font-size: 2.2em;
-  margin-bottom: 24px;
+.index-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(24px) saturate(220%) brightness(105%);
+  -webkit-backdrop-filter: blur(24px) saturate(220%) brightness(105%);
+  background: linear-gradient(120deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+  border-bottom: 1px solid rgba(0,122,255,0.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08), inset 0 0 10px rgba(255,255,255,0.1);
+  
+  text-align: center;
+  padding: 25px 24px;
+  z-index: 1000;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+
+.index-header h1 {
+  font-size: 2.1em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
   color: #111;
   text-align: center;
-  padding-bottom: 10px;
   position: relative;
 }
 
-h1::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  width: 50%;
-  height: 3px;
-  background: linear-gradient(90deg,
-    rgba(0,122,255,0.4), rgba(0,200,255,0.2));
-  border-radius: 3px;
-}
-
-h1 .subtitle {
+.index-header h1 .subtitle {
   display: block;
+  margin-top: 5px;
   font-size: 0.5em;
   font-weight: 400;
   font-style: italic;
   color: #888;
 }
 
-.cards-wrapper {
+.overview-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0 20px 0;
+  width: 100%;
 }
 
-.card {
+.overview {
   display: inline-block;
-  margin-bottom: 32px;
+  margin: 15px auto;
   padding: 24px;
   border-radius: 16px;
   background: rgba(255,255,255,0.7);
@@ -71,7 +85,106 @@ h1 .subtitle {
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   border-left: 4px solid rgba(0,122,255,0.25);
   transition: all 0.35s ease;
-  width: max-content;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.overview:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-left-color: rgba(0,122,255,0.45);
+}
+
+.overview a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #007acc !important;
+  border-bottom: 1px dashed rgba(0, 122, 255, 0.4);
+}
+
+.overview a:hover {
+  color: #005fa3 !important;
+  border-bottom-color: #005fa3;
+}
+
+.overview p {
+  margin: 0.8rem 0 0.8rem 0;
+  color: #222;
+}
+
+.overview ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.overview li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+  color: #222;
+}
+
+.group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+  padding: 8px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(0, 122, 255, 0.75);
+  letter-spacing: 1px;
+  text-align: center; 
+  user-select: none;
+  position: relative;
+  background: none;
+}
+
+.group-heading::before,
+.group-heading::after {
+  content: '';
+  flex: 1;
+  height: 3px;
+}
+
+.group-heading::before {
+  background: linear-gradient(90deg, rgba(0,122,255,0.2) 0%, rgba(0,122,255,0) 100%);
+}
+
+.group-heading::after {
+  background: linear-gradient(90deg, rgba(0,122,255,0) 0%, rgba(0,122,255,0.2) 100%);
+}
+
+.cards-group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 24px;
+}
+
+.card {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-left: 4px solid rgba(0,122,255,0.25);
+  transition: all 0.35s ease;
+  width: 100%;
   text-align: left;
 }
 
@@ -81,10 +194,47 @@ h1 .subtitle {
   border-left-color: rgba(0,122,255,0.45);
 }
 
-.card h2 {
+.card[data-state="complete"] {
+  border-left-color: rgba(40, 200, 120, 0.45);
+}
+
+.card[data-state="complete"]:hover {
+  border-left-color: rgba(40, 200, 120, 0.7);
+}
+
+.card[data-state="incomplete"] {
+  border-left-color: rgba(170, 170, 170, 0.25);
+  opacity: 0.9;
+}
+
+.card[data-state="incomplete"]:hover {
+  border-left-color: rgba(170, 170, 170, 0.45);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.card-title {
   font-size: 1.6em;
-  margin-bottom: 12px;
+  margin-bottom: 0 !important;
   color: #222;
+}
+
+.folio-range {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(0, 122, 255, 0.7);
+  background: rgba(0, 122, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-left: 15px;
 }
 
 .card a {
@@ -96,6 +246,56 @@ h1 .subtitle {
 .card a:hover {
   color: #000;
   border-bottom-color: rgba(0,122,255,0.45);
+}
+
+.card-summary {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.card-warning {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;  
+  background-color: rgba(255, 193, 7, 0.15);
+  color: #a87e00;
+  border: 1px solid rgba(255, 193, 7, 0.4);  
+  font-style: italic;
+  font-weight: 500;  
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.1);
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.card-warning::before {
+  content: '⚠️';
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  line-height: 1; 
+}
+
+.edition-link-container {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.edition-link {
+  font-weight: 500;
+  color: #007acc !important;
+  border-bottom: 1px dashed rgba(0, 122, 255, 0.4);
+}
+
+.edition-link:hover {
+  color: #005fa3 !important;
+  border-bottom-color: #005fa3;
 }
 
 .link-buttons {
@@ -122,6 +322,38 @@ h1 .subtitle {
   background: rgba(0, 123, 255, 0.6);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.link-buttons button.disabled {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #888;
+  background: rgba(170, 170, 170, 0.15);
+  border-radius: 12px;
+  border: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+  transition: none;
+}
+
+.link-buttons button.disabled:hover {
+  transform: none;
+  box-shadow: none;
+  background: rgba(170, 170, 170, 0.15);
+}
+
+.arlima-button {
+  background: rgba(113, 152, 152, 0.5) !important;
+  color: #000 !important;
+  box-shadow: 0 4px 12px rgba(113, 152, 152, 0.15) !important;
+}
+
+.arlima-button:hover {
+  background: rgba(113, 152, 152, 0.9) !important;
+  box-shadow: 0 6px 18px rgba(113, 152, 152, 0.2);
 }
 
 
@@ -220,7 +452,7 @@ h1 .subtitle {
 
 .meta h1 {
   font-size: 1.8rem;
-  margin: 0 0 0.5rem 0;
+  margin-top: 1.5rem;
   color: #111;
 }
 

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="281r" xml:id="f281r"/><div type="text" n="70" xml:id="VilainDespensier">
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-281r-2-42"><choice><orig>NE</orig><reg resp="#SDM">Ne</reg></choice> ſai a<choice><orig/><reg resp="#SDM"> </reg></choice>quoi<lb/>
+                    gentis homs penſe</l>
+                    <l xml:id="l-281r-2-43">Qui vilain charge<lb/>
+                    ſa deſpenſe</l>
+                    <l xml:id="l-281r-2-44">Vilains de cuer de mal poꝛpens</l>
+                    <l xml:id="l-281r-2-45">Ycis ne puet vëoir deſpens.</l>
+
+                    <pb n="281v" xml:id="f281v"/>
+                    <cb n="1" xml:id="cb-281v-1"/>
+                    <l xml:id="l-281v-1-1">Ainz ſamble <choice><abbr>ꝯ</abbr><expan resp="#SDM"><ex>c'on</ex></expan></choice> l'amaine <choice><abbr>pēdꝛe</abbr><expan resp="#SDM">pe<ex>n</ex>dꝛe</expan></choice></l>
+                    <l xml:id="l-281v-1-2"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> il voit ſon ſeignoꝛ <choice><abbr>deſpēdꝛe</abbr><expan resp="#SDM">deſpe<ex>n</ex>dꝛe</expan></choice></l>
+                    <l xml:id="l-281v-1-3"><choice><abbr>P˞</abbr><expan resp="#SDM">P<ex>our</ex></expan></choice> faire <choice><abbr>honn˞</abbr><expan resp="#SDM">honn<ex>eur</ex></expan></choice> ſon mal penſer</l>
+                    <l xml:id="l-281v-1-4">N'en puet <choice><orig>couurir</orig><reg resp="#SDM">couvrir</reg></choice> au<choice><orig/><reg resp="#SDM"> </reg></choice>deſpenſer</l>
+                    <l xml:id="l-281v-1-5">Car chiere en<choice><orig/><reg resp="#SDM"> </reg></choice>fait triſte <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>pēſiue</abbr><expan resp="#SDM">pe<ex>n</ex>ſiue</expan></choice></l>
+                    <l xml:id="l-281v-1-6">Si<choice><orig/><reg resp="#SDM"> </reg></choice>n'eſt nus <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> le deſpens ſiue</l>
+                    <l xml:id="l-281v-1-7">Ne l'en hace tant va <choice><abbr>pensāt</abbr><expan resp="#SDM">penſa<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-281v-1-8">D'oꝛdure eſt deſpers <choice><abbr>deſpēsāt</abbr><expan resp="#SDM">deſpe<ex>n</ex>ſa<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-281v-1-9">Car fuſt il es <choice><abbr>maīs</abbr><expan resp="#SDM">mai<ex>n</ex>s</expan></choice> du <choice><abbr>pēdeur</abbr><expan resp="#SDM">pe<ex>n</ex>deur</expan></choice></l>
+                    <l xml:id="l-281v-1-10"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ne puet vëoir deſpendeur</l>
+                    <l xml:id="l-281v-1-11"><choice><abbr>Bn̄</abbr><expan resp="#SDM">B<ex>ie</ex>n</expan></choice> het en <choice><abbr>honn˞</abbr><expan resp="#SDM">honn<ex>eur</ex></expan></choice> deſpendus</l>
+                    <l xml:id="l-281v-1-12">Vilains deſpenſiers ſoit <choice><abbr>pēdꝰ</abbr><expan resp="#SDM">pe<ex>n</ex>d<ex>us</ex></expan></choice></l>
+                    <l xml:id="l-281v-1-13">Car <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> <choice><abbr>honno˞</abbr><expan resp="#SDM">honno<ex>ur</ex></expan></choice> ne penſera</l>
+                    <l xml:id="l-281v-1-14">En tout ce qu'il deſpenſera</l>
+                    <l xml:id="l-281v-1-15">Tnat a<choice><orig/><reg resp="#SDM"> </reg></choice>vilaine la<choice><orig/><reg resp="#SDM"> </reg></choice>pensee</l>
+                    <l xml:id="l-281v-1-16">En oꝛdure faire a<choice><orig/><reg resp="#SDM"> </reg></choice>pensee</l>
+                    <l xml:id="l-281v-1-17"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> ſon mal <choice><abbr>apenſem̄t</abbr><expan resp="#SDM">apenſem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-281v-1-18">Fait ſi vilains <choice><abbr>deſpenſem̄t</abbr><expan resp="#SDM">deſpenſem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-281v-1-19"><choice><abbr>Qⁱl</abbr><expan resp="#SDM">Q<ex>u'i</ex>l</expan></choice> n'entra en ſa deſpenſe ier</l>
+                    <l xml:id="l-281v-1-20">Ne hui nus <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> le deſpenſier</l>
+                    <l xml:id="l-281v-1-21">Ne hace <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> dit ſ'on le pendoit</l>
+                    <l xml:id="l-281v-1-22">Ce ſeroit pꝛex ſ'il deſpendoit</l>
+                    <l xml:id="l-281v-1-23">Le ſien <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> mal ſeroit <choice><abbr>pēsāz</abbr><expan resp="#SDM">pe<ex>n</ex>ſa<ex>n</ex>z</expan></choice></l>
+                    <l xml:id="l-281v-1-24"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> il l'autrui eſt <choice><abbr>deſpēſanz</abbr><expan resp="#SDM">deſpe<ex>n</ex>ſanz</expan></choice></l>
+                    <l xml:id="l-281v-1-25"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> recreaument le deſpent</l>
+                    <l xml:id="l-281v-1-26">A <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> cuer toute oꝛdure apent</l>
+                    <l xml:id="l-281v-1-27"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ainſi le va deſpendant</l>
+                    <l xml:id="l-281v-1-28">Il va tout adez le pendant</l>
+                    <l xml:id="l-281v-1-29">Pendus ſoit <choice><abbr>sāz</abbr><expan resp="#SDM">ſa<ex>n</ex>z</expan></choice> <choice><abbr>deſpendem̄t</abbr><expan resp="#SDM">deſpendem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-281v-1-30"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> fait vilain <choice><abbr>deſpendem̄t</abbr><expan resp="#SDM">deſpendem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-281v-1-31">Dont on le <choice><sic>ſoulzaide</sic><corr resp="#SDM">ſouhaite</corr></choice> pendu</l>
+                    <l xml:id="l-281v-1-32"><choice><abbr>Vilainem̄t</abbr><expan resp="#SDM">Vilainem<ex>en</ex>t</expan></choice> a deſpendu</l>
+                    <l xml:id="l-281v-1-33">Les <choice><abbr>bn̄s</abbr><expan resp="#SDM">b<ex>ie</ex>ns</expan></choice> dont il eſt deſpenſins</l>
+                    <l xml:id="l-281v-1-34">Car a<choice><orig/><reg resp="#SDM"> </reg></choice>uilonie eſt penſins</l>
+                    <l xml:id="l-281v-1-35"><choice><abbr>Ꝯ</abbr><expan resp="#SDM"><ex>Com</ex></expan></choice> vilains de<choice><orig/><reg resp="#SDM"> </reg></choice>mal apenſez</l>
+                    <l xml:id="l-281v-1-36">A autrui deſpenz deſpenſez</l>
+                </lg>
+            </div></body></text></TEI>

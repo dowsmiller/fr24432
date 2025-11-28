@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="257v" xml:id="f257v"/><div type="text" n="62" xml:id="RuesParis">
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-257v-1-4"><choice><orig>MAint</orig><reg resp="#SDM">Maint</reg></choice> dit a fait<lb/>
+                    De roys de Conte</l>
+                    <l xml:id="l-257v-1-5">/Guillot de /<choice><orig>paris</orig><reg resp="#SDM">Paris</reg></choice><lb/>
+                    En ſon conte</l>
+                    <l xml:id="l-257v-1-6">Les rues de /<choice><abbr>par՚</abbr><expan resp="#SDM">par<ex>is</ex></expan></choice> <choice><abbr>bꝛiem̄t</abbr><expan resp="#SDM">bꝛiem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-257v-1-7">A mis en rime oiez <choice><abbr>ꝯmēt</abbr><expan resp="#SDM"><ex>com</ex>me<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-257v-1-8">/La rue de la chuchete a<choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><abbr>par՚</abbr><expan resp="#SDM">par<ex>is</ex></expan></choice></l>
+                    <l xml:id="l-257v-1-9"><choice><abbr>P՚miere</abbr><expan resp="#SDM">P<ex>re</ex>miere</expan></choice> <choice><abbr>dōt</abbr><expan resp="#SDM">do<ex>n</ex>t</expan></choice> pas n'a <choice><abbr>meſpⁱs</abbr><expan resp="#SDM">meſp<ex>ri</ex>s</expan></choice></l>
+                    <l xml:id="l-257v-1-10">Aſes toſt <choice><orig>trouua</orig><reg resp="#SDM">trouva</reg></choice> /ſacalie</l>
+                    <l xml:id="l-257v-1-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la petute bouclerie</l>
+                    <l xml:id="l-257v-1-12"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> bouclerie <choice><abbr>ap՚s</abbr><expan resp="#SDM">ap<ex>ré</ex>s</expan></choice></l>
+                    <l xml:id="l-257v-1-13"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /herondale tout en <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice></l>
+
+                    <cb n="2" xml:id="cb-257v-2"/>
+                    <l xml:id="l-257v-2-1"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la Rue pauee alé</l>
+                    <l xml:id="l-257v-2-2">Ou a <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> viſage hale</l>
+                    <l xml:id="l-257v-2-3">/La rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/l'abé /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><orig>denis</orig><reg resp="#SDM">Denis</reg></choice></l>
+                    <l xml:id="l-257v-2-4">Siet aſes <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> de /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><orig>denis</orig><reg resp="#SDM">Denis</reg></choice></l>
+                    <l xml:id="l-257v-2-5">De /la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><abbr>g՚main</abbr><expan resp="#SDM">g<ex>er</ex>main</expan></choice></l>
+                    <l xml:id="l-257v-2-6">Des<choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice> ſi fait /rue <choice><abbr>Gauuaī</abbr><expan resp="#SDM">Gauuai<ex>n</ex></expan></choice></l>
+                    <l xml:id="l-257v-2-7"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> puis /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> andꝛi</l>
+                    <l xml:id="l-257v-2-8"><choice><orig>De hoꝛs</orig><reg resp="#SDM">Dehoꝛs</reg></choice> <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> <choice><abbr>chemī</abbr><expan resp="#SDM">chemi<ex>n</ex></expan></choice> ſ'<choice><abbr>eſtēdi</abbr><expan resp="#SDM">eſte<ex>n</ex>di</expan></choice></l>
+                    <l xml:id="l-257v-2-9"><choice><orig><choice><abbr>Iuſq՚s</abbr><expan resp="#SDM">Iuſq<ex>ue</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>Juſq՚s</abbr><expan resp="#SDM">Juſq<ex>ue</ex>s</expan></choice></reg></choice> en /la rue poupee</l>
+                    <l xml:id="l-257v-2-10"><choice><abbr>Adōt</abbr><expan resp="#SDM">Ado<ex>n</ex>t</expan></choice> ai ma voie adꝛecee</l>
+                    <l xml:id="l-257v-2-11"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> /la Rue de la barre vins</l>
+                    <l xml:id="l-257v-2-12"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> en<choice><orig/><reg resp="#SDM"> </reg></choice>/la<choice><orig/><reg resp="#SDM"> </reg></choice>rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><orig>poiteuins</orig><reg resp="#SDM">poitevins</reg></choice></l>
+                    <l xml:id="l-257v-2-13"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue de la ſerpent</l>
+                    <l xml:id="l-257v-2-14">De ce de riens ne me <choice><abbr>repēt</abbr><expan resp="#SDM">repe<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-257v-2-15"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue de la platriere</l>
+                    <l xml:id="l-257v-2-16">La <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> dame loudiere</l>
+                    <l xml:id="l-257v-2-17">Qui maint chapel<lb/>
+                    A fait de fueille</l>
+                    <l xml:id="l-257v-2-18"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue de haute feulle</l>
+                    <l xml:id="l-257v-2-19">Ving en /la Rue<lb/>
+                    De champ petit</l>
+                    <l xml:id="l-257v-2-20"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> au deſus eſt <num value="1">.i.</num> petit</l>
+                    <l xml:id="l-257v-2-21">/La rue du puon <choice><abbr>vraiem̄t</abbr><expan resp="#SDM">vraiem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-257v-2-22"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> deſcendi tout <choice><abbr>belem̄t</abbr><expan resp="#SDM">belem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-257v-2-23">Droit a<choice><orig/><reg resp="#SDM"> </reg></choice>/la<choice><orig/><reg resp="#SDM"> </reg></choice>rue des<choice><orig/><reg resp="#SDM"> </reg></choice>coꝛdeles</l>
+                    <l xml:id="l-257v-2-24">Dames i<choice><orig/><reg resp="#SDM"> </reg></choice>a le deſcoꝛd d'elles</l>
+                    <l xml:id="l-257v-2-25">Ne voudꝛoie <choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice><lb/>
+                    Nullement</l>
+                    <l xml:id="l-257v-2-26"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> m'en alai tout<lb/>
+                    Simplement</l>
+                    <l xml:id="l-257v-2-27">D'iluecques au /palais<lb/>
+                    De termes</l>
+                    <l xml:id="l-257v-2-28">Ou il a celiers <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>cit՚nes</abbr><expan resp="#SDM">cit<ex>er</ex>nes</expan></choice></l>
+                    <l xml:id="l-257v-2-29">En celle rue a<choice><orig/><reg resp="#SDM"> </reg></choice>mainte court</l>
+                    <l xml:id="l-257v-2-30">/La rue aus hoirs de<lb/>
+                    Harecourt</l>
+                    <l xml:id="l-257v-2-31">/La rue pierre <choice><orig>ſarrazin</orig><reg resp="#SDM">Sarrazin</reg></choice></l>
+                    <l xml:id="l-257v-2-32">Ou l'en eſſai <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> <choice><abbr>rōcin</abbr><expan resp="#SDM">ro<ex>n</ex>cin</expan></choice></l>
+
+                    <pb n="258r" xml:id="f258r"/>
+                    <cb n="1" xml:id="cb-258r-1"/>
+                    <l xml:id="l-258r-1-1">Chaſcun an Comment<lb/>
+                    Con le hape</l>
+                    <l xml:id="l-258r-1-2"><choice><abbr>Ꝯtreual</abbr><expan resp="#SDM"><ex>Con</ex>treual</expan></choice> /rue de le harpe</l>
+                    <l xml:id="l-258r-1-3">Ving en /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> ſeuring</l>
+                    <l xml:id="l-258r-1-4"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>tāt</abbr><expan resp="#SDM">ta<ex>n</ex>t</expan></choice> fiſt c'au carefour <choice><abbr>vīg</abbr><expan resp="#SDM">vi<ex>n</ex>g</expan></choice></l>
+                    <l xml:id="l-258r-1-5">/La <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> rue <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> <choice><abbr>bꝛiem̄t</abbr><expan resp="#SDM">bꝛiem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-258r-1-6">De la entrai <choice><abbr>pꝛemierem̄t</abbr><expan resp="#SDM">pꝛemierem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-258r-1-7"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> /la rue as <choice><abbr>eſcriuaīs</abbr><expan resp="#SDM">eſcriuai<ex>n</ex>s</expan></choice></l>
+                    <l xml:id="l-258r-1-8">De <choice><abbr>chemin՚</abbr><expan resp="#SDM">chemin<ex>er</ex></expan></choice> ne fu pas vains</l>
+                    <l xml:id="l-258r-1-9"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la petite ruelete</l>
+                    <l xml:id="l-258r-1-10">/<choice><orig><choice><abbr><supplied resp="#SDM">.</supplied>S՚.</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr><supplied resp="#SDM">.</supplied>s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice> ſeurin mainte<lb/>
+                    Meſchinnete</l>
+                    <l xml:id="l-258r-1-11">Si iouent <choice><orig><choice><abbr>ſouuēt</abbr><expan resp="#SDM">ſouue<ex>n</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>ſouvēt</abbr><expan resp="#SDM">ſouve<ex>n</ex>t</expan></choice></reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> menu</l>
+                    <l xml:id="l-258r-1-12"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> font batre le trou velu</l>
+                    <l xml:id="l-258r-1-13">Des feſſeriaus <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><abbr>nꝰ</abbr><expan resp="#SDM">n<ex>us</ex></expan></choice> die</l>
+                    <l xml:id="l-258r-1-14"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue /Erembourc de /bꝛie</l>
+                    <l xml:id="l-258r-1-15">Alai <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en /la rue o /fain</l>
+                    <l xml:id="l-258r-1-16">De cheminer ne fu<choice><orig/><reg resp="#SDM"> </reg></choice>pas vain</l>
+                    <l xml:id="l-258r-1-17"><choice><orig>Vne</orig><reg resp="#SDM">Une</reg></choice> <choice><abbr>fem̄e</abbr><expan resp="#SDM">fem<ex>m</ex>e</expan></choice> vi batre lin</l>
+                    <l xml:id="l-258r-1-18"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> Mathelin</l>
+                    <l xml:id="l-258r-1-19"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /l'en cloiſtre m'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> retourne</l>
+                    <l xml:id="l-258r-1-20">/<choice><sic><choice><orig><choice><abbr>.S՚</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice></sic><corr resp="#SDM"><choice><orig><choice><abbr>.S՚<supplied resp="#SDM">.</supplied></abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚<supplied resp="#SDM">.</supplied></abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice></corr></choice> beneoit le beſtourne</l>
+                    <l xml:id="l-258r-1-21"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> la rue as hoirs de /<choice><abbr>ſabōnes</abbr><expan resp="#SDM">ſabo<ex>n</ex>nes</expan></choice></l>
+                    <l xml:id="l-258r-1-22">A <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> poꝛtes belles <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>bōnes</abbr><expan resp="#SDM">bo<ex>n</ex>nes</expan></choice></l>
+                    <l xml:id="l-258r-1-23">/La rue a l'abbee de /cligny</l>
+                    <l xml:id="l-258r-1-24"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue au <choice><abbr>ſeign՚</abbr><expan resp="#SDM">ſeign<ex>er</ex></expan></choice> d'/igny</l>
+                    <l xml:id="l-258r-1-25">Sont <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> de /la rue o /coꝛbel</l>
+                    <l xml:id="l-258r-1-26">De ſus ſiet /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue o /ponel</l>
+                    <l xml:id="l-258r-1-27"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue a<choice><orig/><reg resp="#SDM"> </reg></choice>coꝛdiers <choice><abbr>ap՚z</abbr><expan resp="#SDM">ap<ex>re</ex>z</expan></choice></l>
+                    <l xml:id="l-258r-1-28"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> des /iacopins ſiet <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> <choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice></l>
+                    <l xml:id="l-258r-1-29"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>ꝯtre</abbr><expan resp="#SDM"><ex>con</ex>tre</expan></choice> eſt /rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> eſtienne</l>
+                    <l xml:id="l-258r-1-30">Que <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> en ſa grace <choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice><lb/>
+                    Tiengne.</l>
+                    <l xml:id="l-258r-1-31"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> de ſ'amour aions <choice><abbr>mātel</abbr><expan resp="#SDM">ma<ex>n</ex>tel</expan></choice></l>
+                    <l xml:id="l-258r-1-32">Loꝛs deſcendi en /fres<lb break="no"/>
+                    Mantel</l>
+                    <l xml:id="l-258r-1-33"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue de l'/oſeroie</l>
+                    <l xml:id="l-258r-1-34">Ne ſai <choice><abbr>ꝯment</abbr><expan resp="#SDM"><ex>com</ex>ment</expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> deſuouroie</l>
+
+                    <cb n="2" xml:id="cb-258r-2"/>
+                    <l xml:id="l-258r-2-1">Ce <choice><abbr>ꝯq՚s</abbr><expan resp="#SDM"><ex>c'on</ex>q<ex>ue</ex>s</expan></choice> nul <choice><orig>iour</orig><reg resp="#SDM">jour</reg></choice> ne voue</l>
+                    <l xml:id="l-258r-2-2">Ne a <choice><orig><choice><abbr>paſq՚s</abbr><expan resp="#SDM">paſq<ex>ue</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>Paſq՚s</abbr><expan resp="#SDM">Paſq<ex>ue</ex>s</expan></choice></reg></choice> ne a<choice><orig/><reg resp="#SDM"> </reg></choice>noue</l>
+                    <l xml:id="l-258r-2-3"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue de /l'oſpital</l>
+                    <l xml:id="l-258r-2-4">Ving <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> <choice><abbr>fem̄e</abbr><expan resp="#SDM">fem<ex>m</ex>e</expan></choice> i<choice><orig/><reg resp="#SDM"> </reg></choice>deſpital</l>
+                    <l xml:id="l-258r-2-5"><choice><orig>Vne</orig><reg resp="#SDM">Une</reg></choice> autre <choice><abbr>fem̄e</abbr><expan resp="#SDM">fem<ex>m</ex>e</expan></choice> <choice><abbr>folem̄t</abbr><expan resp="#SDM">folem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-258r-2-6">De ſa <choice><abbr>ꝑole</abbr><expan resp="#SDM">p<ex>ar</ex>ole</expan></choice> <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> <choice><abbr>vilm̄t</abbr><expan resp="#SDM">vilm<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-258r-2-7">/La rue de la chaueterie</l>
+                    <l xml:id="l-258r-2-8"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> n'alai pas<lb/>
+                    /Chiés <choice><orig>marie</orig><reg resp="#SDM">Marie</reg></choice></l>
+                    <l xml:id="l-258r-2-9"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /rue /<choice><abbr>s՚</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> ſyphoꝛien</l>
+                    <l xml:id="l-258r-2-10">Ou <choice><abbr>mainguēt</abbr><expan resp="#SDM">maingue<ex>n</ex>t</expan></choice> li<choice><orig/><reg resp="#SDM"> </reg></choice>logipcien</l>
+                    <l xml:id="l-258r-2-11"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> eſt /la rue du<choice><orig/><reg resp="#SDM"> </reg></choice>moine</l>
+                    <l xml:id="l-258r-2-12"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue au duc de /<choice><abbr>bourgoīgne</abbr><expan resp="#SDM">bougoi<ex>n</ex>gne</expan></choice></l>
+                    <l xml:id="l-258r-2-13"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue des amandiers pꝛez</l>
+                    <l xml:id="l-258r-2-14">Siet en <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> autre rue en<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice></l>
+                    <l xml:id="l-258r-2-15"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> a<choice><orig/><reg resp="#SDM"> </reg></choice>non /rue de /<choice><orig>ſauoie</orig><reg resp="#SDM">ſavoie</reg></choice></l>
+                    <l xml:id="l-258r-2-16">/Guillot de /<choice><abbr>par՚</abbr><expan resp="#SDM">par<ex>is</ex></expan></choice>. tint ſa voie</l>
+                    <l xml:id="l-258r-2-17">Droit en /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> ylaire</l>
+                    <l xml:id="l-258r-2-18">Ou <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> dame <choice><orig><choice><abbr>de bō naire</abbr><expan resp="#SDM">de bo<ex>n</ex> naire</expan></choice></orig><reg resp="#SDM"><choice><abbr>debōnaire</abbr><expan resp="#SDM">debo<ex>n</ex>naire</expan></choice></reg></choice></l>
+                    <l xml:id="l-258r-2-19">Maint <choice><abbr>ꝯ</abbr><expan resp="#SDM"><ex>c'on</ex></expan></choice> apele giete das</l>
+                    <l xml:id="l-258r-2-20"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>ꝯtre</abbr><expan resp="#SDM"><ex>con</ex>tre</expan></choice> eſt /la rue /<choice><orig>iudas</orig><reg resp="#SDM">Judas</reg></choice></l>
+                    <l xml:id="l-258r-2-21"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue du petit four</l>
+                    <l xml:id="l-258r-2-22"><choice><abbr>Ꝯ</abbr><expan resp="#SDM"><ex>C'on</ex></expan></choice> apele le petit four</l>
+                    <l xml:id="l-258r-2-23">/<choice><sic><choice><orig><choice><abbr>.S՚</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice></sic><corr resp="#SDM"><choice><orig><choice><abbr>.S՚<supplied resp="#SDM">.</supplied></abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚<supplied resp="#SDM">.</supplied></abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice></corr></choice> ylaire <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /clos burniau</l>
+                    <l xml:id="l-258r-2-24">Ou l'en a roſti <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> bꝛuliau</l>
+                    <l xml:id="l-258r-2-25"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> puis /la rue du noier</l>
+                    <l xml:id="l-258r-2-26">Ou pluſeurs dames <choice><abbr>p˞</abbr><expan resp="#SDM">p<ex>our</ex></expan></choice> louier</l>
+                    <l xml:id="l-258r-2-27">Font <choice><orig>ſouuent</orig><reg resp="#SDM">ſouvent</reg></choice> batre leur<lb/>
+                    Cartiers</l>
+                    <l xml:id="l-258r-2-28"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice> eſt /la rue a<choice><orig/><reg resp="#SDM"> </reg></choice>plaſtriers</l>
+                    <l xml:id="l-258r-2-29"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /la rue as englais</l>
+                    <l xml:id="l-258r-2-30">Ving a grant feſte at a<lb/>
+                    Grant Glais</l>
+                    <l xml:id="l-258r-2-31">/La<choice><orig/><reg resp="#SDM"> </reg></choice>rue a<choice><orig/><reg resp="#SDM"> </reg></choice>lauendieres toſt</l>
+                    <l xml:id="l-258r-2-32"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice> d'iluec aſſez toſt</l>
+                    <l xml:id="l-258r-2-33">/La<choice><orig/><reg resp="#SDM"> </reg></choice>rue qui eſt belle et <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice></l>
+                    <l xml:id="l-258r-2-34">/<choice><abbr>Saīte</abbr><expan resp="#SDM">Sai<ex>n</ex>te</expan></choice> Geneuieue la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice></l>
+                    <l xml:id="l-258r-2-35"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la petite ruelete.</l>
+
+                    <pb n="258v" xml:id="f258v"/>
+                    <cb n="1" xml:id="cb-258v-1"/>
+                    <l xml:id="l-258v-1-1">De quoi l'un des bous chiet<lb/>
+                    Sus /l'etre.</l>
+                    <l xml:id="l-258v-1-2"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> l'autre bout ſi<choice><orig/><reg resp="#SDM"> </reg></choice>ſe rapoꝛte</l>
+                    <l xml:id="l-258v-1-3">Droit a /la rue de la poꝛte</l>
+                    <l xml:id="l-258v-1-4">De /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> Marcel. <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> copin</l>
+                    <l xml:id="l-258v-1-5"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>ꝯtre</abbr><expan resp="#SDM"><ex>con</ex>tre</expan></choice> eſt /la rue clopin</l>
+                    <l xml:id="l-258v-1-6"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la rue <choice><abbr>trau՚ſaīne</abbr><expan resp="#SDM">trau<ex>er</ex>ſai<ex>n</ex>ne</expan></choice></l>
+                    <l xml:id="l-258v-1-7"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſiet en haut <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> loins de<lb/>
+                    /Sainne</l>
+                    <l xml:id="l-258v-1-8"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice> eſt /la rue des murs</l>
+                    <l xml:id="l-258v-1-9">De <choice><abbr>chemin՚</abbr><expan resp="#SDM">chemin<ex>er</ex></expan></choice> ne fu pas mus</l>
+                    <l xml:id="l-258v-1-10"><choice><orig><choice><abbr>Iuſq̃</abbr><expan resp="#SDM">Iuſq<ex>u'a</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>Juſq̃</abbr><expan resp="#SDM">Juſq<ex>u'a</ex></expan></choice></reg></choice> /la .rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> vitoꝛ</l>
+                    <l xml:id="l-258v-1-11">Ne <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> ne poꝛc ne butoꝛ</l>
+                    <l xml:id="l-258v-1-12">Mes <choice><abbr>fem̄e</abbr><expan resp="#SDM">fem<ex>m</ex>e</expan></choice> qui autre <choice><orig><choice><abbr>ꝯ ſeille</abbr><expan resp="#SDM"><ex>con</ex> ſeille</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝯſeille</abbr><expan resp="#SDM"><ex>con</ex>ſeille</expan></choice></reg></choice></l>
+                    <l xml:id="l-258v-1-13"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> truis /la tue de /<choice><abbr>v՚ſeille</abbr><expan resp="#SDM">v<ex>er</ex>ſeille</expan></choice></l>
+                    <l xml:id="l-258v-1-14"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la rue du <choice><abbr>bō</abbr><expan resp="#SDM">bo<ex>n</ex></expan></choice> puis</l>
+                    <l xml:id="l-258v-1-15">La<choice><orig/><reg resp="#SDM"> </reg></choice> <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> la <choice><abbr>fem̄e</abbr><expan resp="#SDM">fem<ex>m</ex>e</expan></choice> a <num value="1">.i.</num> <choice><abbr>chapīs</abbr><expan resp="#SDM">chapi<ex>n</ex>s</expan></choice></l>
+                    <l xml:id="l-258v-1-16"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> de <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> <choice><sic>ho</sic><corr resp="#SDM"><choice><abbr>hō</abbr><expan resp="#SDM">ho<supplied resp="#SDM"><ex>m</ex></supplied></expan></choice></corr></choice> a<choice><orig/><reg resp="#SDM"> </reg></choice>fait ſes glais</l>
+                    <l xml:id="l-258v-1-17">/La rue /<choice><abbr>alixand՚</abbr><expan resp="#SDM">alixand<ex>re</ex></expan></choice>. l'englais</l>
+                    <l xml:id="l-258v-1-18"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue pauee Goire</l>
+                    <l xml:id="l-258v-1-19">La bui<choice><orig/><reg resp="#SDM"> </reg></choice>ge de <choice><abbr>bō</abbr><expan resp="#SDM">bo<ex>n</ex></expan></choice> vin de beire</l>
+                    <l xml:id="l-258v-1-20"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> Nicolas</l>
+                    <l xml:id="l-258v-1-21">Du /<choice><orig><choice><abbr>char dōnai</abbr><expan resp="#SDM">char do<ex>n</ex>nai</expan></choice></orig><reg resp="#SDM"><choice><abbr>chardōnai</abbr><expan resp="#SDM">chardo<ex>n</ex>nai</expan></choice></reg></choice> ne fu pas las</l>
+                    <l xml:id="l-258v-1-22"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue de /bieure vins</l>
+                    <l xml:id="l-258v-1-23"><choice><abbr>Iluecq՚s</abbr><expan resp="#SDM">Iluecq<ex>ue</ex>s</expan></choice> <num value="1">.<choice><orig>j</orig><reg resp="#SDM">i</reg></choice>.</num> petit m'aſſis</l>
+                    <l xml:id="l-258v-1-24">D'iluec en /la rue <choice><abbr>ꝑdue</abbr><expan resp="#SDM">p<ex>er</ex>due</expan></choice></l>
+                    <l xml:id="l-258v-1-25">Ma voie ne fu pas <choice><orig><choice><abbr>ꝑ due</abbr><expan resp="#SDM">p<ex>er</ex> due</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝑdue</abbr><expan resp="#SDM">p<ex>er</ex>due</expan></choice></reg></choice></l>
+                    <l xml:id="l-258v-1-26"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> m'en reuing dꝛoit en<lb/>
+                    /La place.</l>
+                    <l xml:id="l-258v-1-27">Maubert <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> bien <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> la<lb/>
+                    Trace.</l>
+                    <l xml:id="l-258v-1-28">D'iluec <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> /la rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/trois poꝛte</l>
+                    <l xml:id="l-258v-1-29">Dont l'une le chemin rapoꝛte</l>
+                    <l xml:id="l-258v-1-30">Droit a<choice><orig/><reg resp="#SDM"> </reg></choice>/la rue de /Gallande</l>
+                    <l xml:id="l-258v-1-31">Ou il n'a ne foꝛeſt ne lande</l>
+                    <l xml:id="l-258v-1-32"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> l'autre en la rue d'/aras</l>
+                    <l xml:id="l-258v-1-33">Ou ſe nourriſſent maint<lb/>
+                    Grant ras</l>
+
+                    <cb n="2" xml:id="cb-258v-2"/>
+                    <l xml:id="l-258v-2-1">En<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> eſt /rue de l'eſcole</l>
+                    <l xml:id="l-258v-2-2">La demeure /dame nicole</l>
+                    <l xml:id="l-258v-2-3"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> celle rue ce me ſamble</l>
+                    <l xml:id="l-258v-2-4">Vent on et fain <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> fuerre<lb/>
+                    Enſamble</l>
+                    <l xml:id="l-258v-2-5"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> julien.</l>
+                    <l xml:id="l-258v-2-6"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice> gart de <choice><orig>mauuais</orig><reg resp="#SDM">mauvais</reg></choice> <choice><abbr>liē</abbr><expan resp="#SDM">lie<ex>n</ex></expan></choice></l>
+                    <l xml:id="l-258v-2-7">M'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> reuing <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> /la bucherie</l>
+                    <l xml:id="l-258v-2-8"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> en /la poiſſonnerie</l>
+                    <l xml:id="l-258v-2-9">C'eſt verité que <choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice> <choice><abbr>deſpōt</abbr><expan resp="#SDM">deſpo<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-258v-2-10">Les rues d'outre /petit pont</l>
+                    <l xml:id="l-258v-2-11"><choice><abbr>Auōs</abbr><expan resp="#SDM">Auo<ex>n</ex>s</expan></choice> <choice><abbr>nōmees</abbr><expan resp="#SDM">no<ex>m</ex>mees</expan></choice> toutes <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> <choice><abbr>nō</abbr><expan resp="#SDM">no<ex>n</ex></expan></choice></l>
+                    <l xml:id="l-258v-2-12">/Guillot <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> de /<choice><abbr>par՚</abbr><expan resp="#SDM">par<ex>is</ex></expan></choice>. ot non.</l>
+                    <l xml:id="l-258v-2-13"><num value="80">.<choice><orig>iiijxx</orig><reg resp="#SDM">IIIIXX</reg></choice>.</num> par conte en y<choice><orig/><reg resp="#SDM"> </reg></choice>a</l>
+                    <l xml:id="l-258v-2-14">Certes <choice><abbr>plꝰ</abbr><expan resp="#SDM">pl<ex>us</ex></expan></choice> ne <choice><abbr>maīs</abbr><expan resp="#SDM">mai<ex>n</ex>s</expan></choice> n'en y<choice><orig/><reg resp="#SDM"> </reg></choice>a</l>
+                    <l xml:id="l-258v-2-15">En la cité <choice><abbr>iſnelem̄t</abbr><expan resp="#SDM">iſnelem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-258v-2-16">M'en ving apꝛés<lb/>
+                    Priueement.</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-258v-2-17">/<choice><orig>LA</orig><reg resp="#SDM">La</reg></choice> rue du ſablon <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> m'ame</l>
+                    <l xml:id="l-258v-2-18"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> /rue neuue /<choice><orig><choice><abbr>n՚re</abbr><expan resp="#SDM">n<ex>ost</ex>re</expan></choice></orig><reg resp="#SDM"><choice><abbr>N՚re</abbr><expan resp="#SDM">N<ex>ost</ex>re</expan></choice></reg></choice> <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice></l>
+                    <l xml:id="l-258v-2-19"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice> eſt /la rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/coulons</l>
+                    <l xml:id="l-258v-2-20">D'iluec ne fu pas mon<lb/>
+                    Cuer lons</l>
+                    <l xml:id="l-258v-2-21">/La ruele <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> <choice><abbr>bꝛiem̄t</abbr><expan resp="#SDM">bꝛiem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-258v-2-22">De /.s. <choice><orig><choice><abbr>xpō fle</abbr><expan resp="#SDM"><ex>christ</ex>o fle</expan></choice></orig><reg resp="#SDM"><choice><abbr>xpōfle</abbr><expan resp="#SDM"><ex>christ</ex>ofle</expan></choice></reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> enſement</l>
+                    <l xml:id="l-258v-2-23">/La rue du paruis <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> <choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice></l>
+                    <l xml:id="l-258v-2-24"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue du cloiſtre <choice><abbr>ap՚s</abbr><expan resp="#SDM">ap<ex>ré</ex>s</expan></choice></l>
+                    <l xml:id="l-258v-2-25"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la .<choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> rue <choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><orig><choice><abbr>xpō fle</abbr><expan resp="#SDM"><ex>christ</ex>o fle</expan></choice></orig><reg resp="#SDM"><choice><abbr>xpōfle</abbr><expan resp="#SDM"><ex>christ</ex>ofle</expan></choice></reg></choice></l>
+                    <l xml:id="l-258v-2-26"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> vi <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> le trelis .d'<choice><abbr>ū</abbr><expan resp="#SDM">u<ex>n</ex></expan></choice> coffre</l>
+                    <l xml:id="l-258v-2-27"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue<choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> pere a /beus</l>
+                    <l xml:id="l-258v-2-28">Oiſiaus qui <choice><sic>avoiet</sic><corr resp="#SDM"><choice><abbr>avoiēt</abbr><expan resp="#SDM">avoie<supplied resp="#SDM"><ex>n</ex></supplied>t</expan></choice></corr></choice> piez <choice><abbr>beꝰ</abbr><expan resp="#SDM">be<ex>us</ex></expan></choice></l>
+                    <l xml:id="l-258v-2-29">Qui furent pꝛis ſus la<lb/>
+                    Marinne</l>
+                    <l xml:id="l-258v-2-30">De /la rue /ſainte marine</l>
+                    <l xml:id="l-258v-2-31"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue cocatris vins</l>
+                    <l xml:id="l-258v-2-32">Ou l'en boit <choice><orig>ſouuent</orig><reg resp="#SDM">ſouvent</reg></choice><lb/>
+                    De bons vins</l>
+                    <l xml:id="l-258v-2-33">Dont mains homs<lb/>
+
+                    <pb n="259r" xml:id="f259r"/>
+                    <cb n="1" xml:id="cb-259r-1"/>
+                    <choice><orig>Souuent</orig><reg resp="#SDM">Souvent</reg></choice> ſe varie</l>
+                    <l xml:id="l-259r-1-1">/La rue de la <choice><orig><choice><abbr>ꝯ frarie</abbr><expan resp="#SDM"><ex>con</ex> frarie</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝯfrarie</abbr><expan resp="#SDM"><ex>con</ex>frarie</expan></choice></reg></choice></l>
+                    <l xml:id="l-259r-1-2">/Noſtre <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en /charoui</l>
+                    <l xml:id="l-259r-1-3">Bonne <choice><abbr>tau՚ne</abbr><expan resp="#SDM">tau<ex>er</ex>ne</expan></choice> achiez ouri</l>
+                    <l xml:id="l-259r-1-4">/La<choice><orig/><reg resp="#SDM"> </reg></choice>rue de la <choice><abbr>pōme</abbr><expan resp="#SDM">po<ex>m</ex>me</expan></choice> aſſez toſt</l>
+                    <l xml:id="l-259r-1-5"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> puis <choice><abbr>ap՚z</abbr><expan resp="#SDM">ap<ex>re</ex>z</expan></choice> <choice><abbr>tātoſt</abbr><expan resp="#SDM">ta<ex>n</ex>toſt</expan></choice></l>
+                    <l xml:id="l-259r-1-6">Ce fu /la rue as oubloiers</l>
+                    <l xml:id="l-259r-1-7">La maint <choice><abbr>Guilleb՚t</abbr><expan resp="#SDM">Guilleb<ex>er</ex>t</expan></choice> a bꝛaies</l>
+                    <l xml:id="l-259r-1-8">/Marcepalu /la iuerie</l>
+                    <l xml:id="l-259r-1-9"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> puis /la petite oꝛberie</l>
+                    <l xml:id="l-259r-1-10"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> en /la iuerie ſiet</l>
+                    <l xml:id="l-259r-1-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> me ſamble que l'autre chief</l>
+                    <l xml:id="l-259r-1-12">Deſcent dꝛoit en /la rue a<lb/>
+                    /<choice><orig>Feues</orig><reg resp="#SDM">Feves</reg></choice>.</l>
+                    <l xml:id="l-259r-1-13"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> <choice><orig>de ca</orig><reg resp="#SDM">deca</reg></choice> /la maiſon o /feure</l>
+                    <l xml:id="l-259r-1-14">/La kalendꝛe <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /la ganterie</l>
+                    <l xml:id="l-259r-1-15"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> oꝛberie</l>
+                    <l xml:id="l-259r-1-16"><choice><abbr>Ap՚z</abbr><expan resp="#SDM">Ap<ex>re</ex>z</expan></choice> /la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> bariſzerie</l>
+                    <l xml:id="l-259r-1-17"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> puis apꝛés /la dꝛaperie</l>
+                    <l xml:id="l-259r-1-18"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /la chauterie</l>
+                    <l xml:id="l-259r-1-19"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la ruele .Sainte crois</l>
+                    <l xml:id="l-259r-1-20">Ou l'en chengle ſouuenc<lb/>
+                    Des cois</l>
+                    <l xml:id="l-259r-1-21">/La<choice><orig/><reg resp="#SDM"> </reg></choice>rue /gerueſe /<choice><orig>loꝛens</orig><reg resp="#SDM">Loꝛens</reg></choice></l>
+                    <l xml:id="l-259r-1-22">Ou <choice><abbr>maītes</abbr><expan resp="#SDM">mai<ex>n</ex>tes</expan></choice> dames <choice><abbr>ygnoꝛēs</abbr><expan resp="#SDM">ygnoꝛe<ex>n</ex>s</expan></choice></l>
+                    <l xml:id="l-259r-1-23">I maingnent qui de leur<lb/>
+                    Quiterne</l>
+                    <l xml:id="l-259r-1-24"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> /rue de la <choice><abbr>lant՚ne</abbr><expan resp="#SDM">lant<ex>er</ex>ne</expan></choice></l>
+                    <l xml:id="l-259r-1-25"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> la rue du marmouſet</l>
+                    <l xml:id="l-259r-1-26"><choice><orig>Trouai</orig><reg resp="#SDM">Trovai</reg></choice> <num value="1">.i.</num> <choice><abbr>hom̄e</abbr><expan resp="#SDM">hom<ex>m</ex>e</expan></choice> <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> mu<choice><orig/><reg resp="#SDM"> </reg></choice>fet</l>
+                    <l xml:id="l-259r-1-27"><choice><orig>Vne</orig><reg resp="#SDM">Une</reg></choice> muſe coꝛne bellourde</l>
+                    <l xml:id="l-259r-1-28"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue de la coulombe</l>
+                    <l xml:id="l-259r-1-29">Alai dꝛoit o /poꝛt /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> landꝛi</l>
+                    <l xml:id="l-259r-1-30">La <choice><orig>de meure</orig><reg resp="#SDM">demeure</reg></choice> /Guiart andꝛi</l>
+                    <l xml:id="l-259r-1-31"><choice><abbr>Fem̄es</abbr><expan resp="#SDM">Fem<ex>m</ex>es</expan></choice> <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> vont tout le cheues</l>
+                    <l xml:id="l-259r-1-32"><choice><abbr>Maīgnēt</abbr><expan resp="#SDM">Mai<ex>n</ex>gne<ex>n</ex>t</expan></choice> en /rue du cheues</l>
+                    <l xml:id="l-259r-1-33">/<choice><orig><choice><abbr>.S՚.</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice> landꝛi eſt de l'autre <choice><abbr>ꝑt</abbr><expan resp="#SDM">p<ex>ar</ex>t</expan></choice></l>
+                    <l xml:id="l-259r-1-34">/La rue de l'ymage <choice><abbr>deꝑt</abbr><expan resp="#SDM">dep<ex>ar</ex>t</expan></choice></l>
+
+                    <cb n="2" xml:id="cb-259r-2"/>
+                    <l xml:id="l-259r-2-1">/La ruele. <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> vincent</l>
+                    <l xml:id="l-259r-2-2">En bout de la rue deſcent</l>
+                    <l xml:id="l-259r-2-3">De /<choice><abbr>glateīgni</abbr><expan resp="#SDM">glatei<ex>n</ex>gni</expan></choice> ou <choice><abbr>bōne</abbr><expan resp="#SDM">bo<ex>n</ex>ne</expan></choice> gent</l>
+                    <l xml:id="l-259r-2-4">Maingnent <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> dames o coꝛs<lb/>
+                    Gent.</l>
+                    <l xml:id="l-259r-2-5">Qui aus hommes ſi <choice><abbr>cō</abbr><expan resp="#SDM">co<ex>m</ex></expan></choice> moi<lb/>
+                    Semblent</l>
+                    <l xml:id="l-259r-2-6">Volentiers charnelment<lb/>
+                    Aſſamblent</l>
+                    <l xml:id="l-259r-2-7">/La Rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><orig>denis</orig><reg resp="#SDM">Denis</reg></choice> de /la chartre</l>
+                    <l xml:id="l-259r-2-8">Ou pluſeurs dames en <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice><lb/>
+                    Chartre.</l>
+                    <l xml:id="l-259r-2-9">Ont maint vis en leur<lb/>
+                    Contenu</l>
+                    <l xml:id="l-259r-2-10"><choice><abbr>Ꝯment</abbr><expan resp="#SDM"><ex>Com</ex>ment</expan></choice> <choice><abbr>qͥl</abbr><expan resp="#SDM">q<ex>u'i</ex>l</expan></choice> ſoient <choice><abbr>ꝯtenu</abbr><expan resp="#SDM"><ex>con</ex>tenu</expan></choice></l>
+                    <l xml:id="l-259r-2-11">En ving en /la peleterie</l>
+                    <l xml:id="l-259r-2-12">Mainte <choice><abbr>oēne</abbr><expan resp="#SDM">oe<ex>n</ex>ne</expan></choice> y vi eſterie</l>
+                    <l xml:id="l-259r-2-13">En <del rend="expunctuation">l fi</del> la faute du <choice><abbr>pōt</abbr><expan resp="#SDM">po<ex>n</ex>t</expan></choice> m'aſis</l>
+                    <l xml:id="l-259r-2-14">Certes il n'a que <num value="36">.<choice><orig>xxxvj</orig><reg resp="#SDM">xxxvi</reg></choice>.</num></l>
+                    <l xml:id="l-259r-2-15">rues <choice><abbr>ꝯtables</abbr><expan resp="#SDM"><ex>con</ex>tables</expan></choice> en cité</l>
+                    <l xml:id="l-259r-2-16">Foi <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> doi benedicite</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-259r-2-17"><choice><orig>PAr</orig><reg resp="#SDM">Par</reg></choice> <choice><orig>de ca</orig><reg resp="#SDM">deca</reg></choice> /grant pont<lb/>
+                    Erranment</l>
+                    <l xml:id="l-259r-2-18">M'<choice><orig>En</orig><reg resp="#SDM">en</reg></choice> ving ſachiez bien<lb/>
+                    Vraiement</l>
+                    <l xml:id="l-259r-2-19">N'<choice><orig>auoie</orig><reg resp="#SDM">avoie</reg></choice> alenas ne poinſon</l>
+                    <l xml:id="l-259r-2-20">Premiere /la rue o poiſſon</l>
+                    <l xml:id="l-259r-2-21">/La rue de la ſaunerie</l>
+                    <l xml:id="l-259r-2-22"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /la meſgneiſcerie</l>
+                    <l xml:id="l-259r-2-23">/L'eſcole <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> rue <surplus reason="repetition" resp="#SDM"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> .rue </surplus>/<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><abbr>g՚maī</abbr><expan resp="#SDM">g<ex>er</ex>mai<ex>n</ex></expan></choice></l>
+                    <l xml:id="l-259r-2-24">A /couroiers <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> vint a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>maī</abbr><expan resp="#SDM">mai<ex>n</ex></expan></choice></l>
+                    <l xml:id="l-259r-2-25">Tantoſt /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><orig>la vendieres</orig><reg resp="#SDM">lavendieres</reg></choice></l>
+                    <l xml:id="l-259r-2-26">Ou il a <choice><abbr>maītes</abbr><expan resp="#SDM">mai<ex>n</ex>tes</expan></choice> <choice><abbr>lauēdieres</abbr><expan resp="#SDM">laue<ex>n</ex>dieres</expan></choice></l>
+                    <l xml:id="l-259r-2-27">/La rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><abbr>moīgnes</abbr><expan resp="#SDM">moi<ex>n</ex>gnes</expan></choice> de<choice><orig/><reg resp="#SDM"> </reg></choice>/ienvau</l>
+                    <l xml:id="l-259r-2-28">Poꝛte a amont <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> poꝛte avau</l>
+                    <l xml:id="l-259r-2-29"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚z</abbr><expan resp="#SDM">p<ex>re</ex>z</expan></choice> /rue <choice><abbr>jeh՚</abbr><expan resp="#SDM">jeh<ex>an</ex></expan></choice> l'ointier</l>
+                    <l xml:id="l-259r-2-30">La ne fu <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> pas trop lointier</l>
+                    <l xml:id="l-259r-2-31">De /la rue bertin poꝛee</l>
+
+                    <pb n="259v" xml:id="f259v"/>
+                    <cb n="1" xml:id="cb-259v-1"/>
+                    <l xml:id="l-259v-1-1">Sanz faire nule eſchau<lb break="no"/>
+                    Fourree.</l>
+                    <l xml:id="l-259v-1-2">Ving en /la ru /<choice><abbr>jehā</abbr><expan resp="#SDM">jeha<ex>n</ex></expan></choice> l'<choice><orig>e veillier</orig><reg resp="#SDM">eveillier</reg></choice></l>
+                    <l xml:id="l-259v-1-3">La <choice><orig>de meure</orig><reg resp="#SDM">demeure</reg></choice> /perriaus<lb/>
+                    Goullier</l>
+                    <l xml:id="l-259v-1-4">/La rue <choice><abbr>Guillē</abbr><expan resp="#SDM">Guille<ex>m</ex></expan></choice> poꝛee pꝛés</l>
+                    <l xml:id="l-259v-1-5">Siet <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /male <choice><abbr>ꝑole</abbr><expan resp="#SDM">p<ex>ar</ex>ole</expan></choice> <choice><abbr>emp՚s</abbr><expan resp="#SDM">emp<ex>re</ex>s</expan></choice></l>
+                    <l xml:id="l-259v-1-6">Ou <choice><orig>de meure</orig><reg resp="#SDM">demeure</reg></choice> /<choice><abbr>jehā</abbr><expan resp="#SDM">jeha<ex>n</ex></expan></choice> aſſelin</l>
+                    <l xml:id="l-259v-1-7"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /le perrin gaſſelin</l>
+                    <l xml:id="l-259v-1-8"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /la <choice><orig>heren gerie</orig><reg resp="#SDM">herengerie</reg></choice></l>
+                    <l xml:id="l-259v-1-9">M'en ving en /la tableterie</l>
+                    <l xml:id="l-259v-1-10">En /la rue a petis ſoulers</l>
+                    <l xml:id="l-259v-1-11">De /baſenne tout fu ſoullies</l>
+                    <l xml:id="l-259v-1-12">Deſrer ce ne mie <choice><orig>foꝛtune</orig><reg resp="#SDM">Foꝛtune</reg></choice></l>
+                    <l xml:id="l-259v-1-13"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue /.<choice><abbr>s՚te</abbr><expan resp="#SDM">s<ex>ain</ex>te</expan></choice> apoꝛtune</l>
+                    <l xml:id="l-259v-1-14">Alai en /la charonnerie</l>
+                    <l xml:id="l-259v-1-15"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> en /la feronnerie</l>
+                    <l xml:id="l-259v-1-16">Tantoſt <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> /la <choice><orig><choice><abbr>mā cherie</abbr><expan resp="#SDM">ma<ex>n</ex> cherie</expan></choice></orig><reg resp="#SDM"><choice><abbr>mācherie</abbr><expan resp="#SDM">ma<ex>n</ex>cherie</expan></choice></reg></choice></l>
+                    <l xml:id="l-259v-1-17"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la <choice><orig>coꝛ douanerie</orig><reg resp="#SDM">coꝛdouanerie</reg></choice></l>
+                    <l xml:id="l-259v-1-18">Prez demeure /<choice><abbr>hēri</abbr><expan resp="#SDM">he<ex>n</ex>ri</expan></choice> <choice><abbr>bōrgaie</abbr><expan resp="#SDM">bo<ex>u</ex>rgaie</expan></choice></l>
+                    <l xml:id="l-259v-1-19">/La rue <choice><abbr>baudōin</abbr><expan resp="#SDM">baudo<ex>n</ex>in</expan></choice> <choice><abbr>pꝛēgaie</abbr><expan resp="#SDM">pꝛe<ex>n</ex>gaie</expan></choice></l>
+                    <l xml:id="l-259v-1-20"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> de boire n'et pas lanier</l>
+                    <l xml:id="l-259v-1-21"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue Raoul l'auenier</l>
+                    <l xml:id="l-259v-1-22">Alai o<choice><orig/><reg resp="#SDM"> </reg></choice>ſiege a des carcheeurs</l>
+                    <l xml:id="l-259v-1-23">D'iluec m'en alai tantoſt<lb/>
+                    Ciex.</l>
+                    <l xml:id="l-259v-1-24">I. <choice><abbr>tauerni՚</abbr><expan resp="#SDM">tauerni<ex>er</ex></expan></choice> en /la viez place</l>
+                    <l xml:id="l-259v-1-25">A pourciaus <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice><lb/>
+                    Ma<choice><orig/><reg resp="#SDM"> </reg></choice>trace.</l>
+                    <l xml:id="l-259v-1-26">/Guillot qui point d'eur<lb/>
+                    Bon n'as.</l>
+                    <l xml:id="l-259v-1-27"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><abbr>bourdōnas</abbr><expan resp="#SDM">bourdo<ex>n</ex>nas</expan></choice></l>
+                    <l xml:id="l-259v-1-28">Ving En /la rue <choice><orig>thibaut</orig><reg resp="#SDM">Thibaut</reg></choice> <choice><orig>a dez</orig><reg resp="#SDM">adez</reg></choice></l>
+                    <l xml:id="l-259v-1-29"><num value="1">.I.</num> hons <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> en ribaudez</l>
+                    <l xml:id="l-259v-1-30"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue de bethiſi</l>
+                    <l xml:id="l-259v-1-31"><choice><abbr>Ētre</abbr><expan resp="#SDM">E<ex>n</ex>tre</expan></choice> ne fu pas ethiſi</l>
+                    <l xml:id="l-259v-1-32">Aſſez toſt <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> /tire chape</l>
+                    <l xml:id="l-259v-1-33">N'ai garde <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> rue m'eſchape</l>
+
+                    <cb n="2" xml:id="cb-259v-2"/>
+                    <l xml:id="l-259v-2-1"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> ne ſache <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> <choice><abbr>nōmer</abbr><expan resp="#SDM">no<ex>m</ex>mer</expan></choice></l>
+                    <l xml:id="l-259v-2-2"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> <choice><abbr>nō</abbr><expan resp="#SDM">no<ex>n</ex></expan></choice> <choice><abbr>sāz</abbr><expan resp="#SDM">ſa<ex>n</ex>z</expan></choice> nule <choice><abbr>meſnōmer</abbr><expan resp="#SDM">meſno<ex>m</ex>mer</expan></choice></l>
+                    <l xml:id="l-259v-2-3">Sanz paſſer /Guichet ne<lb/>
+                    /Poſtis.</l>
+                    <l xml:id="l-259v-2-4"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue o <choice><abbr>quiaīs</abbr><expan resp="#SDM">quiai<ex>n</ex>s</expan></choice> de /<choice><abbr>pōtis</abbr><expan resp="#SDM">po<ex>n</ex>tis</expan></choice></l>
+                    <l xml:id="l-259v-2-5">Fiſt <num value="1">.<choice><orig>j</orig><reg resp="#SDM">i</reg></choice>.</num> chapia de violete</l>
+                    <l xml:id="l-259v-2-6">/La rue o<choice><orig/><reg resp="#SDM"> </reg></choice>ſerf <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /gloꝛiete</l>
+                    <l xml:id="l-259v-2-7"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue de l'arbꝛe ſel</l>
+                    <l xml:id="l-259v-2-8"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> deſcent ſus <num value="1">.i.</num> biau ruiſſel</l>
+                    <l xml:id="l-259v-2-9"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> col de bacon</l>
+                    <l xml:id="l-259v-2-10">Ou l'en a trafarcie <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-259v-2-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /le foſſe /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><abbr>g՚main</abbr><expan resp="#SDM">g<ex>er</ex>main</expan></choice>.</l>
+                    <l xml:id="l-259v-2-12">/Trou bernart <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice><lb/>
+                    Main a<choice><orig/><reg resp="#SDM"> </reg></choice>main.</l>
+                    <l xml:id="l-259v-2-13">Part ne <choice><abbr>ꝯpaigne</abbr><expan resp="#SDM"><ex>com</ex>paigne</expan></choice> n'<choice><abbr>atēdi</abbr><expan resp="#SDM">ate<ex>n</ex>di</expan></choice></l>
+                    <l xml:id="l-259v-2-14"><choice><abbr>Mō</abbr><expan resp="#SDM">Mo<ex>n</ex></expan></choice> <choice><abbr>chm̄i</abbr><expan resp="#SDM">ch<ex>e</ex>m<ex>in</ex></expan></choice> aval ſ'eſtendi</l>
+                    <l xml:id="l-259v-2-15"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /le <choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><abbr>esꝑit</abbr><expan resp="#SDM">eſp<ex>er</ex>it</expan></choice> de rue</l>
+                    <l xml:id="l-259v-2-16">Sus la <choice><orig>riuiere</orig><reg resp="#SDM">riviere</reg></choice> en la<lb/>
+                    /Grant rue</l>
+                    <l xml:id="l-259v-2-17">Seigneur de /la poꝛte du<lb/>
+                    Louure</l>
+                    <l xml:id="l-259v-2-18">Dames y<choice><orig/><reg resp="#SDM"> </reg></choice>a gentes <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>bōnes</abbr><expan resp="#SDM">bo<ex>n</ex>nes</expan></choice></l>
+                    <l xml:id="l-259v-2-19">De leur denrees trop<lb/>
+                    Sont riche</l>
+                    <l xml:id="l-259v-2-20"><choice><abbr>Droitem̄t</abbr><expan resp="#SDM">Droitem<ex>en</ex>t</expan></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /oſteriche</l>
+                    <l xml:id="l-259v-2-21"><choice><abbr>Vīg</abbr><expan resp="#SDM">Vi<ex>n</ex>g</expan></choice> en /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> honoure</l>
+                    <l xml:id="l-259v-2-22">La <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> ge /meſtre hure</l>
+                    <l xml:id="l-259v-2-23">Les lui <choice><abbr>ſeāt</abbr><expan resp="#SDM">ſea<ex>n</ex>t</expan></choice> dames polies</l>
+                    <l xml:id="l-259v-2-24"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /la rue des poulie</l>
+                    <l xml:id="l-259v-2-25"><choice><abbr>Vīg</abbr><expan resp="#SDM">Vi<ex>n</ex>g</expan></choice> en /la rue daueron</l>
+                    <l xml:id="l-259v-2-26">Il y demeure <num value="1">.i.</num> <choice><abbr>gētis</abbr><expan resp="#SDM">ge<ex>n</ex>tis</expan></choice> hon</l>
+                    <l xml:id="l-259v-2-27"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue jehan tiſon</l>
+                    <l xml:id="l-259v-2-28">N'<choice><orig>auoie</orig><reg resp="#SDM">avoie</reg></choice> talent de pꝛoier</l>
+                    <l xml:id="l-259v-2-29">Mes <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /la crois de tirouer</l>
+                    <l xml:id="l-259v-2-30">Ving en /la rue de neele</l>
+                    <l xml:id="l-259v-2-31">N'<choice><orig>auoie</orig><reg resp="#SDM">avoie</reg></choice> tabour ne viele</l>
+                    <l xml:id="l-259v-2-32">En /la rue Raoul menuicet</l>
+                    <l xml:id="l-259v-2-33"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <num value="1">.i.</num> homme qui<lb/>
+
+                    <pb n="260r" xml:id="f260r"/>
+                    <cb n="1" xml:id="cb-260r-1"/>
+                    Mucet.</l>
+                    <l xml:id="l-260r-1-1"><choice><orig>Vne</orig><reg resp="#SDM">Une</reg></choice> <choice><abbr>fem̄e</abbr><expan resp="#SDM">fem<ex>m</ex>e</expan></choice> en <choice><abbr>t՚re</abbr><expan resp="#SDM">t<ex>er</ex>re</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en<choice><orig/><reg resp="#SDM"> </reg></choice>ſiet</l>
+                    <l xml:id="l-260r-1-2">/La rue des eſtruues en<lb/>
+                    Pres ſiet</l>
+                    <l xml:id="l-260r-1-3"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> eſt /la rue du four</l>
+                    <l xml:id="l-260r-1-4">Loꝛs <choice><abbr>ētrai</abbr><expan resp="#SDM">e<ex>n</ex>trai</expan></choice> <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> <num value="1">.i.</num> carefour</l>
+                    <l xml:id="l-260r-1-5"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> /la rue des eſcus</l>
+                    <l xml:id="l-260r-1-6"><num value="1">.I.</num> homs a granz ongles<lb/>
+                    Locus.</l>
+                    <l xml:id="l-260r-1-7">Demanda Guillot que<lb/>
+                    Fes<choice><orig/><reg resp="#SDM"> </reg></choice>tu</l>
+                    <l xml:id="l-260r-1-8">Droitement de /chaſtiau<lb/>
+                    Feſtu</l>
+                    <l xml:id="l-260r-1-9">M'en ving a<choice><orig/><reg resp="#SDM"> </reg></choice>/la<choice><orig/><reg resp="#SDM"> </reg></choice>rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/pꝛou<lb break="no"/>
+                    Voires</l>
+                    <l xml:id="l-260r-1-10"><choice><orig>Ov</orig><reg resp="#SDM">Ou</reg></choice> il a<choice><orig/><reg resp="#SDM"> </reg></choice>maintes pennes<lb/>
+                    Vaires</l>
+                    <l xml:id="l-260r-1-11">Mon cuer ſi a <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> ferme<lb/>
+                    Veue.</l>
+                    <l xml:id="l-260r-1-12"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue de la croiz neuve</l>
+                    <l xml:id="l-260r-1-13"><choice><abbr>Vīg</abbr><expan resp="#SDM">Vi<ex>n</ex>g</expan></choice> en /la rue <choice><orig>raoul</orig><reg resp="#SDM">Raoul</reg></choice><choice><orig/><reg resp="#SDM"> </reg></choice>roiſſole</l>
+                    <l xml:id="l-260r-1-14">N'<choice><orig>auoie</orig><reg resp="#SDM">avoie</reg></choice> ne plais ne ſole</l>
+                    <l xml:id="l-260r-1-15">/La rue de <choice><orig><choice><abbr>mō matre</abbr><expan resp="#SDM">mo<ex>n</ex> matre</expan></choice></orig><reg resp="#SDM"><choice><abbr>mōmatre</abbr><expan resp="#SDM">mo<ex>n</ex>matre</expan></choice></reg></choice> <choice><abbr>trōue</abbr><expan resp="#SDM">tro<ex>u</ex>ue</expan></choice></l>
+                    <l xml:id="l-260r-1-16">Il eſt <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> ſeu <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> pꝛoue</l>
+                    <l xml:id="l-260r-1-17">Ma voie fu <choice><orig>deliure</orig><reg resp="#SDM">delivre</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>p՚ſte</abbr><expan resp="#SDM">p<ex>re</ex>ſte</expan></choice></l>
+                    <l xml:id="l-260r-1-18">Tout dꝛoit <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /la ruele<lb/>
+                    E pꝛeſtre</l>
+                    <l xml:id="l-260r-1-19">Ving a /la <choice><abbr>poīte</abbr><expan resp="#SDM">poi<ex>n</ex>te</expan></choice> /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> huitaſſe</l>
+                    <l xml:id="l-260r-1-20">Droit <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> avant ſui ma<choice><orig/><reg resp="#SDM"> </reg></choice> <choice><abbr>t˜ce</abbr><expan resp="#SDM">t<ex>ra</ex>ce</expan></choice></l>
+                    <l xml:id="l-260r-1-21"><choice><orig><choice><abbr>Iuſq՚s</abbr><expan resp="#SDM">Iuſq<ex>ue</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>Juſq՚s</abbr><expan resp="#SDM">Juſq<ex>ue</ex>s</expan></choice></reg></choice> en /la tonelerie.</l>
+                    <l xml:id="l-260r-1-22">Ne ſui pas cil <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> <choice><orig>trueue</orig><reg resp="#SDM">trueve</reg></choice> lie</l>
+                    <l xml:id="l-260r-1-23">Mais par <choice><orig>deuant</orig><reg resp="#SDM">devant</reg></choice> /la halle<lb/>
+                    Au<choice><orig/><reg resp="#SDM"> </reg></choice>blé</l>
+                    <l xml:id="l-260r-1-24">Ou l'en a mainte foiz lobe</l>
+                    <l xml:id="l-260r-1-25">M'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> ving en /la <choice><abbr>poisōnerie</abbr><expan resp="#SDM">poiſo<ex>n</ex>nerie</expan></choice></l>
+                    <l xml:id="l-260r-1-26">Des halles et en la<lb/>
+                    /Foꝛmagerie</l>
+                    <l xml:id="l-260r-1-27">Tantoſt <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> /la <choice><abbr>gāterie</abbr><expan resp="#SDM">ga<ex>n</ex>terie</expan></choice></l>
+
+                    <cb n="2" xml:id="cb-260r-2"/>
+                    <l xml:id="l-260r-2-1">A l'<choice><abbr>enꝯtre</abbr><expan resp="#SDM">en<ex>con</ex>tre</expan></choice> eſt /la lingerie</l>
+                    <l xml:id="l-260r-2-2">/La rue o feure ſiet <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> pꝛés</l>
+                    <l xml:id="l-260r-2-3"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la coſſonnerie <choice><abbr>ap՚s</abbr><expan resp="#SDM">ap<ex>ré</ex>s</expan></choice></l>
+                    <l xml:id="l-260r-2-4"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> poꝛ moi miex garder<lb/>
+                    Des /halles</l>
+                    <l xml:id="l-260r-2-5"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> <choice><orig>de ſouz</orig><reg resp="#SDM">deſouz</reg></choice> /les avans des<lb/>
+                    /Halles.</l>
+                    <l xml:id="l-260r-2-6"><choice><abbr>Vīg</abbr><expan resp="#SDM">Vi<ex>n</ex>g</expan></choice> en /la rue a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>p՚eſcheeurs</abbr><expan resp="#SDM">p<ex>er</ex>eſcheeurs</expan></choice></l>
+                    <l xml:id="l-260r-2-7">La bui <choice><orig>auec</orig><reg resp="#SDM">avec</reg></choice> freres meneurs</l>
+                    <l xml:id="l-260r-2-8">Dont <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> n'ai pas chiere <choice><orig>marie</orig><reg resp="#SDM">Marie</reg></choice></l>
+                    <l xml:id="l-260r-2-9"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> alait en /la chauuerie</l>
+                    <l xml:id="l-260r-2-10">Aſez <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> /<choice><abbr>maudeſto˞</abbr><expan resp="#SDM">maudeſto<ex>ur</ex></expan></choice></l>
+                    <l xml:id="l-260r-2-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /le carrefour de la tour</l>
+                    <l xml:id="l-260r-2-12">Ou l'en giete <choice><abbr>maīte</abbr><expan resp="#SDM">mai<ex>n</ex>te</expan></choice> <choice><abbr>sētence</abbr><expan resp="#SDM">ſe<ex>n</ex>tence</expan></choice></l>
+                    <l xml:id="l-260r-2-13"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> la maiſon a<choice><orig/><reg resp="#SDM"> </reg></choice>/dan <choice><abbr>ſeq՚nce</abbr><expan resp="#SDM">ſeq<ex>ue</ex>nce</expan></choice></l>
+                    <l xml:id="l-260r-2-14">/Le puis le <choice><orig>carre four</orig><reg resp="#SDM">carrefour</reg></choice> <choice><abbr>deꝑt</abbr><expan resp="#SDM">dep<ex>ar</ex>t</expan></choice></l>
+                    <l xml:id="l-260r-2-15">/<choice><orig>Iehan</orig><reg resp="#SDM">Jehan</reg></choice> pinche clou d'autre <choice><abbr>ꝑt</abbr><expan resp="#SDM">p<ex>ar</ex>t</expan></choice></l>
+                    <l xml:id="l-260r-2-16">Demoura tout dꝛoit a<choice><orig/><reg resp="#SDM"> </reg></choice>l'<choice><orig><choice><abbr>ē ꝯtre</abbr><expan resp="#SDM">e<ex>n</ex> <ex>con</ex>tre</expan></choice></orig><reg resp="#SDM"><choice><abbr>ēꝯtre</abbr><expan resp="#SDM">e<ex>n</ex><ex>con</ex>tre</expan></choice></reg></choice></l>
+                    <l xml:id="l-260r-2-17">Oꝛ<choice><orig/><reg resp="#SDM"> </reg></choice>dirai ſanz faire <choice><abbr>lōc</abbr><expan resp="#SDM">lo<ex>n</ex>c</expan></choice> <choice><abbr>ꝯte</abbr><expan resp="#SDM"><ex>con</ex>te</expan></choice></l>
+                    <l xml:id="l-260r-2-18">/La petite truanderie</l>
+                    <l xml:id="l-260r-2-19">Es /rues des halles ſ'alie</l>
+                    <l xml:id="l-260r-2-20">/La rue au <choice><abbr>cīgē</abbr><expan resp="#SDM">ci<ex>n</ex>g<ex>n</ex>e</expan></choice> ce me <choice><abbr>sāble</abbr><expan resp="#SDM">ſa<ex>m</ex>ble</expan></choice></l>
+                    <l xml:id="l-260r-2-21"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>ꝯtre</abbr><expan resp="#SDM"><ex>con</ex>tre</expan></choice> /maudeſtour <choice><abbr>aſſāble</abbr><expan resp="#SDM">aſſa<ex>m</ex>ble</expan></choice></l>
+                    <l xml:id="l-260r-2-22">Droit a<choice><orig/><reg resp="#SDM"> </reg></choice>/la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> <choice><abbr>truāderie</abbr><expan resp="#SDM">trua<ex>n</ex>derie</expan></choice></l>
+                    <l xml:id="l-260r-2-23"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /Merderiau n'obli <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> mie</l>
+                    <l xml:id="l-260r-2-24">Ne /la petite ruelete</l>
+                    <l xml:id="l-260r-2-25">/<choice><orig>Iehan</orig><reg resp="#SDM">Jehan</reg></choice> <choice><abbr>bīgue</abbr><expan resp="#SDM">bi<ex>n</ex>gue</expan></choice> par /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> cler<lb/>
+                    Surete</l>
+                    <l xml:id="l-260r-2-26">Mon chemin ne fu pas trop<lb/>
+                    Rogue</l>
+                    <l xml:id="l-260r-2-27"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue /<choice><orig>nicolas</orig><reg resp="#SDM">Nicolas</reg></choice> arode.</l>
+                    <l xml:id="l-260r-2-28">Alai <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> en /mau <choice><abbr>ꝯſeil</abbr><expan resp="#SDM"><ex>con</ex>ſeil</expan></choice>.</l>
+                    <l xml:id="l-260r-2-29"><choice><orig>Vne</orig><reg resp="#SDM">Une</reg></choice> dame vi ſus <num value="1">.i.</num> ſeil</l>
+                    <l xml:id="l-260r-2-30">Qui <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> ſe poꝛtoit <choice><abbr>noblem̄t</abbr><expan resp="#SDM">noblem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-260r-2-31"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> la ſaluai <choice><abbr>ſimplem̄t</abbr><expan resp="#SDM">ſimplem<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-260r-2-32"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> elle moi <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> loys</l>
+                    <l xml:id="l-260r-2-33"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la <choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>ainte</ex></expan></choice> rue <choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><orig>denis</orig><reg resp="#SDM">Denis</reg></choice></l>
+                    <l xml:id="l-260r-2-34"><choice><abbr>Vīg</abbr><expan resp="#SDM">Vi<ex>n</ex>g</expan></choice> <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> /la rue as oues dꝛoit</l>
+
+                    <pb n="260v" xml:id="f260v"/>
+                    <cb n="1" xml:id="cb-260v-1"/>
+                    <l xml:id="l-260v-1-1">Pris <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> <choice><abbr>chemī</abbr><expan resp="#SDM">chemi<ex>n</ex></expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> adꝛoit</l>
+                    <l xml:id="l-260v-1-2">Droit <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> martin</l>
+                    <l xml:id="l-260v-1-3">Ou <choice><orig>i</orig><reg resp="#SDM">j</reg></choice>'oï chanter en latin</l>
+                    <l xml:id="l-260v-1-4">De /<choice><orig><choice><abbr>nr՚e</abbr><expan resp="#SDM">n<ex>ost</ex>re</expan></choice></orig><reg resp="#SDM"><choice><abbr>Nr՚e</abbr><expan resp="#SDM">N<ex>ost</ex>re</expan></choice></reg></choice> <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice> <num value="1">.i.</num> ſi <choice><abbr>doꝰ</abbr><expan resp="#SDM">do<ex>us</ex></expan></choice> chans</l>
+                    <l xml:id="l-260v-1-5"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la rue des petis chans</l>
+                    <l xml:id="l-260v-1-6">Alai <choice><abbr>dꝛoitem̄t</abbr><expan resp="#SDM">dꝛoitem<ex>en</ex>t</expan></choice> <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> /biau bourc</l>
+                    <l xml:id="l-260v-1-7">Ne chaſſoie chieure ne bouc</l>
+                    <l xml:id="l-260v-1-8"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> truis /la rue a<choice><orig/><reg resp="#SDM"> </reg></choice>iongleeurs</l>
+                    <l xml:id="l-260v-1-9"><choice><abbr>Ꝯ</abbr><expan resp="#SDM"><ex>C'on</ex></expan></choice> ne me <choice><abbr>tiēgne</abbr><expan resp="#SDM">tie<ex>n</ex>gne</expan></choice> a<choice><orig/><reg resp="#SDM"> </reg></choice>iengleeurs</l>
+                    <l xml:id="l-260v-1-10">De /la rue /gieffroi l'angeuin</l>
+                    <l xml:id="l-260v-1-11"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue des eſtuues vin</l>
+                    <l xml:id="l-260v-1-12"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> en /la rue lingeriere</l>
+                    <l xml:id="l-260v-1-13">La ou l'en<choice><orig/><reg resp="#SDM"> </reg></choice>a <choice><abbr>maīte</abbr><expan resp="#SDM">mai<ex>n</ex>te</expan></choice> plaſtriere</l>
+                    <l xml:id="l-260v-1-14">D'archal miſe en oeuur<lb/>
+                    Pour voir</l>
+                    <l xml:id="l-260v-1-15">Pluſeurs gens pour leur<lb/>
+                    Vie <choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice>.</l>
+                    <l xml:id="l-260v-1-16"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la rue ſendebours</l>
+                    <l xml:id="l-260v-1-17">La <choice><orig>tre filliere</orig><reg resp="#SDM">trefilliere</reg></choice> a l'un des bous</l>
+                    <l xml:id="l-260v-1-18"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /qui qu'en poit que <choice><orig>i</orig><reg resp="#SDM">j</reg></choice>'ai<lb/>
+                    <choice><abbr>Ml՚t</abbr><expan resp="#SDM">M<ex>ou</ex>lt</expan></choice> chier</l>
+                    <l xml:id="l-260v-1-19">/La rue auberi le bouchier</l>
+                    <l xml:id="l-260v-1-20"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la <choice><orig><choice><abbr>ꝯ reerie</abbr><expan resp="#SDM"><ex>con</ex> reerie</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝯreerie</abbr><expan resp="#SDM"><ex>con</ex>reerie</expan></choice></reg></choice> auſſi</l>
+                    <l xml:id="l-260v-1-21">/La rue amauri de rouſſi</l>
+                    <l xml:id="l-260v-1-22"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>ꝯtre</abbr><expan resp="#SDM"><ex>con</ex>tre</expan></choice> /trouſſe vache chiet</l>
+                    <l xml:id="l-260v-1-23">Que <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> gart qu'il ne <choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice><lb/>
+                    Meſchiet.</l>
+                    <l xml:id="l-260v-1-24"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue du vin le roy</l>
+                    <l xml:id="l-260v-1-25">Dieu grace ou n'a <choice><abbr>pōit</abbr><expan resp="#SDM">poi<ex>n</ex>t</expan></choice> de deſroy</l>
+                    <l xml:id="l-260v-1-26"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la viez <choice><abbr>mōnoie</abbr><expan resp="#SDM">mo<ex>n</ex>noie</expan></choice> par ſens</l>
+                    <l xml:id="l-260v-1-27">M'en ving auſſi <choice><abbr>ꝯ</abbr><expan resp="#SDM"><ex>com</ex></expan></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> aſens</l>
+                    <l xml:id="l-260v-1-28">Audeſus d'iluec <num value="1">.i.</num> petit</l>
+                    <l xml:id="l-260v-1-29"><choice><orig>Trouai</orig><reg resp="#SDM">Trovai</reg></choice> le <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le petit</l>
+                    <l xml:id="l-260v-1-30">/Marivaus ſi<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>ꝯme</abbr><expan resp="#SDM"><ex>com</ex>me</expan></choice> il me ſamble</l>
+                    <l xml:id="l-260v-1-31">Li<choice><orig/><reg resp="#SDM"> </reg></choice><choice><orig>vns</orig><reg resp="#SDM">uns</reg></choice> a<choice><orig/><reg resp="#SDM"> </reg></choice>l'autre <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> ſ'<choice><orig><choice><abbr>a sāble</abbr><expan resp="#SDM">a ſa<ex>m</ex>ble</expan></choice></orig><reg resp="#SDM"><choice><abbr>asāble</abbr><expan resp="#SDM">aſa<ex>m</ex>ble</expan></choice></reg></choice></l>
+                    <l xml:id="l-260v-1-32">Audeſous ſiet /la hiaumerie</l>
+                    <l xml:id="l-260v-1-33"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> aſes <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> /la loꝛmerie</l>
+                    <l xml:id="l-260v-1-34"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /la baſennerie</l>
+
+                    <cb n="2" xml:id="cb-260v-2"/>
+                    <l xml:id="l-260v-2-1">Ving en /la rue <choice><abbr>iehā</abbr><expan resp="#SDM">ieha<ex>n</ex></expan></choice> le <choice><abbr>ꝯte</abbr><expan resp="#SDM"><ex>con</ex>te</expan></choice></l>
+                    <l xml:id="l-260v-2-2">/La ſavonnerie en <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> <choice><abbr>ꝯte</abbr><expan resp="#SDM"><ex>con</ex>te</expan></choice></l>
+                    <l xml:id="l-260v-2-3">Ai<choice><orig/><reg resp="#SDM"> </reg></choice>miſe par /la pierre o<choice><orig/><reg resp="#SDM"> </reg></choice>let</l>
+                    <l xml:id="l-260v-2-4">Ving <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> /la rue <choice><abbr>iehā</abbr><expan resp="#SDM">ieha<ex>n</ex></expan></choice> <choice><abbr>paī</abbr><expan resp="#SDM">pai<ex>n</ex></expan></choice> molet</l>
+                    <l xml:id="l-260v-2-5"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> truis /la rue des arſis</l>
+                    <l xml:id="l-260v-2-6"><choice><abbr>Sꝰ</abbr><expan resp="#SDM">S<ex>us</ex></expan></choice> <num value="1">.i.</num> ſiege <num value="1">.i.</num> petit m'aſſis</l>
+                    <l xml:id="l-260v-2-7"><choice><abbr>P˞</abbr><expan resp="#SDM">P<ex>our</ex></expan></choice> ce <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> le repos fu bon</l>
+                    <l xml:id="l-260v-2-8"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> truis /les <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> rues /<choice><orig><choice><abbr>.S՚.</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice> bon</l>
+                    <l xml:id="l-260v-2-9">Loꝛs ving en /la buffeterie</l>
+                    <l xml:id="l-260v-2-10">Tantoſt <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> /la <choice><abbr>lāperie</abbr><expan resp="#SDM">la<ex>m</ex>perie</expan></choice></l>
+                    <l xml:id="l-260v-2-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la rue de la poꝛte</l>
+                    <l xml:id="l-260v-2-12">/<choice><orig><choice><abbr>.S՚.</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice> Meſri <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> chemin ſ'apoꝛte</l>
+                    <l xml:id="l-260v-2-13">Droit en /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue a<choice><orig/><reg resp="#SDM"> </reg></choice>/bouvetins</l>
+                    <l xml:id="l-260v-2-14"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue a<choice><orig/><reg resp="#SDM"> </reg></choice>chauetiers tins</l>
+                    <l xml:id="l-260v-2-15">Ma<choice><orig/><reg resp="#SDM"> </reg></choice>voie en /rue de l'eſtable</l>
+                    <l xml:id="l-260v-2-16">Di /cloiſtre qui eſt honeſtable</l>
+                    <l xml:id="l-260v-2-17">De /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> meſri en /baille hoe</l>
+                    <l xml:id="l-260v-2-18">Ou <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> plenté de boe</l>
+                    <l xml:id="l-260v-2-19"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> rue de renon</l>
+                    <l xml:id="l-260v-2-20">/Rue neuue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> Meſri a<choice><orig/><reg resp="#SDM"> </reg></choice>non</l>
+                    <l xml:id="l-260v-2-21"><choice><abbr>Tātoſt</abbr><expan resp="#SDM">Ta<ex>n</ex>toſt</expan></choice> <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> /la court <choice><orig><choice><abbr>rob՚t</abbr><expan resp="#SDM">rob<ex>er</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>Rob՚t</abbr><expan resp="#SDM">Rob<ex>er</ex>t</expan></choice></reg></choice></l>
+                    <l xml:id="l-260v-2-22">De /<choice><abbr>par՚</abbr><expan resp="#SDM">par<ex>is</ex></expan></choice>. Mes <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /<choice><sic><choice><abbr>.s՚</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></sic><corr resp="#SDM"><choice><abbr>.s՚<supplied resp="#SDM">.</supplied></abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></corr></choice> lambert</l>
+                    <l xml:id="l-260v-2-23">/Rue pierre o lart ſiet pꝛés</l>
+                    <l xml:id="l-260v-2-24"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la bouclerie apꝛés</l>
+                    <l xml:id="l-260v-2-25">Ne /la rue n'oubli<choice><orig/><reg resp="#SDM"> </reg></choice>ge pas</l>
+                    <l xml:id="l-260v-2-26">/Symon le <choice><abbr>fñc</abbr><expan resp="#SDM">f<ex>ra</ex>nc</expan></choice> <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> petit pas</l>
+                    <l xml:id="l-260v-2-27">Alai <choice><abbr>v՚s</abbr><expan resp="#SDM">v<ex>er</ex>s</expan></choice> /la poꝛte du <choice><abbr>tēple</abbr><expan resp="#SDM">te<ex>m</ex>ple</expan></choice>.</l>
+                    <l xml:id="l-260v-2-28">Penſis ma <choice><abbr>maī</abbr><expan resp="#SDM">mai<ex>n</ex></expan></choice> <choice><orig>de lez</orig><reg resp="#SDM">delez</reg></choice> ma <choice><abbr>tēple</abbr><expan resp="#SDM">te<ex>m</ex>ple</expan></choice></l>
+                    <l xml:id="l-260v-2-29"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue des <choice><abbr>blās</abbr><expan resp="#SDM">bla<ex>n</ex>s</expan></choice> <choice><abbr>mātiaus</abbr><expan resp="#SDM">ma<ex>n</ex>tiaus</expan></choice></l>
+                    <l xml:id="l-260v-2-30"><choice><abbr>Ētrai</abbr><expan resp="#SDM">E<ex>n</ex>trai</expan></choice> ou <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> vi <choice><abbr>maīte</abbr><expan resp="#SDM">mai<ex>n</ex>te</expan></choice> piaus</l>
+                    <l xml:id="l-260v-2-31">Metre en <choice><abbr>cōroi</abbr><expan resp="#SDM">co<ex>n</ex>roi</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>blāche</abbr><expan resp="#SDM">bla<ex>n</ex>che</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> noire</l>
+                    <l xml:id="l-260v-2-32"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> truis /la rue perrenele</l>
+                    <l xml:id="l-260v-2-33">De /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><orig>pol</orig><reg resp="#SDM">Pol</reg></choice> /la ru du plaſtre</l>
+                    <l xml:id="l-260v-2-34">Ou maintes dames leur<lb/>
+                    Emplaſtre</l>
+                    <l xml:id="l-260v-2-35">A maint compaignon ont<lb/>
+                    Fait batre</l>
+                    <l xml:id="l-260v-2-36">Ce me ſamble <choice><abbr>p˞</abbr><expan resp="#SDM">p<ex>our</ex></expan></choice> eulz eſbatre</l>
+
+                    <pb n="261r" xml:id="f261r"/>
+                    <cb n="1" xml:id="cb-261r-1"/>
+                    <l xml:id="l-261r-1-1"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> eſt /la rue du puis</l>
+                    <l xml:id="l-261r-1-2">/La rue a<choice><orig/><reg resp="#SDM"> </reg></choice>ſinges <choice><abbr>ap՚s</abbr><expan resp="#SDM">ap<ex>ré</ex>s</expan></choice> pꝛis</l>
+                    <l xml:id="l-261r-1-3"><choice><abbr>Ꝯtreual</abbr><expan resp="#SDM"><ex>Con</ex>treual</expan></choice> /la <choice><abbr>bꝛetōnerie</abbr><expan resp="#SDM">bꝛeto<ex>n</ex>nerie</expan></choice></l>
+                    <l xml:id="l-261r-1-4">M'en <choice><abbr>vīg</abbr><expan resp="#SDM">vi<ex>n</ex>g</expan></choice> <choice><abbr>plaī</abbr><expan resp="#SDM">plai<ex>n</ex></expan></choice> de mirencolie</l>
+                    <l xml:id="l-261r-1-5"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> /la rue des <choice><orig>iardins</orig><reg resp="#SDM">jardins</reg></choice></l>
+                    <l xml:id="l-261r-1-6">Ou<choice><orig/><reg resp="#SDM"> </reg></choice>/les <choice><orig>iuys</orig><reg resp="#SDM">Juys</reg></choice> <choice><abbr>maītrens</abbr><expan resp="#SDM">mai<ex>n</ex>trens</expan></choice> <choice><orig>iadis</orig><reg resp="#SDM">jadis</reg></choice></l>
+                    <l xml:id="l-261r-1-7">O /carrefour du <choice><abbr>tēple</abbr><expan resp="#SDM">te<ex>m</ex>ple</expan></choice> vins</l>
+                    <l xml:id="l-261r-1-8">Ou<choice><orig/><reg resp="#SDM"> </reg></choice><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> bui plain henap de vin</l>
+                    <l xml:id="l-261r-1-9">Pour ce <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> ſoif <choice><orig>auoie</orig><reg resp="#SDM">avoie</reg></choice></l>
+                    <l xml:id="l-261r-1-10">Adont me remis a<choice><orig/><reg resp="#SDM"> </reg></choice>la voie</l>
+                    <l xml:id="l-261r-1-11">/La rue de l'abbeie du bec</l>
+                    <l xml:id="l-261r-1-12">Helouin <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> abec</l>
+                    <l xml:id="l-261r-1-13">M'en alai en /la verrerie</l>
+                    <l xml:id="l-261r-1-14">Tout <choice><abbr>ꝯtreual</abbr><expan resp="#SDM"><ex>con</ex>treual</expan></choice> /la poterie</l>
+                    <l xml:id="l-261r-1-15">Ving o /carefour quilloꝛi</l>
+                    <l xml:id="l-261r-1-16">Li <choice><orig>vn</orig><reg resp="#SDM">un</reg></choice> dit ho l'autre hari</l>
+                    <l xml:id="l-261r-1-17">Ne <choice><orig><choice><abbr>ꝑ di</abbr><expan resp="#SDM">p<ex>er</ex> di</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝑdi</abbr><expan resp="#SDM">p<ex>er</ex>di</expan></choice></reg></choice> pas <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> eſſien</l>
+                    <l xml:id="l-261r-1-18">/La ruelet gencien</l>
+                    <l xml:id="l-261r-1-19">Alai ou maint <num value="1">.i.</num> biau varlet</l>
+                    <l xml:id="l-261r-1-20"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>rue /andꝛi mallet</l>
+                    <l xml:id="l-261r-1-21"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> /la rue du martrai</l>
+                    <l xml:id="l-261r-1-22"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> ruele tournai</l>
+                    <l xml:id="l-261r-1-23"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> de /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> iehan voie apoꝛte</l>
+                    <l xml:id="l-261r-1-24"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> <choice><abbr>ꝯtre</abbr><expan resp="#SDM"><ex>con</ex>tre</expan></choice> la rue a <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> poꝛtes</l>
+                    <l xml:id="l-261r-1-25">De /la viez tieſſeranderie</l>
+                    <l xml:id="l-261r-1-26">Alai dꝛoit en<choice><orig/><reg resp="#SDM"> </reg></choice>/l'eſculerie</l>
+                    <l xml:id="l-261r-1-27"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> en /la rue de /chartron</l>
+                    <l xml:id="l-261r-1-28">Ou <choice><abbr>maīte</abbr><expan resp="#SDM">mai<ex>n</ex>te</expan></choice> dame <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> chartre ont</l>
+                    <l xml:id="l-261r-1-29">Tenu <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> vit. <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> noꝛier</l>
+                    <l xml:id="l-261r-1-30"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue du franc <choice><abbr>mōrier</abbr><expan resp="#SDM">mo<ex>n</ex>roier</expan></choice></l>
+                    <l xml:id="l-261r-1-31">Alai <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /vuiez cimetiere</l>
+                    <l xml:id="l-261r-1-32">/<choice><orig><choice><abbr>.S՚.</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice> iehan meiſme en cetiere</l>
+                    <l xml:id="l-261r-1-33"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> toſt /la rue du /bours</l>
+                    <l xml:id="l-261r-1-34">Tibout. <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> dꝛoit a l'<choice><abbr>ū</abbr><expan resp="#SDM">u<ex>n</ex></expan></choice> des<choice><orig/><reg resp="#SDM"> </reg></choice>bous</l>
+                    <l xml:id="l-261r-1-35">/La rue <choice><abbr>anq՚til</abbr><expan resp="#SDM">anq<ex>ue</ex>til</expan></choice> le faucheur</l>
+                    <l xml:id="l-261r-1-36">La <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> <num value="1">.i.</num> <choice><orig><choice><abbr>ꝯ pains</abbr><expan resp="#SDM"><ex>com</ex> pains</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝯpains</abbr><expan resp="#SDM"><ex>com</ex>pains</expan></choice></reg></choice> tencheeur</l>
+                    <l xml:id="l-261r-1-37"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue du <choice><abbr>tēple</abbr><expan resp="#SDM">te<ex>m</ex>ple</expan></choice> alai</l>
+                    <l xml:id="l-261r-1-38"><choice><abbr>Iſnelem̄t</abbr><expan resp="#SDM">Iſnelem<ex>en</ex>t</expan></choice> ſanz nul <choice><orig>de lai</orig><reg resp="#SDM">delai</reg></choice></l>
+
+                    <cb n="2" xml:id="cb-261r-2"/>
+                    <l xml:id="l-261r-2-1"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la ru au roy de /ſezille</l>
+                    <l xml:id="l-261r-2-2"><choice><abbr>Ētrai</abbr><expan resp="#SDM">E<ex>n</ex>trai</expan></choice> <choice><abbr>tātoſt</abbr><expan resp="#SDM">ta<ex>n</ex>toſt</expan></choice> <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> ſedile</l>
+                    <l xml:id="l-261r-2-3"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue Renaut le feure</l>
+                    <l xml:id="l-261r-2-4"><choice><abbr>Maīt</abbr><expan resp="#SDM">Mai<ex>n</ex>t</expan></choice> ou el <choice><abbr>vēt</abbr><expan resp="#SDM">ve<ex>n</ex>t</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> pois <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><orig>feues</orig><reg resp="#SDM">feves</reg></choice></l>
+                    <l xml:id="l-261r-2-5"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue de pute y<choice><orig/><reg resp="#SDM"> </reg></choice>muce</l>
+                    <l xml:id="l-261r-2-6">M'en entrai en la <choice><abbr>maisō</abbr><expan resp="#SDM">maiſo<ex>n</ex></expan></choice> luce</l>
+                    <l xml:id="l-261r-2-7"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> maint en /rue de tyron</l>
+                    <l xml:id="l-261r-2-8">Des dames t mes <choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice> diron</l>
+                    <l xml:id="l-261r-2-9">/La rue de l'eſcouffle eſt pꝛés</l>
+                    <l xml:id="l-261r-2-10"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue des roſiers pꝛés</l>
+                    <l xml:id="l-261r-2-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> rue de la poꝛte</l>
+                    <l xml:id="l-261r-2-12">Baudeer ſi <choice><abbr>ꝯ</abbr><expan resp="#SDM"><ex>c'on</ex></expan></choice> ſe <choice><abbr>ꝯpoꝛte</abbr><expan resp="#SDM"><ex>com</ex>poꝛte</expan></choice>.</l>
+                    <l xml:id="l-261r-2-13">M'en alai en /rue percie</l>
+                    <l xml:id="l-261r-2-14"><choice><orig>Vne</orig><reg resp="#SDM">Une</reg></choice> <choice><abbr>fem̄e</abbr><expan resp="#SDM">fem<ex>m</ex>e</expan></choice> vi deſtrecie</l>
+                    <l xml:id="l-261r-2-15"><choice><abbr>P˞</abbr><expan resp="#SDM">P<ex>our</ex></expan></choice> ſoi pignier <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> me <choice><abbr>dōna</abbr><expan resp="#SDM">do<ex>n</ex>na</expan></choice></l>
+                    <l xml:id="l-261r-2-16">De bon vin ma voie <choice><abbr>adōna</abbr><expan resp="#SDM">ado<ex>n</ex>na</expan></choice></l>
+                    <l xml:id="l-261r-2-17"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue des poulies /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> pou</l>
+                    <l xml:id="l-261r-2-18"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> audeſus d'iluec <num value="1">.i.</num> pou</l>
+                    <l xml:id="l-261r-2-19"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> /la rue a <choice><abbr>faucōniers</abbr><expan resp="#SDM">fauco<ex>n</ex>niers</expan></choice></l>
+                    <l xml:id="l-261r-2-20">Ou l'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> <choice><orig>trueue</orig><reg resp="#SDM">trueve</reg></choice> <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> poꝛ deniers</l>
+                    <l xml:id="l-261r-2-21"><choice><abbr>Fem̄es</abbr><expan resp="#SDM">Fem<ex>m</ex>es</expan></choice> poꝛ <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> coꝛs ſoulacier<!-- notable feature --></l>
+                    <l xml:id="l-261r-2-22"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /la rue du figuier</l>
+                    <l xml:id="l-261r-2-23"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><orig><choice><abbr>ꝑ mi</abbr><expan resp="#SDM">p<ex>ar</ex> mi</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝑmi</abbr><expan resp="#SDM">p<ex>ar</ex>mi</expan></choice></reg></choice> /la rue a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>nōnains</abbr><expan resp="#SDM">no<ex>n</ex>nains</expan></choice></l>
+                    <l xml:id="l-261r-2-24">D'/iere vi <choice><orig><choice><abbr>cheuauch՚</abbr><expan resp="#SDM">cheuauch<ex>ier</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>chevauch՚</abbr><expan resp="#SDM">chevauch<ex>ier</ex></expan></choice></reg></choice> <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> <choice><abbr>naīs</abbr><expan resp="#SDM">nai<ex>n</ex>s</expan></choice></l>
+                    <l xml:id="l-261r-2-25"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> eſtoient eſioi</l>
+                    <l xml:id="l-261r-2-26"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> truis /la rue de ioy</l>
+                    <l xml:id="l-261r-2-27"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue foꝛgier l'anier</l>
+                    <l xml:id="l-261r-2-28"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> ving en /la moꝛtelerie</l>
+                    <l xml:id="l-261r-2-29">Ou a <choice><abbr>maīte</abbr><expan resp="#SDM">mai<ex>n</ex>te</expan></choice> <choice><abbr>taīturerie</abbr><expan resp="#SDM">tai<ex>n</ex>turerie</expan></choice></l>
+                    <l xml:id="l-261r-2-30">/La rue /<choice><abbr>Ēmeline</abbr><expan resp="#SDM">E<ex>m</ex>meline</expan></choice> boiliaue</l>
+                    <l xml:id="l-261r-2-31">/La rue garnier de <choice><abbr>sꝰ</abbr><expan resp="#SDM">s<ex>us</ex></expan></choice> l'yaue</l>
+                    <l xml:id="l-261r-2-32"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> a ce <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> cure ſ'atyre</l>
+                    <l xml:id="l-261r-2-33"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> /la rue du cimetire</l>
+                    <l xml:id="l-261r-2-34">/<choice><orig><choice><abbr>.S՚.</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice> <choice><abbr>g՚uais</abbr><expan resp="#SDM">g<ex>re</ex>uais</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> /l'ourmetiau</l>
+                    <l xml:id="l-261r-2-35">Sanz paſſer foſſe ne ruiſſiau</l>
+                    <l xml:id="l-261r-2-36">Ne ſanz paſſer planche ne <choice><abbr>pōt</abbr><expan resp="#SDM">po<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-261r-2-37">/La rue a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>moīnes</abbr><expan resp="#SDM">moi<ex>n</ex>nes</expan></choice> de lonc pont</l>
+                    <l xml:id="l-261r-2-38"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> iehan</l>
+
+                    <pb n="261v" xml:id="f261v"/>
+                    <cb n="1" xml:id="cb-261v-1"/>
+                    <l xml:id="l-261v-1-1">De greue ou demeure iouan</l>
+                    <l xml:id="l-261v-1-2"><num value="1">.I.</num> homs <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> n'a pas veue <choice><abbr>ſaīne</abbr><expan resp="#SDM">ſai<ex>n</ex>ne</expan></choice></l>
+                    <l xml:id="l-261v-1-3">Pres de /la ruele de ſaine</l>
+                    <l xml:id="l-261v-1-4"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue ſus la <choice><orig>riuiere</orig><reg resp="#SDM">riviere</reg></choice></l>
+                    <l xml:id="l-261v-1-5"><choice><orig>Trouuai</orig><reg resp="#SDM">Trouvai</reg></choice> <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> fauſſe<lb/>
+                    Eſtriuiere.</l>
+                    <l xml:id="l-261v-1-6">Si<choice><orig/><reg resp="#SDM"> </reg></choice>m'en reuing tout dꝛoit<lb/>
+                    En /greue.</l>
+                    <l xml:id="l-261v-1-7">/Le chemin de <choice><abbr>riēs</abbr><expan resp="#SDM">rie<ex>n</ex>s</expan></choice> ne me greue.</l>
+                    <l xml:id="l-261v-1-8">Tantoſt <choice><orig>trouuai</orig><reg resp="#SDM">trouvai</reg></choice> /la<choice><orig/><reg resp="#SDM"> </reg></choice>tanerie</l>
+                    <l xml:id="l-261v-1-9"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> apꝛés /la vanerie</l>
+                    <l xml:id="l-261v-1-10">/La rue de la coifferie</l>
+                    <l xml:id="l-261v-1-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> apꝛés /la tacherie</l>
+                    <l xml:id="l-261v-1-12"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /la rue aus <choice><abbr>ꝯmādereſſes</abbr><expan resp="#SDM"><ex>com</ex>ma<ex>n</ex>dereſſes</expan></choice></l>
+                    <l xml:id="l-261v-1-13">Ou il a <choice><abbr>maītes</abbr><expan resp="#SDM">mai<ex>n</ex>tes</expan></choice> tenchereſſes</l>
+                    <l xml:id="l-261v-1-14"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ont <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> <choice><abbr>hōme</abbr><expan resp="#SDM">ho<ex>m</ex>me</expan></choice> <choice><abbr>pͥs</abbr><expan resp="#SDM">p<ex>ri</ex>s</expan></choice> o bꝛai</l>
+                    <l xml:id="l-261v-1-15"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> /le carefour de mibꝛai</l>
+                    <l xml:id="l-261v-1-16"><choice><abbr>Ē</abbr><expan resp="#SDM">E<ex>n</ex></expan></choice> /la rue /<choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice> <choice><orig>iaque</orig><reg resp="#SDM">Jaque</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ou /poꝛce</l>
+                    <l xml:id="l-261v-1-17">M'en <choice><abbr>vīg</abbr><expan resp="#SDM">vi<ex>n</ex>g</expan></choice> n'<choice><orig>auoie</orig><reg resp="#SDM">avoie</reg></choice> ſac ne poce</l>
+                    <l xml:id="l-261v-1-18"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> alai en /la boucherie</l>
+                    <l xml:id="l-261v-1-19">/La rue de l'eſcoꝛcherie</l>
+                    <l xml:id="l-261v-1-20">Tournai <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><choice><orig/><reg resp="#SDM"> </reg></choice>mi /la triperie</l>
+                    <l xml:id="l-261v-1-21">M'en ving en /la poulaillerie</l>
+                    <l xml:id="l-261v-1-22">Car c'eſt la derreniere rue</l>
+                    <l xml:id="l-261v-1-23"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> ſi ſiet dꝛoit ſus /la <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> rue</l>
+                    <l xml:id="l-261v-1-24">/Guillot ſi fait a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>toꝰ</abbr><expan resp="#SDM">to<ex>us</ex></expan></choice> <choice><orig>ſauoit</orig><reg resp="#SDM">ſavoit</reg></choice></l>
+                    <l xml:id="l-261v-1-25">Que par <choice><orig>de ca</orig><reg resp="#SDM">deca</reg></choice> /grant pont<lb/>
+                    Pour voir.</l>
+                    <l xml:id="l-261v-1-26">N'a <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <num value="200">.<choice><orig>ijc</orig><reg resp="#SDM">iic</reg></choice>.</num> rues mains ſis</l>
+                    <l xml:id="l-261v-1-27"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> en la cité <num value="36">.<choice><orig>xxxvj</orig><reg resp="#SDM">xxxvi</reg></choice>.</num></l>
+                    <l xml:id="l-261v-1-28">Outre /petit pont <num value="80">.<choice><orig>iiijxx</orig><reg resp="#SDM">iiiixx</reg></choice>.</num></l>
+                    <l xml:id="l-261v-1-29">Ce ſont <num value="10">.x.</num> mains de <num value="320">.<choice><orig>xvjxx</orig><reg resp="#SDM">xvixx</reg></choice>.</num></l>
+                    <l xml:id="l-261v-1-30"><choice><orig>De denz</orig><reg resp="#SDM">Dedenz</reg></choice> les murs non<lb/>
+                    Pas <choice><orig>de hoꝛs</orig><reg resp="#SDM">dehoꝛs</reg></choice>.</l>
+                    <l xml:id="l-261v-1-31">Les autres rues ai mis hoꝛs</l>
+                    <l xml:id="l-261v-1-32">De ſa<choice><orig/><reg resp="#SDM"> </reg></choice>rime <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice> <choice><abbr>qͥl</abbr><expan resp="#SDM">q<ex>u'i</ex>l</expan></choice> n'<choice><abbr>ōt</abbr><expan resp="#SDM">o<ex>n</ex>t</expan></choice> chief</l>
+                    <l xml:id="l-261v-1-33">Ci vont faire de ſon dit chief</l>
+                    <l xml:id="l-261v-1-34">/Guillot <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> a fait <choice><abbr>maīt</abbr><expan resp="#SDM">mai<ex>n</ex>t</expan></choice> <choice><abbr>biaꝰ</abbr><expan resp="#SDM">bia<ex>us</ex></expan></choice> dis</l>
+
+                    <cb n="2" xml:id="cb-261v-2"/>
+                    <l xml:id="l-261v-2-1">Dit <choice><abbr>qͥl</abbr><expan resp="#SDM">q<ex>u'i</ex>l</expan></choice> n'a que <num value="300">.<choice><orig>iijc</orig><reg resp="#SDM">iiic</reg></choice>.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <num value="10">.x.</num></l>
+                    <l xml:id="l-261v-2-2">Rues a<choice><orig/><reg resp="#SDM"> </reg></choice>/<choice><orig>paris</orig><reg resp="#SDM">Paris</reg></choice> vraiement</l>
+                    <l xml:id="l-261v-2-3">Le <choice><abbr>doꝰ</abbr><expan resp="#SDM">do<ex>us</ex></expan></choice> <choice><abbr>ſeign˞</abbr><expan resp="#SDM">ſeign<ex>eur</ex></expan></choice> du <choice><abbr>firmam̄t</abbr><expan resp="#SDM">firmam<ex>en</ex>t</expan></choice></l>
+                    <l xml:id="l-261v-2-4"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> /ſa tres douce chiere <choice><abbr>m՚e</abbr><expan resp="#SDM">m<ex>er</ex>e</expan></choice></l>
+                    <l xml:id="l-261v-2-5"><choice><abbr>Noꝰ</abbr><expan resp="#SDM">No<ex>us</ex></expan></choice> deffende de moꝛt <choice><abbr>am՚e</abbr><expan resp="#SDM">am<ex>er</ex>e</expan></choice></l>
+                </lg>
+            </div></body></text></TEI>

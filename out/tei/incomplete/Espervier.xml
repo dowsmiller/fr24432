@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="86v" xml:id="f86v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f176"/><div type="text" n="23" xml:id="Espervier">
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-86v-1-10">Auſſi com cil qui<lb/>
+                    garde en mue</l>
+                    <l xml:id="l-86v-1-11">Son oiſel qui<lb/>
+                    ne ſe remue</l>
+                    <l xml:id="l-86v-1-12">Detout liueꝛ <choice><orig>iuſques</orig><reg resp="#SDM">juſques</reg></choice> aleſte</l>
+                    <l xml:id="l-86v-1-13"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> <choice><orig>uoit</orig><reg resp="#SDM">voit</reg></choice> <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> la <choice><abbr>u՚dure</abbr><expan resp="#SDM">u<ex>er</ex>dure</expan></choice> <choice><abbr>÷</abbr><expan resp="#SDM"><ex>est</ex></expan></choice> dꝛue</l>
+                    <l xml:id="l-86v-1-14"><choice><abbr>Qⁱl</abbr><expan resp="#SDM">Q<ex>u'i</ex>l</expan></choice> veut que ſon oiſel ſemue</l>
+                    <l xml:id="l-86v-1-15"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> deplume et deuolente</l>
+                    <l xml:id="l-86v-1-16"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> <add hand="#SH3" place="end"><choice><abbr>viēt</abbr><expan resp="#SDM">vie<ex>n</ex>t</expan></choice></add> autens renouuele</l>
+                    <l xml:id="l-86v-1-17"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> il na mes pieca vole</l>
+                    <l xml:id="l-86v-1-18"><choice><abbr>P˞</abbr><expan resp="#SDM">P<ex>our</ex></expan></choice> ſoulacieꝛ lepꝛent et rue</l>
+                    <l xml:id="l-86v-1-19"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> quant il a de lair taſte</l>
+                    <l xml:id="l-86v-1-20">Poy li chaut du tans <choice><abbr>q̃</abbr><expan resp="#SDM">q<ex>u'a</ex></expan></choice> gaſté</l>
+                    <l xml:id="l-86v-1-21">Ainſi ai mamie <choice><abbr>ꝑdue</abbr><expan resp="#SDM">p<ex>er</ex>due</expan></choice></l>
+                </lg>
+
+                <ab type="lineInsert">
+                    <choice>
+                        <sic>
+                            <lg>
+                                <l rend="decoratedInitial decoInitred" xml:id="l-86v-1-22"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> fui au<choice><orig/><reg resp="#SDM"> </reg></choice>fueꝛ du <choice><abbr>faucōnieꝛ</abbr><expan resp="#SDM">fauco<ex>n</ex>nieꝛ</expan></choice></l>
+
+                                <cb n="2" xml:id="cb-86v-2"/>
+                                <l xml:id="l-86v-2-1">Quant il pꝛant <num value="1">.i.</num> faucon lanieꝛ</l>
+                                <l xml:id="l-86v-2-2">Voulentieꝛs lapꝛiue ſeꝛoit</l>
+                                <l xml:id="l-86v-2-3"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſi licouſte mout alacointieꝛ</l>
+                                <l xml:id="l-86v-2-4">Et ſi lepeꝛt moult delegieꝛ</l>
+                                <l xml:id="l-86v-2-5">Si lepeꝛt ce neſt mie dꝛoit</l>
+                                <l xml:id="l-86v-2-6">Lafame eſt bien de tel endꝛoit</l>
+                                <l xml:id="l-86v-2-7"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> qui plus <choice><abbr>laīme</abbr><expan resp="#SDM">lai<ex>m</ex>me</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> plus lacroit</l>
+                                <l xml:id="l-86v-2-8">Si penſelle dengingnieꝛ</l>
+                                <l xml:id="l-86v-2-9">Celle fame maudite ſoit</l>
+                                <l xml:id="l-86v-2-10"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>aup՚mieꝛ</abbr><expan resp="#SDM">aup<ex>re</ex>mieꝛ</expan></choice> loume decoit</l>
+                                <l xml:id="l-86v-2-11"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> puis reſemble l<choice><abbr>eſp՚uieꝛ</abbr><expan resp="#SDM">eſp<ex>er</ex>uieꝛ</expan></choice></l>
+                                <l xml:id="l-86v-2-12">Iele di pour mamie chieꝛe</l>
+                                <l xml:id="l-86v-2-13"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> biau ſemblant et bele chieꝛe</l>
+                                <l xml:id="l-86v-2-14">Mefiſt alen coumencement</l>
+                                <l xml:id="l-86v-2-15">Mes oꝛ la truis <choice><orig>ueꝛs</orig><reg resp="#SDM">veꝛs</reg></choice> moy ſi fieꝛe</l>
+                                <l xml:id="l-86v-2-16">Pour <num value="1">.i.</num> autre mamis arrieꝛe</l>
+                                <l xml:id="l-86v-2-17">Ci a petit acointement</l>
+                                <l xml:id="l-86v-2-18">Ielai <choice><orig>ſeꝛuie</orig><reg resp="#SDM">ſeꝛvie</reg></choice> bonnement</l>
+                                <l xml:id="l-86v-2-19">Elle men rent lepaiement</l>
+                                <l xml:id="l-86v-2-20">Auſſi com de tous en <choice><orig>riuieꝛe</orig><reg resp="#SDM">rivieꝛe</reg></choice><choice><orig/><reg resp="#SDM"> </reg></choice>ſe <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice></l><!-- These are the lines that change -->
+                                <l xml:id="l-86v-2-21">Seꝛuie leuſſe autrement<choice><orig/><reg resp="#SDM"> </reg></choice>ſceuſſe</l><!-- These are the lines that change -->
+                                <l xml:id="l-86v-2-22">A laguiſe deſa manieꝛe <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> <choice><abbr>cōuēt</abbr><expan resp="#SDM">co<ex>u</ex>ue<ex>n</ex>t</expan></choice></l><!-- These are the lines that change -->
+                            </lg>
+                        </sic>
+                        <corr resp="#SH3">
+                            <lg>
+                                <l rend="decoratedInitial decoInitred" xml:id="l-86v-2-23"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> fui aufueꝛ du <choice><abbr>faucōnieꝛ</abbr><expan resp="#SDM">fauco<ex>n</ex>nieꝛ</expan></choice></l>
+
+                                <cb n="2"/>
+                                <l xml:id="l-86v-2-24">Quant il pꝛant <num value="1">.i.</num> faucon lanieꝛ</l>
+                                <l xml:id="l-86v-2-25">Voulentieꝛs lapꝛiue ſeꝛoit</l>
+                                <l xml:id="l-86v-2-26"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſi licouſte mout alacointieꝛ</l>
+                                <l xml:id="l-86v-2-27">Et ſi lepeꝛt moult delegieꝛ</l>
+                                <l xml:id="l-86v-2-28">Si lepeꝛt ce neſt mie dꝛoit</l>
+                                <l xml:id="l-86v-2-29">Lafame eſt bien de tel endꝛoit</l>
+                                <l xml:id="l-86v-2-30"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> qui plus <choice><abbr>laīme</abbr><expan resp="#SDM">lai<ex>m</ex>me</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> plus lacroit</l>
+                                <l xml:id="l-86v-2-31">Si penſelle dengingnieꝛ</l>
+                                <l xml:id="l-86v-2-32">Celle fame maudite ſoit</l>
+                                <l xml:id="l-86v-2-33"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>aup՚mieꝛ</abbr><expan resp="#SDM">aup<ex>re</ex>mieꝛ</expan></choice> loume decoit</l>
+                                <l xml:id="l-86v-2-34"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> puis reſemble l<choice><abbr>eſp՚uieꝛ</abbr><expan resp="#SDM">eſp<ex>er</ex>uieꝛ</expan></choice></l>
+                                <l xml:id="l-86v-2-35">Iele di pour mamie chieꝛe</l>
+                                <l xml:id="l-86v-2-36"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> biau ſemblant et bele chieꝛe</l>
+                                <l xml:id="l-86v-2-37">Mefiſt alen coumencement</l>
+                                <l xml:id="l-86v-2-38">Mes oꝛ la truis <choice><orig>ueꝛs</orig><reg resp="#SDM">veꝛs</reg></choice> moy ſi fieꝛe</l>
+                                <l xml:id="l-86v-2-39">Pour <num value="1">.i.</num> autre mamis arrieꝛe</l>
+                                <l xml:id="l-86v-2-40">Ci a petit acointement</l>
+                                <l xml:id="l-86v-2-41">Ielai <choice><orig>ſeꝛuie</orig><reg resp="#SDM">ſeꝛvie</reg></choice> bonnement</l>
+                                <l xml:id="l-86v-2-42">Elle men rent lepaiement</l>
+                                <l xml:id="l-86v-2-43">Auſſi com de tous en <choice><orig>riuieꝛe</orig><reg resp="#SDM">rivieꝛe</reg></choice></l>
+                                <l xml:id="l-86v-2-44">ſe <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> ſceuſſe <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> <choice><abbr>cōuēt</abbr><expan resp="#SDM">co<ex>u</ex>ue<ex>n</ex>t</expan></choice></l><!-- This is the inserted line -->
+                                <l xml:id="l-86v-2-45">Seꝛuie leuſſe autrement</l>
+                                <l xml:id="l-86v-2-46">A laguiſe deſa manieꝛe</l>
+                            </lg>
+                        </corr>
+                    </choice>
+                </ab>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-86v-2-47">Mes li homs ſemble lepoiſſon</l>
+                    <l xml:id="l-86v-2-48">Qui par trace ſuit lamecon</l>
+                    <l xml:id="l-86v-2-49">Et fait que il <add hand="#SH3" place="above"><choice><abbr>÷</abbr><expan resp="#SDM"><ex>est</ex></expan></choice></add> pꝛiſe alain</l>
+                    <l xml:id="l-86v-2-50">Il ne ſcet pas la traiſon</l>
+                    <l xml:id="l-86v-2-51"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> ce que on amis en ſon</l>
+                    <l xml:id="l-86v-2-52"><choice><orig>Deuant</orig><reg resp="#SDM">Devant</reg></choice> <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> il eſt <choice><abbr>p՚s</abbr><expan resp="#SDM">p<ex>re</ex>s</expan></choice> alamain</l>
+                    <l xml:id="l-86v-2-53">Ainſſi fet fame acueꝛ vilain</l>
+                    <l xml:id="l-86v-2-54"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> dit moncueꝛ mamoꝛ ietain</l>
+                    <l xml:id="l-86v-2-55">Biau ſemblant et cueꝛ debon</l>
+                    <l xml:id="l-86v-2-56">De telles en <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> tout plain</l>
+                    <l xml:id="l-86v-2-57">Nemeblaſmes ſeieme plain</l>
+                    <l xml:id="l-86v-2-58"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> ne me duel ſe d'une non</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-86v-2-59">Puis <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> fame quieꝛt le ſoulas</l>
+                    <l xml:id="l-86v-2-60">Dautre tenir entre ſes bꝛas</l>
+                    <l xml:id="l-86v-2-61"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> celui dont elle eſt acointe</l>
+                    <l xml:id="l-86v-2-62">Soit <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> mari ou no ſoit pas</l>
+                    <fw type="catchwords" xml:id="fw-86v-2-1">Il eſt fox <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /ſaint <choice><orig>nicholas</orig><reg resp="#SDM">Nicholas</reg></choice></fw>
+
+                    <gb n="12"/>
+                    <pb n="87r" xml:id="f87r"/>
+                    <cb n="1" xml:id="cb-87r-1"/>
+                    <l xml:id="l-87r-1-1">Il eſt fox par /ſaint <choice><orig>nicholas</orig><reg resp="#SDM">Nicholas</reg></choice></l>
+                    <l xml:id="l-87r-1-2">Se il latient mignote et cointe</l>
+                    <l xml:id="l-87r-1-3"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> puis <choice><abbr>q՚lle</abbr><expan resp="#SDM">q<ex>u'e</ex>lle</expan></choice> eſt ailleurs cointe</l>
+                    <l xml:id="l-87r-1-4">Et el a fait <num value="1">.i.</num> autre acointe</l>
+                    <l xml:id="l-87r-1-5">Ceꝛtes elle ne lainme oas</l>
+                    <l xml:id="l-87r-1-6">Elle eſt ſon feu damours <choice><abbr>eſpoīte</abbr><expan resp="#SDM">eſpoi<ex>n</ex>te</expan></choice></l>
+                    <l xml:id="l-87r-1-7">Qui miex lapaume li a ointe</l>
+                    <l xml:id="l-87r-1-8">Ceſt cil qui mains <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> decras</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-87r-1-9">Cilz que ce diſt il diſt trop <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice></l>
+                    <l xml:id="l-87r-1-10">Ris de fame ceſt ris dechien</l>
+                    <l xml:id="l-87r-1-11">Au pꝛemieꝛ rit et apꝛés moꝛt</l>
+                    <l xml:id="l-87r-1-12">Trop bele chieꝛe pour lemien</l>
+                    <l xml:id="l-87r-1-13">Me feꝛa et ſeie nay rien</l>
+                    <l xml:id="l-87r-1-14">Enli aray petit depoꝛt</l>
+                    <l xml:id="l-87r-1-15">Le feble leſſe pour lefoꝛt</l>
+                    <l xml:id="l-87r-1-16"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> ſia trop aſpꝛe lien</l>
+                    <l xml:id="l-87r-1-17">Lihons eſt fox qui ſi amoꝛt</l>
+                    <l xml:id="l-87r-1-18">A fame deſi fait depoꝛt</l>
+                    <l xml:id="l-87r-1-19">Setouſiours nepuet dire tien</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-87r-1-20">Tien ceſt trop fole vantance</l>
+                    <l xml:id="l-87r-1-21">Fame nainme <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><abbr>ꝑſemblance</abbr><expan resp="#SDM">p<ex>ar</ex>ſemblance</expan></choice></l>
+                    <l xml:id="l-87r-1-22">Trop <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> dira quelle eſt amie</l>
+                    <l xml:id="l-87r-1-23">Fame <choice><orig>iure</orig><reg resp="#SDM">jure</reg></choice> et ſe crucefie</l>
+                    <l xml:id="l-87r-1-24">Mon cueꝛ mamoꝛ ieuous affie</l>
+                    <l xml:id="l-87r-1-25"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> ieuous ains ſans deuance</l>
+                    <l xml:id="l-87r-1-26">Ainſi cueꝛ doume pꝛant et lie</l>
+                    <l xml:id="l-87r-1-27">Il eſt trop fox qui ſiaffie</l>
+                    <l xml:id="l-87r-1-28"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> quelle quieꝛt dautrui <choice><abbr>pitāce</abbr><expan resp="#SDM">pita<ex>n</ex>ce</expan></choice></l>
+                    <l xml:id="l-87r-1-29">Tant dure amour</l>
+                    <l xml:id="l-87r-1-30">Coume argent dure</l>
+                    <l xml:id="l-87r-1-31">Quant argent faut</l>
+                    <l xml:id="l-87r-1-32">Amour neſt nulle</l>
+                    <l xml:id="l-87r-1-33">Pour<choice><orig/><reg resp="#SDM"> </reg></choice>ce fet bon <choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
+                    <l xml:id="l-87r-1-34"><choice><orig>Souuent</orig><reg resp="#SDM">Souvent</reg></choice> labourſe</l>
+                    <l xml:id="l-87r-1-35">Garnie dargent</l>
+                    <l xml:id="l-87r-1-36">Quamours a anon</l>
+                    <l xml:id="l-87r-1-37">Dame rebourſe</l>
+                    <l xml:id="l-87r-1-38"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> na cure de vuide bourſe</l>
+                </lg>
+            </div></body></text></TEI>

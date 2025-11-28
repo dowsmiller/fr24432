@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="49r" xml:id="f49r"/><div type="text" n="17" xml:id="ChapelFlors">
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-49r-2-1">Une pucelle<lb/>
+                    Me pꝛia</l>
+                    <l xml:id="l-49r-2-2">Que <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> <num value="1">.i.</num> chapel<lb/>
+                    Li feiſſe</l>
+                    <l xml:id="l-49r-2-3">Com <choice><abbr>longuemēt</abbr><expan resp="#SDM">longueme<ex>n</ex>t</expan></choice> <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> g'i<choice><orig/><reg resp="#SDM"> </reg></choice>meiſſe</l>
+                    <l xml:id="l-49r-2-4">Et <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> li fis tout par loiſſir</l>
+                    <l xml:id="l-49r-2-5"><choice><abbr>Ml՚t</abbr><expan resp="#SDM">M<ex>ou</ex>lt</expan></choice> voulentieꝛs a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> plaiſſir</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-49r-2-6">Au <choice><abbr>cōmanc՚</abbr><expan resp="#SDM">co<ex>m</ex>manc<ex>ier</ex></expan></choice> de <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> chapel</l>
+                    <l xml:id="l-49r-2-7">Pour <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> il ſeꝛa plus bel</l>
+                    <l xml:id="l-49r-2-8">G'i<choice><orig/><reg resp="#SDM"> </reg></choice>metrai la fleur de<choice><orig/><reg resp="#SDM"> </reg></choice>lis</l>
+                    <l xml:id="l-49r-2-9"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> eſt <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> belle a<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> devis</l>
+                    <l xml:id="l-49r-2-10">La ſeconde eſt la violete</l>
+                    <l xml:id="l-49r-2-11">La tieꝛce fleur <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> flourete</l>
+                    <l xml:id="l-49r-2-12">La ſouſie <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> eſt <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> belle</l>
+                    <l xml:id="l-49r-2-13">Laquarte flour eꝛt la <choice><abbr>ꝑſelle</abbr><expan resp="#SDM">p<ex>er</ex>ſelle</expan></choice></l>
+                    <l xml:id="l-49r-2-14">La quine flour eſt la <choice><abbr>cōſaude</abbr><expan resp="#SDM">co<ex>n</ex>ſaude</expan></choice></l>
+                    <l xml:id="l-49r-2-15"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> quoi li chapeles ſe ſaude</l>
+                    <l xml:id="l-49r-2-16">La ſiſime roſe eſpanie</l>
+                    <l xml:id="l-49r-2-17"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> la ſeptime lacolie</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-49r-2-18">Ueſci chapel <choice><abbr>degñt</abbr><expan resp="#SDM">deg<ex>ra</ex>nt</expan></choice> hauteſce</l>
+                    <l xml:id="l-49r-2-19"><choice><abbr>Chaſcū</abbr><expan resp="#SDM">Chaſcu<ex>n</ex></expan></choice> fleur <choice><abbr>dōne</abbr><expan resp="#SDM">do<ex>n</ex>ne</expan></choice> <choice><abbr>vētance</abbr><expan resp="#SDM">ve<ex>n</ex>tance</expan></choice></l>
+                    <l xml:id="l-49r-2-20"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> la pucelle doit <choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
+                    <l xml:id="l-49r-2-21"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> retenir <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> eſtouuoir</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-49r-2-22">La fleur delis eſt <choice><abbr>blāche</abbr><expan resp="#SDM">bla<ex>n</ex>che</expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> digne</l>
+                    <l xml:id="l-49r-2-23">Qui ala pucelle deſtine</l>
+                    <l xml:id="l-49r-2-24">De /lameꝛe <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> honnoꝛeꝛ</l>
+
+                    <pb n="49v" xml:id="f49v"/>
+                    <cb n="1" xml:id="cb-49v-1"/>
+                    <l xml:id="l-49v-1-1">Et <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſainte egliſe ameꝛ</l>
+                    <l xml:id="l-49v-1-2"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> ſiſoit coie et taiſans</l>
+                    <l xml:id="l-49v-1-3">Pour eſcouteꝛ les <choice><abbr>meſdisās</abbr><expan resp="#SDM">meſdiſa<ex>n</ex>s</expan></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-49v-1-4">La violete eſt la ſeconde</l>
+                    <l xml:id="l-49v-1-5">Ceſt <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> douce floꝛ amonde</l>
+                    <l xml:id="l-49v-1-6"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> deuiſſe par ſa doucoꝛ</l>
+                    <l xml:id="l-49v-1-7">A la pucele <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> voloꝛ</l>
+                    <l xml:id="l-49v-1-8">Voulentieꝛs aleꝛ aumouſtieꝛ</l>
+                    <l xml:id="l-49v-1-9">Et eſcouteꝛ le <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> meſtieꝛ</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-49v-1-10">La tieꝛce floꝛ eſt la ſoucie</l>
+                    <l xml:id="l-49v-1-11"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice> <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> choſe ſenefie</l>
+                    <l xml:id="l-49v-1-12">La ſouſie reſemble loꝛ</l>
+                    <l xml:id="l-49v-1-13"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> <choice><abbr>bn̄</abbr><expan resp="#SDM">b<ex>ie</ex>n</expan></choice> regarde en treſoꝛ</l>
+                    <l xml:id="l-49v-1-14">Soit en iaue ou <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> fumieꝛ</l>
+                    <l xml:id="l-49v-1-15"><choice><abbr>Ml՚t</abbr><expan resp="#SDM">M<ex>ou</ex>lt</expan></choice> longuement <choice><abbr>sās</abbr><expan resp="#SDM">ſa<ex>n</ex>s</expan></choice> empꝛirieꝛ</l>
+                    <l xml:id="l-49v-1-16">Auſi doit pucele <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> coꝛs</l>
+                    <l xml:id="l-49v-1-17">Gardeꝛ com ſe garde lioꝛs</l>
+                    <l xml:id="l-49v-1-18">Sans male teiche <choice><orig>receuoir</orig><reg resp="#SDM">recevoir</reg></choice></l>
+                    <l xml:id="l-49v-1-19">Com puiſt ſur lur <choice><abbr>aꝑceuoir</abbr><expan resp="#SDM">ap<ex>er</ex>ceuoir</expan></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-49v-1-20">La peꝛſelle eſt de <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> bonté</l>
+                    <l xml:id="l-49v-1-21"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſenefie humilité</l>
+                    <l xml:id="l-49v-1-22">Pour ce <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> dige <choice><abbr>vraiemēt</abbr><expan resp="#SDM">vraieme<ex>n</ex>t</expan></choice></l>
+                    <l xml:id="l-49v-1-23">Pucele doit <choice><orig>viure</orig><reg resp="#SDM">vivre</reg></choice> <choice><abbr>hūblemēt</abbr><expan resp="#SDM">hu<ex>m</ex>bleme<ex>n</ex>t</expan></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-49v-1-24">La couſaude eſt la <choice><abbr>qͥnte</abbr><expan resp="#SDM">q<ex>ui</ex>nte</expan></choice> floꝛ</l>
+                    <l xml:id="l-49v-1-25"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> contre laclarte du <choice><orig>iour</orig><reg resp="#SDM">jour</reg></choice></l>
+                    <l xml:id="l-49v-1-26">Euure auſoleil <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſi reſtant</l>
+                    <l xml:id="l-49v-1-27">Et la pucelle <choice><abbr>qͥ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> ſentant</l>
+                    <l xml:id="l-49v-1-28">Doit <choice><orig>ouurir</orig><reg resp="#SDM">ouvrir</reg></choice> ſon cueꝛ <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> <choice><abbr>bōne</abbr><expan resp="#SDM">bo<ex>n</ex>ne</expan></choice> <choice><orig>euure</orig><reg resp="#SDM">euvre</reg></choice></l>
+                    <l xml:id="l-49v-1-29">Tout auſſi <choice><abbr>cō</abbr><expan resp="#SDM">co<ex>m</ex></expan></choice> la couſaude <choice><orig>euure</orig><reg resp="#SDM">euvre</reg></choice></l>
+                    <l xml:id="l-49v-1-30"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> clot contre lanuit obſcure</l>
+                    <l xml:id="l-49v-1-31">Doit lapucelle <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> nature</l>
+                    <l xml:id="l-49v-1-32">Eſcueꝛ toute vilonie</l>
+                    <l xml:id="l-49v-1-33"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> entendꝛe alacourtoiſſie</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-49v-1-34">La ſiſime ſi eſt la roſe</l>
+                    <l xml:id="l-49v-1-35"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> toutes autres fleurs apoſe</l>
+                    <l xml:id="l-49v-1-36">Debiauté <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> de ſeignoꝛie</l>
+                    <l xml:id="l-49v-1-37">Pour l'amour de/ſainte <choice><orig>marie</orig><reg resp="#SDM">Marie</reg></choice></l>
+                    <l xml:id="l-49v-1-38">/<choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> du coꝛs <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> fu <choice><abbr>hōnoꝛee</abbr><expan resp="#SDM">ho<ex>n</ex>noꝛee</expan></choice></l>
+
+                    <cb n="2" xml:id="cb-49v-2"/>
+                    <l xml:id="l-49v-2-1">/Et fu pucelle demouree</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-49v-2-2">La ſeptime eſt liacolie</l>
+                    <l xml:id="l-49v-2-3"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> toutes autres floꝛs alie</l>
+                    <l xml:id="l-49v-2-4"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> li afet lucanetes</l>
+                    <l xml:id="l-49v-2-5"><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> pour lui loeꝛ <choice><abbr>furēt</abbr><expan resp="#SDM">fure<ex>n</ex>t</expan></choice> faites</l>
+                    <l xml:id="l-49v-2-6"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> <num value="1">.i.</num> chapel <choice><abbr>ꝑt</abbr><expan resp="#SDM">p<ex>ar</ex>t</expan></choice> <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> floꝛ</l>
+                    <l xml:id="l-49v-2-7"><choice><abbr>Ml՚t</abbr><expan resp="#SDM">M<ex>ou</ex>lt</expan></choice> en dechiet deſa valoꝛ</l>
+                    <l xml:id="l-49v-2-8">Ainſi eſt il delameſchine</l>
+                    <l xml:id="l-49v-2-9"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> deſa chaasté de chine</l>
+                    <l xml:id="l-49v-2-10">Pucelle <choice><orig>vns</orig><reg resp="#SDM">uns</reg></choice> vallés <choice><abbr>vꝰ</abbr><expan resp="#SDM">v<ex>ous</ex></expan></choice> pꝛoie</l>
+                    <l xml:id="l-49v-2-11"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> <choice><abbr>chaſcūne</abbr><expan resp="#SDM">chaſcu<ex>n</ex>ne</expan></choice> ſon cueꝛ otroie</l>
+                    <l xml:id="l-49v-2-12">Du chapel <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſi le retiegne</l>
+                    <l xml:id="l-49v-2-13"><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>Et</ex></expan></choice> de ces <num value="7">.vii.</num> floꝛs li ſouueigne</l>
+                    <l xml:id="l-49v-2-14">Ceſt li chapiaus</l>
+                    <l xml:id="l-49v-2-15">Des <num value="7">.vii.</num> flouretes</l>
+                    <l xml:id="l-49v-2-16"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> donnai <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> amouretes</l>
+                </lg>
+            </div></body></text></TEI>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="99r" xml:id="f99r"/><div type="text" n="27" xml:id="TrenteJours">
+                <p rend="decoratedInitial decoInitblue" xml:id="p-99r-1-4"><choice><orig>IL</orig><reg resp="#SDM">Il</reg></choice><choice><orig/><reg resp="#SDM"> </reg></choice>a <num value="30">.xxx.</num> <choice><orig>ioꝛz</orig><reg resp="#SDM">joꝛz</reg></choice> en l'an <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> <choice><abbr>ml՚t</abbr><expan resp="#SDM">m<ex>ou</ex>lt</expan></choice><lb/>
+                ſont <choice><abbr>ꝑilleus</abbr><expan resp="#SDM">p<ex>er</ex>illeus</expan></choice>. ce nos <choice><abbr>racōte</abbr><expan resp="#SDM">raco<ex>n</ex>te</expan></choice><lb/>
+                Li maiſtres des grius. Cil<lb/>
+                qui eſt en feꝛs. en<choice><orig/><reg resp="#SDM"> </reg></choice>ces <choice><orig>ioꝛz</orig><reg resp="#SDM">joꝛz</reg></choice><lb/>
+                garra a<choice><orig/><reg resp="#SDM"> </reg></choice>paines. <choice><abbr>It՚</abbr><expan resp="#SDM">It<ex>em</ex></expan></choice> ſe fame.<lb/>
+                giſt de fiz ou de fille en geſine<lb/>
+                Il ne vinra pas grainnent<lb rend="sicHyphenBefore"/>
+                <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſe il <choice><orig>viuoit</orig><reg resp="#SDM">vivoit</reg></choice>. il ſeꝛoit touz<lb/>
+                <choice><orig>ioꝛz</orig><reg resp="#SDM">joꝛz</reg></choice> <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice> de touz <choice><abbr>bn̄s</abbr><expan resp="#SDM">b<ex>ie</ex>ns</expan></choice>. Item<lb/>
+                ſe home ſe mane ences <choice><orig>ioꝛz</orig><reg resp="#SDM">joꝛz</reg></choice><lb/>
+                Li ou ſa fame ne viuront ga<lb break="no"/>
+                ires. <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſe il viuent <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> <choice><orig><choice><abbr>auēture</abbr><expan resp="#SDM">aue<ex>n</ex>ture</expan></choice></orig><reg resp="#SDM"><choice><abbr>avēture</abbr><expan resp="#SDM">ave<ex>n</ex>ture</expan></choice></reg></choice><lb/>
+                il ne ſentrameꝛont <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice>. ne n'a<lb break="no"/>
+                uront pais enſemble. Item.<lb/>
+
+                <cb n="2" xml:id="cb-99r-2"/>
+                Se il ſ'<choice><orig>en traiment</orig><reg resp="#SDM">entraiment</reg></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> <choice><abbr>auent˞e</abbr><expan resp="#SDM">auent<ex>ur</ex>e</expan></choice><lb/>
+                il ſeꝛont toz <choice><orig>ioꝛz</orig><reg resp="#SDM">joꝛz</reg></choice> <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice> et<lb/>
+                ſouffreteus. <choice><abbr>It՚</abbr><expan resp="#SDM">It<ex>em</ex></expan></choice> ſe il vont en<lb/>
+                eſtrange <choice><abbr>t՚re</abbr><expan resp="#SDM">t<ex>er</ex>re</expan></choice>. Il ne ſ'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> <choice><abbr>vēront</abbr><expan resp="#SDM">ve<ex>n</ex>ront</expan></choice><lb/>
+                <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> a ſente. de loꝛ coꝛs ne de-<lb/>
+                loꝛ chatel. <choice><abbr>It՚</abbr><expan resp="#SDM">It<ex>em</ex></expan></choice> en ces <choice><orig>ioꝛz</orig><reg resp="#SDM">joꝛz</reg></choice> ne<lb/>
+                doit on vendꝛe n'<choice><abbr>achat՚</abbr><expan resp="#SDM">achat<ex>er</ex></expan></choice>. ne<lb/>
+                edefieꝛ ne <choice><abbr>plant՚</abbr><expan resp="#SDM">plant<ex>er</ex></expan></choice>. <choice><abbr>qr̃</abbr><expan resp="#SDM">q<ex>ua</ex>r</expan></choice> il ne pu<lb break="no"/>
+                et. pꝛofitieꝛ ſe poi <choice><abbr>nō</abbr><expan resp="#SDM">no<ex>n</ex></expan></choice>. Item<lb/>
+                En Ienvieꝛ. en a <num value="5">.v.</num> <choice><orig>iourz</orig><reg resp="#SDM">jourz</reg></choice><lb/>
+                Le <choice><abbr>p՚mieꝛ</abbr><expan resp="#SDM">p<ex>re</ex>mieꝛ</expan></choice>. le ſecont. le<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>qr̃t</abbr><expan resp="#SDM">q<ex>ua</ex>rt</expan></choice>.<lb/>
+                Le ſiſſieme <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le ſeſſieme. En<lb/>
+                feurieꝛ. en a <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num> le <num value="12">.xii.</num> le<lb/>
+                <num value="15">.xv.</num> le <num value="19">.xix.</num> En marz en a<lb/>
+                <num value="4">.<choice><orig>iiij</orig><reg resp="#SDM">iiii</reg></choice>.</num> le ſiſſieme. le ſeſſieme<lb/>
+                le <num value="15">.xv.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le <num value="17">.<choice><orig>xvij</orig><reg resp="#SDM">xvii</reg></choice>.</num> En auril<lb/>
+                en a <num value="2">.ii.</num> le <num value="15">.xv.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le <num value="16">.<choice><orig>xvj</orig><reg resp="#SDM">xvi</reg></choice>.</num><lb/>
+                En moi. en a <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num> le <num value="12">.<choice><orig>xij</orig><reg resp="#SDM">xii</reg></choice>.</num><lb/>
+                le <num value="17">.<choice><orig>xvij</orig><reg resp="#SDM">xvii</reg></choice>.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le <num value="19"><supplied resp="#SDM">.</supplied>xix.</num> En Iuins.<lb/>
+                en a <num value="1">.i.</num> le <num value="6">.vi.</num> En <choice><abbr>Iūgnet</abbr><expan resp="#SDM">Iu<ex>n</ex>gnet</expan></choice><lb/>
+                en a <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> le <num value="15">.xv.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le <num value="16">.<choice><orig>xvj</orig><reg resp="#SDM">xvi</reg></choice>.</num> En<lb/>
+                ſetembꝛe en a <num value="1">.i.</num> le <num value="6">.<choice><orig>vj</orig><reg resp="#SDM">vi</reg></choice>.</num> En<lb/>
+                Oſtobꝛe en a <num value="2">.ii.</num> le <num value="15">.xv.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le<lb/>
+                <num value="17"><supplied resp="#SDM">.</supplied><choice><orig>xvij</orig><reg resp="#SDM">xvii</reg></choice>.</num> En <choice><abbr>noēbꝛe</abbr><expan resp="#SDM">noe<ex>m</ex>bꝛe</expan></choice> en a <num value="4">.<choice><orig>iiij</orig><reg resp="#SDM">iiii</reg></choice>.</num><lb/>
+                le ſetieme. le <num value="10">.x.</num> le <num value="13">.<choice><orig>xiij</orig><reg resp="#SDM">xiii</reg></choice>.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><lb/>
+                le <num value="17">.<choice><orig>xvij</orig><reg resp="#SDM">xvii</reg></choice>.</num> En<choice><orig/><reg resp="#SDM"> </reg></choice><choice><abbr>decēbꝛe</abbr><expan resp="#SDM">dece<ex>m</ex>bꝛe</expan></choice> en a -<lb/>
+                <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num> le <num value="6">.<choice><orig>vj</orig><reg resp="#SDM">vi</reg></choice>.</num> le <num value="7">.<choice><orig>vij</orig><reg resp="#SDM">vii</reg></choice>.</num> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le nue<lb break="no"/>
+                vieme. Explicit oo o o o</p>
+            </div></body></text></TEI>

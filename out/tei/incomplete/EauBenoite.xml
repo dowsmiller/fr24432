@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI-XML Encoding of Paris, Bibliothèque nationale de France, fonds français, 24432</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transcribed and encoded by Sebastian H Dows-Miller</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="BnF_fr_24432">
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <collection>Fonds français</collection>
+                        <idno type="shelfmark">24432</idno>
+                    </msIdentifier>
+                    <additional>
+                        <surrogates>
+                            <bibl subtype="full" type="iiif-manifest">
+                                <ref target="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/manifest.json">
+                                    <title>IIIF Manifest</title>
+                                </ref>
+                            </bibl>
+                        </surrogates>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader><text><body><pb n="128r" xml:id="f128r"/><div type="text" n="39" xml:id="EauBenoite">
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128r-1-5"><choice><sic><choice><orig>DOus</orig><reg resp="#SDM">Dous</reg></choice></sic><corr resp="#SDM"><choice><orig>VOus</orig><reg resp="#SDM">Vous</reg></choice></corr></choice> qui volez oir<lb/>
+                    Retenir <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> apꝛendꝛe</l>
+                    <l xml:id="l-128r-1-6"><num value="2">.<choice><orig>ij</orig><reg resp="#SDM">II</reg></choice>.</num> <choice><abbr>exāples</abbr><expan resp="#SDM">exa<ex>m</ex>ples</expan></choice> moult biaus<lb/>
+                    Ou il n'a que repꝛendꝛe</l>
+                    <l xml:id="l-128r-1-7">Diex doinſt <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><sic>le</sic><corr resp="#Olsen"><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> les</corr></choice> puiſſe<lb/>
+                    Recoꝛder ſans <choice><abbr>meſpꝛēdꝛe</abbr><expan resp="#SDM">meſpꝛe<ex>n</ex>dꝛe</expan></choice></l>
+                    <l xml:id="l-128r-1-8">Et <choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice> gart du <choice><orig>maluais</orig><reg resp="#SDM">malvais</reg></choice><lb/>
+                    <choice><abbr>Qⁱl</abbr><expan resp="#SDM">Q<ex>u'i</ex>l</expan></choice> ne <choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice> puiſt <choice><sic>ſouſpꝛedꝛe</sic><corr resp="#SDM"><choice><abbr>ſouſpꝛēdꝛe</abbr><expan resp="#SDM">ſouſpꝛe<supplied resp="#SDM"><ex>n</ex></supplied>dꝛe</expan></choice></corr></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128r-1-9"><choice><orig>LA</orig><reg resp="#SDM">La</reg></choice> pꝛemiere <choice><abbr>exāple</abbr><expan resp="#SDM">exa<ex>m</ex>ple</expan></choice><lb/>
+                    vus dirai ſans mentir</l>
+                    <l xml:id="l-128r-1-10">Oꝛ metez tous <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> toutes<lb/>
+                    Les cuers a retenir</l>
+                    <l xml:id="l-128r-1-11">Car aincois <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> de vous<lb/>
+                    Me doie <choice><abbr>deꝑtir</abbr><expan resp="#SDM">dep<ex>ar</ex>tir</expan></choice></l>
+                    <l xml:id="l-128r-1-12"><choice><abbr>Voꝰ</abbr><expan resp="#SDM">Vo<ex>us</ex></expan></choice> dirai <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> tel choſe<lb/>
+
+                    <cb n="2" xml:id="cb-128r-2"/>
+                    Dont <choice><abbr>gñs</abbr><expan resp="#SDM">g<ex>ra</ex>ns</expan></choice> biens puet venir</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128r-2-1"><choice><sic><choice><orig>Ia</orig><reg resp="#SDM">Ja</reg></choice></sic><corr resp="#Olsen">La</corr></choice> <choice><orig>diuine</orig><reg resp="#SDM">divine</reg></choice> <choice><orig>eſcripture</orig><reg resp="#SDM">Eſcripture</reg></choice><lb/>
+                    Nous en fait mencion</l>
+                    <l xml:id="l-128r-2-2">D'un <choice><abbr>pꝛeudōme</abbr><expan resp="#SDM">pꝛeudo<ex>m</ex>me</expan></choice> <choice><orig>iadis</orig><reg resp="#SDM">jadis</reg></choice><lb/>
+                    <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> en <choice><orig>deuotion</orig><reg resp="#SDM">devotion</reg></choice></l>
+                    <l xml:id="l-128r-2-3">Priſt les dꝛaps <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> le pain<lb/>
+                    D'une religion</l>
+                    <l xml:id="l-128r-2-4">En /<choice><orig><choice><abbr>n՚re</abbr><expan resp="#SDM">n<ex>ost</ex>re</expan></choice></orig><reg resp="#SDM"><choice><abbr>N՚re</abbr><expan resp="#SDM">N<ex>ost</ex>re</expan></choice></reg></choice> <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice> miſt<lb/>
+                    Toute ſ'entention.</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128r-2-5">En /<choice><orig><choice><abbr>nr՚e</abbr><expan resp="#SDM">n<ex>ost</ex>re</expan></choice></orig><reg resp="#SDM"><choice><abbr>Nr՚e</abbr><expan resp="#SDM">N<ex>ost</ex>re</expan></choice></reg></choice> <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice> amer<lb/>
+                    Miſt <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> cuer <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ſ'amoꝛ</l>
+                    <l xml:id="l-128r-2-6"><choice><orig>Deuant</orig><reg resp="#SDM">Devant</reg></choice> ſon dous ymage<lb/>
+                    Eſtoit et nuit <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><orig>ioꝛ</orig><reg resp="#SDM">joꝛ</reg></choice>.</l>
+                    <l xml:id="l-128r-2-7">De la haire veſtir<lb/>
+                    Souffri paine <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> doloꝛ</l>
+                    <l xml:id="l-128r-2-8">De jeuner de veillier<lb/>
+                    Ot tainte la coulour</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128r-2-9">En /la <choice><orig>mere</orig><reg resp="#SDM">Mere</reg></choice> <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> ot<lb/>
+                    Son cuer ſi afichiés</l>
+                    <l xml:id="l-128r-2-10"><choice><abbr>Qⁱl</abbr><expan resp="#SDM">Q<ex>u'i</ex>l</expan></choice> amaſt miex <choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice><lb/>
+                    Tous les <choice><abbr>mēbꝛes</abbr><expan resp="#SDM">me<ex>m</ex>bꝛes</expan></choice> <choice><abbr>trēchiez</abbr><expan resp="#SDM">tre<ex>n</ex>chiez</expan></choice></l>
+                    <l xml:id="l-128r-2-11"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> il la <choice><orig><choice><abbr>ꝑiuraſt</abbr><expan resp="#SDM">p<ex>ar</ex>iuraſt</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝑjuraſt</abbr><expan resp="#SDM">p<ex>ar</ex>juraſt</expan></choice></reg></choice><lb/>
+                    Ne n'en fuſt entechiez</l>
+                    <l xml:id="l-128r-2-12">Mais d'une male tache<lb/>
+                    Fu ſon coꝛps entechiez</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128r-2-13">Le <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice> <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> di<lb/>
+                    Dont <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> fais <choice><abbr>rem̄ebꝛāce</abbr><expan resp="#SDM">reme<ex>m</ex>bꝛa<ex>n</ex>ce</expan></choice></l>
+                    <l xml:id="l-128r-2-14">Poꝛ riens ne pooit croire<lb/>
+                    Ne n'<choice><orig>auoit</orig><reg resp="#SDM">avoit</reg></choice> <choice><abbr>esꝑance</abbr><expan resp="#SDM">eſp<ex>er</ex>ance</expan></choice></l>
+                    <l xml:id="l-128r-2-15">Qu'yaue benoite eüſt<lb/>
+                    Ne vertu ne puiſſance</l>
+                    <l xml:id="l-128r-2-16">Et diſoit <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> <choice><orig>ioꝛ</orig><reg resp="#SDM">joꝛ</reg></choice><lb/>
+                    Il n'i <choice><orig>auroit</orig><reg resp="#SDM">avroit</reg></choice> creance</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128r-2-17"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> li pꝛeſtres getoit<lb/>
+                    L'yaue <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> le mouſtier</l>
+                    <l xml:id="l-128r-2-18"><choice><orig>Ia</orig><reg resp="#SDM">Ja</reg></choice> cil ne l'<choice><orig>a pꝛochaſt</orig><reg resp="#SDM">apꝛochaſt</reg></choice><lb/>
+                    Ains ſ'en traioit arrier</l>
+                    <l xml:id="l-128r-2-19">En ſon pꝛopos diſoit<lb/>
+
+                    <pb n="128v" xml:id="f128v"/>
+                    <cb n="1" xml:id="cb-128v-1"/>
+                    <q xml:id="q-128v-1-1" next="#q-128v-1-2"><choice><orig>Ia</orig><reg resp="#SDM">Ja</reg></choice> ne me quier moillier</q></l>
+                    <l xml:id="l-128v-1-1"><q xml:id="q-128v-1-2" prev="#q-128v-1-1">Car <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> n'ai pas fiance<lb/>
+                    <choice><abbr>Q՚l</abbr><expan resp="#SDM">Q<ex>u'e</ex>l</expan></choice> me peüſt aidier</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128v-1-2">Lonc <choice><abbr>tēps</abbr><expan resp="#SDM">te<ex>m</ex>ps</expan></choice> a<choice><orig/><reg resp="#SDM"> </reg></choice>li <choice><orig><choice><abbr>ꝯuers</abbr><expan resp="#SDM"><ex>con</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝯvers</abbr><expan resp="#SDM"><ex>con</ex>vers</expan></choice></reg></choice><lb/>
+                    Ceſte vie menee</l>
+                    <l xml:id="l-128v-1-3">Diex qui ſcet de chaſcun<lb/>
+                    Le cuer et la pensee</l>
+                    <l xml:id="l-128v-1-4">Volt que la ferme foy<lb/>
+                    Fuſt en ſon coꝛps entee</l>
+                    <l xml:id="l-128v-1-5">Et la <choice><orig>maluaiſe</orig><reg resp="#SDM">malvaiſe</reg></choice> fuſt<lb/>
+                    Toute de lui oſtee</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128v-1-6">/<choice><orig>LI</orig><reg resp="#SDM">Li</reg></choice> dous roys gloꝛieus<lb/>
+                    <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> tout ſcet et tout voit</l>
+                    <l xml:id="l-128v-1-7">Si voult mouſtrer <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> foꝛce<lb/>
+                    L'yaue benoite <choice><orig>auoit</orig><reg resp="#SDM">avoit</reg></choice></l>
+                    <l xml:id="l-128v-1-8">Et poꝛquoi eſtablie<lb/>
+                    En <choice><orig>ſainte</orig><reg resp="#SDM">Sainte</reg></choice> <choice><orig>egliſe</orig><reg resp="#SDM">Egliſe</reg></choice> eſtoit</l>
+                    <l xml:id="l-128v-1-9">Dont chaſcuns <choice><orig>creſtiens</orig><reg resp="#SDM">Creſtiens</reg></choice><lb/>
+                    Arrouſer ſe <choice><orig>deuoit</orig><reg resp="#SDM">devoit</reg></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128v-1-10"><choice><orig>UN</orig><reg resp="#SDM">Un</reg></choice> <choice><orig>iour</orig><reg resp="#SDM">jour</reg></choice> fu li <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice><lb/>
+                    En ſa chambꝛe <choice><abbr>toꝰ</abbr><expan resp="#SDM">to<ex>us</ex></expan></choice> ſeulz</l>
+                    <l xml:id="l-128v-1-11">En ſaluant /la <choice><orig>virge</orig><reg resp="#SDM">Virge</reg></choice><lb/>
+                    D'un ſalut gracieus</l>
+                    <l xml:id="l-128v-1-12"><choice><orig>Deuant</orig><reg resp="#SDM">Devant</reg></choice> lui vit venir<lb/>
+                    <num value="1">.I.</num> <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> poꝛc moult <choice><abbr>hydeꝰ</abbr><expan resp="#SDM">hyde<ex>us</ex></expan></choice></l>
+                    <l xml:id="l-128v-1-13">De l'autre <choice><abbr>ꝑt</abbr><expan resp="#SDM">p<ex>ar</ex>t</expan></choice> regarde<lb/>
+                    Si en va choiſir <choice><sic><num value="1">.I.</num></sic><corr resp="#Olsen"><num value="2">.II.</num></corr></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128v-1-14"><choice><orig>Deuant</orig><reg resp="#SDM">Devant</reg></choice> li en po d'eure<lb/>
+                    En <choice><sic>vis</sic><corr resp="#SDM">vit</corr></choice> plus de <num value="500">.vc.</num></l>
+                    <l xml:id="l-128v-1-15">Chaſcun eſtoit plus<lb/>
+                    Noir <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> pois ne <choice><abbr>arrem̄s</abbr><expan resp="#SDM">arrem<ex>en</ex>s</expan></choice></l>
+                    <l xml:id="l-128v-1-16">Le <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice> aſſaillirent<lb/>
+                    <choice><orig>Enuiron</orig><reg resp="#SDM">Environ</reg></choice> de tous ſens</l>
+                    <l xml:id="l-128v-1-17">Poꝛ ce <choice><abbr>qⁱl</abbr><expan resp="#SDM">q<ex>u'i</ex>l</expan></choice> le voloient<lb/>
+                    <choice><orig>Deuourer</orig><reg resp="#SDM">Devourer</reg></choice> a leurs dens</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128v-1-18"><choice><abbr>Onq՚s</abbr><expan resp="#SDM">Onq<ex>ue</ex>s</expan></choice> n'i ot celui<lb/>
+                    <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> le peüſt touchier</l>
+                    <l xml:id="l-128v-1-19">Juſqu'a tant <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> le meſtre<lb/>
+                    Vint tout au derrenier</l>
+
+                    <cb n="2" xml:id="cb-128v-2"/>
+                    <l xml:id="l-128v-2-1"><num value="1">.I.</num> croc de fer poꝛtoit<lb/>
+                    <choice><abbr>Ml՚t</abbr><expan resp="#SDM">M<ex>ou</ex>lt</expan></choice> <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> cel <choice><orig>aduerſier</orig><reg resp="#SDM">adverſier</reg></choice></l>
+                    <l xml:id="l-128v-2-2">Droit au <choice><orig>conuers</orig><reg resp="#SDM">convers</reg></choice> ſ'en ſault<lb/>
+                    Si<choice><orig/><reg resp="#SDM"> </reg></choice>le <choice><orig>ua</orig><reg resp="#SDM">va</reg></choice> acrochier</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128v-2-3">A terre l'abatirent<lb/>
+                    Li autre l'apꝛochierent</l>
+                    <l xml:id="l-128v-2-4">Loꝛs pꝛennent le <choice><orig><choice><abbr>ꝯuers</abbr><expan resp="#SDM"><ex>con</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝯvers</abbr><expan resp="#SDM"><ex>con</ex>vers</expan></choice></reg></choice><lb/>
+                    Et ſi le defoulerent</l>
+                    <l xml:id="l-128v-2-5">Li <choice><orig>vns</orig><reg resp="#SDM">uns</reg></choice> encontre l'autre<lb/>
+                    Laidement le geterent</l>
+                    <l xml:id="l-128v-2-6">Et d'oꝛribles tourmens<lb/>
+                    Foꝛment le <choice><abbr>tourmēterent</abbr><expan resp="#SDM">tourme<ex>n</ex>terent</expan></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128v-2-7">Li <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice> en ſon cuer<lb/>
+                    /<choice><abbr>Nr՚e</abbr><expan resp="#SDM">N<ex>ost</ex>re</expan></choice> <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice> apela</l>
+                    <l xml:id="l-128v-2-8">Et l'<seg xml:lang="lat"><choice><orig>aue</orig><reg resp="#SDM">Ave</reg></choice> /<choice><orig>maria</orig><reg resp="#SDM">Maria</reg></choice></seg><lb/>
+                    En ſon cuer recoꝛda</l>
+                    <l xml:id="l-128v-2-9"><q xml:id="q-128v-2-1">Hé</q> fait il <q xml:id="q-128v-2-2" next="#q-128v-2-3">/douce <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice><lb/>
+                    /<choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> chaſcuns pꝛier doit</q></l>
+                    <l xml:id="l-128v-2-10"><q xml:id="q-128v-2-3" prev="#q-128v-2-2">Se ne me ſecourez<lb/>
+                    <choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> moꝛrai oꝛendꝛoit</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128v-2-11">Ce fu <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> le voloir<lb/>
+                    /Le <choice><orig>pere</orig><reg resp="#SDM">Pere</reg></choice> tout puiſſant</l>
+                    <l xml:id="l-128v-2-12">Pour celi chaſtier<lb/>
+                    Des cele heure en <choice><orig><choice><abbr>auāt</abbr><expan resp="#SDM">aua<ex>n</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>avāt</abbr><expan resp="#SDM">ava<ex>n</ex>t</expan></choice></reg></choice></l>
+                    <l xml:id="l-128v-2-13">Mais /la <choice><orig>virge</orig><reg resp="#SDM">Virge</reg></choice> <choice><orig>marie</orig><reg resp="#SDM">Marie</reg></choice><lb/>
+                    Pria tant /ſon enfant</l>
+                    <l xml:id="l-128v-2-14"><choice><orig>QU</orig><reg resp="#SDM">Qu</reg></choice>'ele peüſt ſecoꝛre<lb/>
+                    Et vengier ſon ſergent</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-128v-2-15"><q xml:id="q-128v-2-4"><choice><sic>Saites</sic><corr resp="#SDM">Faites</corr></choice> <choice><abbr>vr՚e</abbr><expan resp="#SDM">v<ex>ost</ex>re</expan></choice> voloir<lb/>
+                    /Mere</q> ce dit /<choice><orig><choice><abbr>ih՚us</abbr><expan resp="#SDM">ih<ex>es</ex>us</expan></choice></orig><reg resp="#SDM"><choice><abbr>Jh՚us</abbr><expan resp="#SDM">Jh<ex>es</ex>us</expan></choice></reg></choice></l>
+                    <l xml:id="l-128v-2-16">Loꝛs <choice><orig>de ſcendi</orig><reg resp="#SDM">deſcendi</reg></choice> /la <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice><lb/>
+                    De <choice><abbr>ꝑadis</abbr><expan resp="#SDM">p<ex>ar</ex>adis</expan></choice> laſſus</l>
+                    <l xml:id="l-128v-2-17">Entre les <choice><abbr>ēnemis</abbr><expan resp="#SDM">e<ex>n</ex>nemis</expan></choice><lb/>
+                    <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> eſtoient ca <choice><orig>ius</orig><reg resp="#SDM">jus</reg></choice></l>
+                    <l xml:id="l-128v-2-18">Si toſt <choice><abbr>cōme</abbr><expan resp="#SDM">co<ex>m</ex>me</expan></choice> il la virent<lb/>
+                    Chaſcuns fu <choice><sic>eſpdus</sic><corr resp="#SDM"><choice><abbr>esꝑdus</abbr><expan resp="#SDM">eſp<supplied resp="#SDM"><ex>er</ex></supplied>dus</expan></choice></corr></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-128v-2-19">/La douce <choice><orig>mere</orig><reg resp="#SDM">Mere</reg></choice> <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice><lb/>
+                    Le <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice> <choice><abbr>garāti</abbr><expan resp="#SDM">gara<ex>n</ex>ti</expan></choice></l>
+                    <l xml:id="l-128v-2-20">Onques puis ne touchierent<lb/>
+
+                    <pb n="129r" xml:id="f129r"/>
+                    <cb n="1" xml:id="cb-129r-1"/>
+                    A lui li <choice><abbr>ēnemi</abbr><expan resp="#SDM">e<ex>n</ex>nemi</expan></choice></l>
+                    <l xml:id="l-129r-1-1"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> li <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice> la vit<lb/>
+                    Si li cria merci</l>
+                    <l xml:id="l-129r-1-2"><q xml:id="q-129r-1-1">Ha;</q> fait il <q xml:id="q-129r-1-2" next="#q-129r-1-3">/douce dame<lb/>
+                    Aiez pitié de mi</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129r-1-3"><q xml:id="q-129r-1-3" prev="#q-129r-1-2" next="#q-129r-1-4">/Dame ſe <choice><orig>i</orig><reg resp="#SDM">j</reg></choice>'ai meffait<lb/>
+                    N'a vous n'a <choice><abbr>vr՚e</abbr><expan resp="#SDM">v<ex>ost</ex>re</expan></choice> enfant</q></l>
+                    <l xml:id="l-129r-1-4"><q xml:id="q-129r-1-4" prev="#q-129r-1-3"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> me veil amender<lb/>
+                    De ce <choice><orig>iour</orig><reg resp="#SDM">jour</reg></choice> en <choice><orig>auant</orig><reg resp="#SDM">avant</reg></choice></q></l>
+                    <l xml:id="l-129r-1-5">Ainſi com li <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice><lb/>
+                    Va /la <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice> loant.</l>
+                    <l xml:id="l-129r-1-6">Li abbes et <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num> moines<lb/>
+                    Paſſoient par <choice><orig>deuant</orig><reg resp="#SDM">devant</reg></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129r-1-7"><choice><orig>LI</orig><reg resp="#SDM">Li</reg></choice> abbes regarda<lb/>
+                    Si<choice><orig/><reg resp="#SDM"> </reg></choice>choiſi<choice><orig/><reg resp="#SDM"> </reg></choice>le <choice><orig><choice><abbr>ꝯuers</abbr><expan resp="#SDM"><ex>con</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝯvers</abbr><expan resp="#SDM"><ex>con</ex>vers</expan></choice></reg></choice></l>
+                    <l xml:id="l-129r-1-8">Qui eſtoit en ſa<choice><orig/><reg resp="#SDM"> </reg></choice>chambꝛe<lb/>
+                    Eſtendu tout <choice><orig>enuers</orig><reg resp="#SDM">envers</reg></choice></l>
+                    <l xml:id="l-129r-1-9">Le coꝛps <choice><sic>et</sic><corr resp="#Olsen">ot</corr></choice> <choice><abbr>tēpeſté</abbr><expan resp="#SDM">te<ex>m</ex>peſté</expan></choice><lb/>
+                    Et plus noirs fu <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> fers</l>
+                    <l xml:id="l-129r-1-10"><choice><abbr>Gñt</abbr><expan resp="#SDM">G<ex>ra</ex>nt</expan></choice> hideur ot li abbes<lb/>
+                    <choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> il le vit ſi <choice><orig>uers</orig><reg resp="#SDM">vers</reg></choice>.</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129r-1-11">Loꝛs le firent couchier<lb/>
+                    Si<choice><orig/><reg resp="#SDM"> </reg></choice>le font confeſſer</l>
+                    <l xml:id="l-129r-1-12">Et puis <choice><abbr>ap՚s</abbr><expan resp="#SDM">ap<ex>ré</ex>s</expan></choice> le coꝛps<lb/>
+                    Noſtre <choice><orig>ſeignoꝛ</orig><reg resp="#SDM">Seignoꝛ</reg></choice> <choice><abbr>dōner</abbr><expan resp="#SDM">do<ex>n</ex>ner</expan></choice></l>
+                    <l xml:id="l-129r-1-13">L'yaue benoite pꝛirent<lb/>
+                    Deſſus lui a<choice><orig/><reg resp="#SDM"> </reg></choice>geter</l>
+                    <l xml:id="l-129r-1-14">Dont n'i<choice><orig/><reg resp="#SDM"> </reg></choice>ot ennemi<lb/>
+                    Qui peüſt demourer</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129r-1-15">Quant li <choice><orig>conuers</orig><reg resp="#SDM">convers</reg></choice> les vit<lb/>
+                    Iſſir de<choice><orig/><reg resp="#SDM"> </reg></choice>la maiſon</l>
+                    <l xml:id="l-129r-1-16">Loꝛs <choice><abbr>cōmēce</abbr><expan resp="#SDM">co<ex>m</ex>me<ex>n</ex>ce</expan></choice> a huchier<lb/>
+                    A moult haute raiſon</l>
+                    <l xml:id="l-129r-1-17"><q xml:id="q-129r-1-5" next="#q-129r-1-6">Getez yaue benoite<lb/>
+                    <choice><orig><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> tout</orig><reg resp="#SDM"><choice><abbr>Ꝑtout</abbr><expan resp="#SDM">P<ex>ar</ex>tout</expan></choice></reg></choice> a <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> foiſon</q></l>
+                    <l xml:id="l-129r-1-18"><q xml:id="q-129r-1-6" prev="#q-129r-1-5">Li <choice><abbr>ēnemi</abbr><expan resp="#SDM">e<ex>n</ex>nemi</expan></choice> ſ'en fuient<lb/>
+                    Ne m'ont fait ſe mal non</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129r-1-19"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> li abbes l'entent<lb/>
+
+                    <cb n="2" xml:id="cb-129r-2"/>
+                    S'ot <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> merancolie</l>
+                    <l xml:id="l-129r-2-1"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> cilz ne feust fox<lb/>
+                    Et plain de freneſie</l>
+                    <l xml:id="l-129r-2-2">Et dont li demanda<lb/>
+                    Et ſon fait et ſa vie</l>
+                    <l xml:id="l-129r-2-3">Et li <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice> li conte<lb/>
+                    Qui ne li cela mie</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129r-2-4">Tout ainſi li conta<lb/>
+                    <choice><abbr>Cōme</abbr><expan resp="#SDM">Co<ex>m</ex>me</expan></choice> il fu abatus</l>
+                    <l xml:id="l-129r-2-5">Et <choice><abbr>cōment</abbr><expan resp="#SDM">co<ex>m</ex>ment</expan></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> /la <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice><lb/>
+                    Ot eſté ſecourus</l>
+                    <l xml:id="l-129r-2-6">Et de l'yaue benoite<lb/>
+                    La foꝛce et la vertus</l>
+                    <l xml:id="l-129r-2-7"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> quoi li <choice><abbr>ēnemis</abbr><expan resp="#SDM">e<ex>n</ex>nemis</expan></choice><lb/>
+                    S'en eſtoient iſſus</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129r-2-8">Des los ot li <choice><orig><choice><abbr>cōuers</abbr><expan resp="#SDM">co<ex>n</ex>uers</expan></choice></orig><reg resp="#SDM"><choice><abbr>cōvers</abbr><expan resp="#SDM">co<ex>n</ex>vers</expan></choice></reg></choice><lb/>
+                    Ferme foy <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> eſtable</l>
+                    <l xml:id="l-129r-2-9"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> l'yaue benoite eſt<lb/>
+                    Et bone et poꝛfitable</l>
+                    <l xml:id="l-129r-2-10"><choice><orig>Enuers</orig><reg resp="#SDM">Envers</reg></choice> <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> ſ'amenda<lb/>
+                    Le <choice><orig>pere</orig><reg resp="#SDM">Pere</reg></choice> <choice><abbr>esꝑirable</abbr><expan resp="#SDM">eſp<ex>er</ex>irable</expan></choice></l>
+                    <l xml:id="l-129r-2-11">Dont il conquiſt des ciex<lb/>
+                    La <choice><orig>ioie</orig><reg resp="#SDM">joie</reg></choice> delitable</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129r-2-12">Le ſecont des <choice><abbr>exāples</abbr><expan resp="#SDM">exa<ex>m</ex>ples</expan></choice><lb/>
+                    vous veil <choice><orig><choice><abbr>ramēteuoir</abbr><expan resp="#SDM">rame<ex>n</ex>teuoir</expan></choice></orig><reg resp="#SDM"><choice><abbr>ramētevoir</abbr><expan resp="#SDM">rame<ex>n</ex>tevoir</expan></choice></reg></choice></l>
+                    <l xml:id="l-129r-2-13">Ainſi con les <choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>ains</ex></expan></choice> peres<lb/>
+                    Le nous font <choice><orig>aſſauoir</orig><reg resp="#SDM">aſſavoir</reg></choice></l>
+                    <l xml:id="l-129r-2-14">Que <choice><orig>iadis</orig><reg resp="#SDM">jadis</reg></choice> fu <choice><orig>vns</orig><reg resp="#SDM">uns</reg></choice> hons<lb/>
+                    Riches de <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> <choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
+                    <l xml:id="l-129r-2-15"><choice><sic>C'</sic><corr resp="#Olsen">Qui </corr></choice><choice><abbr>onq՚s</abbr><expan resp="#SDM">onq<ex>ue</ex>s</expan></choice> de bien faire<lb/>
+                    N'ot talent ne voloir</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129r-2-16">Onques en ſon <choice><orig>viuant</orig><reg resp="#SDM">vivant</reg></choice><lb/>
+                    Aumoſne<choice><orig/><reg resp="#SDM"> </reg></choice>ne <choice><abbr>dōna</abbr><expan resp="#SDM">do<ex>n</ex>na</expan></choice></l>
+                    <l xml:id="l-129r-2-17">Ne de biens qu'il eüſt<lb/>
+                    <choice><orig>Poures</orig><reg resp="#SDM">Povres</reg></choice> n'en amenda</l>
+                    <l xml:id="l-129r-2-18">Poꝛ tant qu'il le ſceüſt<lb/>
+                    Tant <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> l'eſpira</l>
+                    <l xml:id="l-129r-2-19"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> <num value="1">.<choice><orig>I</orig><reg resp="#SDM">i</reg></choice>.</num> moult bel example.<lb/>
+
+                    <pb n="129v" xml:id="f129v"/>
+                    <cb n="1" xml:id="cb-129v-1"/>
+                    Si con vous oꝛrez <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice>.</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129v-1-1">Car <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> qui eſt a tous<lb/>
+                    vrais ſecours <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> amis</l>
+                    <l xml:id="l-129v-1-2">Le volt geter et traire<lb/>
+                    Des mains aus <choice><abbr>ēnemis</abbr><expan resp="#SDM">e<ex>n</ex>nemis</expan></choice></l>
+                    <l xml:id="l-129v-1-3"><choice><orig>Vne</orig><reg resp="#SDM">Une</reg></choice> nuit en ſon lit<lb/>
+                    Eſtoit ſi endoꝛmis</l>
+                    <l xml:id="l-129v-1-4">Con cil qui n'<choice><orig>auoit</orig><reg resp="#SDM">avoit</reg></choice> pas<lb/>
+                    Le ſien cuer a <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> mis</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129v-1-5">En <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> doꝛmant <choice><orig><choice><abbr>sōioit</abbr><expan resp="#SDM">ſo<ex>n</ex>ioit</expan></choice></orig><reg resp="#SDM"><choice><abbr>sōjoit</abbr><expan resp="#SDM">ſo<ex>n</ex>joit</expan></choice></reg></choice><lb/>
+                    Qu'il li pꝛiſt ſi <choice><abbr>gñs</abbr><expan resp="#SDM">g<ex>ra</ex>ns</expan></choice> fains</l>
+                    <l xml:id="l-129v-1-6"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> po qu'il ne <choice><orig><choice><abbr>mēioie</abbr><expan resp="#SDM">me<ex>n</ex>ioie</expan></choice></orig><reg resp="#SDM"><choice><abbr>mējoie</abbr><expan resp="#SDM">me<ex>n</ex>joie</expan></choice></reg></choice><lb/>
+                    <choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> deſtrece ſes mains</l>
+                    <l xml:id="l-129v-1-7"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> rage de famine<lb/>
+                    Eſtoit ſi foꝛs eſtains</l>
+                    <l xml:id="l-129v-1-8"><choice><abbr>Qⁱl</abbr><expan resp="#SDM">Q<ex>u'i</ex>l</expan></choice> ne pooit aler<lb/>
+                    Tant eſtoit <choice><abbr>sō</abbr><expan resp="#SDM">ſo<ex>n</ex></expan></choice> cuer vains</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129v-1-9">En cele <choice><orig>auiſion</orig><reg resp="#SDM">aviſion</reg></choice><lb/>
+                    Que cil ainſinc eſtoit</l>
+                    <l xml:id="l-129v-1-10"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> delez <num value="1">.i.</num> jardin<lb/>
+                    Fermé de murs eſtroit</l>
+                    <l xml:id="l-129v-1-11">De tous les fruis du mond<lb/>
+                    En ce <choice><orig>iardin</orig><reg resp="#SDM">jardin</reg></choice> <choice><orig>auoit</orig><reg resp="#SDM">avoit</reg></choice></l>
+                    <l xml:id="l-129v-1-12"><choice><orig>Auis</orig><reg resp="#SDM">Avis</reg></choice> li fu c'uns anges<lb/>
+                    Tout le vergier gardoit</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129v-1-13">Cil qui ainſi <choice><orig>ſonioit</orig><reg resp="#SDM">ſonjoit</reg></choice><lb/>
+                    <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>u'i</ex></expan></choice> <choice><orig>auoit</orig><reg resp="#SDM">avoit</reg></choice> tel famine</l>
+                    <l xml:id="l-129v-1-14">Vers l'ange qui gardoit<lb/>
+                    Tout le fruit ſ'<choice><orig>a chemine</orig><reg resp="#SDM">achemine</reg></choice></l>
+                    <l xml:id="l-129v-1-15"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> amours li a dit<lb/>
+                    Et doucement l'encline</l>
+                    <l xml:id="l-129v-1-16"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> du fruit du <choice><orig>iardin</orig><reg resp="#SDM">jardin</reg></choice><lb/>
+                    Li doinſt <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> amoꝛs fine</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129v-1-17">La garde reſpondi<lb/>
+                    <q xml:id="q-129v-1-1" next="#q-129v-1-2"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> ne t'en donrai pas</q></l>
+                    <l xml:id="l-129v-1-18"><q xml:id="q-129v-1-2" prev="#q-129v-1-1" next="#q-129v-1-3">Mais ſe tu y vois fruit<lb/>
+                    De quoi l'arbꝛe <choice><abbr>plātas</abbr><expan resp="#SDM">pla<ex>n</ex>tas</expan></choice></q></l>
+                    <l xml:id="l-129v-1-19"><q xml:id="q-129v-1-3" prev="#q-129v-1-2" next="#q-129v-2-1">Entres ens ſi en quers<lb/>
+
+                    <cb n="2" xml:id="cb-129v-2"/>
+                    Tant <choice><abbr>cōme</abbr><expan resp="#SDM">co<ex>m</ex>me</expan></choice> tu voudꝛas.</q></l>
+                    <l xml:id="l-129v-2-1"><q xml:id="q-129v-2-1" prev="#q-129v-1-3">Se riens n'i as planté<lb/>
+                    Vas t'en iſnelepas</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129v-2-2">Le fameilleus reſpont<lb/>
+                    Dolant a raiſon baſſe</l>
+                    <l xml:id="l-129v-2-3"><q xml:id="q-129v-2-2" next="#q-129v-2-3">Certes <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> n'i voi riens<lb/>
+                    <choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> <choice><abbr>onq՚s</abbr><expan resp="#SDM">onq<ex>ue</ex>s</expan></choice> plantaſſe</q></l>
+                    <l xml:id="l-129v-2-4"><q xml:id="q-129v-2-3" prev="#q-129v-2-2" next="#q-129v-2-4">Il me fu bien meſtier<lb/>
+                    Que <num value="1">.i.</num> ſeul li <choice><abbr>dōnaſſe</abbr><expan resp="#SDM">do<ex>n</ex>naſſe</expan></choice></q></l>
+                    <l xml:id="l-129v-2-5"><q xml:id="q-129v-2-4" prev="#q-129v-2-3"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> quoi a <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> beſoing<lb/>
+                    A ma fain en <choice><orig><choice><abbr>mēiaſſe</abbr><expan resp="#SDM">me<ex>n</ex>iaſſe</expan></choice></orig><reg resp="#SDM"><choice><abbr>mējaſſe</abbr><expan resp="#SDM">me<ex>n</ex>jaſſe</expan></choice></reg></choice></q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129v-2-6">La garde reſpondi<lb/>
+                    Quant elle ot eſcouté</l>
+                    <l xml:id="l-129v-2-7"><q xml:id="q-129v-2-5" next="#q-129v-2-6">Amis cilz <choice><abbr>v՚g՚s</abbr><expan resp="#SDM">v<ex>er</ex>g<ex>ier</ex>s</expan></choice> eſt<lb/>
+                    Tous fais de charité</q></l>
+                    <l xml:id="l-129v-2-8"><q xml:id="q-129v-2-6" prev="#q-129v-2-5" next="#q-129v-2-7">Puis <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> tu n'as dedens<lb/>
+                    Nule choſe planté</q></l>
+                    <l xml:id="l-129v-2-9"><q xml:id="q-129v-2-7" prev="#q-129v-2-6" next="#q-129v-2-8">Tu n'<choice><orig><choice><abbr>ē poꝛteras</abbr><expan resp="#SDM">e<ex>m</ex> poꝛteras</expan></choice></orig><reg resp="#SDM"><choice><abbr>ēpoꝛteras</abbr><expan resp="#SDM">e<ex>m</ex>poꝛteras</expan></choice></reg></choice> riens<lb/>
+                    Se ne l'as apoꝛté</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129v-2-10"><q xml:id="q-129v-2-8" prev="#q-129v-2-7" next="#q-129v-2-9">C'<choice><orig>vne</orig><reg resp="#SDM">une</reg></choice> toute ſeule <choice><orig>en te</orig><reg resp="#SDM">ente</reg></choice><lb/>
+                    Dedens planté eüſſes</q></l>
+                    <l xml:id="l-129v-2-11"><q xml:id="q-129v-2-9" prev="#q-129v-2-8" next="#q-129v-2-10">Sans <choice><abbr>cōgié</abbr><expan resp="#SDM">co<ex>n</ex>gié</expan></choice> de nului<lb/>
+                    Du fruit <choice><abbr>mēgier</abbr><expan resp="#SDM">me<ex>n</ex>gier</expan></choice> peüſſes</q></l>
+                    <l xml:id="l-129v-2-12"><q xml:id="q-129v-2-10" prev="#q-129v-2-9" next="#q-129v-2-11">Et a <choice><abbr>tō</abbr><expan resp="#SDM">to<ex>n</ex></expan></choice> abꝛicel<lb/>
+                    Moult <choice><abbr>biē</abbr><expan resp="#SDM">bie<ex>n</ex></expan></choice> aler peüſſes</q></l>
+                    <l xml:id="l-129v-2-13"><q xml:id="q-129v-2-11" prev="#q-129v-2-10">Nul ne t'en deſtoꝛnaſt<lb/>
+                    Tant aler y ſceüſſes</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-129v-2-14">A ce mot ſans plus dire<lb/>
+                    Le fameilleus ſ'<choice><orig>eſueille</orig><reg resp="#SDM">eſveille</reg></choice></l>
+                    <l xml:id="l-129v-2-15">De ce qu'il ot ſongié<lb/>
+                    Li vint a <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> <choice><orig>merueille</orig><reg resp="#SDM">merveille</reg></choice></l>
+                    <l xml:id="l-129v-2-16"><choice><abbr>Sō</abbr><expan resp="#SDM">So<ex>n</ex></expan></choice> cuer vers /<choice><orig><choice><abbr>ih՚ucriſt</abbr><expan resp="#SDM">ih<ex>es</ex>ucriſt</expan></choice></orig><reg resp="#SDM"><choice><abbr>Jh՚ucriſt</abbr><expan resp="#SDM">Jh<ex>es</ex>ucriſt</expan></choice></reg></choice><lb/>
+                    De pꝛier ſ'apareille</l>
+                    <l xml:id="l-129v-2-17">A <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> a /ſa mere<lb/>
+                    En ploꝛant ſe <choice><abbr>ꝯſeille</abbr><expan resp="#SDM"><ex>con</ex>ſeille</expan></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-129v-2-18"><q xml:id="q-129v-2-12">Ha;</q> fait<choice><orig/><reg resp="#SDM"> </reg></choice>il <q xml:id="q-129v-2-13" next="#q-129v-2-14">/haute <choice><orig>dame</orig><reg resp="#SDM">Dame</reg></choice><lb/>
+                    /Fleur de virginité</q></l>
+                    <l xml:id="l-129v-2-19"><q xml:id="q-129v-2-14" prev="#q-129v-2-13" next="#q-130r-1-1">/Dame pꝛiez poꝛ moy<lb/>
+
+                    <pb n="130r" xml:id="f130r"/>
+                    <cb n="1" xml:id="cb-130r-1"/>
+                    /La ſainte <choice><orig>trinité</orig><reg resp="#SDM">Trinité</reg></choice></q></l>
+                    <l xml:id="l-130r-1-1"><q xml:id="q-130r-1-1" prev="#q-129v-2-14" next="#q-130r-1-2"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> cuer ſoit <choice><abbr>ēpli</abbr><expan resp="#SDM">e<ex>m</ex>pli</expan></choice><lb/>
+                    De vraie charité</q></l>
+                    <l xml:id="l-130r-1-2"><q xml:id="q-130r-1-2" prev="#q-130r-1-1" next="#q-130r-1-3">Car <choice><orig>i</orig><reg resp="#SDM">j</reg></choice>'ai trop <choice><abbr>lōguem̄t</abbr><expan resp="#SDM">lo<ex>n</ex>guem<ex>en</ex>t</expan></choice><lb/>
+                    Veſcu en vanité</q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-130r-1-3"><q xml:id="q-130r-1-3" prev="#q-130r-1-2" next="#q-130r-1-4">Bien m'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> ſui <choice><abbr>ꝑceus</abbr><expan resp="#SDM">p<ex>ar</ex>ceus</expan></choice><lb/>
+                    Ennuit en <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> <choice><abbr>doꝛmāt</abbr><expan resp="#SDM">doꝛma<ex>n</ex>t</expan></choice></q></l>
+                    <l xml:id="l-130r-1-4"><q xml:id="q-130r-1-4" prev="#q-130r-1-3" next="#q-130r-1-5">C'<choice><abbr>onq՚s</abbr><expan resp="#SDM">onq<ex>ue</ex>s</expan></choice> <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> ne fis bien<lb/>
+                    En treſtout <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> <choice><orig>viuant</orig><reg resp="#SDM">vivant</reg></choice></q></l>
+                    <l xml:id="l-130r-1-5"><q xml:id="q-130r-1-5" prev="#q-130r-1-4" next="#q-130r-1-6">Mais ſe <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> ſa grace<lb/>
+                    Me leſſe <choice><orig>viure</orig><reg resp="#SDM">vivre</reg></choice> tant</q></l>
+                    <l xml:id="l-130r-1-6"><q xml:id="q-130r-1-6" prev="#q-130r-1-5"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> ferai <num value="1">.<choice><orig>I</orig><reg resp="#SDM">i</reg></choice>.</num> vergier<lb/>
+                    <choice><orig>Merueilleuſement</orig><reg resp="#SDM">Merveilleuſement</reg></choice> <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice></q></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-130r-1-7"><choice><orig>AInsi</orig><reg resp="#SDM">Ainsi</reg></choice> li riches hons<lb/>
+                    Fu en cele pensee</l>
+                    <l xml:id="l-130r-1-8"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> ce vint au matin<lb/>
+                    <choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> la nuit fu paſſee</l>
+                    <l xml:id="l-130r-1-9"><choice><orig><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> tout</orig><reg resp="#SDM"><choice><abbr>Ꝑtout</abbr><expan resp="#SDM">P<ex>ar</ex>tout</expan></choice></reg></choice> a fait crier<lb/>
+                    C'on viegne a ſa <choice><abbr>dōnee</abbr><expan resp="#SDM">do<ex>n</ex>nee</expan></choice></l>
+                    <l xml:id="l-130r-1-10">Loꝛs fu de ſon <choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice><lb/>
+                    <choice><orig>Poure</orig><reg resp="#SDM">Povre</reg></choice> gent confoꝛtee</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-130r-1-11">Des loꝛs toute ſa vie<lb/>
+                    Grant aumoſne <choice><abbr>dōna</abbr><expan resp="#SDM">do<ex>n</ex>na</expan></choice></l>
+                    <l xml:id="l-130r-1-12">Et <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> grant <choice><abbr>ſapiēce</abbr><expan resp="#SDM">ſapie<ex>n</ex>ce</expan></choice><lb/>
+                    De bons arbꝛes <choice><abbr>plāta</abbr><expan resp="#SDM">pla<ex>n</ex>ta</expan></choice></l>
+                    <l xml:id="l-130r-1-13"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> il fu treſpaſſez<lb/>
+                    Le fruit en <choice><orig>retrouua</orig><reg resp="#SDM">retrouva</reg></choice></l>
+                    <l xml:id="l-130r-1-14">Dont <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> l'ame de lui<lb/>
+                    Et ciex <choice><orig>re pꝛouuenda</orig><reg resp="#SDM">repꝛouvenda</reg></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-130r-1-15">Tout ainſi doit chaſcuns<lb/>
+                    Son <choice><abbr>v՚gier</abbr><expan resp="#SDM">v<ex>er</ex>gier</expan></choice> eſtablir</l>
+                    <l xml:id="l-130r-1-16">Et planter arbꝛiſſiaus<lb/>
+                    Dont bons fruis puet venir</l>
+                    <l xml:id="l-130r-1-17">Y puet a ſon beſoing<lb/>
+                    Hardiement cuillir</l>
+                    <l xml:id="l-130r-1-18">Nulz ſelonc ſon pooir<lb/>
+                    Ne ſ'en doit repentir</l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-130r-1-19">Par menues aumoſnes<lb/>
+
+                    <cb n="2" xml:id="cb-130r-2"/>
+                    Aus <choice><orig>poures</orig><reg resp="#SDM">povres</reg></choice> gens <choice><abbr>dōner</abbr><expan resp="#SDM">do<ex>n</ex>ner</expan></choice></l>
+                    <l xml:id="l-130r-2-1">Puet chaſcuns <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> chaſcune<lb/>
+                    Son <choice><orig>iardignet</orig><reg resp="#SDM">jardignet</reg></choice> planter</l>
+                    <l xml:id="l-130r-2-2"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> quoi en l'autre ſiecle<lb/>
+                    <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> tous <choice><orig>ioꝛs</orig><reg resp="#SDM">joꝛs</reg></choice> puet durer</l>
+                    <l xml:id="l-130r-2-3">Puiſt on <choice><orig>pꝛiueement</orig><reg resp="#SDM">pꝛiveement</reg></choice><lb/>
+                    Son <choice><orig>bien fait</orig><reg resp="#SDM">bienfait</reg></choice> <choice><orig>retrouuer</orig><reg resp="#SDM">retrouver</reg></choice></l>
+                </lg>
+
+                <lg>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-130r-2-4"><choice><orig>OR</orig><reg resp="#SDM">Oꝛ</reg></choice> pꝛions de bon cuer<lb/>
+                    A /la haute roynne</l>
+                    <l xml:id="l-130r-2-5">/<choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> poꝛta /le <choice><orig>filz</orig><reg resp="#SDM">Filz</reg></choice> <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice><lb/>
+                    <choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> la vertu <choice><orig>diuine</orig><reg resp="#SDM">divine</reg></choice></l>
+                    <l xml:id="l-130r-2-6">Qu'ele pꝛie pour nous<lb/>
+                    Au tres dous roy hautiſme</l>
+                    <l xml:id="l-130r-2-7"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>u'i</ex></expan></choice> nous otroit ſ'amour<lb/>
+                    <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> tant eſt bone <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> fine</l></lg> <p rend="inline" xml:id="p-130r-2-1">.Amen.</p>
+            </div></body></text></TEI>
