@@ -1,4 +1,4 @@
-# The texts of BnF fr. 24432: A cumulative, work-in-progress digital edition
+# The Texts of BnF fr. 24432: A cumulative, work-in-progress digital edition
 [For easy access to the data, click here.](https://dowsmiller.github.io/fr24432)
 
 ## About the Manuscript
