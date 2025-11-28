@@ -37,10 +37,9 @@ body.has-fixed-header {
   width: 100%;
   backdrop-filter: blur(24px) saturate(220%) brightness(105%);
   -webkit-backdrop-filter: blur(24px) saturate(220%) brightness(105%);
-  background: linear-gradient(120deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+  background: linear-gradient(120deg, rgba(255,255,255,0.8), rgba(255,255,255,0.15));
   border-bottom: 1px solid rgba(0,122,255,0.25);
   box-shadow: 0 8px 32px rgba(0,0,0,0.08), inset 0 0 10px rgba(255,255,255,0.1);
-  
   text-align: center;
   padding: 25px 24px;
   z-index: 1000;
