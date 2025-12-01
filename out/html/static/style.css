@@ -186,7 +186,7 @@ code {
 }
 
 .license a {
-  display: inline-block;
+  display: block;
   border-bottom: none !important;
   text-decoration: none !important;
 }
