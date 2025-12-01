@@ -39,13 +39,10 @@
               folio_open=False
             ) 
         -%}
-
         {%- for row in lines -%}
           {%- set folio = row.folio|string|trim -%}
           {%- set lg = row.lg|string|trim -%}
           {%- set col = row.col|string|trim -%}
-
-          {# --- HIERARCHY MANAGEMENT --- #}
 
           {# 1. Check Folio Change: If folio changes, close everything down to the root #}
           {%- if folio != ns.last_folio -%}
@@ -91,16 +88,13 @@
             {%- set ns.current_speaker = None -%} 
           {%- endif -%}
 
-
-          {# --- CONTENT RENDERING --- #}
-
-          {# Speaker Label #}
+          {# 4. Speaker Label #}
           {%- if row.speaker and row.speaker != ns.current_speaker -%}
             <div class="speaker-label">{{ row.speaker }}</div>
             {%- set ns.current_speaker = row.speaker -%}
           {%- endif -%}
 
-          {# Line #}
+          {# 5. Line #}
           <div class="line">
             <span class="ln">{{ row.line_no }}</span>
             <span class="line-text">{{ row.text | safe }}</span>
