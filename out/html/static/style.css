@@ -180,6 +180,22 @@ code {
   transition: background 0.2s ease;
 }
 
+.license {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.license a {
+  display: inline-block;
+}
+
+.license img {
+  width: 88px;
+  height: 31px;
+  border: 0;
+  vertical-align: middle;
+}
+
 code:hover {
   background: rgba(0, 122, 255, 0.1);
 }
