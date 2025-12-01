@@ -188,6 +188,7 @@ code {
 .license a {
   display: inline-block;
   border-bottom: none !important;
+  text-decoration: none !important;
 }
 
 .license img {
