@@ -21,4 +21,7 @@
   <!-- Remove elements explicitly marked ignore -->
   <xsl:template match="*[@ana='ignore']"/>
 
+  <!-- Remove notes and formworks -->
+  <xsl:template match="tei:note | tei:fw"/>
+
 </xsl:stylesheet>
