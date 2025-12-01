@@ -79,7 +79,7 @@
       <h2>Encoding Principles <span class="arrow">▼</span></h2>
       <div class="expand-content">
         <p>
-          Individual texts, and their incipit and explicit markings (linked to the main text through <code>@corresp</code>) have been separated through use of the <code>&lt;div&gt;</code> tag, with sections of prose marked using <code>&lt;p&gt;</code>, and sections of poetry marked using <code>&lt;lg&gt;</code>, with individual lines of verse tagged using <code>&lt;l&gt;</code>.
+          In the TEI-XML encoding, individual texts, and their incipit and explicit markings (linked to the main text through <code>@corresp</code>) have been separated through use of the <code>&lt;div&gt;</code> tag, with sections of prose marked using <code>&lt;p&gt;</code>, and sections of poetry marked using <code>&lt;lg&gt;</code>, with individual lines of verse tagged using <code>&lt;l&gt;</code>.
           When a text is dialogic in form, this is marked using <code>&lt;spGrp&gt;</code>, with contributions by individual speakers marked using <code>&lt;sp&gt;</code>.
           Direct speech within non dialogic text has often been marked with <code>&lt;q&gt;</code>.
           Both <code>&lt;sp&gt;</code> and <code>&lt;q&gt;</code> make use of <code>@who</code> and <code>@toWhom</code>, where appropriate, and instances of <code>&lt;q&gt;</code> that break across structural divisions are connected through the use of <code>@next</code> and <code>@prev</code> references.
@@ -104,6 +104,28 @@
         <p>
           Again, where such details have been pertinent to our analysis, personal and geographic names have been encoded within <code>&lt;persName&gt;</code> and <code>&lt;placeName&gt;</code>, each referring to an associated identifier using <code>@ref</code>.
           Dates are encoded in <code>&lt;date&gt;</code>, usually with an <code>@when</code> attribute to present the date in a machine readable format, and <code>&lt;num&gt;</code> elements are encoded with their associated <code>@value</code>, to enable machine reading of complex numeral sequences.
+        </p>
+      </div>
+    </div>
+    <div class="expand">
+      <h2>Editorial Principles <span class="arrow">▼</span></h2>
+      <div class="expand-content">
+        <p>
+          Diplomatic transcriptions have been extracted from the TEI-XML encoding by ignoring all <code>&lt;expan&gt;</code>, <code>&lt;reg&gt;</code>,  <code>&lt;corr&gt;</code>,  <code>&lt;add&gt;</code>, and  <code>&lt;supplied&gt;</code> elements, unless they are marked with  <code>&lt;@ana='retain'&gt;</code>.
+          The resulting text mimics, as far as possible, allographic variation on the manuscript page, and retains original word separation and punctuation (the <em>punctus elevatus</em> is represented by a modern semi-colon).
+          All later modifications to the text, including by early correctors, are ignored.
+        </p>
+        <p>
+          Critical editions have been extracted from the TEI-XML encoding by ignoring all <code>&lt;abbr&gt;</code>, <code>&lt;orig&gt;</code>,  <code>&lt;sic&gt;</code>,  <code>&lt;del&gt;</code>, and  <code>&lt;surplus&gt;</code> elements, unless they are marked with  <code>&lt;@ana='retain'&gt;</code>.
+          The resulting text simplifies allographic variation for <em>r</em> and <em>s</em>, regularises the use of <em>u</em> and <em>v</em> as in Modern French, modernises punctuation, and adds diacritical marks where these provide a clearer idea of pronunciation (predominantly through the the use of the acute accent to mark otherwise ambiguous tonic <em>e</em>, and the use of the trema to indicate diaeresis).
+          Later modifications to the text are accepted in cases of clear scribal error, to which I occasionally add my own editorial interventions.
+        </p>
+        <p>
+          All elements marked with <code>@ana='ignore'</code> are excluded from both edition types, as are all <code>&lt;note&gt;</code> and <code>&lt;fw&gt;</code> elements.
+        </p>
+        <p>
+          Note that I use the term <em>critical edition</em> here as a shorthand for a single-manuscript critical edition, which does not attempt to incorporate lessons from other copies of a given text which may exist outside of fr24432.
+          For details of such witnesses, where they exist, see the links provided to the <a href="https://www.arlima.net" target="_blank">Archives de littérature du Moyen Âge</em> (ARLIMA) database.
         </p>
       </div>
     </div>
