@@ -15,41 +15,82 @@
   </header>
 
   <div class="overview-container">
-    <span class="overview">
-      <h2>About the Manuscript</h2>
-      <p>
-        The manuscript at the centre of this project (Paris, Bibliothèque nationale de France, fonds français, 24432, hereafter fr24432) was produced in Paris in the middle of the fourteenth century.
-        It is the work of some 11 scribes, and contains some 87 texts across its 446 folios, all of which are written entirely or primarily in French.
-      </p>
-      <h2>About the Project</h2>
-      <p>
-        This page presents a work-in-progress edition of the texts of fr24432 arising from my doctoral project, in which I conducted a combined textual and digital analysis of the manuscript.
-        The texts are separated into three groups according to their status: <em>Complete</em>, <em>Near Complete</em>, and <em>Incomplete</em>.
-      </p>
-      <ul>
-        <li>
-          <em>Complete</em> texts are those for which I have completed a full edition-quality encoding, which is presented via a web viewer.
-          Links are given to editions I have published using these data.
-        </li>
-        <li>
-          <em>Near Complete</em> texts can also be accessed via the web viewer, but should be approached with some caution as they are likely to contain errors and may not yet be wholly suitable for reading.
-          Notes are given to set out those areas which are not yet complete.
-        </li>
-        <li>
-          <em>Incomplete</em> texts are likely to contain numerous errors and inconsistencies, especially in the regularisation of punctuation, word-separation, and allographs.
-          The data should therefore be treated with extreme caution.
-        </li>
-      </ul>
-      <p>
-        All texts, whatever their status, are published in their current form in TEI-XML, CSV, and TXT formats, in the hope that they will be of use to scholars, and will raise the profile of this fascinating manuscript.
-        To download the full dataset, including a single TEI file containing all data for the full manuscript, go to the <a href="https://github.com/dowsmiller/fr24432" target="_blank">GitHub Repository</a> for this project.
-      </p>
-      <p>
-        My thesis is available in Open Access <a href="https://ora.ox.ac.uk/objects/uuid:57feff4b-fa3e-4133-b1c9-7544b6874f4b" target="_blank">here</a>.
-        For further details of my ongoing research, see my personal page <a href="https://dowsmiller.github.io" target="_blank">here</a>.
-      </p>
-    </span>
-  </div>
+  <span class="overview">
+
+    <div class="expand">
+      <h2>About the Manuscript <span class="arrow">▼</span></h2>
+      <div class="expand-content">
+        <p>
+          The manuscript at the centre of this project (Paris, Bibliothèque nationale de France, fonds français, 24432, hereafter fr24432) was produced in Paris in the middle of the fourteenth century.
+          It is the work of some 11 scribes, and contains some 87 texts across its 446 folios, all of which are written entirely or primarily in French.
+          My thesis, in which I conduct a full material analysis of the codex, is available in Open Access <a href="https://ora.ox.ac.uk/objects/uuid:57feff4b-fa3e-4133-b1c9-7544b6874f4b" target="_blank">here</a>.
+        </p>
+      </div>
+    </div>
+    <div class="expand">
+      <h2>About the Project <span class="arrow">▼</span></h2>
+      <div class="expand-content">
+        <p>
+          This page presents a work-in-progress edition of the texts of fr24432 arising from my doctoral project, in which I conducted a combined textual and digital analysis of the manuscript.
+          The texts are separated into three groups according to their status: <em>Complete</em>, <em>Near Complete</em>, and <em>Incomplete</em>.
+        </p>
+        <ul>
+          <li>
+            <em>Complete</em> texts are those for which I have completed a full edition-quality encoding, which is presented via a web viewer.
+            Links are given to editions I have published using these data.
+          </li>
+          <li>
+            <em>Near Complete</em> texts can also be accessed via the web viewer, but should be approached with some caution as they are likely to contain errors and may not yet be wholly suitable for reading.
+            Notes are given to set out those areas which are not yet complete.
+          </li>
+          <li>
+            <em>Incomplete</em> texts are likely to contain numerous errors and inconsistencies, especially in the regularisation of punctuation, word-separation, and allographs.
+            The data should therefore be treated with extreme caution.
+          </li>
+        </ul>
+        <p>
+          All texts, whatever their status, are published in their current form in TEI-XML, CSV, and TXT formats, in the hope that they will be of use to scholars, and will raise the profile of this fascinating manuscript.
+          To download the full dataset, including a single TEI file containing all data for the full manuscript, go to the <a href="https://github.com/dowsmiller/fr24432" target="_blank">GitHub Repository</a> for this project.
+        </p>
+        <p>
+          For further details of my ongoing research, see my personal page <a href="https://dowsmiller.github.io" target="_blank">here</a>.
+        </p>
+      </div>
+    </div>
+    <div class="expand">
+      <h2>Encoding Principles <span class="arrow">▼</span></h2>
+      <div class="expand-content">
+        <p>
+          Individual texts, and their incipit and explicit markings (linked to the main text through <code>@corresp</code>) have been separated through use of the <code>&lt;div&gt;</code> tag, with sections of prose marked using <code>&lt;p&gt;</code>, and sections of poetry marked using <code>&lt;lg&gt;</code>, with individual lines of verse tagged using <code>&lt;l&gt;</code>.
+          When a text is dialogic in form, this is marked using <code>&lt;spGrp&gt;</code>, with contributions by individual speakers marked using <code>&lt;sp&gt;</code>.
+          Direct speech within non dialogic text has often been marked with <code>&lt;q&gt;</code>.
+          Both <code>&lt;sp&gt;</code> and <code>&lt;q&gt;</code> make use of <code>@who</code> and <code>@toWhom</code>, where appropriate, and instances of <code>&lt;q&gt;</code> that break across structural divisions are connected through the use of <code>@next</code> and <code>@prev</code> references.
+          The few words and phrases written in languages other than Old and Middle French (predominantly Latin) have been marked using <code>@xml:lang</code> and contained within <code>&lt;seg&gt;</code>, if these do not align with another tagged section of text.
+        </p>
+        <p>
+          Material divisions within the codex have been marked, with <code>&lt;gb&gt;</code>, <code>&lt;pb&gt;</code>, <code>&lt;cb&gt;</code>, and <code>&lt;lb&gt;</code> tags indicating the beginning of a new quire, folio, column, and line respectively, with the latter tag marked with <code>@break</code> as <code>"no"</code> when a line break occurs within a word. <code>&lt;handShift&gt;</code> is used to mark the beginning of a section of work by a particular scribe, with the scribe identified using <code>@scribeRef</code>.
+          Additions and interventions by hands other than the main scribe of a section are marked through the addition of the <code>@hand</code> attribute.
+        </p>
+        <p>
+          The table of contents is encoded as a table using the <code>&lt;table&gt;</code>, <code>&lt;cell&gt;</code>, and <code>&lt;row&gt;</code> tags.
+          Labels, marginal notes, catchwords, and highlighted sections are marked using <code>&lt;label&gt;</code>, <code>&lt;note&gt;</code>, <code>&lt;fw&gt;</code>, and <code>&lt;hi&gt;</code>, with information about the location and presentation of these additions usually included in <code>@place</code> and <code>@rend</code> attributes. The latter attribute is applied to material and textual divisions more broadly, particularly to mark the use of <em>litterae notabiliores</em>, or to indicate the exact manner in which text is added or deleted.
+          Meanwhile, moments of damage, blank spaces, and gaps in text are marked using <code>&lt;damage&gt;</code>, <code>&lt;space&gt;</code>, and <code>&lt;gap&gt;</code> respectively.
+          In the latter case, details such as the <code>@agent</code>, <code>@extent</code>, <code>@quantity</code>, and <code>@reason</code> behind the gap are marked.
+          All material and textual divisions are given a unique identifier through the use of <code>@xml:id</code>.
+        </p>
+        <p>
+          Within the text of the encoding, expansions of scribal abbreviation, additions and deletions by scribal or later hands, as well as editorial regularisations, corrections, suppressions, and insertions have been encoded using the <code>&lt;expan&gt;</code>, <code>&lt;add&gt;</code>, <code>&lt;del&gt;</code>, <code>&lt;reg&gt;</code>, <code>&lt;corr&gt;</code>, <code>&lt;surplus&gt;</code>, and <code>&lt;supplied&gt;</code> elements respectively, alongside the unexpanded, unregularised, and uncorrected version of the text, through the <code>&lt;abbr&gt;</code>, <code>&lt;orig&gt;</code>, and <code>&lt;sic&gt;</code> elements respectively.
+          Such modifications are marked with <code>@resp</code> to indicate the responsible party, where this is known.
+          Where more than one variant of the same segment of text has been encoded, for example in cases of expanded abbreviation, correction, and regularisation, the variants have been contained within a <code>&lt;choice&gt;</code> element.
+        </p>
+        <p>
+          Again, where such details have been pertinent to our analysis, personal and geographic names have been encoded within <code>&lt;persName&gt;</code> and <code>&lt;placeName&gt;</code>, each referring to an associated identifier using <code>@ref</code>.
+          Dates are encoded in <code>&lt;date&gt;</code>, usually with an <code>@when</code> attribute to present the date in a machine readable format, and <code>&lt;num&gt;</code> elements are encoded with their associated <code>@value</code>, to enable machine reading of complex numeral sequences.
+        </p>
+      </div>
+    </div>
+  </span>
+</div>
 
   
   
@@ -4304,5 +4345,13 @@
     
   
 
+<script>
+document.querySelectorAll('.expand h2').forEach(header => {
+  header.addEventListener('click', () => {
+    const section = header.parentElement;
+    section.classList.toggle('open');
+  });
+});
+</script>
 </body>
 </html>
