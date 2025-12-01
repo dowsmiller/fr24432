@@ -692,6 +692,7 @@ code:hover {
   .folio-block {
     flex-direction: column;
     gap: 0;
+  }
 
   #mirador-viewer {
     height: 400px;
