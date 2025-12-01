@@ -27,7 +27,7 @@
                 </msDesc>
             </sourceDesc>
         </fileDesc>
-    </teiHeader><text><body><pb n="153v" xml:id="f153v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f312"/><div type="text" n="49" xml:id="Panthere">
+    </teiHeader><text><body><pb n="153v" xml:id="f153v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f310"/><div type="text" n="49" xml:id="Panthere">
                 <lg>
                     <l rend="decoratedInitial decoInitblue" xml:id="l-153v-1-1">A dame bele et bone et <choice><orig>ſage</orig><reg resp="#SDM">sage</reg></choice></l>
                     <l xml:id="l-153v-1-2">Noble de cuer <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> de lignage</l>
@@ -101,7 +101,7 @@
                     <l xml:id="l-153v-2-37">Et <choice><orig>poꝛtez</orig><reg resp="#SDM">portez</reg></choice> en <choice><orig>vne</orig><reg resp="#SDM">une</reg></choice><seg> </seg><choice><orig>foꝛeſt</orig><reg resp="#SDM">forest</reg></choice></l>
                     <l xml:id="l-153v-2-38"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>loꝛs</orig><reg resp="#SDM">lors</reg></choice><seg> </seg><choice><orig>eſtoit</orig><reg resp="#SDM">estoit</reg></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><orig><choice><orig><choice><orig><choice><abbr>ēcoꝛe</abbr><expan resp="#SDM">e<ex>n</ex>coꝛe</expan></choice></orig><reg resp="#SDM"><choice><abbr>ēcore</abbr><expan resp="#SDM">e<ex>n</ex>core</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>ēcore</abbr><expan resp="#SDM">e<ex>n</ex>core</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>ēcore</abbr><expan resp="#SDM">e<ex>n</ex>core</expan></choice></reg></choice><seg> </seg><choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice></l>
 
-                    <pb n="154r" xml:id="f154r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f313"/>
+                    <pb n="154r" xml:id="f154r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f311"/>
                     <cb n="1" xml:id="cb-154r-1"/>
                     <l xml:id="l-154r-1-1">Se cele <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice> tele <choice><abbr>cō</abbr><expan resp="#SDM">co<ex>m</ex></expan></choice><seg> </seg><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> cuidoie</l>
                     <l xml:id="l-154r-1-2"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> elle <choice><orig>eſtoit</orig><reg resp="#SDM">estoit</reg></choice><seg> </seg><choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice><seg> </seg><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice><seg> </seg><choice><orig>ſonioie</orig><reg resp="#SDM">sonioie</reg></choice></l>
@@ -187,7 +187,7 @@
                     <l xml:id="l-154r-2-38">Toutes les <choice><orig>beſtes</orig><reg resp="#SDM">bestes</reg></choice> miex <choice><abbr>valoiēt</abbr><expan resp="#SDM">valoie<ex>n</ex>t</expan></choice></l>
                     <l xml:id="l-154r-2-39">De <choice><orig>ſa</orig><reg resp="#SDM">sa</reg></choice> doucour <choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice> l'i <choice><abbr>trouuoiēt</abbr><expan resp="#SDM">trouuoie<ex>n</ex>t</expan></choice></l>
 
-                    <pb n="154v" xml:id="f154v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f314"/>
+                    <pb n="154v" xml:id="f154v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f312"/>
                     <cb n="1" xml:id="cb-154v-1"/>
                     <l xml:id="l-154v-1-1"><choice><orig>Pour quoie</orig><reg resp="#SDM">Pourquoie</reg></choice><seg> </seg><choice><sic><choice><orig>chaſcus</orig><reg resp="#SDM">chascus</reg></choice></sic><corr resp="#SDM"><choice><orig><choice><orig><choice><orig><choice><abbr>chaſcūs</abbr><expan resp="#SDM">chaſcu<supplied resp="#SDM"><ex>n</ex></supplied>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>chascūs</abbr><expan resp="#SDM">chascu<supplied resp="#SDM"><ex>n</ex></supplied>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>chascūs</abbr><expan resp="#SDM">chascu<supplied resp="#SDM"><ex>n</ex></supplied>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>chascūs</abbr><expan resp="#SDM">chascu<supplied resp="#SDM"><ex>n</ex></supplied>s</expan></choice></reg></choice></corr></choice><seg> </seg><choice><abbr>biē</abbr><expan resp="#SDM">bie<ex>n</ex></expan></choice> dire <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> doit</l>
                     <l xml:id="l-154v-1-2">E<add hand="#SH6" place="inline">t</add><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><choice><orig>chaſcune</orig><reg resp="#SDM">chascune</reg></choice> en amendoit</l>
@@ -282,7 +282,7 @@
                                 <l xml:id="l-154v-2-38">Et <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice><seg> </seg><choice><orig>deſirrier</orig><reg resp="#SDM">desirrier</reg></choice> du <choice><orig>ſauoir</orig><reg resp="#SDM"><choice><orig>savoir</orig><reg resp="#SDM">savoir</reg></choice></reg></choice></l>
                                 <l xml:id="l-154v-2-39">Se <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> l'un d'eulz <choice><orig>poꝛroie</orig><reg resp="#SDM">porroie</reg></choice><seg> </seg><choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
 
-                                <pb n="155r" xml:id="f155r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f315"/>
+                                <pb n="155r" xml:id="f155r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f313"/>
                                 <cb n="1" xml:id="cb-155r-1"/>
                                 <l xml:id="l-155r-1-1">La <choice><orig>dꝛoite</orig><reg resp="#SDM">droite</reg></choice><seg> </seg><choice><orig>interpꝛetation</orig><reg resp="#SDM">interpretation</reg></choice></l>
                                 <l xml:id="l-155r-1-2">Et la vois <choice><abbr>doucem̄t</abbr><expan resp="#SDM">doucem<ex>en</ex>t</expan></choice> oÿ</l>
@@ -365,7 +365,7 @@
                                 <l xml:id="l-155r-2-38"><choice><orig>Eſtoit</orig><reg resp="#SDM">Estoit</reg></choice> a pié <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice> menoit</l>
                                 <l xml:id="l-155r-2-39"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> les <choice><orig>reſnes</orig><reg resp="#SDM">resnes</reg></choice> le <choice><orig>damoiſel</orig><reg resp="#SDM">damoisel</reg></choice>.</l>
 
-                                <pb n="155v" xml:id="f155v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f316"/>
+                                <pb n="155v" xml:id="f155v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f314"/>
                                 <cb n="1" xml:id="cb-155v-1"/>
                                 <l xml:id="l-155v-1-1"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> la chantoient li <choice><orig>oiſel</orig><reg resp="#SDM">oisel</reg></choice></l>
                                 <l xml:id="l-155v-1-2">A haute vois <choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><abbr>doucem̄t</abbr><expan resp="#SDM">doucem<ex>en</ex>t</expan></choice></l>
@@ -389,7 +389,7 @@
                                 <l xml:id="l-155v-1-16">Et <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice><seg> </seg><choice><orig>deſirrier</orig><reg resp="#SDM">desirrier</reg></choice> du <choice><orig>ſauoir</orig><reg resp="#SDM">sauoir</reg></choice></l>
                                 <l xml:id="l-155v-1-17">Se <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> l'un d'eulz <choice><orig>poꝛroie</orig><reg resp="#SDM">porroie</reg></choice><seg> </seg><choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
 
-                                <pb n="155r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f315"/>
+                                <pb n="155r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f313"/>
                                 <cb n="1"/>
                                 <l xml:id="l-155v-1-18">La <choice><orig>dꝛoite</orig><reg resp="#SDM">droite</reg></choice><seg> </seg><choice><orig>interpꝛetation</orig><reg resp="#SDM">interpretation</reg></choice></l>
                                 <l xml:id="l-155v-1-19">Et la vois <choice><abbr>doucem̄t</abbr><expan resp="#SDM">doucem<ex>en</ex>t</expan></choice> oÿ</l>
@@ -472,7 +472,7 @@
                                 <l xml:id="l-155v-1-94"><choice><orig>Eſtoit</orig><reg resp="#SDM">Estoit</reg></choice> a pié <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice> menoit</l>
                                 <l xml:id="l-155v-1-95"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> les <choice><orig>reſnes</orig><reg resp="#SDM">resnes</reg></choice> le <choice><orig>damoiſel</orig><reg resp="#SDM">damoisel</reg></choice>.</l>
 
-                                <pb n="155v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f316"/>
+                                <pb n="155v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f314"/>
                                 <cb n="1"/>
                                 <l xml:id="l-155v-1-96"><choice><abbr>Ꝑ</abbr><expan resp="#SDM">P<ex>ar</ex></expan></choice> la chantoient li <choice><orig>oiſel</orig><reg resp="#SDM">oisel</reg></choice></l>
                                 <l xml:id="l-155v-1-97">A haute vois <choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><abbr>doucem̄t</abbr><expan resp="#SDM">doucem<ex>en</ex>t</expan></choice></l>
@@ -567,7 +567,7 @@
                     <l xml:id="l-155v-2-38"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> n'aye <choice><orig>ſeignoꝛie</orig><reg resp="#SDM">seignorie</reg></choice></l>
                     <l xml:id="l-155v-2-39">Si fais les <choice><orig><choice><orig><choice><orig><choice><abbr>oꝛgueilloꝰ</abbr><expan resp="#SDM">oꝛgueillo<ex>us</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>orgueilloꝰ</abbr><expan resp="#SDM">orgueillo<ex>us</ex></expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>orgueilloꝰ</abbr><expan resp="#SDM">orgueillo<ex>us</ex></expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>orgueilloꝰ</abbr><expan resp="#SDM">orgueillo<ex>us</ex></expan></choice></reg></choice><seg> </seg><choice><orig>cheoir</orig><reg resp="#SDM">chëoir</reg></choice></l>
 
-                    <pb n="156r" xml:id="f156r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f317"/>
+                    <pb n="156r" xml:id="f156r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f315"/>
                     <cb n="1" xml:id="cb-156r-1"/>
                     <l xml:id="l-156r-1-1"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> fais les <choice><abbr>hūbles</abbr><expan resp="#SDM">hu<ex>m</ex>bles</expan></choice> hault <choice><orig>ſeoir</orig><reg resp="#SDM">seoir</reg></choice></l>
                     <l xml:id="l-156r-1-2"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> fais <choice><abbr>biē</abbr><expan resp="#SDM">bie<ex>n</ex></expan></choice> des couars hardis</l>
@@ -651,7 +651,7 @@
                     <l xml:id="l-156r-2-37"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice><seg> </seg><choice><orig>poꝛ</orig><reg resp="#SDM">por</reg></choice><seg> </seg><choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice> m'<choice><orig><choice><abbr>ē hardirai</abbr><expan resp="#SDM">e<ex>n</ex> hardirai</expan></choice></orig><reg resp="#SDM"><choice><abbr>ēhardirai</abbr><expan resp="#SDM">e<ex>n</ex>hardirai</expan></choice></reg></choice></l>
                     <l xml:id="l-156r-2-38">Et <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><abbr>gñs</abbr><expan resp="#SDM">g<ex>ra</ex>ns</expan></choice><seg> </seg><choice><abbr>biēs</abbr><expan resp="#SDM">bie<ex>n</ex>s</expan></choice> m'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice><seg> </seg><choice><orig><choice><abbr>auiēgne</abbr><expan resp="#SDM">auie<ex>n</ex>gne</expan></choice></orig><reg resp="#SDM"><choice><abbr>aviēgne</abbr><expan resp="#SDM">avie<ex>n</ex>gne</expan></choice></reg></choice></l>
 
-                    <pb n="156v" xml:id="f156v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f318"/>
+                    <pb n="156v" xml:id="f156v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f316"/>
                     <cb n="1" xml:id="cb-156v-1"/>
                     <l xml:id="l-156v-1-1">Qu'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice><seg> </seg><choice><abbr>vr՚e</abbr><expan resp="#SDM">v<ex>ost</ex>re</expan></choice> non a<choice><orig/><reg resp="#SDM"><seg> </seg></reg></choice><choice><orig>ſien</orig><reg resp="#SDM">sien</reg></choice> me <choice><abbr>tiēgne</abbr><expan resp="#SDM">tie<ex>n</ex>gne</expan></choice></l>
                 </lg>
@@ -756,7 +756,7 @@
                     <l rend="decoratedInitial decoInitred" xml:id="l-156v-2-40"><choice><orig>CE</orig><reg resp="#SDM">Ce</reg></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> l'<choice><orig><choice><abbr>a laīne</abbr><expan resp="#SDM">a lai<ex>n</ex>ne</expan></choice></orig><reg resp="#SDM"><choice><abbr>alaīne</abbr><expan resp="#SDM">alai<ex>n</ex>ne</expan></choice></reg></choice><seg> </seg><choice><orig>ſ</orig><reg resp="#SDM">s</reg></choice>'<choice><orig>iſſoit</orig><reg resp="#SDM">issoit</reg></choice></l>
                     <l xml:id="l-156v-2-41">De la <choice><abbr>panth՚e</abbr><expan resp="#SDM">panth<ex>er</ex>e</expan></choice><seg> </seg><choice><orig>gariſſoit</orig><reg resp="#SDM">garissoit</reg></choice></l>
 
-                    <pb n="157r" xml:id="f157r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f319"/>
+                    <pb n="157r" xml:id="f157r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f317"/>
                     <cb n="1" xml:id="cb-157r-1"/>
                     <l xml:id="l-157r-1-1">De cele a qui tu es <choice><orig>pꝛiſons</orig><reg resp="#SDM">prisons</reg></choice></l>
                     <l xml:id="l-157r-1-2">Sans <choice><orig>eſtre</orig><reg resp="#SDM">estre</reg></choice> en buies ne <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> fers</l>
@@ -861,7 +861,7 @@
                     <l xml:id="l-157r-2-40"><choice><abbr>Toꝰ</abbr><expan resp="#SDM">To<ex>us</ex></expan></choice><seg> </seg><choice><orig>joꝛs</orig><reg resp="#SDM">jors</reg></choice><seg> </seg><choice><orig>ſe</orig><reg resp="#SDM">se</reg></choice> veulent entremettre</l>
                     <l xml:id="l-157r-2-41">De males <choice><orig>nouueles</orig><reg resp="#SDM">nouveles</reg></choice><seg> </seg><choice><orig>poꝛter</orig><reg resp="#SDM">porter</reg></choice>.</l>
 
-                    <pb n="157v" xml:id="f157v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f320"/>
+                    <pb n="157v" xml:id="f157v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f318"/>
                     <cb n="1" xml:id="cb-157v-1"/>
                     <l xml:id="l-157v-1-1"><choice><orig><choice><orig><choice><orig><choice><abbr>Chaſcūs</abbr><expan resp="#SDM">Chaſcu<ex>n</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>Chascūs</abbr><expan resp="#SDM">Chascu<ex>n</ex>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>Chascūs</abbr><expan resp="#SDM">Chascu<ex>n</ex>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>Chascūs</abbr><expan resp="#SDM">Chascu<ex>n</ex>s</expan></choice></reg></choice><seg> </seg><choice><abbr>poignēt</abbr><expan resp="#SDM">poigne<ex>n</ex>t</expan></choice> et <choice><abbr>aguillonēt</abbr><expan resp="#SDM">aguillone<ex>n</ex>t</expan></choice></l>
                     <l xml:id="l-157v-1-2">Et pour voir a <choice><orig><choice><orig><choice><orig><choice><abbr>entēdꝛe</abbr><expan resp="#SDM">ente<ex>n</ex>dꝛe</expan></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice><seg> </seg><choice><sic><choice><abbr>dōnet</abbr><expan resp="#SDM">do<ex>n</ex>net</expan></choice></sic><corr resp="#SDM"><choice><abbr>dōnēt</abbr><expan resp="#SDM">do<ex>n</ex>ne<supplied resp="#SDM"><ex>n</ex></supplied>t</expan></choice></corr></choice></l>
@@ -948,7 +948,7 @@
                     <l xml:id="l-157v-2-37">Et la voie tient de <choice><orig>ſimplece</orig><reg resp="#SDM">simplece</reg></choice></l>
                     <l xml:id="l-157v-2-38">Il doit <choice><orig>humilite</orig><reg resp="#SDM">humilité</reg></choice><seg> </seg><choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
 
-                    <pb n="158r" xml:id="f158r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f321"/>
+                    <pb n="158r" xml:id="f158r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f319"/>
                     <cb n="1" xml:id="cb-158r-1"/>
                     <l xml:id="l-158r-1-1">Et plus <choice><orig>encoꝛ</orig><reg resp="#SDM">encor</reg></choice> ce dois <choice><orig>ſauoir</orig><reg resp="#SDM"><choice><orig>savoir</orig><reg resp="#SDM">savoir</reg></choice></reg></choice></l>
                     <l xml:id="l-158r-1-2">Le plus <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice><seg> </seg><choice><abbr>qñt</abbr><expan resp="#SDM">q<ex>ua</ex>nt</expan></choice> ala <choice><orig>deſcueure</orig><reg resp="#SDM"><choice><orig>descuevre</orig><reg resp="#SDM">descuevre</reg></choice></reg></choice></l>
@@ -1042,7 +1042,7 @@
                     <l xml:id="l-158r-2-36">Ou tu as <choice><orig>eſte</orig><reg resp="#SDM">esté</reg></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> te <choice><orig>ſamble</orig><reg resp="#SDM">samble</reg></choice></l>
                     <l xml:id="l-158r-2-37">Sire dis <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> li cuers me <choice><abbr>trāble</abbr><expan resp="#SDM">tra<ex>m</ex>ble</expan></choice></l>
 
-                    <pb n="158v" xml:id="f158v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f322"/>
+                    <pb n="158v" xml:id="f158v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f320"/>
                     <cb n="1" xml:id="cb-158v-1"/>
                     <l xml:id="l-158v-1-1">Toutes les fois qu'il m'en <choice><orig><choice><orig><choice><orig><choice><abbr>ſouuiēt</abbr><expan resp="#SDM">ſouuie<ex>n</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>souuiēt</abbr><expan resp="#SDM">souuie<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>souuiēt</abbr><expan resp="#SDM">souuie<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>souuiēt</abbr><expan resp="#SDM">souuie<ex>n</ex>t</expan></choice></reg></choice></l>
                     <l xml:id="l-158v-1-2">Mais puis <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> dire le <choice><orig>conuient</orig><reg resp="#SDM">convient</reg></choice></l>
@@ -1133,7 +1133,7 @@
                     <l xml:id="l-158v-2-38"><choice><orig>en tr</orig><reg resp="#SDM">entr</reg></choice>'eulz <num value="3">.<choice><orig>iij</orig><reg resp="#SDM">iii</reg></choice>.</num><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> m'<choice><orig><choice><orig><choice><orig><choice><abbr>amōneſterent</abbr><expan resp="#SDM">amo<ex>n</ex>neſterent</expan></choice></orig><reg resp="#SDM"><choice><abbr>amōnesterent</abbr><expan resp="#SDM">amo<ex>n</ex>nesterent</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>amōnesterent</abbr><expan resp="#SDM">amo<ex>n</ex>nesterent</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>amōnesterent</abbr><expan resp="#SDM">amo<ex>n</ex>nesterent</expan></choice></reg></choice></l>
 
                     <gb n="21"/>
-                    <pb n="159r" xml:id="f159r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f323"/>
+                    <pb n="159r" xml:id="f159r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f321"/>
                     <cb n="1" xml:id="cb-159r-1"/>
                     <l xml:id="l-159r-1-1"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice><seg> </seg><choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><seg> </seg><choice><orig>amoꝛs</orig><reg resp="#SDM">amors</reg></choice><seg> </seg><choice><orig>loꝛ</orig><reg resp="#SDM">lor</reg></choice><choice><orig/><reg resp="#SDM"><seg> </seg></reg></choice><choice><orig>deiſſe</orig><reg resp="#SDM">deisse</reg></choice></l>
                     <l xml:id="l-159r-1-2">Ma <choice><orig>volente</orig><reg resp="#SDM">volenté</reg></choice> et <choice><orig>deſcouuriſſe</orig><reg resp="#SDM">descouurisse</reg></choice></l>
@@ -1220,7 +1220,7 @@
                                 <l xml:id="l-159r-2-37">De cuer de <choice><orig>coꝛps</orig><reg resp="#SDM">corps</reg></choice><seg> </seg><choice><orig><choice><orig><choice><abbr>ſās</abbr><expan resp="#SDM">ſa<ex>n</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice> nul <choice><abbr>deceuem̄t</abbr><expan resp="#SDM">deceuem<ex>en</ex>t</expan></choice></l>
                                 <l xml:id="l-159r-2-38"><choice><orig>Poꝛ</orig><reg resp="#SDM">Por</reg></choice> ce <choice><abbr>coumēt</abbr><expan resp="#SDM">coume<ex>n</ex>t</expan></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> me faciez doloir.</l>
 
-                                <pb n="159v" xml:id="f159v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f324"/>
+                                <pb n="159v" xml:id="f159v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f322"/>
                                 <cb n="1" xml:id="cb-159v-1"/>
                                 <l xml:id="l-159v-1-1">Veil <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> de <choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice><seg> </seg><choice><orig><choice><orig><choice><orig><choice><abbr>atēdꝛe</abbr><expan resp="#SDM">ate<ex>n</ex>dꝛe</expan></choice></orig><reg resp="#SDM"><choice><abbr>atēdre</abbr><expan resp="#SDM">ate<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>atēdre</abbr><expan resp="#SDM">ate<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>atēdre</abbr><expan resp="#SDM">ate<ex>n</ex>dre</expan></choice></reg></choice> le voloir</l>
                                 <l xml:id="l-159v-1-2">En <choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice><seg> </seg><choice><orig>ſeruant</orig><reg resp="#SDM">seruant</reg></choice> de</l>
@@ -1301,7 +1301,7 @@
                                 <l xml:id="l-159v-2-37">Et amiable.</l>
                                 <l xml:id="l-159v-2-38">Et a <choice><orig><choice><orig><choice><orig><choice><abbr>chaſcū</abbr><expan resp="#SDM">chaſcu<ex>n</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>chascū</abbr><expan resp="#SDM">chascu<ex>n</ex></expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>chascū</abbr><expan resp="#SDM">chascu<ex>n</ex></expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>chascū</abbr><expan resp="#SDM">chascu<ex>n</ex></expan></choice></reg></choice><seg> </seg><choice><orig>coꝛtoiſe</orig><reg resp="#SDM">cortoise</reg></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> delitable</l>
 
-                                <pb n="160r" xml:id="f160r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f325"/>
+                                <pb n="160r" xml:id="f160r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f323"/>
                                 <cb n="1" xml:id="cb-160r-1"/>
                                 <l xml:id="l-160r-1-1">Et <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice> en fais <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en dis <choice><orig><choice><orig><choice><orig><choice><abbr>gr̃cieuſe</abbr><expan resp="#SDM">gr<ex>a</ex>cieuſe</expan></choice></orig><reg resp="#SDM"><choice><abbr>gr̃cieuse</abbr><expan resp="#SDM">gr<ex>a</ex>cieuse</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>gr̃cieuse</abbr><expan resp="#SDM">gr<ex>a</ex>cieuse</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>gr̃cieuse</abbr><expan resp="#SDM">gr<ex>a</ex>cieuse</expan></choice></reg></choice></l>
                                 <l xml:id="l-160r-1-2">Et <choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice> la truis <choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><abbr>hūble</abbr><expan resp="#SDM">hu<ex>m</ex>ble</expan></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><orig>piteuſe</orig><reg resp="#SDM">piteuse</reg></choice></l>
@@ -1391,7 +1391,7 @@
                                 <l xml:id="l-160r-1-80">De cuer de <choice><orig>coꝛps</orig><reg resp="#SDM">corps</reg></choice><seg> </seg><choice><orig><choice><orig><choice><abbr>ſās</abbr><expan resp="#SDM">ſa<ex>n</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice> nul <choice><abbr>deceuem̄t</abbr><expan resp="#SDM">deceuem<ex>en</ex>t</expan></choice></l>
                                 <l xml:id="l-160r-1-81"><choice><orig>Poꝛ</orig><reg resp="#SDM">Por</reg></choice> ce <choice><abbr>coumēt</abbr><expan resp="#SDM">coume<ex>n</ex>t</expan></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> me faciez doloir.</l>
 
-                                <pb n="159v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f324"/>
+                                <pb n="159v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f322"/>
                                 <cb n="1"/>
                                 <l xml:id="l-160r-1-82">Veil <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> de <choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice><seg> </seg><choice><orig><choice><orig><choice><orig><choice><abbr>atēdꝛe</abbr><expan resp="#SDM">ate<ex>n</ex>dꝛe</expan></choice></orig><reg resp="#SDM"><choice><abbr>atēdre</abbr><expan resp="#SDM">ate<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>atēdre</abbr><expan resp="#SDM">ate<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>atēdre</abbr><expan resp="#SDM">ate<ex>n</ex>dre</expan></choice></reg></choice> le voloir</l>
                                 <l xml:id="l-160r-1-83">En <choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice><seg> </seg><choice><orig>ſeruant</orig><reg resp="#SDM">seruant</reg></choice> de</l>
@@ -1472,7 +1472,7 @@
                                 <l xml:id="l-160r-1-156">Et amiable.</l>
                                 <l xml:id="l-160r-1-157">Et a <choice><orig><choice><orig><choice><orig><choice><abbr>chaſcū</abbr><expan resp="#SDM">chaſcu<ex>n</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>chascū</abbr><expan resp="#SDM">chascu<ex>n</ex></expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>chascū</abbr><expan resp="#SDM">chascu<ex>n</ex></expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>chascū</abbr><expan resp="#SDM">chascu<ex>n</ex></expan></choice></reg></choice><seg> </seg><choice><orig>coꝛtoiſe</orig><reg resp="#SDM">cortoise</reg></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> delitable</l>
 
-                                <pb n="160r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f326"/>
+                                <pb n="160r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f323"/>
                                 <cb n="1"/>
                                 <l xml:id="l-160r-1-158">Et <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice> en fais <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> en dis <choice><orig><choice><orig><choice><orig><choice><abbr>gr̃cieuſe</abbr><expan resp="#SDM">gr<ex>a</ex>cieuſe</expan></choice></orig><reg resp="#SDM"><choice><abbr>gr̃cieuse</abbr><expan resp="#SDM">gr<ex>a</ex>cieuse</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>gr̃cieuse</abbr><expan resp="#SDM">gr<ex>a</ex>cieuse</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>gr̃cieuse</abbr><expan resp="#SDM">gr<ex>a</ex>cieuse</expan></choice></reg></choice></l>
                                 <l xml:id="l-160r-1-159">Et <choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice> la truis <choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><abbr>hūble</abbr><expan resp="#SDM">hu<ex>m</ex>ble</expan></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><orig>piteuſe</orig><reg resp="#SDM">piteuse</reg></choice></l>
@@ -1564,7 +1564,7 @@
                     <l xml:id="l-160r-2-37">Et <choice><abbr>pꝰ</abbr><expan resp="#SDM">p<ex>uis</ex></expan></choice><seg> </seg><choice><orig><choice><orig><choice><orig><choice><abbr>entēdꝛe</abbr><expan resp="#SDM">ente<ex>n</ex>dꝛe</expan></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice> teulz <choice><orig>nouueles</orig><reg resp="#SDM">nouveles</reg></choice></l>
                     <l xml:id="l-160r-2-38"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice><seg> </seg><choice><orig><choice><orig><choice><orig><choice><abbr>ſoiēt</abbr><expan resp="#SDM">ſoie<ex>n</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>soiēt</abbr><expan resp="#SDM">soie<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>soiēt</abbr><expan resp="#SDM">soie<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>soiēt</abbr><expan resp="#SDM">soie<ex>n</ex>t</expan></choice></reg></choice><seg> </seg><choice><orig>coꝛtoiſes</orig><reg resp="#SDM">cortoises</reg></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> beles</l>
 
-                    <pb n="160v" xml:id="f160v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f327"/>
+                    <pb n="160v" xml:id="f160v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f324"/>
                     <cb n="1" xml:id="cb-160v-1"/>
                     <l xml:id="l-160v-1-1">Et <choice><orig>ſe</orig><reg resp="#SDM">se</reg></choice> tu n'en <choice><orig>ſces</orig><reg resp="#SDM">sces</reg></choice> pas la <choice><orig>guiſe</orig><reg resp="#SDM">guise</reg></choice></l>
                     <l xml:id="l-160v-1-2">Ou tu ne l'as <choice><orig>encoꝛe</orig><reg resp="#SDM">encore</reg></choice><seg> </seg><choice><orig>apꝛiſe</orig><reg resp="#SDM">aprise</reg></choice></l>
@@ -1668,7 +1668,7 @@
                     <l xml:id="l-160v-2-38">Tout ce me fait <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice><seg> </seg><choice><orig>pꝛoier</orig><reg resp="#SDM">proier</reg></choice></l>
                     <l xml:id="l-160v-2-39">Car miex me vient <choice><orig>vſer</orig><reg resp="#SDM"><choice><orig>user</orig><reg resp="#SDM">user</reg></choice></reg></choice> toute</l>
 
-                    <pb n="161r" xml:id="f161r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f328"/>
+                    <pb n="161r" xml:id="f161r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f325"/>
                     <cb n="1" xml:id="cb-161r-1"/>
                     <l xml:id="l-161r-1-1">Ma vie en <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice> ioli <choice><orig>ſouuenir</orig><reg resp="#SDM"><choice><orig>souvenir</orig><reg resp="#SDM">souvenir</reg></choice></reg></choice></l>
                     <l xml:id="l-161r-1-2">Que <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice> trop taillant <choice><orig>deſir</orig><reg resp="#SDM">desir</reg></choice></l>
@@ -1762,7 +1762,7 @@
                     <l xml:id="l-161r-2-37"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> ne <choice><orig>ſai</orig><reg resp="#SDM">sai</reg></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>deuenir</orig><reg resp="#SDM">devenir</reg></choice></l>
                     <l xml:id="l-161r-2-38">De <choice><abbr>mō</abbr><expan resp="#SDM">mo<ex>n</ex></expan></choice><seg> </seg><choice><abbr>˞ppos</abbr><expan resp="#SDM">p<ex>ro</ex>pos</expan></choice><seg> </seg><choice><abbr>maītenir</abbr><expan resp="#SDM">mai<ex>n</ex>tenir</expan></choice></l>
 
-                    <pb n="161v" xml:id="f161v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f329"/>
+                    <pb n="161v" xml:id="f161v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f326"/>
                     <cb n="1" xml:id="cb-161v-1"/>
                     <l xml:id="l-161v-1-1">Car <choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><orig><choice><orig><choice><orig><choice><abbr>foꝛm̄t</abbr><expan resp="#SDM">foꝛm<ex>en</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>form̄t</abbr><expan resp="#SDM">form<ex>en</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>form̄t</abbr><expan resp="#SDM">form<ex>en</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>form̄t</abbr><expan resp="#SDM">form<ex>en</ex>t</expan></choice></reg></choice> m'<choice><orig>eſpoente</orig><reg resp="#SDM">espoente</reg></choice></l>
                     <l xml:id="l-161v-1-2"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> ne <choice><orig>ſai</orig><reg resp="#SDM">sai</reg></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>deuenir</orig><reg resp="#SDM">devenir</reg></choice></l>
@@ -1862,7 +1862,7 @@
                     <l xml:id="l-161v-2-39"><choice><orig>Auoir</orig><reg resp="#SDM">Avoir</reg></choice> et la <choice><orig>ſenefiance</orig><reg resp="#SDM">senefiance</reg></choice></l>
                     <l xml:id="l-161v-2-40">De <choice><orig>loꝛ</orig><reg resp="#SDM">lor</reg></choice> et de la pierre <choice><abbr>bōne</abbr><expan resp="#SDM">bo<ex>n</ex>ne</expan></choice></l>
 
-                    <pb n="162r" xml:id="f162r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f330"/>
+                    <pb n="162r" xml:id="f162r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f327"/>
                     <cb n="1" xml:id="cb-162r-1"/>
                     <l xml:id="l-162r-1-1"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>chaſcuns</orig><reg resp="#SDM">chascuns</reg></choice> a <choice><orig><choice><orig><choice><orig><choice><abbr>entēdꝛe</abbr><expan resp="#SDM">ente<ex>n</ex>dꝛe</expan></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>entēdre</abbr><expan resp="#SDM">ente<ex>n</ex>dre</expan></choice></reg></choice> donne</l>
                     <l xml:id="l-162r-1-2">Es quiex vertus <choice><abbr>pueēt</abbr><expan resp="#SDM">puee<ex>n</ex>t</expan></choice><seg> </seg><choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
@@ -1952,7 +1952,7 @@
                 <lg>
                     <l rend="decoratedInitial decoInitblue" xml:id="l-162r-2-38">C'<choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice><seg> </seg><choice><orig>poꝛ</orig><reg resp="#SDM">por</reg></choice> ce <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> de <choice><orig>ſa</orig><reg resp="#SDM">sa</reg></choice> nature</l>
 
-                    <pb n="162v" xml:id="f162v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f331"/>
+                    <pb n="162v" xml:id="f162v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f328"/>
                     <cb n="1" xml:id="cb-162v-1"/>
                     <l xml:id="l-162v-1-1">Elle <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice><seg> </seg><choice><abbr>maīs</abbr><expan resp="#SDM">mai<ex>n</ex>s</expan></choice> encline a <choice><orig>dꝛoiture</orig><reg resp="#SDM">droiture</reg></choice></l>
                     <l xml:id="l-162v-1-2">Qu'a<choice><orig/><reg resp="#SDM"><seg> </seg></reg></choice>la <choice><orig>deſtre</orig><reg resp="#SDM">destre</reg></choice> et <choice><abbr>maīs</abbr><expan resp="#SDM">mai<ex>n</ex>s</expan></choice><seg> </seg><choice><orig>ſe</orig><reg resp="#SDM">se</reg></choice><seg> </seg><choice><orig>ſcet</orig><reg resp="#SDM">scet</reg></choice><seg> </seg><choice><abbr>t˜ire</abbr><expan resp="#SDM">t<ex>ra</ex>ire</expan></choice></l>
@@ -2040,7 +2040,7 @@
                     <l xml:id="l-162v-2-36">Car <choice><orig>ſe</orig><reg resp="#SDM">se</reg></choice><seg> </seg><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> le trouuoie a <choice><abbr>poīt</abbr><expan resp="#SDM">poi<ex>n</ex>t</expan></choice></l>
                     <l xml:id="l-162v-2-37">De cele <choice><abbr>volēté</abbr><expan resp="#SDM">vole<ex>n</ex>té</expan></choice> m'<choice><orig>a point</orig><reg resp="#SDM">apoint</reg></choice></l>
 
-                    <pb n="163r" xml:id="f163r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f332"/>
+                    <pb n="163r" xml:id="f163r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f329"/>
                     <cb n="1" xml:id="cb-163r-1"/>
                     <l xml:id="l-163r-1-1"><choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> ne m'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice><seg> </seg><choice><orig>poꝛroie</orig><reg resp="#SDM">porroie</reg></choice> tenir</l>
                     <l xml:id="l-163r-1-2">Diex m'i <choice><orig><choice><orig><choice><orig><choice><abbr>doīſt</abbr><expan resp="#SDM">doi<ex>n</ex>ſt</expan></choice></orig><reg resp="#SDM"><choice><abbr>doīst</abbr><expan resp="#SDM">doi<ex>n</ex>st</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>doīst</abbr><expan resp="#SDM">doi<ex>n</ex>st</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>doīst</abbr><expan resp="#SDM">doi<ex>n</ex>st</expan></choice></reg></choice> en <choice><abbr>bō</abbr><expan resp="#SDM">bo<ex>n</ex></expan></choice><seg> </seg><choice><abbr>poīt</abbr><expan resp="#SDM">poi<ex>n</ex>t</expan></choice> venir</l>
@@ -2124,7 +2124,7 @@
                     <l xml:id="l-163r-2-37">Si <choice><orig>diſt</orig><reg resp="#SDM">dist</reg></choice> en <choice><orig><choice><orig><choice><orig><choice><abbr>doꝛmāt</abbr><expan resp="#SDM">doꝛma<ex>n</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>dormāt</abbr><expan resp="#SDM">dorma<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>dormāt</abbr><expan resp="#SDM">dorma<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>dormāt</abbr><expan resp="#SDM">dorma<ex>n</ex>t</expan></choice></reg></choice> me <choice><orig>ſambla</orig><reg resp="#SDM">sambla</reg></choice></l>
                     <l xml:id="l-163r-2-38"><choice><abbr>Dōt</abbr><expan resp="#SDM">Do<ex>n</ex>t</expan></choice> mes <choice><orig>coꝛps</orig><reg resp="#SDM">corps</reg></choice> de <choice><orig>paoꝛ</orig><reg resp="#SDM">paor</reg></choice><seg> </seg><choice><abbr>trābla</abbr><expan resp="#SDM">tra<ex>m</ex>bla</expan></choice></l>
 
-                    <pb n="163v" xml:id="f163v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f333"/>
+                    <pb n="163v" xml:id="f163v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f330"/>
                     <cb n="1" xml:id="cb-163v-1"/>
                     <l xml:id="l-163v-1-1"><choice><orig>I</orig><reg resp="#SDM">J</reg></choice>'en <choice><orig>ſui</orig><reg resp="#SDM">sui</reg></choice> dis <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice><seg> </seg><choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><choice><orig/><reg resp="#SDM"><seg> </seg></reg></choice>effrees</l>
                     <l xml:id="l-163v-1-2">Et <choice><orig>eſmeus</orig><reg resp="#SDM">esmeüs</reg></choice><seg> </seg><choice><abbr>cō</abbr><expan resp="#SDM">co<ex>m</ex></expan></choice><seg> </seg><choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice> veez</l>
@@ -2216,7 +2216,7 @@
                 </lg>
 
                 <lg>
-                    <pb n="164r" xml:id="f164r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f334"/>
+                    <pb n="164r" xml:id="f164r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f331"/>
                     <cb n="1" xml:id="cb-164r-1"/>
                     <l rend="decoratedInitial decoInitblue" xml:id="l-164r-1-1">Adam en l'autre ver <choice><abbr>racōte</abbr><expan resp="#SDM">raco<ex>n</ex>te</expan></choice></l>
                     <l xml:id="l-164r-1-2">Dont <choice><orig>amoꝛ</orig><reg resp="#SDM">amor</reg></choice> vient <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><abbr>ꝯm̄t</abbr><expan resp="#SDM"><ex>com</ex>m<ex>en</ex>t</expan></choice><seg> </seg><choice><abbr>mōte</abbr><expan resp="#SDM">mo<ex>n</ex>te</expan></choice></l>
@@ -2312,7 +2312,7 @@
                     <l xml:id="l-164r-2-37"><choice><orig>Eſcoute</orig><reg resp="#SDM">Escoute</reg></choice><seg> </seg><choice><orig>poꝛ</orig><reg resp="#SDM">por</reg></choice> ce <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> il <choice><orig>ſoꝛent</orig><reg resp="#SDM">sorent</reg></choice></l>
                     <l xml:id="l-164r-2-38"><choice><abbr>Ꝯm̄t</abbr><expan resp="#SDM"><ex>Com</ex>m<ex>en</ex>t</expan></choice><seg> </seg><choice><abbr>v՚s</abbr><expan resp="#SDM">v<ex>er</ex>s</expan></choice> eulz me <choice><abbr>ꝯtenoie</abbr><expan resp="#SDM"><ex>con</ex>tenoie</expan></choice></l>
 
-                    <pb n="164v" xml:id="f164v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f335"/>
+                    <pb n="164v" xml:id="f164v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f332"/>
                     <cb n="1" xml:id="cb-164v-1"/>
                     <l xml:id="l-164v-1-1">Et quel <choice><abbr>fiāce</abbr><expan resp="#SDM">fia<ex>n</ex>ce</expan></choice> en eulz <choice><orig>auoie</orig><reg resp="#SDM">avoie</reg></choice></l>
                     <l xml:id="l-164v-1-2">Me <choice><orig>diſtrent</orig><reg resp="#SDM">distrent</reg></choice> il <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><seg> </seg><choice><orig><choice><orig><choice><abbr>ſās</abbr><expan resp="#SDM">ſa<ex>n</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice><seg> </seg><choice><abbr>doutāce</abbr><expan resp="#SDM">douta<ex>n</ex>ce</expan></choice></l>
@@ -2399,7 +2399,7 @@
                     <l xml:id="l-164v-2-37">Et <choice><orig>ſe</orig><reg resp="#SDM">se</reg></choice> de ce veulz la <choice><orig><choice><orig><choice><orig><choice><abbr>ſciēce</abbr><expan resp="#SDM">ſcie<ex>n</ex>ce</expan></choice></orig><reg resp="#SDM"><choice><abbr>sciēce</abbr><expan resp="#SDM">scie<ex>n</ex>ce</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>sciēce</abbr><expan resp="#SDM">scie<ex>n</ex>ce</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>sciēce</abbr><expan resp="#SDM">scie<ex>n</ex>ce</expan></choice></reg></choice></l>
                     <l xml:id="l-164v-2-38"><choice><abbr>Biē</abbr><expan resp="#SDM">Bie<ex>n</ex></expan></choice> en <choice><abbr>cerch՚</abbr><expan resp="#SDM">cerch<ex>er</ex></expan></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><abbr>biē</abbr><expan resp="#SDM">bie<ex>n</ex></expan></choice><seg> </seg><choice><abbr>enq՚rre</abbr><expan resp="#SDM">enq<ex>ue</ex>rre</expan></choice></l>
 
-                    <pb n="165r" xml:id="f165r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f336"/>
+                    <pb n="165r" xml:id="f165r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f333"/>
                     <cb n="1" xml:id="cb-165r-1"/>
                     <l xml:id="l-165r-1-1"><choice><abbr>Cōm̄t</abbr><expan resp="#SDM">Co<ex>m</ex>m<ex>en</ex>t</expan></choice> on doit d'<choice><orig>amoꝛs</orig><reg resp="#SDM">amors</reg></choice><seg> </seg><choice><abbr>req՚rre</abbr><expan resp="#SDM">req<ex>ue</ex>rre</expan></choice></l>
                     <l xml:id="l-165r-1-2"><choice><orig>Chaſcune</orig><reg resp="#SDM">Chascune</reg></choice><seg> </seg><choice><orig><choice><orig><choice><orig><choice><abbr>ſelōc</abbr><expan resp="#SDM">ſelo<ex>n</ex>c</expan></choice></orig><reg resp="#SDM"><choice><abbr>selōc</abbr><expan resp="#SDM">selo<ex>n</ex>c</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>selōc</abbr><expan resp="#SDM">selo<ex>n</ex>c</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>selōc</abbr><expan resp="#SDM">selo<ex>n</ex>c</expan></choice></reg></choice><seg> </seg><choice><orig>ſa</orig><reg resp="#SDM">sa</reg></choice> noblece</l>
@@ -2536,7 +2536,7 @@
                     <l xml:id="l-165r-2-70">Car <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> n'ai pas toutes mes <choice><orig>aaiſes</orig><reg resp="#SDM">aaises</reg></choice></l>
                     <l xml:id="l-165r-2-71"><choice><abbr>Auāt</abbr><expan resp="#SDM">Aua<ex>n</ex>t</expan></choice> en ay des <choice><abbr>gñs</abbr><expan resp="#SDM">g<ex>ra</ex>ns</expan></choice><seg> </seg><choice><orig>meſaiſes</orig><reg resp="#SDM">mesaises</reg></choice></l>
 
-                    <pb n="165v" xml:id="f165v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f337"/>
+                    <pb n="165v" xml:id="f165v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f334"/>
                     <cb n="1" xml:id="cb-165v-1"/>
                     <l xml:id="l-165v-1-1">Et moult en <choice><orig>ſui</orig><reg resp="#SDM">sui</reg></choice> entrez en <choice><abbr>gñs</abbr><expan resp="#SDM">g<ex>ra</ex>ns</expan></choice></l>
                     <l xml:id="l-165v-1-2"><choice><orig><choice><orig><choice><orig><choice><abbr>Pēſees</abbr><expan resp="#SDM">Pe<ex>n</ex>ſees</expan></choice></orig><reg resp="#SDM"><choice><abbr>Pēsees</abbr><expan resp="#SDM">Pe<ex>n</ex>sees</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>Pēsees</abbr><expan resp="#SDM">Pe<ex>n</ex>sees</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>Pēsees</abbr><expan resp="#SDM">Pe<ex>n</ex>sees</expan></choice></reg></choice><seg> </seg><choice><abbr>biē</abbr><expan resp="#SDM">bie<ex>n</ex></expan></choice> doi <choice><orig>eſtre</orig><reg resp="#SDM">estre</reg></choice> engrans</l>
@@ -2617,7 +2617,7 @@
                     <l xml:id="l-165v-2-34"><choice><abbr>Dōt</abbr><expan resp="#SDM">Do<ex>n</ex>t</expan></choice> tout ay tou <choice><orig><choice><orig><choice><abbr>ſās</abbr><expan resp="#SDM">ſa<ex>n</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>sās</abbr><expan resp="#SDM">sa<ex>n</ex>s</expan></choice></reg></choice><seg> </seg><choice><orig>deceuoir</orig><reg resp="#SDM">decevoir</reg></choice></l>
                     <l xml:id="l-165v-2-35">Et <choice><orig>oꝛe</orig><reg resp="#SDM">ore</reg></choice> en ay mal di <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> voir</l>
 
-                    <pb n="166r" xml:id="f166r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f338"/>
+                    <pb n="166r" xml:id="f166r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f335"/>
                     <cb n="1" xml:id="cb-166r-1"/>
                     <l xml:id="l-166r-1-1">En <choice><abbr>aucū</abbr><expan resp="#SDM">aucu<ex>n</ex></expan></choice><seg> </seg><choice><abbr>tēps</abbr><expan resp="#SDM">te<ex>m</ex>ps</expan></choice><seg> </seg><choice><orig>aurai</orig><reg resp="#SDM">avrai</reg></choice><seg> </seg><choice><orig>depoꝛt</orig><reg resp="#SDM">deport</reg></choice></l>
                     <l xml:id="l-166r-1-2">En ce moult <choice><orig><choice><orig><choice><orig><choice><orig><choice><abbr>ſouuēt</abbr><expan resp="#SDM">ſouue<ex>n</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>souuēt</abbr><expan resp="#SDM">souue<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>souuēt</abbr><expan resp="#SDM">souue<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>souuēt</abbr><expan resp="#SDM">souue<ex>n</ex>t</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>souvēt</abbr><expan resp="#SDM">souve<ex>n</ex>t</expan></choice></reg></choice> me <choice><orig>depoꝛt</orig><reg resp="#SDM">deport</reg></choice></l>
@@ -2698,7 +2698,7 @@
                     <l xml:id="l-166r-2-34"><choice><orig>Foꝛs</orig><reg resp="#SDM">Fors</reg></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> la voie de <choice><orig>foꝛtune</orig><reg resp="#SDM"><choice><orig>Fortune</orig><reg resp="#SDM">Fortune</reg></choice></reg></choice>.</l>
                     <l xml:id="l-166r-2-35">Et cele voie <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice> trop <choice><orig>douteuſe</orig><reg resp="#SDM">douteuse</reg></choice></l>
 
-                    <pb n="166v" xml:id="f166v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f339"/>
+                    <pb n="166v" xml:id="f166v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f336"/>
                     <cb n="1" xml:id="cb-166v-1"/>
                     <l xml:id="l-166v-1-1">A tenir et trop <choice><orig><choice><orig><choice><orig><choice><abbr>ꝑilleuſe</abbr><expan resp="#SDM">p<ex>er</ex>illeuſe</expan></choice></orig><reg resp="#SDM"><choice><abbr>ꝑilleuse</abbr><expan resp="#SDM">p<ex>er</ex>illeuse</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>ꝑilleuse</abbr><expan resp="#SDM">p<ex>er</ex>illeuse</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>ꝑilleuse</abbr><expan resp="#SDM">p<ex>er</ex>illeuse</expan></choice></reg></choice></l>
                     <l xml:id="l-166v-1-2">Car <choice><orig>foꝛtune</orig><reg resp="#SDM"><choice><orig>Fortune</orig><reg resp="#SDM">Fortune</reg></choice></reg></choice><seg> </seg><choice><orig>ſi</orig><reg resp="#SDM">si</reg></choice><seg> </seg><choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice> trop dure</l>
@@ -2781,7 +2781,7 @@
                     <fw type="catchwords" xml:id="fw-166v-2-1">..Mais il <choice><orig><choice><abbr>conuiēt</abbr><expan resp="#SDM">conuie<ex>n</ex>t</expan></choice></orig><reg resp="#SDM"><choice><abbr>conviēt</abbr><expan resp="#SDM">convie<ex>n</ex>t</expan></choice></reg></choice></fw>
 
                     <gb n="22"/>
-                    <pb n="167r" xml:id="f167r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f340"/>
+                    <pb n="167r" xml:id="f167r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f337"/>
                     <cb n="1" xml:id="cb-167r-1"/>
                     <l xml:id="l-167r-1-1">Mais il <choice><orig>couuent</orig><reg resp="#SDM">couvent</reg></choice><seg> </seg><choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice> de <choice><orig>foꝛtune</orig><reg resp="#SDM"><choice><orig>Fortune</orig><reg resp="#SDM">Fortune</reg></choice></reg></choice></l>
                     <l xml:id="l-167r-1-2">Leur <choice><orig>ſoit</orig><reg resp="#SDM">soit</reg></choice> l'<choice><orig>autoꝛite</orig><reg resp="#SDM">autorite</reg></choice> baillie</l>
@@ -2872,7 +2872,7 @@
                     <l xml:id="l-167r-2-36">Si <choice><orig><choice><orig><choice><abbr>ſōmes</abbr><expan resp="#SDM">ſo<ex>m</ex>mes</expan></choice></orig><reg resp="#SDM"><choice><abbr>sōmes</abbr><expan resp="#SDM">so<ex>m</ex>mes</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>sōmes</abbr><expan resp="#SDM">so<ex>m</ex>mes</expan></choice></reg></choice> cy <choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><seg> </seg><choice><orig>ſa</orig><reg resp="#SDM">sa</reg></choice><seg> </seg><choice><abbr>coītāce</abbr><expan resp="#SDM">coi<ex>n</ex>ta<ex>n</ex>ce</expan></choice></l>
                     <l xml:id="l-167r-2-37">Et <choice><orig>poꝛ</orig><reg resp="#SDM">por</reg></choice><seg> </seg><choice><abbr>m՚ci</abbr><expan resp="#SDM">m<ex>er</ex>ci</expan></choice> querre venu</l>
 
-                    <pb n="167v" xml:id="f167v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f341"/>
+                    <pb n="167v" xml:id="f167v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f338"/>
                     <cb n="1" xml:id="cb-167v-1"/>
                     <l xml:id="l-167v-1-1">Car <choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice><seg> </seg><choice><orig>ſomes</orig><reg resp="#SDM">somes</reg></choice> a li tenu</l>
                     <l xml:id="l-167v-1-2">Que <choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice> ne la poons faillir</l>
@@ -2954,7 +2954,7 @@
                     <l xml:id="l-167v-2-36">Et eur <choice><orig>pꝛier</orig><reg resp="#SDM">prier</reg></choice> en feriez</l>
                     <l xml:id="l-167v-2-37">Et bone <choice><abbr>volēté</abbr><expan resp="#SDM">vole<ex>n</ex>té</expan></choice> la <choice><abbr>gēte</abbr><expan resp="#SDM">ge<ex>n</ex>te</expan></choice></l>
 
-                    <pb n="168r" xml:id="f168r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f342"/>
+                    <pb n="168r" xml:id="f168r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f339"/>
                     <cb n="1" xml:id="cb-168r-1"/>
                     <l xml:id="l-168r-1-1"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> a <choice><abbr>toꝰ</abbr><expan resp="#SDM">to<ex>us</ex></expan></choice><seg> </seg><choice><abbr>biēs</abbr><expan resp="#SDM">bie<ex>n</ex>s</expan></choice> faire <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice><seg> </seg><choice><orig><choice><orig><choice><abbr>p՚ſēte</abbr><expan resp="#SDM">p<ex>re</ex>ſe<ex>n</ex>te</expan></choice></orig><reg resp="#SDM"><choice><abbr>p՚sēte</abbr><expan resp="#SDM">p<ex>re</ex>se<ex>n</ex>te</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>p՚sēte</abbr><expan resp="#SDM">p<ex>re</ex>se<ex>n</ex>te</expan></choice></reg></choice></l>
                     <l xml:id="l-168r-1-2">Et <choice><orig>ſachiez</orig><reg resp="#SDM">sachiez</reg></choice><seg> </seg><choice><abbr>noꝰ</abbr><expan resp="#SDM">no<ex>us</ex></expan></choice> n'y</l>
@@ -3044,7 +3044,7 @@
                     <l xml:id="l-168r-2-37">N'<choice><orig><choice><abbr>on q՚s</abbr><expan resp="#SDM">on q<ex>ue</ex>s</expan></choice></orig><reg resp="#SDM"><choice><abbr>onq՚s</abbr><expan resp="#SDM">onq<ex>ue</ex>s</expan></choice></reg></choice> n'<choice><orig>oy</orig><reg resp="#SDM">oÿ</reg></choice> autre <choice><abbr>volēté</abbr><expan resp="#SDM">vole<ex>n</ex>té</expan></choice></l>
                     <l xml:id="l-168r-2-38">Tant <choice><orig>euſſe</orig><reg resp="#SDM">eusse</reg></choice> de mal <choice><abbr>plēté</abbr><expan resp="#SDM">ple<ex>n</ex>té</expan></choice></l>
 
-                    <pb n="168v" xml:id="f168v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f343"/>
+                    <pb n="168v" xml:id="f168v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f340"/>
                     <cb n="1" xml:id="cb-168v-1"/>
                     <l xml:id="l-168v-1-1">Ne <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> n'<choice><orig>aurai</orig><reg resp="#SDM">avrai</reg></choice><seg> </seg><choice><orig>ioꝛ</orig><reg resp="#SDM"><choice><orig>jor</orig><reg resp="#SDM">jor</reg></choice></reg></choice> de ma vie</l>
                     <l xml:id="l-168v-1-2">S'en di <choice><orig>ceſte</orig><reg resp="#SDM">ceste</reg></choice><seg> </seg><choice><abbr>chancō</abbr><expan resp="#SDM">chanco<ex>n</ex></expan></choice> iolie</l>
@@ -3155,7 +3155,7 @@
                     <l xml:id="l-168v-2-37">Car bele <choice><orig>eſt</orig><reg resp="#SDM">est</reg></choice> a regarder</l>
                     <l xml:id="l-168v-2-38"><choice><orig>Coꝛtoiſe</orig><reg resp="#SDM">Cortoise</reg></choice><seg> </seg><choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice><seg> </seg><choice><abbr>biē</abbr><expan resp="#SDM">bie<ex>n</ex></expan></choice><seg> </seg><choice><orig>enſaignie</orig><reg resp="#SDM">ensaignie</reg></choice></l>
 
-                    <pb n="169r" xml:id="f169r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f344"/>
+                    <pb n="169r" xml:id="f169r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f341"/>
                     <cb n="1" xml:id="cb-169r-1"/>
                     <l xml:id="l-169r-1-1">Et trop plus <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><seg> </seg><choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> ne die</l>
                     <l xml:id="l-169r-1-2">Plaine de valour</l>
@@ -3248,7 +3248,7 @@
                     <l xml:id="l-169r-2-37"><choice><abbr>Dōt</abbr><expan resp="#SDM">Do<ex>n</ex>t</expan></choice><seg> </seg><choice><orig>iadis</orig><reg resp="#SDM">jadis</reg></choice> telz rit au <choice><abbr>maī</abbr><expan resp="#SDM">mai<ex>n</ex></expan></choice></l>
                     <l xml:id="l-169r-2-38">Qui au <choice><orig>ſoir</orig><reg resp="#SDM">soir</reg></choice> pleure</l>
 
-                    <pb n="169v" xml:id="f169v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f345"/>
+                    <pb n="169v" xml:id="f169v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f342"/>
                     <cb n="1" xml:id="cb-169v-1"/>
                     <l xml:id="l-169v-1-1">Si n'a en moy ne ieu ne ris</l>
                     <l xml:id="l-169v-1-2">Car <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> ne puis <choice><orig>eſtre</orig><reg resp="#SDM">estre</reg></choice> oys</l>
@@ -3350,7 +3350,7 @@
                     <l xml:id="l-169v-2-37">Les cuers qu'<choice><orig>amoꝛs</orig><reg resp="#SDM">amors</reg></choice> fait <choice><orig><choice><orig><choice><orig><choice><abbr>aſſābler</abbr><expan resp="#SDM">aſſa<ex>m</ex>bler</expan></choice></orig><reg resp="#SDM"><choice><abbr>assābler</abbr><expan resp="#SDM">assa<ex>m</ex>bler</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>assābler</abbr><expan resp="#SDM">assa<ex>m</ex>bler</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>assābler</abbr><expan resp="#SDM">assa<ex>m</ex>bler</expan></choice></reg></choice></l>
                     <l xml:id="l-169v-2-38"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> pitiez <choice><orig>ſ</orig><reg resp="#SDM">s</reg></choice>'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> melle <choice><orig>ſamblans</orig><reg resp="#SDM">samblans</reg></choice></l>
 
-                    <pb n="170r" xml:id="f170r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f346"/>
+                    <pb n="170r" xml:id="f170r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f343"/>
                     <cb n="1" xml:id="cb-170r-1"/>
                     <l xml:id="l-170r-1-1">So <choice><abbr>cō</abbr><expan resp="#SDM">co<ex>m</ex></expan></choice><seg> </seg><choice><orig>diſt</orig><reg resp="#SDM">dist</reg></choice><seg> </seg><choice><orig>adam</orig><reg resp="#SDM">Adam</reg></choice> de la <choice><orig>hale</orig><reg resp="#SDM">Hale</reg></choice></l>
                     <l xml:id="l-170r-1-2"><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice><seg> </seg><choice><abbr>onq՚s</abbr><expan resp="#SDM">onq<ex>ue</ex>s</expan></choice> n'ot <choice><orig><choice><orig><choice><orig><choice><abbr>pēſee</abbr><expan resp="#SDM">pe<ex>n</ex>ſee</expan></choice></orig><reg resp="#SDM"><choice><abbr>pēsee</abbr><expan resp="#SDM">pe<ex>n</ex>see</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>pēsee</abbr><expan resp="#SDM">pe<ex>n</ex>see</expan></choice></reg></choice></orig><reg resp="#SDM"><choice><abbr>pēsee</abbr><expan resp="#SDM">pe<ex>n</ex>see</expan></choice></reg></choice> male</l>
@@ -3450,7 +3450,7 @@
                     <l xml:id="l-170r-2-37">Douce dame <choice><orig>ſe</orig><reg resp="#SDM">se</reg></choice> pooie</l>
                     <l xml:id="l-170r-2-38">Faire <choice><orig>choſe</orig><reg resp="#SDM">chose</reg></choice><seg> </seg><choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice><seg> </seg><choice><abbr>voꝰ</abbr><expan resp="#SDM">vo<ex>us</ex></expan></choice><seg> </seg><choice><orig>pleuſt</orig><reg resp="#SDM">pleüst</reg></choice>.</l>
 
-                    <pb n="170v" xml:id="f170v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f347"/>
+                    <pb n="170v" xml:id="f170v" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f344"/>
                     <cb n="1" xml:id="cb-170v-1"/>
                     <l xml:id="l-170v-1-1"><choice><abbr>Combiē</abbr><expan resp="#SDM">Combie<ex>n</ex></expan></choice> que <choice><orig>couſter</orig><reg resp="#SDM">couster</reg></choice> me <choice><orig>deuſt</orig><reg resp="#SDM">deüst</reg></choice>.</l>
                     <l xml:id="l-170v-1-2"><choice><orig>Fuſt</orig><reg resp="#SDM">Fust</reg></choice> du <choice><orig>coꝛps</orig><reg resp="#SDM">corps</reg></choice><seg> </seg><choice><orig>fuſt</orig><reg resp="#SDM">fust</reg></choice> de l'<choice><orig>auoir</orig><reg resp="#SDM">avoir</reg></choice></l>
@@ -3552,7 +3552,7 @@
                     <l xml:id="l-170v-2-39">Et <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> amender y <choice><orig>ſauront</orig><reg resp="#SDM"><choice><orig>savront</orig><reg resp="#SDM">savront</reg></choice></reg></choice></l>
                     <l xml:id="l-170v-2-40">Au <choice><orig>coꝛrigier</orig><reg resp="#SDM">corrigier</reg></choice> il y a<choice><orig/><reg resp="#SDM"><seg> </seg></reg></choice><choice><abbr>poīt</abbr><expan resp="#SDM">poi<ex>n</ex>t</expan></choice></l>
 
-                    <pb n="171r" xml:id="f171r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f348"/>
+                    <pb n="171r" xml:id="f171r" facs="https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f345"/>
                     <cb n="1" xml:id="cb-171r-1"/>
                     <l xml:id="l-171r-1-1"><choice><orig>Poꝛ</orig><reg resp="#SDM">Por</reg></choice><seg> </seg><choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice><seg> </seg><choice><abbr>qⁱl</abbr><expan resp="#SDM">q<ex>u'i</ex>l</expan></choice> le <choice><abbr>mettēt</abbr><expan resp="#SDM">mette<ex>n</ex>t</expan></choice> a point</l>
                     <l xml:id="l-171r-1-2">Sans moy <choice><orig>remoꝛdꝛe</orig><reg resp="#SDM">remordre</reg></choice><seg> </seg><choice><abbr>ꝑ</abbr><expan resp="#SDM">p<ex>ar</ex></expan></choice><seg> </seg><choice><orig><choice><abbr>ēuie</abbr><expan resp="#SDM">e<ex>n</ex>uie</expan></choice></orig><reg resp="#SDM"><choice><abbr>ēvie</abbr><expan resp="#SDM">e<ex>n</ex>vie</expan></choice></reg></choice></l>
