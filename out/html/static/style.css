@@ -436,6 +436,7 @@ code:hover {
 .right {
   background: #f4f4f4;
   margin-left: 0.2rem;
+  max-width: 40%;
 }
 
 .left, .right {
@@ -565,6 +566,20 @@ code:hover {
   border-bottom-color: rgba(0,122,255,0.55);
 }
 
+.folio-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.text-col {
+  flex: 1;
+  min-width: 0;
+}
+
 .lg-group {
   padding: 4px;
   border-left: 3px solid transparent;
@@ -595,6 +610,8 @@ code:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  clear: both;
   margin: 12px 0;
   padding: 8px 0;
   cursor: pointer;
@@ -662,7 +679,7 @@ code:hover {
 /* ----------------------------------------------------------
    RESPONSIVE
 ---------------------------------------------------------- */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .split {
     flex-direction: column;
     height: auto;
@@ -671,6 +688,10 @@ code:hover {
   .left, .right {
     height: auto;
   }
+
+  .folio-block {
+    flex-direction: column;
+    gap: 0;
 
   #mirador-viewer {
     height: 400px;
