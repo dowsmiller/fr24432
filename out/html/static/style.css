@@ -124,6 +124,66 @@ body.has-fixed-header {
   color: #222;
 }
 
+.expand {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 1rem;
+}
+
+.expand:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.expand h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  user-select: none;
+}
+
+.expand h2 .arrow {
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.expand-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.expand.open .expand-content {
+  max-height: 2000px;
+  opacity: 1;
+}
+
+.expand.open h2 .arrow {
+  transform: rotate(180deg);
+}
+
+code {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  background: rgba(0, 122, 255, 0.05);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0. ninerem;
+  color: #007acc;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+code:hover {
+  background: rgba(0, 122, 255, 0.1);
+}
+
 .group-heading {
   display: flex;
   align-items: center;
