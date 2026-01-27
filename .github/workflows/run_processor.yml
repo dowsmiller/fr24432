@@ -7,6 +7,7 @@ on:
       - 'out/**'
       - '.github/**'
       - 'README.md'
+      - 'xpath/**'
 
 permissions:
   contents: write
