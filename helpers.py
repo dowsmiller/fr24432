@@ -465,6 +465,101 @@ def get_preceding_pb_element(div_node_xml, source_root):
     
     return None
 
+def get_scribes_for_div(div_id, source_root):
+    """
+    Extracts scribe information for a given div from the source XML.
+
+    Determines the scribes responsible for a text by examining handShift elements.
+    If a handShift appears before any textual content within the div, it marks the
+    start of the text. Otherwise, the previous handShift outside the div is used.
+    Tracks all handShift elements within the div for handoff sequences.
+    Returns a formatted string (e.g. '5→3' for scribe 5 handing over to scribe 3).
+
+    Args:
+        div_id (str): The xml:id of the div to search for.
+        source_root: The ElementTree root element of the source XML.
+
+    Returns:
+        str: A formatted scribe string (e.g., '1', '5→3', '') if no handShift found.
+    """
+    TEI_NS = "{http://www.tei-c.org/ns/1.0}"
+    XML_ID_NS = "{http://www.w3.org/XML/1998/namespace}id"
+
+    # Find the div element in the source XML
+    div_elem = None
+    for elem in source_root.iter():
+        if elem.tag == f"{TEI_NS}div" and elem.get(XML_ID_NS) == div_id:
+            div_elem = elem
+            break
+
+    if div_elem is None:
+        return ""
+
+    # Get a list of all nodes to scan backwards/within the div
+    all_nodes = list(source_root.iter())
+    try:
+        div_idx = all_nodes.index(div_elem)
+    except ValueError:
+        return ""
+
+    # Get all descendants of the div
+    div_descendants = list(div_elem.iter())
+    if not div_descendants:
+        return ""
+
+    # Find the first handShift within the div (in document order)
+    first_internal_handshift = None
+    first_internal_idx = None
+    for i, node in enumerate(div_descendants):
+        if node.tag == f"{TEI_NS}handShift":
+            first_internal_handshift = node
+            first_internal_idx = i
+            break
+
+    # Determine if there's any textual content before the first internal handShift
+    has_text_before_handshift = False
+    if first_internal_handshift is not None and first_internal_idx is not None:
+        for node in div_descendants[:first_internal_idx]:
+            if node.text and node.text.strip():
+                has_text_before_handshift = True
+                break
+
+    # Start building the scribe list
+    scribes = []
+
+    # Case 1: handShift appears before any textual content -> it's the starting scribe
+    if first_internal_handshift is not None and not has_text_before_handshift:
+        scribe_ref = first_internal_handshift.get("scribeRef", "")
+        if scribe_ref.startswith("#SH"):
+            scribes.append(scribe_ref[3:])  # Extract scribe number
+    else:
+        # Case 2: Text appears before any handShift in the div -> look backward
+        for prev_node in reversed(all_nodes[:div_idx]):
+            if prev_node.tag == f"{TEI_NS}handShift":
+                scribe_ref = prev_node.get("scribeRef", "")
+                if scribe_ref.startswith("#SH"):
+                    scribes.append(scribe_ref[3:])
+                break
+
+    # Track all handShift elements after the first one
+    found_first_in_list = False
+    for node in div_descendants:
+        if node.tag == f"{TEI_NS}handShift":
+            if not found_first_in_list:
+                found_first_in_list = True
+                continue  # Skip the first one (already handled)
+            scribe_ref = node.get("scribeRef", "")
+            if scribe_ref.startswith("#SH"):
+                scribe_num = scribe_ref[3:]
+                # Only add if different from the last scribe
+                if not scribes or scribes[-1] != scribe_num:
+                    scribes.append(scribe_num)
+
+    # Format output
+    if not scribes:
+        return ""
+    return "→".join(scribes)
+
 def simple_folio_sort_key(fol_range):
     """
     Extracts the first sequence of numbers from a folio reference for numerical sorting.

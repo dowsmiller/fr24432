@@ -77114,7 +77114,7 @@
                 <gb n="52" cert="medium"/>
                 <pb n="388r" xml:id="f388r"/>
                 <cb n="1" xml:id="cb-388r-1"/>
-                <p rend="red" xml:id="p-388r-1-1">Ci <choice><abbr>cōmance</abbr><expan resp="#SDM">co<ex>m</ex>mance</expan></choice> le dit du pꝛeu <choice><abbr>chl՚r</abbr><expan resp="#SDM">ch<ex>evalie</ex>r</expan></choice></p>
+                <p rend="red" xml:id="p-388r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-17-s2"/>Ci <choice><abbr>cōmance</abbr><expan resp="#SDM">co<ex>m</ex>mance</expan></choice> le dit du pꝛeu <choice><abbr>chl՚r</abbr><expan resp="#SDM">ch<ex>evalie</ex>r</expan></choice></p>
                 <lb/>
                 <note hand="LH?" xml:id="note-388r-1-1">Par Watriquez</note><!-- same hand as 297rb -->
                 <lb/>
@@ -77529,7 +77529,7 @@
 
             <div type="text" n="80" xml:id="Yraigne">
                 <lg>
-                    <l rend="decoratedInitial decoInitblue" xml:id="l-390r-2-1"><handShift scribeRef="#SH2" xml:id="handShift-17-s2"/>Par <choice><orig>vn</orig><reg resp="#SDM">un</reg></choice> mardi<lb/>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-390r-2-1">Par <choice><orig>vn</orig><reg resp="#SDM">un</reg></choice> mardi<lb/>
                     au<choice><orig/><reg resp="#SDM"> </reg></choice>point du<choice><orig/><reg resp="#SDM"> </reg></choice><choice><orig>iour</orig><reg resp="#SDM">jour</reg></choice></l>
                     <l xml:id="l-390r-2-2">Me<choice><orig/><reg resp="#SDM"> </reg></choice><choice><orig>leuai</orig><reg resp="#SDM">levai</reg></choice> qu'ains<lb/>
                     ne fis <choice><orig>ſeiour</orig><reg resp="#SDM">ſejour</reg></choice></l>

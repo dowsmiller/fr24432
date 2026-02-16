@@ -7,18 +7,25 @@
   <link id="site-style" rel="stylesheet" href="static/style.css">
 </head>
 <body class="has-fixed-header">
-  <header class="index-header">
-    <h1>
-      {{ project_title }}
-      {% if project_subtitle %}<span class="subtitle">{{ project_subtitle }}</span>{% endif %}
-    </h1>
+  <header class="index-header" id="index-header">
+    <div class="header-content">
+      <h1>
+        {{ project_title }}
+        {% if project_subtitle %}<span class="subtitle">{{ project_subtitle }}</span>{% endif %}
+      </h1>
+      <div class="view-toggle-switch">
+        <label for="sort-toggle" class="toggle-label">Order by completeness</label>
+        <input type="checkbox" id="sort-toggle" class="toggle-checkbox">
+        <div class="toggle-slider"></div>
+      </div>
+    </div>
   </header>
 
   <div class="overview-container">
   <span class="overview">
 
     <div class="expand">
-      <h2>About the Manuscript <span class="arrow">▼</span></h2>
+      <h2>📕&ensp;About the Manuscript <span class="arrow">▼</span></h2>
       <div class="expand-content">
         <p>
           The manuscript at the centre of this project is Paris, Bibliothèque nationale de France, fonds français, 24432, hereafter fr24432.
@@ -35,7 +42,41 @@
       </div>
     </div>
     <div class="expand">
-      <h2>About the Project <span class="arrow">▼</span></h2>
+      <h2>📖&ensp;Manuscript Contents <span class="arrow">▼</span></h2>
+      <div class="expand-content">
+        {# --- TABLE OF CONTENTS --- #}
+        <div class="toc-section">
+          <div class="toc-wrapper">
+            <table class="toc-table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Summary</th>
+                  <th>Folio(s)</th>
+                  <th>Scribe ID(s)</th>
+                  <th>Encoding Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in all_items_manuscript_order %}
+                <tr>
+                  <td class="toc-title">{{ item.title }}</td>
+                  <td class="toc-summary">{{ item.summary }}</td>
+                  <td class="toc-folio">{{ item.fol_range }}</td>
+                  <td class="toc-scribe">{{ item.scribes }}</td>
+                  <td class="toc-status">
+                    <span class="status-label status-{{ item.state|replace('-', '_') }}">{{ item.state|upper|replace('-', ' ') }}</span>
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="expand">
+      <h2>🗂️&ensp;About the Project <span class="arrow">▼</span></h2>
       <div class="expand-content">
         <p>
           This page presents a work-in-progress edition of the texts of fr24432, using the full TEI-XML encoding of the codex that I produced by hand during my doctoral project.
@@ -76,7 +117,7 @@
       </div>
     </div>
     <div class="expand">
-      <h2>Encoding Principles <span class="arrow">▼</span></h2>
+      <h2>⚙️&ensp;Encoding Principles <span class="arrow">▼</span></h2>
       <div class="expand-content">
         <p>
           In the TEI-XML encoding, individual texts, and their incipit and explicit markings (linked to the main text through <code>@corresp</code>) have been separated through use of the <code>&lt;div&gt;</code> tag, with sections of prose marked using <code>&lt;p&gt;</code>, and sections of poetry marked using <code>&lt;lg&gt;</code>, with individual lines of verse tagged using <code>&lt;l&gt;</code>.
@@ -108,7 +149,7 @@
       </div>
     </div>
     <div class="expand">
-      <h2>Editorial Principles <span class="arrow">▼</span></h2>
+      <h2>📝&ensp;Editorial Principles <span class="arrow">▼</span></h2>
       <div class="expand-content">
         <p>
           Diplomatic transcriptions have been extracted from the TEI-XML encoding by ignoring all <code>&lt;expan&gt;</code>, <code>&lt;reg&gt;</code>,  <code>&lt;corr&gt;</code>,  <code>&lt;add&gt;</code>, and  <code>&lt;supplied&gt;</code> elements, unless they are marked with  <code>@ana='retain'</code>.
@@ -130,7 +171,7 @@
       </div>
     </div>
     <div class="expand">
-      <h2>Licensing <span class="arrow">▼</span></h2>
+      <h2>⚖️&ensp;Licensing <span class="arrow">▼</span></h2>
       <div class="expand-content">
         <p>
           Unless otherwise stated, all TEI-XML, CSV, TXT, and HTML outputs presented on this site are released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution–ShareAlike 4.0 International (CC BY-SA 4.0)</a> licence.
@@ -155,83 +196,259 @@
   </span>
 </div>
 
-  {% set ordered_states = ['complete', 'near-complete', 'incomplete'] %}
-  
-  {% for state in ordered_states %}
-    {% if grouped_listing[state] %}
-      <h2 class="group-heading">{{ state | upper | replace('-', ' ') }}</h2>
-      
-      {% for item in grouped_listing[state] %}
-        <div class="cards-wrapper">
-          <div class="card" data-state="{{ state }}"> 
-            <div class="card-header-info">
-              {# 1. Title #}
+  {# --- MANUSCRIPT ORDER VIEW (DEFAULT) --- #}
+  <div class="view-container" id="manuscript-view" data-view="manuscript">
+    {% for item in all_items_manuscript_order %}
+      <div class="cards-wrapper">
+        <div class="card" data-state="{{ item.state }}">
+          <div class="card-header-info">
+            <div class="card-title-wrapper">
               <h2 class="card-title">{{ item.title }}</h2>
-              
-              {# 2. Folio Range #}
-              {% if item.fol_range %}
-                <p class="folio-range">Folios: {{ item.fol_range }}</span>
+              {% if item.state == 'complete' %}
+                <span class="status-indicator complete" title="Complete">🟩</span>
+              {% elif item.state == 'near-complete' %}
+                <span class="status-indicator near-complete" title="Near complete.{% if item.notes %} {{ item.notes }}{% endif %}">⚠️</span>
+              {% else %}
+                <span class="status-indicator incomplete" title="Proceed with caution: this text has not been fully checked and is likely to contain numerous errors and inconsistencies, especially in the regularisation of punctuation, word-separation, and allographs.">🚩</span>
               {% endif %}
             </div>
             
-            {# 3. Summary #}
-            {% if item.summary %}
-              <p class="card-summary">{{ item.summary }}</p>
-            {% endif %}
-
-            {# 4. Published Edition #}
-            {% if item.edition_title %}
-              <p class="edition-link-container">
-                Published edition: 
-                <a href="{{ item.edition_uri }}" target="_blank" class="edition-link">{{ item.edition_title }}</a>
-              </p>
-            {% endif %}
-
-            {# 5. Notes/Warnings #}
-            {% if item.notes %}
-              <p class="card-warning">{{ item.notes }}</p>
-            {% endif %}
-
-            {# 6. Link buttons #}
-            <div class="link-buttons">
-              
-              {# Only show Web Viewer button if the link path is NOT empty ("") #}
-              {% if item.diplomatic_html %}
-                <a href="{{ item.diplomatic_html }}" class="button">Web Viewer (Diplomatic)</a>
-              {% else %}
-                <button disabled class="button disabled">Web Viewer (Diplomatic)</button>
+            <div class="card-right-info">
+              {% if item.scribes %}
+                <span class="scribe-badge">Scribe ID(s): {{ item.scribes }}</span>
               {% endif %}
-              
-              {% if item.critical_html %}
-                <a href="{{ item.critical_html }}" class="button">Web Viewer (Critical)</a>
-              {% else %}
-                <button disabled class="button disabled">Web Viewer (Critical)</button>
-              {% endif %}
-              
-              {# Data file links (TEI, CSV, TXT) #}
-              <a href="{{ item.tei }}" class="button">TEI Snippet</a>
-              <a href="{{ item.diplomatic_csv }}" class="button">CSV (Diplomatic)</a>
-              <a href="{{ item.critical_csv }}" class="button">CSV (Critical)</a>
-              <a href="{{ item.diplomatic_txt }}" class="button">TXT (Diplomatic)</a>
-              <a href="{{ item.critical_txt }}" class="button">TXT (Critical)</a>
-
-              {% if item.arlima_uri %}
-                <a href="{{ item.arlima_uri }}" class="button arlima-button">View on ARLIMA</a>
-              {% else %}
-                <button disabled class="button disabled">View on ARLIMA</button>
+              {% if item.fol_range %}
+                <span class="folio-range">Folio(s): {{ item.fol_range }}</span>
               {% endif %}
             </div>
           </div>
+          
+          {# 3. Summary #}
+          {% if item.summary %}
+            <p class="card-summary">{{ item.summary }}</p>
+          {% endif %}
+
+          {# 4. Published Edition #}
+          {% if item.edition_title %}
+            <p class="edition-link-container">
+              Published edition: 
+              <a href="{{ item.edition_uri }}" target="_blank" class="edition-link">{{ item.edition_title }}</a>
+            </p>
+          {% endif %}
+
+          {# Link buttons #}
+          <div class="link-buttons">
+            
+            {# Only show Web Viewer button if the link path is NOT empty ("") #}
+            {% if item.diplomatic_html %}
+              <a href="{{ item.diplomatic_html }}" class="button btn-viewer">Web Viewer (Diplomatic)</a>
+            {% else %}
+              <button disabled class="button disabled">Web Viewer (Diplomatic)</button>
+            {% endif %}
+            
+            {% if item.critical_html %}
+              <a href="{{ item.critical_html }}" class="button btn-viewer">Web Viewer (Critical)</a>
+            {% else %}
+              <button disabled class="button disabled">Web Viewer (Critical)</button>
+            {% endif %}
+            
+            {# Data file links (TEI, CSV, TXT) #}
+            <a href="{{ item.tei }}" class="button btn-tei">TEI</a>
+            <a href="{{ item.diplomatic_csv }}" class="button btn-csv">CSV (Diplomatic)</a>
+            <a href="{{ item.critical_csv }}" class="button btn-csv">CSV (Critical)</a>
+            <a href="{{ item.diplomatic_txt }}" class="button btn-txt">TXT (Diplomatic)</a>
+            <a href="{{ item.critical_txt }}" class="button btn-txt">TXT (Critical)</a>
+
+            {% if item.arlima_uri %}
+              <a href="{{ item.arlima_uri }}" class="button btn-arlima">ARLIMA entry</a>
+            {% else %}
+              <button disabled class="button disabled">ARLIMA entry</button>
+            {% endif %}
+          </div>
         </div>
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {# --- COMPLETION STATUS VIEW --- #}
+  {% set ordered_states = ['complete', 'near-complete', 'incomplete'] %}
+  <div class="view-container hidden" id="status-view" data-view="status">
+    {% for state in ordered_states %}
+      {% if grouped_listing[state] %}
+        <h2 class="group-heading">{{ state | upper | replace('-', ' ') }}</h2>
+        
+        {% for item in grouped_listing[state] %}
+          <div class="cards-wrapper">
+            <div class="card" data-state="{{ state }}">
+              <div class="card-header-info">
+                <div class="card-title-wrapper">
+                  <h2 class="card-title">{{ item.title }}</h2>
+                </div>
+                
+                <div class="card-right-info">
+                  {% if item.scribes %}
+                    <span class="scribe-badge">Scribe ID(s): {{ item.scribes }}</span>
+                  {% endif %}
+                  {% if item.fol_range %}
+                    <span class="folio-range">Folio(s): {{ item.fol_range }}</span>
+                  {% endif %}
+                </div>
+              </div>
+              
+              {# Summary #}
+              {% if item.summary %}
+                <p class="card-summary">{{ item.summary }}</p>
+              {% endif %}
+
+              {# Published Edition #}
+              {% if item.edition_title %}
+                <p class="edition-link-container">
+                  Published edition: 
+                  <a href="{{ item.edition_uri }}" target="_blank" class="edition-link">{{ item.edition_title }}</a>
+                </p>
+              {% endif %}
+
+              {# Notes/Warnings #}
+              {% if item.notes %}
+                <p class="card-warning">{{ item.notes }}</p>
+              {% endif %}
+
+              {# 6. Link buttons #}
+              <div class="link-buttons">
+                
+                {# Only show Web Viewer button if the link path is NOT empty ("") #}
+                {% if item.diplomatic_html %}
+                  <a href="{{ item.diplomatic_html }}" class="button btn-viewer">Web Viewer (Diplomatic)</a>
+                {% else %}
+                  <button disabled class="button disabled">Web Viewer (Diplomatic)</button>
+                {% endif %}
+                
+                {% if item.critical_html %}
+                  <a href="{{ item.critical_html }}" class="button btn-viewer">Web Viewer (Critical)</a>
+                {% else %}
+                  <button disabled class="button disabled">Web Viewer (Critical)</button>
+                {% endif %}
+                
+                {# Data file links (TEI, CSV, TXT) #}
+                <a href="{{ item.tei }}" class="button btn-tei">TEI Snippet</a>
+                <a href="{{ item.diplomatic_csv }}" class="button btn-csv">CSV (Diplomatic)</a>
+                <a href="{{ item.critical_csv }}" class="button btn-csv">CSV (Critical)</a>
+                <a href="{{ item.diplomatic_txt }}" class="button btn-txt">TXT (Diplomatic)</a>
+                <a href="{{ item.critical_txt }}" class="button btn-txt">TXT (Critical)</a>
+
+                {% if item.arlima_uri %}
+                  <a href="{{ item.arlima_uri }}" class="button btn-arlima">View on ARLIMA</a>
+                {% else %}
+                  <button disabled class="button disabled">View on ARLIMA</button>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
 
 <script>
+// Expand/collapse functionality for About sections
 document.querySelectorAll('.expand h2').forEach(header => {
   header.addEventListener('click', () => {
     const section = header.parentElement;
     section.classList.toggle('open');
+  });
+});
+
+// View toggle switch functionality
+const sortToggle = document.getElementById('sort-toggle');
+sortToggle.addEventListener('change', () => {
+  const view = sortToggle.checked ? 'status' : 'manuscript';
+  
+  // Update view visibility
+  document.querySelectorAll('.view-container').forEach(container => {
+    container.classList.add('hidden');
+  });
+  document.getElementById(view + '-view').classList.remove('hidden');
+});
+
+// Make toggle slider clickable
+document.querySelector('.toggle-slider')?.addEventListener('click', function() {
+  const checkbox = document.getElementById('sort-toggle');
+  if (checkbox) {
+    checkbox.checked = !checkbox.checked;
+    checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+});
+
+// Header scroll behavior - hide on scroll down, show on scroll up
+const header = document.getElementById('index-header');
+let lastScrollTop = 0;
+let scrollTimeout;
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    header.style.transform = 'translateY(-100%)';
+  } else {
+    // Scrolling up
+    header.style.transform = 'translateY(0)';
+  }
+  
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}, false);
+
+// Smooth transition for header
+header.style.transition = 'transform 0.3s ease';
+
+// Status indicator tooltips and touch support
+document.querySelectorAll('.status-indicator').forEach(indicator => {
+  const title = indicator.getAttribute('title');
+  indicator.removeAttribute('title');
+  
+  let tooltip = null;
+  let isTouched = false;
+  
+  const showTooltip = () => {
+    if (tooltip) tooltip.remove();
+    tooltip = document.createElement('div');
+    tooltip.className = 'status-tooltip';
+    tooltip.textContent = title;
+    document.body.appendChild(tooltip);
+    
+    const rect = indicator.getBoundingClientRect();
+    tooltip.style.left = Math.min(rect.right + 10, window.innerWidth - 320) + 'px';
+    tooltip.style.top = (rect.top - 10) + 'px';
+  };
+  
+  const hideTooltip = () => {
+    if (tooltip) {
+      tooltip.remove();
+      tooltip = null;
+    }
+  };
+  
+  // Mouse events
+  indicator.addEventListener('mouseenter', showTooltip);
+  indicator.addEventListener('mouseleave', hideTooltip);
+  
+  // Touch events - toggle on tap
+  indicator.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    isTouched = !isTouched;
+    if (isTouched) {
+      showTooltip();
+    } else {
+      hideTooltip();
+    }
+  });
+  
+  // Close tooltip on any other touch
+  document.addEventListener('touchstart', (e) => {
+    if (!e.target.closest('.status-indicator') && tooltip) {
+      hideTooltip();
+      isTouched = false;
+    }
   });
 });
 </script>

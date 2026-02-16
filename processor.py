@@ -5,7 +5,7 @@ import csv # Provides functions to work with CSV files
 import xml.etree.ElementTree as ET # XML parsing library
 from saxonche import PySaxonProcessor # Library for running XSLT and XPath with Saxon-EE
 from jinja2 import Environment, FileSystemLoader # Jinja2 templating engine for HTML generation
-from helpers import process_div, get_folio_and_col_at_div, get_preceding_pb_element, simple_folio_sort_key, load_metadata # Custom helper functions
+from helpers import process_div, get_folio_and_col_at_div, get_preceding_pb_element, simple_folio_sort_key, load_metadata, get_scribes_for_div # Custom helper functions
 
 # --- Configuration ---
 
@@ -181,6 +181,7 @@ for state_dir in os.listdir(OUT_TEI_DIR):
                 edition_title = metadata_dict.get(base, {}).get('edition_title', '')
                 arlima_uri = metadata_dict.get(base, {}).get('arlima_uri', '')
                 notes = metadata_dict.get(base, {}).get('notes', '')
+                scribes = get_scribes_for_div(base, source_root)  # Extract scribe information
 
                 # Determine if HTML links should be included based on state
                 include_html = div_state in ALLOWED_HTML_STATES
@@ -193,6 +194,7 @@ for state_dir in os.listdir(OUT_TEI_DIR):
                 # Create a dictionary for the current item
                 item = {
                     "id": base,
+                    "state": norm_div_state,
                     "tei": f"{RAW_BASE}/tei/{norm_div_state}/{fname}",
                     "diplomatic_html": diplomatic_html_path, # Path to diplomatic HTML
                     "critical_html": critical_html_path, # Path to critical HTML
@@ -209,7 +211,8 @@ for state_dir in os.listdir(OUT_TEI_DIR):
                     "edition_uri": edition_uri,
                     "edition_title": edition_title,
                     "arlima_uri": arlima_uri,
-                    "notes": notes
+                    "notes": notes,
+                    "scribes": scribes
                 }
                 
                 # Group the item based on its state
@@ -224,11 +227,18 @@ for state_dir in os.listdir(OUT_TEI_DIR):
 for state in grouped_listing:
     grouped_listing[state].sort(key=lambda item: simple_folio_sort_key(item.get('fol_range', '')))
 
+# Create a flat list of all items sorted by manuscript order (for the alternate view)
+all_items_manuscript_order = []
+for state in grouped_listing:
+    all_items_manuscript_order.extend(grouped_listing[state])
+all_items_manuscript_order.sort(key=lambda item: simple_folio_sort_key(item.get('fol_range', '')))
+
 # Only generate the index if there are items to list
 if any(grouped_listing.values()):
     # Render the HTML template with the grouped data
     index_html = index_tmpl.render(
         grouped_listing=grouped_listing,
+        all_items_manuscript_order=all_items_manuscript_order,
         project_title="The Texts of BnF fr. 24432", 
         project_subtitle="A cumulative, work-in-progress digital edition by Sebastian Dows-Miller"
     )
