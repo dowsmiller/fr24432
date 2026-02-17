@@ -261,6 +261,61 @@ body.has-fixed-header {
   }
 }
 
+.overview p.indent {
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview p.indent {
+  }
+}
+
+.overview h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.8rem 0 0.8rem 0;
+  padding-bottom: 0.8rem;
+  color: #222;
+  border-bottom: 1px solid rgba(0, 122, 255, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview h3 {
+    color: #ddd;
+    border-bottom: 1px solid rgba(100, 181, 246, 0.25);
+  }
+}
+
+.overview h3:first-child {
+  margin-top: 0;
+}
+
+.overview ol {
+  padding-left: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview ol {
+    color: #ddd;
+  }
+}
+
+.overview ol li {
+  margin-bottom: 0.6rem;
+  line-height: 1.75;
+  color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview ol li {
+    color: #ddd;
+  }
+}
+
 .overview ul {
   padding-left: 1.5rem;
   margin-bottom: 0.8rem;
@@ -282,6 +337,100 @@ body.has-fixed-header {
 @media (prefers-color-scheme: dark) {
   .overview li {
     color: #ddd;
+  }
+}
+
+.overview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview table {
+  }
+}
+
+.overview table thead {
+  background: rgba(0, 122, 255, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview table thead {
+    background: rgba(100, 181, 246, 0.08);
+  }
+}
+
+.overview table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 2px solid rgba(0, 122, 255, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview table th {
+    color: #ddd;
+    border-bottom: 2px solid rgba(100, 181, 246, 0.35);
+  }
+}
+
+.overview table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0, 122, 255, 0.1);
+  color: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview table td {
+    border-bottom: 1px solid rgba(100, 181, 246, 0.1);
+    color: #bbb;
+  }
+}
+
+.overview table tbody tr:hover {
+  background: rgba(0, 122, 255, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview table tbody tr:hover {
+    background: rgba(100, 181, 246, 0.05);
+  }
+}
+
+/* Row-header table (key-value pairs) */
+.overview table tbody tr th {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 122, 255, 0.1);
+  border-right: 1px solid rgba(0, 122, 255, 0.15);
+  padding: 12px;
+  font-weight: 600;
+  color: #222;
+  width: 35%;
+  font-size: 0.95rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview table tbody tr th {
+    border-bottom: 1px solid rgba(100, 181, 246, 0.1);
+    border-right: 1px solid rgba(100, 181, 246, 0.15);
+    color: #ddd;
+  }
+}
+
+.overview table tbody tr th + td {
+  background: rgba(0, 122, 255, 0.03);
+  padding: 12px;
+  color: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+  .overview table tbody tr th + td {
+    background: rgba(100, 181, 246, 0.04);
+    color: #bbb;
   }
 }
 
@@ -325,6 +474,10 @@ body.has-fixed-header {
   opacity: 0;
   overflow: hidden;
   transition: all 0.35s ease;
+}
+
+.expand-content > :first-child {
+  margin-top: 1.8rem !important;
 }
 
 .expand.open .expand-content {
@@ -962,7 +1115,7 @@ code:hover {
 /* --- BUTTON TYPE COLOURS --- */
 .btn-viewer {
   background: rgba(0, 122, 255, 0.5) !important;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .btn-viewer:hover {
@@ -974,6 +1127,7 @@ code:hover {
 @media (prefers-color-scheme: dark) {
   .btn-viewer {
     background: rgba(100, 181, 246, 0.5) !important;
+    color: #fff !important;
   }
 
   .btn-viewer:hover {
@@ -984,7 +1138,7 @@ code:hover {
 
 .btn-tei {
   background: rgba(85, 145, 150, 0.5) !important;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .btn-tei:hover {
@@ -996,6 +1150,7 @@ code:hover {
 @media (prefers-color-scheme: dark) {
   .btn-tei {
     background: rgba(128, 188, 186, 0.5) !important;
+    color: #fff !important;
   }
 
   .btn-tei:hover {
@@ -1006,7 +1161,7 @@ code:hover {
 
 .btn-csv {
   background: rgba(76, 175, 80, 0.5) !important;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .btn-csv:hover {
@@ -1018,6 +1173,7 @@ code:hover {
 @media (prefers-color-scheme: dark) {
   .btn-csv {
     background: rgba(129, 199, 132, 0.5) !important;
+    color: #fff !important;
   }
 
   .btn-csv:hover {
@@ -1028,7 +1184,7 @@ code:hover {
 
 .btn-txt {
   background: rgba(197, 160, 100, 0.5) !important;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .btn-txt:hover {
@@ -1040,6 +1196,7 @@ code:hover {
 @media (prefers-color-scheme: dark) {
   .btn-txt {
     background: rgba(225, 190, 124, 0.5) !important;
+    color: #fff !important;
   }
 
   .btn-txt:hover {
@@ -1050,7 +1207,7 @@ code:hover {
 
 .btn-arlima {
   background: rgba(156, 120, 214, 0.5) !important;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .btn-arlima:hover {
@@ -1062,6 +1219,7 @@ code:hover {
 @media (prefers-color-scheme: dark) {
   .btn-arlima {
     background: rgba(186, 150, 244, 0.5) !important;
+    color: #fff !important;
   }
 
   .btn-arlima:hover {
