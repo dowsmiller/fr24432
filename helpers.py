@@ -1,4 +1,5 @@
 import os # Provides functions for interacting with the operating system
+import sys # Provides access to interpreter exit handling
 import re # Provides support for regular expressions
 import csv # Provides functions to work with CSV files
 import xml.etree.ElementTree as ET # XML parsing library
@@ -84,6 +85,16 @@ def get_text_with_markup(node):
 
     return "".join(text_parts)
 
+def apply_deco_init(text, color):
+    """
+    Wraps the first visible character of a line's text in a styled drop-cap span.
+    Skips over any leading HTML tags (e.g. <em>) so the span targets the first
+    rendered character, not a tag bracket.
+    """
+    pattern = r'^(\s*(?:<[^>]+>\s*)*)(.)'  # optional tags, then first char
+    replacement = lambda m: m.group(1) + f'<span class="deco-init deco-init-{color}">{m.group(2)}</span>'
+    return re.sub(pattern, replacement, text, count=1, flags=re.DOTALL)
+
 # --- Line Extraction and Metadata Mapping ---
 
 def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
@@ -129,6 +140,18 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
         text = get_text_with_markup(l)
         # Normalize multiple spaces into single spaces
         text = re.sub(r"\s+", " ", text).strip()
+
+        # Detect decorated initial from @rend on the <l> element
+        rend = l.get('rend', '')
+        deco_init = ''
+        if 'decoInitred' in rend:
+            deco_init = 'red'
+        elif 'decoInitblue' in rend:
+            deco_init = 'blue'
+        elif 'decoratedInitial' in rend:
+            deco_init = 'blue'  # colour unspecified: fall back to blue
+        if deco_init:
+            text = apply_deco_init(text, deco_init)
 
         # Get the line's XML ID
         xml_ns = "{http://www.w3.org/XML/1998/namespace}id"
@@ -193,7 +216,24 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
 
         # Append the line data to the list
         lines.append({"line_no": line_counter, "text": text, "lg": lg_id,
-                      "l_id": l_id, "folio": folio, "col": col, "speaker": speaker})
+                      "l_id": l_id, "folio": folio, "col": col, "speaker": speaker,
+                      "deco_init": deco_init, "deco_indent": False})
+
+    # Post-process: mark the line following a decorated initial for indentation,
+    # but only if it stays in the same group, folio, and column.
+    # This prevents unnecessary indents across column/page transitions.
+    for i, entry in enumerate(lines):
+        if not entry['deco_init'] or i + 1 >= len(lines):
+            continue
+
+        next_entry = lines[i + 1]
+        same_group = next_entry['lg'] == entry['lg']
+        same_folio = next_entry['folio'] == entry['folio']
+        same_col = next_entry['col'] == entry['col']
+
+        if same_group and same_folio and same_col:
+            next_entry['deco_indent'] = True
+
     return lines
 
 # --- Output Writing Functions ---
@@ -203,8 +243,8 @@ def write_txt(lines, outpath):
     os.makedirs(os.path.dirname(outpath), exist_ok=True) # Ensure directory exists
     with open(outpath, "w", encoding="utf8") as fh:
         for entry in lines:
-            # Remove HTML emphasis tags (<em>) before writing to TXT
-            text = re.sub(r"</?em>", "", entry["text"])
+            # Remove display HTML markup before writing to TXT
+            text = re.sub(r"<[^>]+>", "", entry["text"])
             fh.write(text + "\n")
 
 def write_csv(lines, outpath):
@@ -215,9 +255,9 @@ def write_csv(lines, outpath):
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for row in lines:
-            # Remove HTML emphasis tags (<em>) before writing to CSV
-            text = re.sub(r"</?em>", "", row["text"])
-            writer.writerow({**row, "text": text})
+            # Remove display HTML markup before writing to CSV
+            text = re.sub(r"<[^>]+>", "", row["text"])
+            writer.writerow({key: row.get(key, "") for key in fieldnames} | {"text": text})
 
 def render_html(template_name, context, outpath):
     # *** Render line data into an HTML file using Jinja2 ***
@@ -243,6 +283,7 @@ def process_div(tei_path, out_root="out", div_id=None, initial_folio="", initial
         tei_basename = os.path.splitext(os.path.basename(tei_path))[0]
     
     # 1. Extract details from the metadata
+    metadata_dict = metadata_dict or {}
     div_state = metadata_dict.get(tei_basename, {}).get('state', 'incomplete').lower()
     norm_div_state = div_state.replace(' ', '-') # Normalized state for directory names
     title = metadata_dict.get(tei_basename, {}).get('title', tei_basename)
@@ -352,7 +393,7 @@ def load_metadata(meta_file_path):
             reader = csv.DictReader(file)
             
             # Normalize and check the column names (fields)
-            fieldnames = [name.strip() for name in reader.fieldnames]
+            fieldnames = [name.strip() for name in (reader.fieldnames or [])]
             reader.fieldnames = fieldnames
             
             if 'id' not in fieldnames:

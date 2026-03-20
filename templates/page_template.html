@@ -95,7 +95,7 @@
           {%- endif -%}
 
           {# 5. Line #}
-          <div class="line">
+          <div class="line{% if row.deco_init %} has-deco-init{% endif %}{% if row.deco_indent %} deco-indent{% endif %}">
             <span class="ln">{{ row.line_no }}</span>
             <span class="line-text">{{ row.text | safe }}</span>
           </div>
@@ -122,6 +122,30 @@
   const startCanvas = "{{ canvas_url or '' }}";
   const scrollContainer = document.getElementById('scroll-container');
   let miradorInstance = null;
+
+  // --- 0. Calibrate decorated-initial indents by actual glyph width ---
+  function applyDecoIndentWidths() {
+    const lines = document.querySelectorAll('.line.has-deco-init');
+    lines.forEach(line => {
+      const deco = line.querySelector('.deco-init');
+      if (!deco) return;
+
+      const rect = deco.getBoundingClientRect();
+      if (!rect || !rect.width) return;
+
+      const gap = 6; // small breathing space between initial and following text
+      const indent = Math.ceil(rect.width + gap);
+      line.style.setProperty('--deco-indent-px', `${indent}px`);
+
+      const nextLine = line.nextElementSibling;
+      if (nextLine && nextLine.classList && nextLine.classList.contains('line') && nextLine.classList.contains('deco-indent')) {
+        nextLine.style.setProperty('--deco-indent-px', `${indent}px`);
+      }
+    });
+  }
+
+  applyDecoIndentWidths();
+  window.addEventListener('resize', applyDecoIndentWidths);
 
   // --- 1. Initialize Mirador (Minimalist Mode) ---
   if (manifestUrl) {

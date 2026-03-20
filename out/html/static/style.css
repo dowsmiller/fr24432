@@ -1838,6 +1838,48 @@ select.filter-input {
 
 
 /* ----------------------------------------------------------
+   DECORATED INITIALS (litterae notabiliores)
+   Rendered for <l> or <p> elements carrying @rend values
+   'decoratedInitial decoInitred' / 'decoratedInitial decoInitblue'.
+   The initial is absolutely positioned within .line-text and
+   visually overlaps into the next .line below (which receives
+   .deco-indent to pad its text out of the way).
+---------------------------------------------------------- */
+
+.line.has-deco-init .line-text {
+  position: relative;
+  padding-left: var(--deco-indent-px, 2.6em);
+}
+
+.line.deco-indent .line-text {
+  padding-left: var(--deco-indent-px, 2.6em);
+}
+
+.deco-init {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2.8em;
+  line-height: 0.85;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.deco-init-red {
+  color: #8b1a1a;
+}
+
+.deco-init-blue {
+  color: #1a3d8b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .deco-init-red  { color: #e07878; }
+  .deco-init-blue { color: #78a0e0; }
+}
+
+
+/* ----------------------------------------------------------
    RESPONSIVE
 ---------------------------------------------------------- */
 
