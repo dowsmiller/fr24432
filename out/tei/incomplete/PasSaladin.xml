@@ -335,7 +335,7 @@
 
                     <pb n="31v" xml:id="f31v"/>
                     <cb n="1" xml:id="cb-31v-1"/>
-                    <l xml:id="l-31v-1-1">Hues pꝛiſt <choice><abbr>ſimō</abbr><expan resp="#SDM">ſimo<ex>n</ex></expan></choice> de<placeName ref="#Montfort">monfoꝛs</placeName></l>
+                    <l xml:id="l-31v-1-1"><handShift scribeRef="#SH4" xml:id="handShift-4-s4"/>Hues pꝛiſt <choice><abbr>ſimō</abbr><expan resp="#SDM">ſimo<ex>n</ex></expan></choice> de<placeName ref="#Montfort">monfoꝛs</placeName></l>
                     <l xml:id="l-31v-1-2">Ki falis naſtoit ne coiarz</l>
                     <l xml:id="l-31v-1-3">Li barrois pꝛiſt meſſe <choice><abbr>b՚naiz</abbr><expan resp="#SDM">b<ex>er</ex>naiz</expan></choice></l>
                     <l xml:id="l-31v-1-4">ki li reiz eſt de <placeName ref="#Horstrinale">hoꝛſtrinale</placeName></l>
@@ -506,7 +506,7 @@
 
                     <pb n="32v" xml:id="f32v"/>
                     <cb n="1" xml:id="cb-32v-1"/>
-                    <l xml:id="l-32v-1-1">Moꝛs letrebuche dos deuans</l>
+                    <l xml:id="l-32v-1-1"><handShift scribeRef="#SH3" xml:id="handShift-5-s3"/>Moꝛs letrebuche dos deuans</l>
                     <l xml:id="l-32v-1-2">Anſi faiſoit li pꝛeus huons</l>
                     <l xml:id="l-32v-1-3">Plus aigrement conme lyons</l>
                     <l xml:id="l-32v-1-4">Les coꝛoit ſus ſans miſeꝛicoꝛde</l>
@@ -602,7 +602,7 @@
                     <gb n="5"/>
                     <pb n="33r" xml:id="f33r"/>
                     <cb n="1" xml:id="cb-33r-1"/>
-                    <l xml:id="l-33r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-4-s2"/><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſoient ens en loſt deſfrans</l>
+                    <l xml:id="l-33r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-6-s2"/><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſoient ens en loſt deſfrans</l>
                     <l xml:id="l-33r-1-2">Et les plus foꝛs les plus hardis</l>
                     <l xml:id="l-33r-1-3">Enſi com roſe <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> floꝛ de lis</l>
                     <l xml:id="l-33r-1-4">Seur monte de biauté les floꝛs</l>

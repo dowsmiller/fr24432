@@ -32,7 +32,7 @@
                     <gb n="31"/>
                     <pb n="231r" xml:id="f231r"/>
                     <cb n="1" xml:id="cb-231r-1"/>
-                    <l rend="decoratedInitial decoInitred" xml:id="l-231r-1-1"><handShift scribeRef="#SH8" xml:id="handShift-11-s8"/><!-- look at D, A -->Dieu et /ſa douce mere<lb/>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-231r-1-1"><handShift scribeRef="#SH8" xml:id="handShift-13-s8"/><!-- look at D, A -->Dieu et /ſa douce mere<lb/>
                     <choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> chaſcun doit amer</l>
                     <l xml:id="l-231r-1-2">Et /le baron ſaint <choice><orig>iaque</orig><reg resp="#SDM">Jaque</reg></choice><lb/>
                     De qui <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> veul parler</l>
@@ -1778,7 +1778,7 @@
                     <gb n="32"/>
                     <pb n="239r" xml:id="f239r"/>
                     <cb n="1" xml:id="cb-239r-1"/>
-                    <l rend="decoratedInitial decoInitblue" xml:id="l-239r-1-1"><q xml:id="q-239r-1-1" prev="#q-238v-2-13" next="#q-239r-1-2"><handShift scribeRef="#SH3" xml:id="handShift-12-s3"/>Mes pour <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> fetes moy<lb/>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-239r-1-1"><q xml:id="q-239r-1-1" prev="#q-238v-2-13" next="#q-239r-1-2"><handShift scribeRef="#SH3" xml:id="handShift-14-s3"/>Mes pour <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> fetes moy<lb/>
                     Ce que <choice><orig>uous</orig><reg resp="#SDM">vous</reg></choice> ai requis</q></l>
                     <l xml:id="l-239r-1-2"><q xml:id="q-239r-1-2" prev="#q-239r-1-1"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> pꝛierai pour <choice><orig>uous</orig><reg resp="#SDM">vous</reg></choice><lb/>
                     Et pour tous <choice><orig>uos</orig><reg resp="#SDM">vos</reg></choice> amis</q></l>

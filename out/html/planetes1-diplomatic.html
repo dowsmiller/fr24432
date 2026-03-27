@@ -34,11 +34,11 @@
             
             
             <div class="folio-block"><div class="text-col" data-col="2"><div class="lg-group" data-lg="1">
-          <div class="line">
+          <div class="line has-deco-init">
             <span class="ln">1</span>
-            <span class="line-text">POurce que ieuoy grant partie</span>
+            <span class="line-text"><span class="deco-init deco-init-blue">P</span>Ource que ieuoy grant partie</span>
           </div>
-          <div class="line">
+          <div class="line deco-indent">
             <span class="ln">2</span>
             <span class="line-text">Du monde qui moult ſ’eſtudie</span>
           </div>
@@ -1427,6 +1427,30 @@
   const startCanvas = "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52516597g/canvas/f171";
   const scrollContainer = document.getElementById('scroll-container');
   let miradorInstance = null;
+
+  // --- 0. Calibrate decorated-initial indents by actual glyph width ---
+  function applyDecoIndentWidths() {
+    const lines = document.querySelectorAll('.line.has-deco-init');
+    lines.forEach(line => {
+      const deco = line.querySelector('.deco-init');
+      if (!deco) return;
+
+      const rect = deco.getBoundingClientRect();
+      if (!rect || !rect.width) return;
+
+      const gap = 6; // small breathing space between initial and following text
+      const indent = Math.ceil(rect.width + gap);
+      line.style.setProperty('--deco-indent-px', `${indent}px`);
+
+      const nextLine = line.nextElementSibling;
+      if (nextLine && nextLine.classList && nextLine.classList.contains('line') && nextLine.classList.contains('deco-indent')) {
+        nextLine.style.setProperty('--deco-indent-px', `${indent}px`);
+      }
+    });
+  }
+
+  applyDecoIndentWidths();
+  window.addEventListener('resize', applyDecoIndentWidths);
 
   // --- 1. Initialize Mirador (Minimalist Mode) ---
   if (manifestUrl) {

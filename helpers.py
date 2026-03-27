@@ -1,4 +1,5 @@
 import os # Provides functions for interacting with the operating system
+import sys # Provides access to interpreter exit handling
 import re # Provides support for regular expressions
 import csv # Provides functions to work with CSV files
 import xml.etree.ElementTree as ET # XML parsing library
@@ -84,6 +85,16 @@ def get_text_with_markup(node):
 
     return "".join(text_parts)
 
+def apply_deco_init(text, color):
+    """
+    Wraps the first visible character of a line's text in a styled drop-cap span.
+    Skips over any leading HTML tags (e.g. <em>) so the span targets the first
+    rendered character, not a tag bracket.
+    """
+    pattern = r'^(\s*(?:<[^>]+>\s*)*)(.)'  # optional tags, then first char
+    replacement = lambda m: m.group(1) + f'<span class="deco-init deco-init-{color}">{m.group(2)}</span>'
+    return re.sub(pattern, replacement, text, count=1, flags=re.DOTALL)
+
 # --- Line Extraction and Metadata Mapping ---
 
 def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
@@ -129,6 +140,18 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
         text = get_text_with_markup(l)
         # Normalize multiple spaces into single spaces
         text = re.sub(r"\s+", " ", text).strip()
+
+        # Detect decorated initial from @rend on the <l> element
+        rend = l.get('rend', '')
+        deco_init = ''
+        if 'decoInitred' in rend:
+            deco_init = 'red'
+        elif 'decoInitblue' in rend:
+            deco_init = 'blue'
+        elif 'decoratedInitial' in rend:
+            deco_init = 'blue'  # colour unspecified: fall back to blue
+        if deco_init:
+            text = apply_deco_init(text, deco_init)
 
         # Get the line's XML ID
         xml_ns = "{http://www.w3.org/XML/1998/namespace}id"
@@ -193,7 +216,24 @@ def extract_lines_from_xml(xml_str, initial_folio="", initial_col=""):
 
         # Append the line data to the list
         lines.append({"line_no": line_counter, "text": text, "lg": lg_id,
-                      "l_id": l_id, "folio": folio, "col": col, "speaker": speaker})
+                      "l_id": l_id, "folio": folio, "col": col, "speaker": speaker,
+                      "deco_init": deco_init, "deco_indent": False})
+
+    # Post-process: mark the line following a decorated initial for indentation,
+    # but only if it stays in the same group, folio, and column.
+    # This prevents unnecessary indents across column/page transitions.
+    for i, entry in enumerate(lines):
+        if not entry['deco_init'] or i + 1 >= len(lines):
+            continue
+
+        next_entry = lines[i + 1]
+        same_group = next_entry['lg'] == entry['lg']
+        same_folio = next_entry['folio'] == entry['folio']
+        same_col = next_entry['col'] == entry['col']
+
+        if same_group and same_folio and same_col:
+            next_entry['deco_indent'] = True
+
     return lines
 
 # --- Output Writing Functions ---
@@ -203,8 +243,8 @@ def write_txt(lines, outpath):
     os.makedirs(os.path.dirname(outpath), exist_ok=True) # Ensure directory exists
     with open(outpath, "w", encoding="utf8") as fh:
         for entry in lines:
-            # Remove HTML emphasis tags (<em>) before writing to TXT
-            text = re.sub(r"</?em>", "", entry["text"])
+            # Remove display HTML markup before writing to TXT
+            text = re.sub(r"<[^>]+>", "", entry["text"])
             fh.write(text + "\n")
 
 def write_csv(lines, outpath):
@@ -215,9 +255,9 @@ def write_csv(lines, outpath):
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for row in lines:
-            # Remove HTML emphasis tags (<em>) before writing to CSV
-            text = re.sub(r"</?em>", "", row["text"])
-            writer.writerow({**row, "text": text})
+            # Remove display HTML markup before writing to CSV
+            text = re.sub(r"<[^>]+>", "", row["text"])
+            writer.writerow({key: row.get(key, "") for key in fieldnames} | {"text": text})
 
 def render_html(template_name, context, outpath):
     # *** Render line data into an HTML file using Jinja2 ***
@@ -243,6 +283,7 @@ def process_div(tei_path, out_root="out", div_id=None, initial_folio="", initial
         tei_basename = os.path.splitext(os.path.basename(tei_path))[0]
     
     # 1. Extract details from the metadata
+    metadata_dict = metadata_dict or {}
     div_state = metadata_dict.get(tei_basename, {}).get('state', 'incomplete').lower()
     norm_div_state = div_state.replace(' ', '-') # Normalized state for directory names
     title = metadata_dict.get(tei_basename, {}).get('title', tei_basename)
@@ -352,7 +393,7 @@ def load_metadata(meta_file_path):
             reader = csv.DictReader(file)
             
             # Normalize and check the column names (fields)
-            fieldnames = [name.strip() for name in reader.fieldnames]
+            fieldnames = [name.strip() for name in (reader.fieldnames or [])]
             reader.fieldnames = fieldnames
             
             if 'id' not in fieldnames:
@@ -470,10 +511,9 @@ def get_scribes_for_div(div_id, source_root):
     Extracts scribe information for a given div from the source XML.
 
     Determines the scribes responsible for a text by examining handShift elements.
-    If a handShift appears before any textual content within the div, it marks the
-    start of the text. Otherwise, the previous handShift outside the div is used.
-    Tracks all handShift elements within the div for handoff sequences.
-    Returns a formatted string (e.g. '5→3' for scribe 5 handing over to scribe 3).
+    Collects all handShift elements that appear within the div, or the last handShift
+    before the div if none appear internally. Returns a formatted string showing
+    all scribes and transitions (e.g., '3', '3→4→3', '2→5').
 
     Args:
         div_id (str): The xml:id of the div to search for.
@@ -495,7 +535,7 @@ def get_scribes_for_div(div_id, source_root):
     if div_elem is None:
         return ""
 
-    # Get a list of all nodes to scan backwards/within the div
+    # Get a list of all nodes to scan
     all_nodes = list(source_root.iter())
     try:
         div_idx = all_nodes.index(div_elem)
@@ -507,53 +547,31 @@ def get_scribes_for_div(div_id, source_root):
     if not div_descendants:
         return ""
 
-    # Find the first handShift within the div (in document order)
-    first_internal_handshift = None
-    first_internal_idx = None
-    for i, node in enumerate(div_descendants):
-        if node.tag == f"{TEI_NS}handShift":
-            first_internal_handshift = node
-            first_internal_idx = i
-            break
-
-    # Determine if there's any textual content before the first internal handShift
-    has_text_before_handshift = False
-    if first_internal_handshift is not None and first_internal_idx is not None:
-        for node in div_descendants[:first_internal_idx]:
-            if node.text and node.text.strip():
-                has_text_before_handshift = True
-                break
-
-    # Start building the scribe list
+    # Collect all handShift elements within the div
     scribes = []
+    handshifts_in_div = []
+    
+    for node in div_descendants:
+        if node.tag == f"{TEI_NS}handShift":
+            handshifts_in_div.append(node)
 
-    # Case 1: handShift appears before any textual content -> it's the starting scribe
-    if first_internal_handshift is not None and not has_text_before_handshift:
-        scribe_ref = first_internal_handshift.get("scribeRef", "")
-        if scribe_ref.startswith("#SH"):
-            scribes.append(scribe_ref[3:])  # Extract scribe number
+    # If there are handShifts within the div, use them
+    if handshifts_in_div:
+        for hs in handshifts_in_div:
+            scribe_ref = hs.get("scribeRef", "")
+            if scribe_ref.startswith("#SH"):
+                scribe_num = scribe_ref[3:]
+                # Only add if different from the last scribe (avoid duplicates from consecutive shifts)
+                if not scribes or scribes[-1] != scribe_num:
+                    scribes.append(scribe_num)
     else:
-        # Case 2: Text appears before any handShift in the div -> look backward
+        # No handShifts within the div; look for the most recent one before it
         for prev_node in reversed(all_nodes[:div_idx]):
             if prev_node.tag == f"{TEI_NS}handShift":
                 scribe_ref = prev_node.get("scribeRef", "")
                 if scribe_ref.startswith("#SH"):
                     scribes.append(scribe_ref[3:])
                 break
-
-    # Track all handShift elements after the first one
-    found_first_in_list = False
-    for node in div_descendants:
-        if node.tag == f"{TEI_NS}handShift":
-            if not found_first_in_list:
-                found_first_in_list = True
-                continue  # Skip the first one (already handled)
-            scribe_ref = node.get("scribeRef", "")
-            if scribe_ref.startswith("#SH"):
-                scribe_num = scribe_ref[3:]
-                # Only add if different from the last scribe
-                if not scribes or scribes[-1] != scribe_num:
-                    scribes.append(scribe_num)
 
     # Format output
     if not scribes:
@@ -562,16 +580,46 @@ def get_scribes_for_div(div_id, source_root):
 
 def simple_folio_sort_key(fol_range):
     """
-    Extracts the first sequence of numbers from a folio reference for numerical sorting.
-    Returns: int: The integer value of the first number found, or a large number if none is found.
+    Creates a sortable key from a folio range string.
+    
+    Handles formats like:
+    - '99ra' (folio 99, recto, column a)
+    - '99ra–102rb' (range from 99ra to 102rb)
+    - '99rb–99va' (same folio, different sides)
+    - '1–40' (simple range)
+    - '328(bis)ra–385rb' (with "bis" notation)
+    
+    Args:
+        fol_range (str): The folio range string.
+    
+    Returns:
+        tuple: A sortable tuple (folio_num, side_order, column_order)
+               based on the first folio in the range.
     """
     if not fol_range:
-        return 999999
-
-    # Regex to capture the first sequence of one or more digits
-    match = re.match(r'(\d+)', fol_range)
-    if match:
-        return int(match.group(1))
+        return (999999, 2, 3)  # Default for empty/missing ranges
     
-    # Fallback for non-standard references
-    return 999999
+    # Extract the first folio reference (before any dash)
+    # Handle patterns like "99ra", "328(bis)ra", etc.
+    match = re.match(r'(\d+)\(bis\)?([rv])([ab])?', fol_range)
+    if not match:
+        # Try simpler pattern without bis
+        match = re.match(r'(\d+)([rv])([ab])?', fol_range)
+    if not match:
+        # Fallback: just extract the number
+        num_match = re.match(r'(\d+)', fol_range)
+        if num_match:
+            return (int(num_match.group(1)), 0, 0)
+        return (999999, 2, 3)
+    
+    folio_num = int(match.group(1))
+    side = match.group(2)  # 'r' or 'v'
+    column = match.group(3)  # 'a', 'b', or None
+    
+    # Side order: r (recto) = 0, v (verso) = 1
+    side_order = 0 if side == 'r' else 1
+    
+    # Column order: a = 0, b = 1, None = 2
+    column_order = 0 if column == 'a' else (1 if column == 'b' else 2)
+    
+    return (folio_num, side_order, column_order)

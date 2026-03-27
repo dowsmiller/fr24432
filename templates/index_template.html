@@ -13,11 +13,6 @@
         {{ project_title }}
         {% if project_subtitle %}<span class="subtitle">{{ project_subtitle }}</span>{% endif %}
       </h1>
-      <div class="view-toggle-switch">
-        <label for="sort-toggle" class="toggle-label">Order by completeness</label>
-        <input type="checkbox" id="sort-toggle" class="toggle-checkbox">
-        <div class="toggle-slider"></div>
-      </div>
     </div>
   </header>
 
@@ -27,24 +22,66 @@
     <div class="expand">
       <h2>📕&ensp;About the Manuscript <span class="arrow">▼</span></h2>
       <div class="expand-content">
+        <h3>Introduction</h3>
         <p>
-          The manuscript at the centre of this project is Paris, Bibliothèque nationale de France, fonds français, 24432, hereafter fr24432.
-          It was produced in Paris in the middle of the fourteenth century.
+          Paris, Bibliothèque nationale de France, fr. 24432 is a mid-fourteenth-century Parisian manuscript containing 87 vernacular texts copied by some 11 scribes.
         </p>
         <p>
-          The manuscript is the work of some 11 scribes, and contains some 87 texts across its 446 folios, all of which are written entirely or primarily in French.
-          It is thus interesting for its palaeographic, codicological, and textual complexity, and yet has received minimal attention from scholarship.
+          The codex brings together narrative, didactic, devotional, and lyric material in Old and Middle French, preserving both widely circulated and lesser-known works within a unified yet complex codicological structure.
+          The manuscript transmits material that remains unpublished in an edited form, while also serving as a witness to several established textual traditions such as the Lais of Marie de France, the fabliaux, and the work of Rutebuef.
         </p>
         <p>
+          It is thus interesting for its palaeographic, codicological, and textual complexity, and yet has received minimal attention from modern scholarship.
           In my doctoral project, I conducted a full material analysis of the codex using a variety of traditional and digital methods.
           The full thesis is available in Open Access <a href="https://ora.ox.ac.uk/objects/uuid:57feff4b-fa3e-4133-b1c9-7544b6874f4b" target="_blank">here</a>.
         </p>
+        <h3>Manuscript Overview</h3>
+        <table>
+          <tbody>
+            <tr>
+              <th>Holding institution</th>
+              <td>Bibliothèque nationale de France, Paris</td>
+            </tr>
+            <tr>
+              <th>Collection</th>
+              <td>Fonds français</td>
+            </tr>
+            <tr>
+              <th>Call number</th>
+              <td>24432</td>
+            </tr>
+            <tr>
+              <th>Place of compilation</th>
+              <td>Paris?</td>
+            </tr>
+            <tr>
+              <th>Compilation date</th>
+              <td>mid-14thC</td>
+            </tr>
+            <tr>
+              <th>Folios</th>
+              <td>446</td>
+            </tr>
+            <tr>
+              <th>Texts (excluding additions)</th>
+              <td>87</td>
+            </tr>
+            <tr>
+              <th>Scribes</th>
+              <td>11</td>
+            </tr>
+            <tr>
+              <th>Languages</th>
+              <td>Old and Middle French</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="expand">
       <h2>📖&ensp;Manuscript Contents <span class="arrow">▼</span></h2>
       <div class="expand-content">
-        {# --- TABLE OF CONTENTS --- #}
+        <h3>Table of Contents</h3>
         <div class="toc-section">
           <div class="toc-wrapper">
             <table class="toc-table">
@@ -73,23 +110,148 @@
             </table>
           </div>
         </div>
+        <h3>Codicological Structure</h3>
+        <p>The full, formal structure of fr24432 is as follows:</p>
+        <p class="indent">singleton (bound with 1), 1–5:8, 6:8 (wants 8), 7:8, 8:6, 9–10:8, 11:8 (booklet of 6, singleton, singleton), 12–24:8,  25:6, 26:8 (wants 8), 27–29:8, 30:8 (wants 1), 31–32:8, wants quire(s), 33:8, 34:8 (1, 8 displaced),  35–38:8, 39:10 (1 displaced from 34, booklet of 8, 8 displaced from 34), 40–42:8, 43:2 (bound as singletons), 44–50:8, 51:4 (bound as singletons; wants 3, 4), 52:8 (singleton, booklet of 6, singleton), 53–58:8, wants quire(s)</p>
+        <p>
+          On the basis of this quire structure, the manuscript's contemporary foliation, as well as shifts in scribal hands, the manuscript can be divided into eight main sections, or groupings, as follows:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Grouping</th>
+              <th>Quire(s)</th>
+              <th>Folio(s)</th>
+              <th>Scribal hand(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>1–26</td>
+              <td>1–198G</td>
+              <td>2, 3, 4, 5, 6</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>27–30</td>
+              <td>199–230</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td>31–32</td>
+              <td>231–246</td>
+              <td>8, 3</td>
+            </tr>
+            <tr>
+              <td>E</td>
+              <td>33–42</td>
+              <td>247–326</td>
+              <td>7, 5</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>43</td>
+              <td>327–328</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>G</td>
+              <td>44–51</td>
+              <td>328(bis)–385</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>H</td>
+              <td>52–58</td>
+              <td>388–443</td>
+              <td>2, 11</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Based on the material, scribal, and textual evidence, it is possible to identify 11 distinct phases in the production of fr24432 before it left its <em>scriptorium</em>, namely the following:
+        </p>
+
+        <ol>
+          <li>
+            The base manuscript (<strong><em>B</em></strong>, <strong><em>C</em></strong>, <strong><em>E</em></strong>, and <strong><em>H</em></strong>) is copied by scribes 2, 3, 4, 5, 6, 7, and 11.
+          </li>
+
+          <li>
+            <strong><em>D</em></strong>, containing the work of hands 8 and 3, is inserted between the previously contiguous groupings <strong><em>C</em></strong> / <strong><em>E</em></strong>, having been removed from a different context, most likely a codex other than the <em>base manuscript</em> of fr24432, which was nevertheless produced by the same <em>scriptorium</em>.
+          </li>
+
+          <li>
+            A quire labelled <s><em>m</em></s> is removed from the previously contiguous grouping <strong><em>E</em></strong> / <strong><em>H</em></strong>.
+          </li>
+
+          <li>
+            <strong><em>F</em></strong> is copied by hand 9 from the removed quire labelled <s><em>m</em></s> to complete the text with which the previous quire ends (<em>Messe</em>).
+          </li>
+
+          <li>
+            <strong><em>F</em></strong> is inserted in the previously contiguous grouping <strong><em>E</em></strong> / <strong><em>H</em></strong> in place of the removed quire <s><em>m</em></s>, along with the discrete grouping <strong><em>G</em></strong>, containing <em>Lucidaires</em>.
+          </li>
+
+          <li>
+            Quires are removed from <strong><em>H</em></strong> at the end of the codex, perhaps to make space in the binding for the newly added groupings <strong><em>F</em></strong> and <strong><em>G</em></strong>.
+          </li>
+
+          <li>
+            Quire 26 is temporarily misplaced from the end of grouping <strong><em>B</em></strong> and is replaced by another quire beginning ‘pour ceuls’, which is removed shortly after erroneous catchwords are added.
+          </li>
+
+          <li>
+            Foliation is added to the full codex.
+          </li>
+
+          <li>
+            The table of contents is compiled by hand 1 and added to the beginning of the codex as grouping <strong><em>A</em></strong>.
+          </li>
+
+          <li>
+            Quire 26 is replaced in its original position at the end of grouping <strong><em>B</em></strong>, less its final folio.
+          </li>
+
+          <li>
+            The <em>litterae notabiliores</em> are added to the full codex.
+          </li>
+        </ol>
+        <p>
+          For full details of the evidence supporting this interpretation, see my doctoral thesis, available in Open Access <a href="https://ora.ox.ac.uk/objects/uuid:57feff4b-fa3e-4133-b1c9-7544b6874f4b" target="_blank">here</a>.
+        </p>
       </div>
     </div>
     <div class="expand">
-      <h2>🗂️&ensp;About the Project <span class="arrow">▼</span></h2>
+      <h2>🗂️&ensp;About the Dataset <span class="arrow">▼</span></h2>
       <div class="expand-content">
+        <h3>Motivation</h3>
         <p>
-          This page presents a work-in-progress edition of the texts of fr24432, using the full TEI-XML encoding of the codex that I produced by hand during my doctoral project.
-          Given the specific requirements of that project, it was not always necessary for the data to be cleaned and regularised before use, so while my doctoral project has concluded, the data are not yet fully ‘complete’.
+          This site presents a work-in-progress digital edition of the manuscript’s texts, based on the full TEI-XML encoding of the codex that I produced by hand during my doctoral research.
+          For a number of texts, this dataset presents their first full digital transcription, presenting material that has not previously appeared in scholarly editions.
+        </p>
+        <p>
+          Due to the specific requirements of the doctoral project from which these data derive, it was not always necessary for the encoding to be fully cleaned and regularised.
+          While my doctoral project itself has concluded, the data therefore remain in development.
         </p>
         <p>
           The motivating principle behind this present project is that a desire for data completeness, which remains the ultimate goal, should not prevent incomplete data from being published if they may be of use to scholarship.
           After all, completeness in one aspect of an encoding may be independent from completeness in another: for example, while it is not yet possible to extract a whole-manuscript critical edition directly from these data, the completeness of the encoding of abbreviations is much higher.
         </p>
         <p>
-          In short, this project presents these data in the hope that they will be of use to scholars in their current form, and will raise the profile of this fascinating manuscript.
+          These materials are presented in the hope that they will be useful to scholars in their current form, and will encourage further engagement with this fascinating manuscript.
           As my work on the texts of fr24432 continues to develop, I will update the data accordingly.
         </p>
+        <h3>How to Use This Dataset</h3>
         <p>
           The texts given here are separated into three groups according to their status: <em>Complete</em>, <em>Near Complete</em>, and <em>Incomplete</em>.
         </p>
@@ -119,6 +281,7 @@
     <div class="expand">
       <h2>⚙️&ensp;Encoding Principles <span class="arrow">▼</span></h2>
       <div class="expand-content">
+        <h3>Textual Structure</h3>
         <p>
           In the TEI-XML encoding, individual texts, and their incipit and explicit markings (linked to the main text through <code>@corresp</code>) have been separated through use of the <code>&lt;div&gt;</code> tag, with sections of prose marked using <code>&lt;p&gt;</code>, and sections of poetry marked using <code>&lt;lg&gt;</code>, with individual lines of verse tagged using <code>&lt;l&gt;</code>.
           When a text is dialogic in form, this is marked using <code>&lt;spGrp&gt;</code>, with contributions by individual speakers marked using <code>&lt;sp&gt;</code>.
@@ -126,10 +289,12 @@
           Both <code>&lt;sp&gt;</code> and <code>&lt;q&gt;</code> make use of <code>@who</code> and <code>@toWhom</code>, where appropriate, and instances of <code>&lt;q&gt;</code> that break across structural divisions are connected through the use of <code>@next</code> and <code>@prev</code> references.
           The few words and phrases written in languages other than Old and Middle French (predominantly Latin) have been marked using <code>@xml:lang</code> and contained within <code>&lt;seg&gt;</code>, if these do not align with another tagged section of text.
         </p>
+        <h3>Codicological Structure</h3>
         <p>
           Material divisions within the codex have been marked, with <code>&lt;gb&gt;</code>, <code>&lt;pb&gt;</code>, <code>&lt;cb&gt;</code>, and <code>&lt;lb&gt;</code> tags indicating the beginning of a new quire, folio, column, and line respectively, with the latter tag marked with <code>@break</code> as <code>"no"</code> when a line break occurs within a word. <code>&lt;handShift&gt;</code> is used to mark the beginning of a section of work by a particular scribe, with the scribe identified using <code>@scribeRef</code>.
           Additions and interventions by hands other than the main scribe of a section are marked through the addition of the <code>@hand</code> attribute.
         </p>
+        <h3>Layout, Paratext, and Material Features</h3>
         <p>
           The table of contents is encoded as a table using the <code>&lt;table&gt;</code>, <code>&lt;cell&gt;</code>, and <code>&lt;row&gt;</code> tags.
           Labels, marginal notes, catchwords, and highlighted sections are marked using <code>&lt;label&gt;</code>, <code>&lt;note&gt;</code>, <code>&lt;fw&gt;</code>, and <code>&lt;hi&gt;</code>, with information about the location and presentation of these additions usually included in <code>@place</code> and <code>@rend</code> attributes. The latter attribute is applied to material and textual divisions more broadly, particularly to mark the use of <em>litterae notabiliores</em>, or to indicate the exact manner in which text is added or deleted.
@@ -137,11 +302,13 @@
           In the latter case, details such as the <code>@agent</code>, <code>@extent</code>, <code>@quantity</code>, and <code>@reason</code> behind the gap are marked.
           All material and textual divisions are given a unique identifier through the use of <code>@xml:id</code>.
         </p>
+        <h3>Editorial Interventions and Textual Variants</h3>
         <p>
           Within the text of the encoding, expansions of scribal abbreviation, additions and deletions by scribal or later hands, as well as editorial regularisations, corrections, suppressions, and insertions have been encoded using the <code>&lt;expan&gt;</code>, <code>&lt;add&gt;</code>, <code>&lt;del&gt;</code>, <code>&lt;reg&gt;</code>, <code>&lt;corr&gt;</code>, <code>&lt;surplus&gt;</code>, and <code>&lt;supplied&gt;</code> elements respectively, alongside the unexpanded, unregularised, and uncorrected version of the text, through the <code>&lt;abbr&gt;</code>, <code>&lt;orig&gt;</code>, and <code>&lt;sic&gt;</code> elements respectively.
           Such modifications are marked with <code>@resp</code> to indicate the responsible party, where this is known.
           Where more than one variant of the same segment of text has been encoded, for example in cases of expanded abbreviation, correction, and regularisation, the variants have been contained within a <code>&lt;choice&gt;</code> element.
         </p>
+        <h3>Named Entities and Numbers</h3>
         <p>
           Again, where such details have been pertinent to our analysis, personal and geographic names have been encoded within <code>&lt;persName&gt;</code> and <code>&lt;placeName&gt;</code>, each referring to an associated identifier using <code>@ref</code>.
           Dates are encoded in <code>&lt;date&gt;</code>, usually with an <code>@when</code> attribute to present the date in a machine readable format, and <code>&lt;num&gt;</code> elements are encoded with their associated <code>@value</code>, to enable machine reading of complex numeral sequences.
@@ -151,22 +318,24 @@
     <div class="expand">
       <h2>📝&ensp;Editorial Principles <span class="arrow">▼</span></h2>
       <div class="expand-content">
+        <h3>Diplomatic Transcription</h3>
         <p>
           Diplomatic transcriptions have been extracted from the TEI-XML encoding by ignoring all <code>&lt;expan&gt;</code>, <code>&lt;reg&gt;</code>,  <code>&lt;corr&gt;</code>,  <code>&lt;add&gt;</code>, and  <code>&lt;supplied&gt;</code> elements, unless they are marked with  <code>@ana='retain'</code>.
           The resulting text mimics, as far as possible, allographic variation on the manuscript page, and retains original word separation and punctuation (the <em>punctus elevatus</em> is represented by a modern semi-colon), with the exception of the inverted comma, which is generally included for clarity.
           All later modifications to the text, including by early correctors, are ignored.
         </p>
+        <h3>Critical Edition</h3>
         <p>
           Critical editions have been extracted from the TEI-XML encoding by ignoring all <code>&lt;abbr&gt;</code>, <code>&lt;orig&gt;</code>,  <code>&lt;sic&gt;</code>,  <code>&lt;del&gt;</code>, and  <code>&lt;surplus&gt;</code> elements, unless they are marked with  <code>@ana='retain'</code>.
           The resulting text simplifies allographic variation for <em>r</em> and <em>s</em>, regularises the use of <em>u</em> and <em>v</em> as in Modern French, modernises punctuation, and adds diacritical marks where these provide a clearer idea of pronunciation (predominantly through the use of the acute accent to mark otherwise ambiguous tonic <em>e</em>, and the use of the trema to indicate diaeresis).
           Later modifications to the text are accepted in cases of clear scribal error, to which I occasionally add my own editorial interventions.
         </p>
         <p>
-          All elements marked with <code>@ana='ignore'</code> are excluded from both edition types, as are all <code>&lt;note&gt;</code> and <code>&lt;fw&gt;</code> elements.
-        </p>
-        <p>
           Note that I use the term <em>critical edition</em> here as a shorthand for a single-manuscript critical edition, which does not attempt to incorporate lessons from other copies of a given text which may exist outside of fr24432.
           For details of such witnesses, where they exist, see the links provided to the <a href="https://www.arlima.net" target="_blank">Archives de littérature du Moyen Âge</a> (ARLIMA) database.
+        </p>
+        <p>
+          All elements marked with <code>@ana='ignore'</code> are excluded from both edition types, as are all <code>&lt;note&gt;</code> and <code>&lt;fw&gt;</code> elements.
         </p>
       </div>
     </div>
@@ -196,11 +365,72 @@
   </span>
 </div>
 
+  {# --- FILTER SECTION --- #}
+  <div class="filter-container">
+    <div class="filter-header">
+      <h2>Filter and Sort</h2>
+      <div class="filter-header-controls">
+        <div class="view-toggle-switch">
+          <label for="sort-toggle" class="toggle-label">Order by completeness</label>
+          <input type="checkbox" id="sort-toggle" class="toggle-checkbox">
+          <div class="toggle-slider"></div>
+        </div>
+        <button id="reset-filters" class="filter-reset-btn">Reset Filters</button>
+      </div>
+    </div>
+    <div class="filter-controls">
+      <div class="filter-group">
+        <label for="text-search">Search</label>
+        <input 
+          type="text" 
+          id="text-search" 
+          class="filter-input" 
+          placeholder="Search title or description...">
+      </div>
+      <div class="filter-group">
+        <label for="completeness-filter">Completeness</label>
+        <select id="completeness-filter" class="filter-input">
+          <option value="">All</option>
+          <option value="complete">Complete</option>
+          <option value="near-complete">Near Complete</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="folio-start">Folio Range Start</label>
+        <input 
+          type="number" 
+          id="folio-start" 
+          class="filter-input" 
+          placeholder="e.g. 100"
+          min="0">
+      </div>
+      <div class="filter-group">
+        <label for="folio-end">Folio Range End</label>
+        <input 
+          type="number" 
+          id="folio-end" 
+          class="filter-input" 
+          placeholder="e.g. 200"
+          min="0">
+      </div>
+      <div class="filter-group">
+        <label for="scribe-ids">Scribe IDs</label>
+        <input 
+          type="text" 
+          id="scribe-ids" 
+          class="filter-input" 
+          placeholder="e.g. 2,5 or 3+4">
+      </div>
+    </div>
+    <div id="filter-results-count" class="filter-results-count"></div>
+  </div>
+
   {# --- MANUSCRIPT ORDER VIEW (DEFAULT) --- #}
   <div class="view-container" id="manuscript-view" data-view="manuscript">
     {% for item in all_items_manuscript_order %}
       <div class="cards-wrapper">
-        <div class="card" data-state="{{ item.state }}">
+        <div class="card" data-state="{{ item.state }}" data-title="{{ item.title|lower }}" data-description="{{ item.summary|lower|default('') }}" data-scribes="{{ item.scribes|default('') }}" data-fol-range="{{ item.fol_range|default('') }}">
           <div class="card-header-info">
             <div class="card-title-wrapper">
               <h2 class="card-title">{{ item.title }}</h2>
@@ -279,7 +509,7 @@
         
         {% for item in grouped_listing[state] %}
           <div class="cards-wrapper">
-            <div class="card" data-state="{{ state }}">
+            <div class="card" data-state="{{ state }}" data-title="{{ item.title|lower }}" data-description="{{ item.summary|lower|default('') }}" data-scribes="{{ item.scribes|default('') }}" data-fol-range="{{ item.fol_range|default('') }}">
               <div class="card-header-info">
                 <div class="card-title-wrapper">
                   <h2 class="card-title">{{ item.title }}</h2>
@@ -450,6 +680,308 @@ document.querySelectorAll('.status-indicator').forEach(indicator => {
       isTouched = false;
     }
   });
+});
+
+// --- Filtering Functionality ---
+
+/**
+ * Parses folio range strings (e.g. "1–5", "199–230G") and extracts numeric boundaries.
+ * Returns an object with start and end properties, or null if parsing fails.
+ */
+function parseFolioRange(folioStr) {
+  if (!folioStr || typeof folioStr !== 'string') {
+    return null;
+  }
+  
+  // Match patterns like "1–5", "199–230G", etc. (using en-dash or regular dash)
+  const match = folioStr.match(/(\d+)[–\-](\d+)/);
+  if (match) {
+    return {
+      start: parseInt(match[1], 10),
+      end: parseInt(match[2], 10)
+    };
+  }
+  
+  // Try single number
+  const singleMatch = folioStr.match(/^(\d+)/);
+  if (singleMatch) {
+    const num = parseInt(singleMatch[1], 10);
+    return { start: num, end: num };
+  }
+  
+  return null;
+}
+
+/**
+ * Checks if a text's folio range overlaps with the filter range.
+ * If filterStart or filterEnd is null, returns true (no filter applied).
+ */
+function folioRangeOverlaps(textRange, filterStart, filterEnd) {
+  // If no filter is set, include everything
+  if (filterStart === null && filterEnd === null) {
+    return true;
+  }
+  
+  // If we have a text range, check for overlap
+  if (textRange) {
+    // Ensure we have valid numeric bounds for the filter
+    const fStart = filterStart !== null ? filterStart : 0;
+    const fEnd = filterEnd !== null ? filterEnd : Infinity;
+    
+    // Check overlap: ranges overlap if textStart <= filterEnd AND textEnd >= filterStart
+    return textRange.start <= fEnd && textRange.end >= fStart;
+  }
+  
+  // No text range to compare
+  return false;
+}
+
+/**
+ * Parses scribe filter input into OR and AND groups.
+ * Examples:
+ *   "3, 4" or "3 | 4" → { orGroups: [[3], [4]] }  (scribe 3 OR 4)
+ *   "3 + 4" or "3 & 4" → { orGroups: [[3, 4]] }   (scribes 3 AND 4)
+ *   "2, 3+4" → { orGroups: [[2], [3, 4]] }        (scribe 2 OR (3 AND 4))
+ */
+function parseScribeFilter(filterStr) {
+  if (!filterStr || typeof filterStr !== 'string') {
+    return { orGroups: [] };
+  }
+
+  const trimmed = filterStr.trim();
+  if (!trimmed) {
+    return { orGroups: [] };
+  }
+
+  // Split by comma or pipe for OR groups
+  const orParts = trimmed.split(/[,|]/);
+  
+  const orGroups = [];
+  for (const orPart of orParts) {
+    const part = orPart.trim();
+    if (!part) continue;
+    
+    // Within each OR group, split by + or & for AND
+    const andParts = part.split(/[+&]/);
+    const andGroup = andParts
+      .map(s => s.trim())
+      .filter(s => s.length > 0);
+    
+    if (andGroup.length > 0) {
+      orGroups.push(andGroup);
+    }
+  }
+
+  return { orGroups };
+}
+
+/**
+ * Checks if card scribes match the filter criteria.
+ * Returns true if at least one OR group is fully satisfied.
+ */
+function matchesScribeFilter(cardScribesStr, filterGroups) {
+  if (!filterGroups || filterGroups.length === 0) {
+    return true;  // No filter applied
+  }
+
+  if (!cardScribesStr) {
+    return false;
+  }
+
+  // Parse the card's scribes (may contain → for transitions)
+  const cardScribes = cardScribesStr
+    .split(/[,\s→]+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 0);
+
+  // Check if any OR group is fully satisfied
+  for (const andGroup of filterGroups) {
+    // All scribes in the AND group must be in the card
+    const allPresent = andGroup.every(filterScribe =>
+      cardScribes.some(cardScribe => cardScribe === filterScribe)
+    );
+    if (allPresent) {
+      return true;  // This OR branch matched
+    }
+  }
+
+  return false;
+}
+
+/**
+ * Checks if card state matches the filter.
+ */
+function matchesStateFilter(cardState, filterState) {
+  if (!filterState) {
+    return true;  // No state filter
+  }
+  return cardState === filterState;
+}
+
+/**
+ * Gets the currently active view (manuscript or status).
+ */
+function getActiveView() {
+  const sortToggle = document.getElementById('sort-toggle');
+  const isStatusView = sortToggle && sortToggle.checked;
+  const activeViewId = isStatusView ? 'status-view' : 'manuscript-view';
+  return document.getElementById(activeViewId);
+}
+
+/**
+ * Hides or shows group headings based on sort toggle and completeness filter.
+ */
+function updateGroupHeadingVisibility() {
+  const sortToggle = document.getElementById('sort-toggle');
+  const completenessFilter = document.getElementById('completeness-filter').value;
+  const shouldHideHeadings = sortToggle.checked && completenessFilter;
+  
+  const statusView = document.getElementById('status-view');
+  if (!statusView) return;
+  
+  const headings = statusView.querySelectorAll('.group-heading');
+  headings.forEach(heading => {
+    const headingText = heading.textContent.trim().toUpperCase();
+    
+    if (shouldHideHeadings) {
+      // Hide headings that don't match the filter
+      const filterUpper = completenessFilter.toUpperCase().replace('-', ' ');
+      if (headingText !== filterUpper) {
+        heading.style.display = 'none';
+      } else {
+        heading.style.display = '';
+      }
+    } else {
+      // Show all headings
+      heading.style.display = '';
+    }
+  });
+}
+
+/**
+ * Applies all active filters to the cards.
+ */
+function applyFilters() {
+  const textSearchInput = document.getElementById('text-search').value.toLowerCase();
+  const completenessFilter = document.getElementById('completeness-filter').value;
+  const folioStartInput = document.getElementById('folio-start').value;
+  const folioEndInput = document.getElementById('folio-end').value;
+  const scribeIdsInput = document.getElementById('scribe-ids').value;
+  
+  // Parse scribe filter
+  const scribeFilterGroups = parseScribeFilter(scribeIdsInput).orGroups;
+  
+  // Parse folio range inputs
+  const filterStart = folioStartInput ? parseInt(folioStartInput, 10) : null;
+  const filterEnd = folioEndInput ? parseInt(folioEndInput, 10) : null;
+  
+  // Update group heading visibility
+  updateGroupHeadingVisibility();
+  
+  // Get only cards from the active view
+  const activeView = getActiveView();
+  const cards = activeView ? activeView.querySelectorAll('.card[data-title]') : [];
+  
+  let visibleCount = 0;
+  
+  cards.forEach(card => {
+    const title = card.dataset.title || '';
+    const description = card.dataset.description || '';
+    const state = card.dataset.state || '';
+    const scribes = card.dataset.scribes || '';
+    const folRange = card.dataset.folRange || '';
+    
+    // Apply text search (title and description)
+    const textMatch = !textSearchInput ||
+      title.includes(textSearchInput) ||
+      description.includes(textSearchInput) ||
+      scribes.toLowerCase().includes(textSearchInput) ||
+      folRange.toLowerCase().includes(textSearchInput);
+    
+    // Apply completeness/state filter
+    const stateMatch = matchesStateFilter(state, completenessFilter);
+    
+    // Apply folio range filter
+    const parsedRange = parseFolioRange(folRange);
+    const folioMatch = folioRangeOverlaps(parsedRange, filterStart, filterEnd);
+    
+    // Apply scribe filter with AND/OR logic
+    const scribeMatch = matchesScribeFilter(scribes, scribeFilterGroups);
+    
+    // Show card if all filters match
+    const shouldShow = textMatch && stateMatch && folioMatch && scribeMatch;
+    const wrapper = card.closest('.cards-wrapper');
+    
+    if (shouldShow) {
+      wrapper.style.display = '';
+      visibleCount++;
+    } else {
+      wrapper.style.display = 'none';
+    }
+  });
+  
+  // Update results count
+  updateResultsCount(visibleCount, cards.length);
+}
+
+/**
+ * Updates the filter results count display.
+ */
+function updateResultsCount(visibleCount, totalCards) {
+  const countContainer = document.getElementById('filter-results-count');
+  
+  if (visibleCount === totalCards && totalCards > 0) {
+    countContainer.textContent = '';
+  } else if (visibleCount === 0) {
+    countContainer.textContent = 'No texts match the current filters.';
+  } else {
+    countContainer.textContent = `Showing ${visibleCount} of ${totalCards} texts.`;
+  }
+}
+
+/**
+ * Resets all filters.
+ */
+function resetFilters() {
+  document.getElementById('text-search').value = '';
+  document.getElementById('completeness-filter').value = '';
+  document.getElementById('folio-start').value = '';
+  document.getElementById('folio-end').value = '';
+  document.getElementById('scribe-ids').value = '';
+  
+  // Show all cards in both views
+  document.querySelectorAll('.cards-wrapper').forEach(wrapper => {
+    wrapper.style.display = '';
+  });
+  
+  // Show all group headings
+  document.querySelectorAll('.group-heading').forEach(heading => {
+    heading.style.display = '';
+  });
+  
+  // Update count for active view
+  const activeView = getActiveView();
+  const totalCards = activeView ? activeView.querySelectorAll('.card[data-title]').length : 0;
+  updateResultsCount(totalCards, totalCards);
+}
+
+// Attach filter listeners
+document.getElementById('text-search').addEventListener('input', applyFilters);
+document.getElementById('completeness-filter').addEventListener('change', () => {
+  applyFilters();
+  updateGroupHeadingVisibility();
+});
+document.getElementById('folio-start').addEventListener('input', applyFilters);
+document.getElementById('folio-end').addEventListener('input', applyFilters);
+document.getElementById('scribe-ids').addEventListener('input', applyFilters);
+document.getElementById('reset-filters').addEventListener('click', resetFilters);
+
+// Also apply filters when the view is switched
+document.getElementById('sort-toggle').addEventListener('change', () => {
+  setTimeout(() => {
+    applyFilters();
+    updateGroupHeadingVisibility();
+  }, 0); // Defer to allow view to switch
 });
 </script>
 </body>

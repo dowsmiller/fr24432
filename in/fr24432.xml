@@ -6574,7 +6574,7 @@
 
                     <pb n="31v" xml:id="f31v"/>
                     <cb n="1" xml:id="cb-31v-1"/>
-                    <l xml:id="l-31v-1-1">Hues pꝛiſt <choice><abbr>ſimō</abbr><expan resp="#SDM">ſimo<ex>n</ex></expan></choice> de<placeName ref="#Montfort">monfoꝛs</placeName></l>
+                    <l xml:id="l-31v-1-1"><handShift scribeRef="#SH4" xml:id="handShift-4-s4"/>Hues pꝛiſt <choice><abbr>ſimō</abbr><expan resp="#SDM">ſimo<ex>n</ex></expan></choice> de<placeName ref="#Montfort">monfoꝛs</placeName></l>
                     <l xml:id="l-31v-1-2">Ki falis naſtoit ne coiarz</l>
                     <l xml:id="l-31v-1-3">Li barrois pꝛiſt meſſe <choice><abbr>b՚naiz</abbr><expan resp="#SDM">b<ex>er</ex>naiz</expan></choice></l>
                     <l xml:id="l-31v-1-4">ki li reiz eſt de <placeName ref="#Horstrinale">hoꝛſtrinale</placeName></l>
@@ -6745,7 +6745,7 @@
 
                     <pb n="32v" xml:id="f32v"/>
                     <cb n="1" xml:id="cb-32v-1"/>
-                    <l xml:id="l-32v-1-1">Moꝛs letrebuche dos deuans</l>
+                    <l xml:id="l-32v-1-1"><handShift scribeRef="#SH3" xml:id="handShift-5-s3"/>Moꝛs letrebuche dos deuans</l>
                     <l xml:id="l-32v-1-2">Anſi faiſoit li pꝛeus huons</l>
                     <l xml:id="l-32v-1-3">Plus aigrement conme lyons</l>
                     <l xml:id="l-32v-1-4">Les coꝛoit ſus ſans miſeꝛicoꝛde</l>
@@ -6841,7 +6841,7 @@
                     <gb n="5"/>
                     <pb n="33r" xml:id="f33r"/>
                     <cb n="1" xml:id="cb-33r-1"/>
-                    <l xml:id="l-33r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-4-s2"/><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſoient ens en loſt deſfrans</l>
+                    <l xml:id="l-33r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-6-s2"/><choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> ſoient ens en loſt deſfrans</l>
                     <l xml:id="l-33r-1-2">Et les plus foꝛs les plus hardis</l>
                     <l xml:id="l-33r-1-3">Enſi com roſe <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> floꝛ de lis</l>
                     <l xml:id="l-33r-1-4">Seur monte de biauté les floꝛs</l>
@@ -11592,7 +11592,7 @@
             </div>
 
             <div type="text" n="21" xml:id="Aristote">
-                <p rend="decoratedInitial decoInitblue" xml:id="p-57r-1-1"><handShift scribeRef="#SH3" xml:id="handShift-5-s3"/>A ſon tres vaillant <choice><abbr>ſeigne˞</abbr><expan resp="#SDM">ſeigne<ex>ur</ex></expan></choice><lb/>
+                <p rend="decoratedInitial decoInitblue" xml:id="p-57r-1-1"><handShift scribeRef="#SH3" xml:id="handShift-7-s3"/>A ſon tres vaillant <choice><abbr>ſeigne˞</abbr><expan resp="#SDM">ſeigne<ex>ur</ex></expan></choice><lb/>
                 tres feꝛme et ceꝛtain con<lb break="no"/>
                 tinuelment dela creſti<lb break="no"/>
                 enne religiiun <choice><abbr>meiſuīt</abbr><expan resp="#SDM">meiſui<ex>n</ex>t</expan></choice><lb/>
@@ -14212,7 +14212,7 @@
 
                 <pb n="73r" xml:id="f73r"/>
                 <cb n="1" xml:id="cb-73r-1"/>
-                <p rend="decoratedInitial decoInitred" xml:id="p-73r-1-1"><handShift scribeRef="#SH4" xml:id="handShift-6-s4"/>O tu /alixandꝛes tu dois <choice><orig>ſauoir</orig><reg resp="#SDM">ſavoir</reg></choice><lb/>
+                <p rend="decoratedInitial decoInitred" xml:id="p-73r-1-1"><handShift scribeRef="#SH4" xml:id="handShift-8-s4"/>O tu /alixandꝛes tu dois <choice><orig>ſauoir</orig><reg resp="#SDM">ſavoir</reg></choice><lb/>
                 que tout auſſi come eſpan<lb break="no"/>
                 ces ſont <choice><orig><choice><abbr>diu՚ſes</abbr><expan resp="#SDM">diu<ex>er</ex>s<ex>es</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>div՚ſes</abbr><expan resp="#SDM">div<ex>er</ex>s<ex>es</ex></expan></choice></reg></choice> foꝛces et veꝛtus <choice><abbr>q՚</abbr><expan resp="#SDM">q<ex>ue</ex></expan></choice><lb/>
                 <choice><orig>diex</orig><reg resp="#SDM">Diex</reg></choice> <choice><orig>ia</orig><reg resp="#SDM">ja</reg></choice> miſes auſſi ſont em pieꝛ<lb break="no"/>
@@ -14708,7 +14708,7 @@
                 adire de tes ſougis et te refeꝛa<lb/>
                 <choice><orig>ſauoir</orig><reg resp="#SDM">ſavoir</reg></choice> les eſtas et le manieꝛes<lb/>
                 de ceulz et les qualitez et les ra<lb break="no"/>
-                cines et toutes <handShift scribeRef="#SH3" xml:id="handShift-7-s3"/>les manieꝛes et<lb/>
+                cines et toutes <handShift scribeRef="#SH3" xml:id="handShift-9-s3"/>les manieꝛes et<lb/>
                 entoutes les griés dont eſt deuiſee<lb/>
                 <choice><orig>iuſtice</orig><reg resp="#SDM">juſtice</reg></choice> en <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num> manieꝛes <surplus resp="#SDM" reason="repetition">et tous les<lb/>
                 griés dont eſt deuiſee <choice><orig>iuſtice</orig><reg resp="#SDM">juſtice</reg></choice> en <num value="2">.<choice><orig>ij</orig><reg resp="#SDM">ii</reg></choice>.</num><lb/>
@@ -18407,7 +18407,7 @@
                                 <gb n="13"/>
                                 <pb n="95r" xml:id="f95r"/>
                                 <cb n="1" xml:id="cb-95r-1"/>
-                                <l xml:id="l-95r-1-1"><handShift scribeRef="#SH5" xml:id="handShift-8-s5"/>Li <choice><orig>vns</orig><reg resp="#SDM">uns</reg></choice> paſſe <num value="10">.x.</num> coiſes<lb/>
+                                <l xml:id="l-95r-1-1"><handShift scribeRef="#SH5" xml:id="handShift-10-s5"/>Li <choice><orig>vns</orig><reg resp="#SDM">uns</reg></choice> paſſe <num value="10">.x.</num> coiſes<lb/>
                                 Li autres <num value="5">.v.</num> ou <num value="7">.vii.</num></l>
                                 <l xml:id="l-95r-1-2">Tant va ſeurement<lb/>
                                 <choice><abbr>Cō</abbr><expan resp="#SDM">Co<ex>m</ex></expan></choice> il a de <choice><orig><choice><abbr>bn̄ fet</abbr><expan resp="#SDM">b<ex>ie</ex>n fet</expan></choice></orig><reg resp="#SDM"><choice><abbr>bn̄fet</abbr><expan resp="#SDM">b<ex>ie</ex>nfet</expan></choice></reg></choice></l>
@@ -20190,7 +20190,7 @@
                     <gb n="14"/>
                     <pb n="103r" xml:id="f103r"/>
                     <cb n="1" xml:id="cb-103r-1"/>
-                    <l xml:id="l-103r-1-1"><handShift scribeRef="#SH6" xml:id="handShift-9-s6"/>N'en <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> cheuaucheure<lb/>
+                    <l xml:id="l-103r-1-1"><handShift scribeRef="#SH6" xml:id="handShift-11-s6"/>N'en <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> cheuaucheure<lb/>
                     N'<choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> <choice><abbr>gñt</abbr><expan resp="#SDM">g<ex>ra</ex>nt</expan></choice> plenté de gent</l>
                     <l xml:id="l-103r-1-2">Aincois <choice><abbr>viēt</abbr><expan resp="#SDM">vie<ex>n</ex>t</expan></choice> du <choice><abbr>ſeigñ</abbr><expan resp="#SDM">ſeign<ex>eur</ex></expan></choice><lb/>
                     <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> fiſt le firmament</l>
@@ -41989,7 +41989,7 @@
             </div>
 
             <div type="incipit" n="53" corresp="#Merlin">
-                <p rend="red" xml:id="p-199r-1-1"><handShift scribeRef="#SH7" xml:id="handShift-10-s7"/>Ci commence le dit<lb/>
+                <p rend="red" xml:id="p-199r-1-1"><handShift scribeRef="#SH7" xml:id="handShift-12-s7"/>Ci commence le dit<lb/>
                 De /<choice><orig>merlin</orig><reg resp="#SDM">Merlin</reg></choice> <choice><orig>mellot</orig><reg resp="#SDM">Mellot</reg></choice></p>
             </div>
 
@@ -49118,7 +49118,7 @@
                     <gb n="31"/>
                     <pb n="231r" xml:id="f231r"/>
                     <cb n="1" xml:id="cb-231r-1"/>
-                    <l rend="decoratedInitial decoInitred" xml:id="l-231r-1-1"><handShift scribeRef="#SH8" xml:id="handShift-11-s8"/><!-- look at D, A -->Dieu et /ſa douce mere<lb/>
+                    <l rend="decoratedInitial decoInitred" xml:id="l-231r-1-1"><handShift scribeRef="#SH8" xml:id="handShift-13-s8"/><!-- look at D, A -->Dieu et /ſa douce mere<lb/>
                     <choice><abbr>Q՚</abbr><expan resp="#SDM">Q<ex>ue</ex></expan></choice> chaſcun doit amer</l>
                     <l xml:id="l-231r-1-2">Et /le baron ſaint <choice><orig>iaque</orig><reg resp="#SDM">Jaque</reg></choice><lb/>
                     De qui <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice> veul parler</l>
@@ -50864,7 +50864,7 @@
                     <gb n="32"/>
                     <pb n="239r" xml:id="f239r"/>
                     <cb n="1" xml:id="cb-239r-1"/>
-                    <l rend="decoratedInitial decoInitblue" xml:id="l-239r-1-1"><q xml:id="q-239r-1-1" prev="#q-238v-2-13" next="#q-239r-1-2"><handShift scribeRef="#SH3" xml:id="handShift-12-s3"/>Mes pour <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> fetes moy<lb/>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-239r-1-1"><q xml:id="q-239r-1-1" prev="#q-238v-2-13" next="#q-239r-1-2"><handShift scribeRef="#SH3" xml:id="handShift-14-s3"/>Mes pour <choice><orig>dieu</orig><reg resp="#SDM">Dieu</reg></choice> fetes moy<lb/>
                     Ce que <choice><orig>uous</orig><reg resp="#SDM">vous</reg></choice> ai requis</q></l>
                     <l xml:id="l-239r-1-2"><q xml:id="q-239r-1-2" prev="#q-239r-1-1"><choice><orig>Ie</orig><reg resp="#SDM">Je</reg></choice> pꝛierai pour <choice><orig>uous</orig><reg resp="#SDM">vous</reg></choice><lb/>
                     Et pour tous <choice><orig>uos</orig><reg resp="#SDM">vos</reg></choice> amis</q></l>
@@ -52412,7 +52412,7 @@
 
             <div type="text" n="61" xml:id="Buef">
                 <lg>
-                    <l rend="decoratedInitial decoInitblue" xml:id="l-247r-1-1"><handShift scribeRef="#SH7" xml:id="handShift-13-s7"/><choice><orig>POur</orig><reg resp="#SDM">Pour</reg></choice> donner <supplied resp="#Olsen">par </supplied><choice><abbr>exēple</abbr><expan resp="#SDM">exe<ex>m</ex>ple</expan></choice><lb/>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-247r-1-1"><handShift scribeRef="#SH7" xml:id="handShift-15-s7"/><choice><orig>POur</orig><reg resp="#SDM">Pour</reg></choice> donner <supplied resp="#Olsen">par </supplied><choice><abbr>exēple</abbr><expan resp="#SDM">exe<ex>m</ex>ple</expan></choice><lb/>
                     Proueſce <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>hardemēt</abbr><expan resp="#SDM">hardeme<ex>n</ex>t</expan></choice></l>
                     <l xml:id="l-247r-1-2">Pecheeurs pechereſſes<lb/>
                     <choice><abbr>Qⁱ</abbr><expan resp="#SDM">Q<ex>ui</ex></expan></choice> pechent <choice><abbr>moꝛtelm̄t</abbr><expan resp="#SDM">moꝛtelm<ex>en</ex>t</expan></choice></l>
@@ -64638,7 +64638,7 @@
 
             <div type="text" n="73" xml:id="LaiAmour2">
                 <lg>
-                    <l rend="decoratedInitial decoInitblue" xml:id="l-311r-1-1"><handShift scribeRef="#SH5" xml:id="handShift-14-s5"/><choice><orig>IL</orig><reg resp="#SDM">Il</reg></choice> eſt aucuns folz <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> ſe <choice><abbr>plaīt</abbr><expan resp="#SDM">plai<ex>n</ex>t</expan></choice></l>
+                    <l rend="decoratedInitial decoInitblue" xml:id="l-311r-1-1"><handShift scribeRef="#SH5" xml:id="handShift-16-s5"/><choice><orig>IL</orig><reg resp="#SDM">Il</reg></choice> eſt aucuns folz <choice><abbr>qⁱ</abbr><expan resp="#SDM">q<ex>ui</ex></expan></choice> ſe <choice><abbr>plaīt</abbr><expan resp="#SDM">plai<ex>n</ex>t</expan></choice></l>
                     <l xml:id="l-311r-1-2">Par maint grief plaint</l>
                     <l xml:id="l-311r-1-3">En <choice><sic>moſtrant</sic><corr resp="#SDM"><choice><abbr>mōſtrant</abbr><expan resp="#SDM">mo<supplied resp="#SDM"><ex>n</ex></supplied>ſtrant</expan></choice></corr></choice> plaint</l>
                     <l xml:id="l-311r-1-4"><choice><abbr>Q˜mours</abbr><expan resp="#SDM">Q<ex>u'a</ex>mours</expan></choice> <choice><abbr>ē</abbr><expan resp="#SDM">e<ex>n</ex></expan></choice> li <choice><abbr>s՚uant</abbr><expan resp="#SDM">s<ex>er</ex>uant</expan></choice> l'<choice><orig>a moꝛt</orig><reg resp="#SDM">amoꝛt</reg></choice></l>
@@ -67528,7 +67528,7 @@
                 <gb n="43"/>
                 <pb n="327r" xml:id="f327r"/>
                 <cb n="1" xml:id="cb-327r-1"/>
-                <handShift scribeRef="#SH9" xml:id="handShift-15-s9"/><!-- Hand shift displayed by capitals -->dite. Car ſi come nous <choice><abbr>acōmuniom</abbr><expan resp="#SDM">aco<ex>m</ex>muniom</expan></choice><lb/>
+                <handShift scribeRef="#SH9" xml:id="handShift-17-s9"/><!-- Hand shift displayed by capitals -->dite. Car ſi come nous <choice><abbr>acōmuniom</abbr><expan resp="#SDM">aco<ex>m</ex>muniom</expan></choice><lb/>
                 en ceſt <choice><orig><choice><abbr>.S՚.</abbr><expan resp="#SDM">S<ex>aint</ex></expan></choice></orig><reg resp="#SDM"><choice><abbr>.s՚.</abbr><expan resp="#SDM">s<ex>aint</ex></expan></choice></reg></choice> temps pꝛeſent de grace<lb/>
                 einſi <choice><abbr>acōmunion</abbr><expan resp="#SDM">aco<ex>m</ex>munion</expan></choice> nous au tens<lb/>
                 <choice><orig>auenir</orig><reg resp="#SDM">avenir</reg></choice> de gloire.</p> <label type="heading" subtype="inlineHeading" rend="red inline" xml:id="label-327r-1-1">Del commu<lb break="no"/>
@@ -67715,7 +67715,7 @@
             </div>
 
             <div type="text" n="78" xml:id="Lucidaires">
-                <p rend="decoratedInitial decoInitred" xml:id="p-328r-bis-1-2"><handShift scribeRef="#SH10" xml:id="handShift-16-s10"/><choice><orig>SOuentes</orig><reg resp="#SDM">Soventes</reg></choice> foiz m'a<lb break="no"/>
+                <p rend="decoratedInitial decoInitred" xml:id="p-328r-bis-1-2"><handShift scribeRef="#SH10" xml:id="handShift-17-s10"/><choice><orig>SOuentes</orig><reg resp="#SDM">Soventes</reg></choice> foiz m'a<lb break="no"/>
                 uoient <choice><orig>uoſtre</orig><reg resp="#SDM">voſtre</reg></choice> deſci<lb break="no"/>
                 ple requis. Que <choice><orig>ie</orig><reg resp="#SDM">je</reg></choice><lb/>
                 leur deſliaſſe unes<lb/>
@@ -77114,7 +77114,7 @@
                 <gb n="52" cert="medium"/>
                 <pb n="388r" xml:id="f388r"/>
                 <cb n="1" xml:id="cb-388r-1"/>
-                <p rend="red" xml:id="p-388r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-17-s2"/>Ci <choice><abbr>cōmance</abbr><expan resp="#SDM">co<ex>m</ex>mance</expan></choice> le dit du pꝛeu <choice><abbr>chl՚r</abbr><expan resp="#SDM">ch<ex>evalie</ex>r</expan></choice></p>
+                <p rend="red" xml:id="p-388r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-19-s2"/>Ci <choice><abbr>cōmance</abbr><expan resp="#SDM">co<ex>m</ex>mance</expan></choice> le dit du pꝛeu <choice><abbr>chl՚r</abbr><expan resp="#SDM">ch<ex>evalie</ex>r</expan></choice></p>
                 <lb/>
                 <note hand="LH?" xml:id="note-388r-1-1">Par Watriquez</note><!-- same hand as 297rb -->
                 <lb/>
@@ -82437,7 +82437,7 @@
                     <l xml:id="l-416v-1-6">La<choice><orig/><reg resp="#SDM"> </reg></choice>flour bel <choice><abbr>ſemblāt</abbr><expan resp="#SDM">ſembla<ex>n</ex>t</expan></choice> ſenefie</l>
                     <l xml:id="l-416v-1-7">Li ſeꝛpens du cueꝛ le boiſſie</l>
                     <l xml:id="l-416v-1-8">Entre moy <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> ma ſeꝛeur ire</l>
-                    <l xml:id="l-416v-1-9">Auons fait ma<handShift scribeRef="#SH11" xml:id="handShift-18-s11"/>inte gent occirre</l>
+                    <l xml:id="l-416v-1-9">Auons fait ma<handShift scribeRef="#SH11" xml:id="handShift-20-s11"/>inte gent occirre</l>
                     <l xml:id="l-416v-1-10">Et /ſon fil chacieꝛ /iacob</l>
                     <l xml:id="l-416v-1-11">Mais <choice><abbr>onq՚s</abbr><expan resp="#SDM">onq<ex>ue</ex>s</expan></choice> ne la<choice><orig/><reg resp="#SDM"> </reg></choice>tienſt a<choice><orig/><reg resp="#SDM"> </reg></choice>cop</l>
                     <l xml:id="l-416v-1-12"><choice><abbr>Pꝰ</abbr><expan resp="#SDM">P<ex>uis</ex></expan></choice> fis /ioſeph entreꝛ em<choice><orig/><reg resp="#SDM"> </reg></choice>pꝛil</l>
@@ -82866,7 +82866,7 @@
 
                     <pb n="419r" xml:id="f419r"/>
                     <cb n="1" xml:id="cb-419r-1"/>
-                    <l xml:id="l-419r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-19-s2"/>Et <choice><orig>vſeꝛa</orig><reg resp="#SDM">uſeꝛa</reg></choice> tel ſacrement</l>
+                    <l xml:id="l-419r-1-1"><handShift scribeRef="#SH2" xml:id="handShift-21-s2"/>Et <choice><orig>vſeꝛa</orig><reg resp="#SDM">uſeꝛa</reg></choice> tel ſacrement</l>
                     <l xml:id="l-419r-1-2"><choice><abbr>Qñt</abbr><expan resp="#SDM">Q<ex>ua</ex>nt</expan></choice> <choice><orig>aura</orig><reg resp="#SDM">avra</reg></choice> fait aſſez <choice><abbr>bꝛiemēt</abbr><expan resp="#SDM">bꝛieme<ex>n</ex>t</expan></choice></l>
                     <l xml:id="l-419r-1-3">Vourra aleꝛ boire <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> mengieꝛ</l>
                     <l xml:id="l-419r-1-4">Sans contredit <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> <choice><abbr>sāz</abbr><expan resp="#SDM">ſa<ex>n</ex>z</expan></choice> <choice><abbr>dang՚</abbr><expan resp="#SDM">dang<ex>ier</ex></expan></choice></l>
@@ -83074,7 +83074,7 @@
             </div>
 
             <div type="incipit" n="89" corresp="#Proverbes">
-                <p rend="red" xml:id="p-420r-1-1"><handShift scribeRef="#SH11" xml:id="handShift-20-s11"/>Ce ſont enſeignement ue li<lb/>
+                <p rend="red" xml:id="p-420r-1-1"><handShift scribeRef="#SH11" xml:id="handShift-22-s11"/>Ce ſont enſeignement ue li<lb/>
                 ſages /ſalemons <choice><abbr>⁊</abbr><expan resp="#SDM"><ex>et</ex></expan></choice> /tholome<lb/>
                 nous <choice><orig>en ſeignent</orig><reg resp="#SDM">enſeignent</reg></choice> pour ue<lb break="no"/>
                 nir au <choice><orig>ſauuement</orig><reg resp="#SDM">ſauvement</reg></choice> de l'ame.<lb/>
