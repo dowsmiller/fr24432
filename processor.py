@@ -2,7 +2,6 @@ import os # Provides functions for interacting with the operating system
 import sys # Provides access to system-specific parameters and functions
 import re # Provides support for regular expressions
 import csv # Provides functions to work with CSV files
-import hashlib # Provides stable hashing for generated filenames
 import urllib.parse # Provides URL parsing utilities
 import urllib.request # Provides HTTP fetching for manifest caching
 import xml.etree.ElementTree as ET # XML parsing library
@@ -22,40 +21,62 @@ os.makedirs(OUT_TEI_DIR, exist_ok=True) # Create the TEI output directory if it 
 
 def cache_iiif_manifest_for_static_site(manifest_url, out_root="out"):
     """
-    Downloads an IIIF manifest to out/html/static/iiif and returns a relative
-    URL (e.g., static/iiif/manifest-abc123.json) suitable for GitHub Pages.
-    Falls back to the original URL if download fails.
+    Uses a local IIIF manifest cache in out/html/static/iiif by default and
+    refreshes it from the remote source when available.
+
+    Returns a site-relative URL (e.g., static/iiif/12148_x_manifest.json)
+    whenever a cache file exists, so the viewer does not depend on direct
+    cross-origin manifest fetches at runtime.
     """
     if not manifest_url:
         return manifest_url
 
     parsed = urllib.parse.urlparse(manifest_url)
-    safe_stem = re.sub(r"[^A-Za-z0-9._-]+", "-", f"{parsed.netloc}{parsed.path}").strip("-")
-    if not safe_stem:
-        safe_stem = "manifest"
-    digest = hashlib.sha1(manifest_url.encode("utf-8")).hexdigest()[:10]
-    filename = f"{safe_stem[:80]}-{digest}.json"
+    ark_match = re.search(r"/ark:/([^/]+)/([^/]+)/manifest\.json$", parsed.path)
+    if ark_match:
+        filename = f"{ark_match.group(1)}_{ark_match.group(2)}_manifest.json"
+    else:
+        safe_stem = re.sub(r"[^A-Za-z0-9._-]+", "_", parsed.path).strip("_")
+        filename = f"{safe_stem or 'manifest'}.json"
 
     rel_path = os.path.join("static", "iiif", filename)
     local_path = os.path.join(out_root, "html", rel_path)
     os.makedirs(os.path.dirname(local_path), exist_ok=True)
 
-    if not os.path.exists(local_path):
-        try:
-            request = urllib.request.Request(
-                manifest_url,
-                headers={"User-Agent": "fr24432-pipeline/1.0"}
-            )
-            with urllib.request.urlopen(request, timeout=30) as response:
-                payload = response.read()
+    cache_exists = os.path.exists(local_path)
+
+    # Try to fetch remote manifest so we can refresh the local cache if the
+    # upstream copy is newer or changed.
+    try:
+        request = urllib.request.Request(
+            manifest_url,
+            headers={"User-Agent": "fr24432-pipeline/1.0"}
+        )
+        with urllib.request.urlopen(request, timeout=30) as response:
+            payload = response.read()
+
+        if cache_exists:
+            with open(local_path, "rb") as existing_manifest:
+                existing_payload = existing_manifest.read()
+            if payload != existing_payload:
+                with open(local_path, "wb") as manifest_file:
+                    manifest_file.write(payload)
+                print(f"Updated IIIF manifest cache -> {local_path}")
+            else:
+                print(f"IIIF manifest cache is current -> {local_path}")
+        else:
             with open(local_path, "wb") as manifest_file:
                 manifest_file.write(payload)
             print(f"Cached IIIF manifest -> {local_path}")
-        except Exception as exc:
-            print(f"Warning: could not cache IIIF manifest ({exc}); using remote URL.")
-            return manifest_url
 
-    return rel_path.replace(os.sep, "/")
+        return rel_path.replace(os.sep, "/")
+    except Exception as exc:
+        if cache_exists:
+            print(f"Warning: could not refresh IIIF manifest ({exc}); using local cache.")
+            return rel_path.replace(os.sep, "/")
+
+        print(f"Warning: could not cache IIIF manifest ({exc}); using remote URL.")
+        return manifest_url
 
 # --- Data Loading and Validation ---
 
