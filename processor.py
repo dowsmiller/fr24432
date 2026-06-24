@@ -2,6 +2,8 @@ import os # Provides functions for interacting with the operating system
 import sys # Provides access to system-specific parameters and functions
 import re # Provides support for regular expressions
 import csv # Provides functions to work with CSV files
+import urllib.parse # Provides URL parsing utilities
+import urllib.request # Provides HTTP fetching for manifest caching
 import xml.etree.ElementTree as ET # XML parsing library
 from saxonche import PySaxonProcessor # Library for running XSLT and XPath with Saxon-EE
 from jinja2 import Environment, FileSystemLoader # Jinja2 templating engine for HTML generation
@@ -15,6 +17,66 @@ META_FILE = os.path.join(INPUT_DIR, "meta.csv") # Path to the metadata CSV file
 OUT_ROOT = "out" # Root directory for all output
 OUT_TEI_DIR = os.path.join(OUT_ROOT, "tei") # Output directory for extracted TEI XML files
 os.makedirs(OUT_TEI_DIR, exist_ok=True) # Create the TEI output directory if it doesn't exist
+
+
+def cache_iiif_manifest_for_static_site(manifest_url, out_root="out"):
+    """
+    Uses a local IIIF manifest cache in out/html/static/iiif by default and
+    refreshes it from the remote source when available.
+
+    Returns a site-relative URL (e.g., static/iiif/12148_x_manifest.json)
+    whenever a cache file exists, so the viewer does not depend on direct
+    cross-origin manifest fetches at runtime.
+    """
+    if not manifest_url:
+        return manifest_url
+
+    parsed = urllib.parse.urlparse(manifest_url)
+    ark_match = re.search(r"/ark:/([^/]+)/([^/]+)/manifest\.json$", parsed.path)
+    if ark_match:
+        filename = f"{ark_match.group(1)}_{ark_match.group(2)}_manifest.json"
+    else:
+        safe_stem = re.sub(r"[^A-Za-z0-9._-]+", "_", parsed.path).strip("_")
+        filename = f"{safe_stem or 'manifest'}.json"
+
+    rel_path = os.path.join("static", "iiif", filename)
+    local_path = os.path.join(out_root, "html", rel_path)
+    os.makedirs(os.path.dirname(local_path), exist_ok=True)
+
+    cache_exists = os.path.exists(local_path)
+
+    # Try to fetch remote manifest so we can refresh the local cache if the
+    # upstream copy is newer or changed.
+    try:
+        request = urllib.request.Request(
+            manifest_url,
+            headers={"User-Agent": "fr24432-pipeline/1.0"}
+        )
+        with urllib.request.urlopen(request, timeout=30) as response:
+            payload = response.read()
+
+        if cache_exists:
+            with open(local_path, "rb") as existing_manifest:
+                existing_payload = existing_manifest.read()
+            if payload != existing_payload:
+                with open(local_path, "wb") as manifest_file:
+                    manifest_file.write(payload)
+                print(f"Updated IIIF manifest cache -> {local_path}")
+            else:
+                print(f"IIIF manifest cache is current -> {local_path}")
+        else:
+            with open(local_path, "wb") as manifest_file:
+                manifest_file.write(payload)
+            print(f"Cached IIIF manifest -> {local_path}")
+
+        return rel_path.replace(os.sep, "/")
+    except Exception as exc:
+        if cache_exists:
+            print(f"Warning: could not refresh IIIF manifest ({exc}); using local cache.")
+            return rel_path.replace(os.sep, "/")
+
+        print(f"Warning: could not cache IIIF manifest ({exc}); using remote URL.")
+        return manifest_url
 
 # --- Data Loading and Validation ---
 
@@ -84,6 +146,9 @@ with PySaxonProcessor(license=False) as proc:
     except Exception:
         pass # Ignore errors during manifest extraction
 
+    # Cache the manifest locally for static hosting (e.g., GitHub Pages)
+    manifest_url_for_pages = cache_iiif_manifest_for_static_site(manifest_url, OUT_ROOT)
+
     # Load source XML (using ET for helpers) and XSLT processor
     source_root = ET.parse(INPUT_FILE).getroot() # Parse the XML again with ElementTree for helper functions
     xslt30 = proc.new_xslt30_processor() # Create XSLT processor
@@ -150,7 +215,7 @@ with PySaxonProcessor(license=False) as proc:
         print(f"Wrote TEI for {div_id} -> {out_path}")
  
         # Process the extracted TEI (generate HTML, CSV, TXT) using helper function
-        process_div(out_path, out_root=OUT_ROOT, div_id=div_id, initial_folio=initial_folio, initial_col=initial_col, manifest_url=manifest_url, metadata_dict=metadata_dict)
+        process_div(out_path, out_root=OUT_ROOT, div_id=div_id, initial_folio=initial_folio, initial_col=initial_col, manifest_url=manifest_url_for_pages, metadata_dict=metadata_dict)
         
 # --- Generate Index HTML ---
 # Set output base

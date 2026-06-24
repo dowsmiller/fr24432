@@ -1,6 +1,38 @@
 /* ----------------------------------------------------------
    GLOBAL RESET & BASE
 ---------------------------------------------------------- */
+@font-face {
+  font-family: "JunicodeWeb";
+  src: url("fonts/junicode/TypoPRO-Junicode-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JunicodeWeb";
+  src: url("fonts/junicode/TypoPRO-Junicode-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JunicodeWeb";
+  src: url("fonts/junicode/TypoPRO-Junicode-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JunicodeWeb";
+  src: url("fonts/junicode/TypoPRO-Junicode-BoldItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1655,6 +1687,8 @@ select.filter-input {
   padding-right: 6px;
   font-size: 1rem;
   line-height: 1.75;
+  font-family: "JunicodeWeb", "Junicode", "Cardo", "Noto Serif",
+               "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 #text a {
@@ -1731,6 +1765,7 @@ select.filter-input {
 
 .line-text {
   flex: 1;
+  font-family: inherit;
 }
 
 /* Folio markers */
