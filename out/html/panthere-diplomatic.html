@@ -11116,6 +11116,8 @@
   const fallbackNote = document.getElementById('iiif-fallback-note');
   let miradorInstance = null;
   let isFallbackMode = false;
+  let activeObserver = null;
+  let lastFallbackCanvasId = '';
 
   function deriveCachedManifestUrl(url) {
     if (!url) return '';
@@ -11145,17 +11147,37 @@
     const base = canvasId.slice(0, idx);
     const canvasToken = canvasId.slice(idx + marker.length).trim();
     if (!base || !canvasToken) return '';
-    return `${base}/${canvasToken}/full/full/0/native.jpg`;
+    // Use a constrained width image in fallback mode to reduce bandwidth and
+    // avoid bursty full-resolution requests when navigating folios.
+    return `${base}/${canvasToken}/full/1600,/0/native.jpg`;
+  }
+
+  function canvasToInfoUrl(canvasId) {
+    if (!canvasId) return '';
+    const marker = '/canvas/';
+    const idx = canvasId.lastIndexOf(marker);
+    if (idx === -1) return '';
+
+    const base = canvasId.slice(0, idx);
+    const canvasToken = canvasId.slice(idx + marker.length).trim();
+    if (!base || !canvasToken) return '';
+    return `${base}/${canvasToken}/info.json`;
   }
 
   function setFallbackCanvas(canvasId) {
+    if (!canvasId || canvasId === lastFallbackCanvasId) return;
     const imageUrl = canvasToImageUrl(canvasId);
     if (!imageUrl || !fallbackImage) return;
+    lastFallbackCanvasId = canvasId;
     fallbackImage.src = imageUrl;
   }
 
   function activateFallbackMode(reason) {
     isFallbackMode = true;
+    if (activeObserver) {
+      activeObserver.disconnect();
+      activeObserver = null;
+    }
     if (viewerContainer) viewerContainer.style.display = 'none';
     if (fallbackContainer) fallbackContainer.style.display = 'block';
     if (fallbackNote && reason) fallbackNote.textContent = reason;
@@ -11190,6 +11212,41 @@
     return '';
   }
 
+  async function buildMiradorManifestConfig(resolvedManifestUrl) {
+    if (!resolvedManifestUrl) return null;
+
+    const absoluteManifestId = new URL(resolvedManifestUrl, window.location.href).toString();
+    const isLocalOrSameOrigin = !/^https?:\/\//i.test(resolvedManifestUrl) ||
+      (new URL(resolvedManifestUrl, window.location.href).origin === window.location.origin);
+
+    if (!isLocalOrSameOrigin) {
+      return {
+        manifestId: resolvedManifestUrl,
+        manifests: undefined
+      };
+    }
+
+    try {
+      const response = await fetch(absoluteManifestId, { method: 'GET', credentials: 'omit', cache: 'no-store' });
+      if (!response.ok) return null;
+
+      const manifestJson = await response.json();
+      // Force Mirador to index this manifest by the local cache URL rather than
+      // the upstream @id/id embedded in the source JSON.
+      manifestJson.id = absoluteManifestId;
+      manifestJson['@id'] = absoluteManifestId;
+
+      return {
+        manifestId: absoluteManifestId,
+        manifests: {
+          [absoluteManifestId]: manifestJson
+        }
+      };
+    } catch (_err) {
+      return null;
+    }
+  }
+
   // --- 0. Calibrate decorated-initial indents by actual glyph width ---
   function applyDecoIndentWidths() {
     const lines = document.querySelectorAll('.line.has-deco-init');
@@ -11216,9 +11273,24 @@
 
   // --- 1. Initialize Mirador (Minimalist Mode) ---
   if (manifestUrl) {
-    chooseManifestUrl().then((resolvedManifestUrl) => {
+    chooseManifestUrl().then(async (resolvedManifestUrl) => {
       if (!resolvedManifestUrl) {
         activateFallbackMode('Mirador manifest fetch failed; using direct IIIF image mode.');
+        return;
+      }
+
+      const manifestConfig = await buildMiradorManifestConfig(resolvedManifestUrl);
+      if (!manifestConfig || !manifestConfig.manifestId) {
+        activateFallbackMode('Mirador manifest fetch failed; using direct IIIF image mode.');
+        return;
+      }
+
+      // Mirador requires IIIF Image API info.json requests for each canvas.
+      // On GitHub Pages, Gallica often blocks these with CORS, which triggers
+      // Mirador's error modal. Preflight once and switch to fallback early.
+      const startInfoUrl = canvasToInfoUrl(startCanvas);
+      if (startInfoUrl && !(await isManifestReachable(startInfoUrl))) {
+        activateFallbackMode('IIIF image metadata is blocked by CORS; using direct image mode.');
         return;
       }
 
@@ -11226,8 +11298,9 @@
 
       miradorInstance = Mirador.viewer({
         id: "mirador-viewer",
+        manifests: manifestConfig.manifests,
         windows: [{
-          manifestId: resolvedManifestUrl,
+          manifestId: manifestConfig.manifestId,
           canvasId: startCanvas
         }],
         workspaceControlPanel: { enabled: false },
@@ -11245,7 +11318,7 @@
         try {
           const state = miradorInstance.store.getState();
           const manifests = state.manifests || {};
-          const manifestState = manifests[resolvedManifestUrl];
+          const manifestState = manifests[manifestConfig.manifestId];
           if (manifestState && manifestState.error) {
             activateFallbackMode('Mirador could not load the manifest; using direct IIIF image mode.');
           }
@@ -11301,8 +11374,9 @@
 
   // --- 4. Scroll Observer ---
   if (window.IntersectionObserver && scrollContainer) {
-    const observer = new IntersectionObserver((entries) => {
+    activeObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
+        if (isFallbackMode) return;
         if (entry.isIntersecting) {
           const marker = entry.target;
           const url = marker.getAttribute('data-canvas-url');
@@ -11316,7 +11390,7 @@
     });
 
     document.querySelectorAll('.folio-marker').forEach(marker => {
-      observer.observe(marker);
+      activeObserver.observe(marker);
     });
   }
 </script>
