@@ -1430,6 +1430,25 @@
   let miradorInstance = null;
   let isFallbackMode = false;
 
+  function deriveCachedManifestUrl(url) {
+    if (!url) return '';
+    const match = url.match(/\/ark:\/([^/]+)\/([^/]+)\/manifest\.json$/);
+    if (!match) return '';
+    return `static/iiif/${match[1]}_${match[2]}_manifest.json`;
+  }
+
+  function clearPersistedMiradorState() {
+    try {
+      Object.keys(window.localStorage || {}).forEach((key) => {
+        if (key.toLowerCase().includes('mirador')) {
+          window.localStorage.removeItem(key);
+        }
+      });
+    } catch (_err) {
+      // Ignore storage errors and continue with a clean init attempt.
+    }
+  }
+
   function canvasToImageUrl(canvasId) {
     if (!canvasId) return '';
     const marker = '/canvas/';
@@ -1459,11 +1478,29 @@
   async function isManifestReachable(url) {
     if (!url) return false;
     try {
-      const response = await fetch(url, { method: 'GET', mode: 'cors', credentials: 'omit' });
+      const response = await fetch(url, { method: 'GET', credentials: 'omit', cache: 'no-store' });
       return response.ok;
     } catch (_err) {
       return false;
     }
+  }
+
+  async function chooseManifestUrl() {
+    const raw = (manifestUrl || '').trim();
+    if (!raw) return '';
+
+    const cachedFromArk = deriveCachedManifestUrl(raw);
+    const preferredLocal = raw.startsWith('http') && cachedFromArk ? cachedFromArk : raw;
+
+    if (await isManifestReachable(preferredLocal)) {
+      return preferredLocal;
+    }
+
+    if (preferredLocal !== raw && await isManifestReachable(raw)) {
+      return raw;
+    }
+
+    return '';
   }
 
   // --- 0. Calibrate decorated-initial indents by actual glyph width ---
@@ -1492,16 +1529,18 @@
 
   // --- 1. Initialize Mirador (Minimalist Mode) ---
   if (manifestUrl) {
-    isManifestReachable(manifestUrl).then((reachable) => {
-      if (!reachable) {
+    chooseManifestUrl().then((resolvedManifestUrl) => {
+      if (!resolvedManifestUrl) {
         activateFallbackMode('Mirador manifest fetch failed; using direct IIIF image mode.');
         return;
       }
 
+      clearPersistedMiradorState();
+
       miradorInstance = Mirador.viewer({
         id: "mirador-viewer",
         windows: [{
-          loadedManifest: manifestUrl,
+          manifestId: resolvedManifestUrl,
           canvasId: startCanvas
         }],
         workspaceControlPanel: { enabled: false },
@@ -1519,7 +1558,7 @@
         try {
           const state = miradorInstance.store.getState();
           const manifests = state.manifests || {};
-          const manifestState = manifests[manifestUrl];
+          const manifestState = manifests[resolvedManifestUrl];
           if (manifestState && manifestState.error) {
             activateFallbackMode('Mirador could not load the manifest; using direct IIIF image mode.');
           }
