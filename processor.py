@@ -2,6 +2,9 @@ import os # Provides functions for interacting with the operating system
 import sys # Provides access to system-specific parameters and functions
 import re # Provides support for regular expressions
 import csv # Provides functions to work with CSV files
+import hashlib # Provides stable hashing for generated filenames
+import urllib.parse # Provides URL parsing utilities
+import urllib.request # Provides HTTP fetching for manifest caching
 import xml.etree.ElementTree as ET # XML parsing library
 from saxonche import PySaxonProcessor # Library for running XSLT and XPath with Saxon-EE
 from jinja2 import Environment, FileSystemLoader # Jinja2 templating engine for HTML generation
@@ -15,6 +18,44 @@ META_FILE = os.path.join(INPUT_DIR, "meta.csv") # Path to the metadata CSV file
 OUT_ROOT = "out" # Root directory for all output
 OUT_TEI_DIR = os.path.join(OUT_ROOT, "tei") # Output directory for extracted TEI XML files
 os.makedirs(OUT_TEI_DIR, exist_ok=True) # Create the TEI output directory if it doesn't exist
+
+
+def cache_iiif_manifest_for_static_site(manifest_url, out_root="out"):
+    """
+    Downloads an IIIF manifest to out/html/static/iiif and returns a relative
+    URL (e.g., static/iiif/manifest-abc123.json) suitable for GitHub Pages.
+    Falls back to the original URL if download fails.
+    """
+    if not manifest_url:
+        return manifest_url
+
+    parsed = urllib.parse.urlparse(manifest_url)
+    safe_stem = re.sub(r"[^A-Za-z0-9._-]+", "-", f"{parsed.netloc}{parsed.path}").strip("-")
+    if not safe_stem:
+        safe_stem = "manifest"
+    digest = hashlib.sha1(manifest_url.encode("utf-8")).hexdigest()[:10]
+    filename = f"{safe_stem[:80]}-{digest}.json"
+
+    rel_path = os.path.join("static", "iiif", filename)
+    local_path = os.path.join(out_root, "html", rel_path)
+    os.makedirs(os.path.dirname(local_path), exist_ok=True)
+
+    if not os.path.exists(local_path):
+        try:
+            request = urllib.request.Request(
+                manifest_url,
+                headers={"User-Agent": "fr24432-pipeline/1.0"}
+            )
+            with urllib.request.urlopen(request, timeout=30) as response:
+                payload = response.read()
+            with open(local_path, "wb") as manifest_file:
+                manifest_file.write(payload)
+            print(f"Cached IIIF manifest -> {local_path}")
+        except Exception as exc:
+            print(f"Warning: could not cache IIIF manifest ({exc}); using remote URL.")
+            return manifest_url
+
+    return rel_path.replace(os.sep, "/")
 
 # --- Data Loading and Validation ---
 
@@ -84,6 +125,9 @@ with PySaxonProcessor(license=False) as proc:
     except Exception:
         pass # Ignore errors during manifest extraction
 
+    # Cache the manifest locally for static hosting (e.g., GitHub Pages)
+    manifest_url_for_pages = cache_iiif_manifest_for_static_site(manifest_url, OUT_ROOT)
+
     # Load source XML (using ET for helpers) and XSLT processor
     source_root = ET.parse(INPUT_FILE).getroot() # Parse the XML again with ElementTree for helper functions
     xslt30 = proc.new_xslt30_processor() # Create XSLT processor
@@ -150,7 +194,7 @@ with PySaxonProcessor(license=False) as proc:
         print(f"Wrote TEI for {div_id} -> {out_path}")
  
         # Process the extracted TEI (generate HTML, CSV, TXT) using helper function
-        process_div(out_path, out_root=OUT_ROOT, div_id=div_id, initial_folio=initial_folio, initial_col=initial_col, manifest_url=manifest_url, metadata_dict=metadata_dict)
+        process_div(out_path, out_root=OUT_ROOT, div_id=div_id, initial_folio=initial_folio, initial_col=initial_col, manifest_url=manifest_url_for_pages, metadata_dict=metadata_dict)
         
 # --- Generate Index HTML ---
 # Set output base

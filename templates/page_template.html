@@ -114,6 +114,14 @@
 
     <div class="right">
       <div id="mirador-viewer" style="width:100%; height:100%;"></div>
+      <div id="iiif-fallback" style="display:none; width:100%; height:100%; box-sizing:border-box; padding:12px; background:#f8f5ef;">
+        <div style="height:100%; display:flex; flex-direction:column; gap:8px;">
+          <div id="iiif-fallback-note" style="font-size:0.9rem; color:#4d4d4d;">Image fallback mode</div>
+          <div style="flex:1; min-height:0; overflow:auto; border:1px solid #d9d2c8; background:white;">
+            <img id="iiif-fallback-image" alt="Current manuscript folio" style="display:block; width:100%; height:auto;">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -121,7 +129,48 @@
   const manifestUrl = "{{ manifest_url or '' }}";
   const startCanvas = "{{ canvas_url or '' }}";
   const scrollContainer = document.getElementById('scroll-container');
+  const viewerContainer = document.getElementById('mirador-viewer');
+  const fallbackContainer = document.getElementById('iiif-fallback');
+  const fallbackImage = document.getElementById('iiif-fallback-image');
+  const fallbackNote = document.getElementById('iiif-fallback-note');
   let miradorInstance = null;
+  let isFallbackMode = false;
+
+  function canvasToImageUrl(canvasId) {
+    if (!canvasId) return '';
+    const marker = '/canvas/';
+    const idx = canvasId.lastIndexOf(marker);
+    if (idx === -1) return '';
+
+    const base = canvasId.slice(0, idx);
+    const canvasToken = canvasId.slice(idx + marker.length).trim();
+    if (!base || !canvasToken) return '';
+    return `${base}/${canvasToken}/full/full/0/native.jpg`;
+  }
+
+  function setFallbackCanvas(canvasId) {
+    const imageUrl = canvasToImageUrl(canvasId);
+    if (!imageUrl || !fallbackImage) return;
+    fallbackImage.src = imageUrl;
+  }
+
+  function activateFallbackMode(reason) {
+    isFallbackMode = true;
+    if (viewerContainer) viewerContainer.style.display = 'none';
+    if (fallbackContainer) fallbackContainer.style.display = 'block';
+    if (fallbackNote && reason) fallbackNote.textContent = reason;
+    setFallbackCanvas(startCanvas);
+  }
+
+  async function isManifestReachable(url) {
+    if (!url) return false;
+    try {
+      const response = await fetch(url, { method: 'GET', mode: 'cors', credentials: 'omit' });
+      return response.ok;
+    } catch (_err) {
+      return false;
+    }
+  }
 
   // --- 0. Calibrate decorated-initial indents by actual glyph width ---
   function applyDecoIndentWidths() {
@@ -149,28 +198,59 @@
 
   // --- 1. Initialize Mirador (Minimalist Mode) ---
   if (manifestUrl) {
-    miradorInstance = Mirador.viewer({
-      id: "mirador-viewer",
-      windows: [{
-        loadedManifest: manifestUrl,
-        canvasId: startCanvas
-      }],
-      workspaceControlPanel: { enabled: false },
-      window: {
-        hideWindowTitle: true,
-        sideBarOpen: false,
-        allowClose: false,
-        allowMaximize: false,
+    isManifestReachable(manifestUrl).then((reachable) => {
+      if (!reachable) {
+        activateFallbackMode('Mirador manifest fetch failed; using direct IIIF image mode.');
+        return;
       }
+
+      miradorInstance = Mirador.viewer({
+        id: "mirador-viewer",
+        windows: [{
+          loadedManifest: manifestUrl,
+          canvasId: startCanvas
+        }],
+        workspaceControlPanel: { enabled: false },
+        window: {
+          hideWindowTitle: true,
+          sideBarOpen: false,
+          allowClose: false,
+          allowMaximize: false,
+        }
+      });
+
+      // If Mirador reports a manifest error after initialization, fall back.
+      window.setTimeout(() => {
+        if (!miradorInstance || isFallbackMode) return;
+        try {
+          const state = miradorInstance.store.getState();
+          const manifests = state.manifests || {};
+          const manifestState = manifests[manifestUrl];
+          if (manifestState && manifestState.error) {
+            activateFallbackMode('Mirador could not load the manifest; using direct IIIF image mode.');
+          }
+        } catch (_err) {
+          activateFallbackMode('Viewer initialization failed; using direct IIIF image mode.');
+        }
+      }, 2500);
     });
   } else {
-    document.getElementById('mirador-viewer').innerHTML = 
+    viewerContainer.innerHTML = 
       "<div style='padding:20px; text-align:center; color:#666;'>No Manifest URL Provided</div>";
   }
 
   // --- 2. Action Handler with Diagnostics ---
   function jumpToCanvas(canvasId, markerElement) {
-    if (!miradorInstance || !canvasId) return;
+    if (!canvasId) return;
+
+    if (isFallbackMode) {
+      setFallbackCanvas(canvasId);
+      document.querySelectorAll('.folio-marker').forEach(el => el.classList.remove('active'));
+      if (markerElement) markerElement.classList.add('active');
+      return;
+    }
+
+    if (!miradorInstance) return;
 
     const state = miradorInstance.store.getState();
     const windows = state.windows;
